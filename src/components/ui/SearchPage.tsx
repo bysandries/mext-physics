@@ -56,7 +56,7 @@ export default function SearchPage({ topics }: Props) {
           <div class="search-empty">No topics found matching "{query}"</div>
         )}
         {results.map(t => (
-          <a href={`/topic/${t.id}`} class="search-result-item">
+          <a href={`${import.meta.env.BASE_URL}topic/${t.id}`} class="search-result-item">
             <div class="sr-header">
               <span class="sr-part" style={`color: ${getPartColor(t.part)}`}>{t.part}</span>
               <span class="sr-number">Topic {t.number}</span>

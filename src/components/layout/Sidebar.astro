@@ -26,7 +26,7 @@ for (const topic of topics) {
               .sort((a, b) => a.data.number - b.data.number)
               .map(t => (
                 <li>
-                  <a href={`/topic/${t.data.id}`} class="topic-link">
+                  <a href={`${import.meta.env.BASE_URL}topic/${t.data.id}`} class="topic-link">
                     <span class="topic-num">{t.data.number}</span>
                     <span class="topic-title">{t.data.title.replace(/\[.*?\]/g, '').trim()}</span>
                     {t.data.theoryOnly && <span class="badge-theory">theory</span>}

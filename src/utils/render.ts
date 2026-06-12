@@ -39,13 +39,13 @@ export function renderInline(text: string): string {
 }
 
 /** Turn "Topic 4" / "Topics 12–13" mentions into links to the topic pages. */
-export function linkTopicRefs(html: string): string {
+export function linkTopicRefs(html: string, base = import.meta.env.BASE_URL): string {
   if (!html) return '';
   return html.replace(/Topics?\s+\d+(?:\s*[–-]\s*\d+)?/g, (m) =>
     m.replace(/\d+/g, (n) => {
       const num = parseInt(n);
       if (num < 1 || num > 46) return n;
-      return `<a href="/topic/t${String(num).padStart(2, '0')}">${n}</a>`;
+      return `<a href="${base}topic/t${String(num).padStart(2, '0')}">${n}</a>`;
     })
   );
 }

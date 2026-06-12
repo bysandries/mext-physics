@@ -32,7 +32,7 @@ const connectionsHtml = (data.connections ?? []).map((c) => linkTopicRefs(render
   <article class="topic-page">
     <header class="topic-header">
       <div class="topic-breadcrumb">
-        <a href="/">{data.part}</a>
+        <a href={import.meta.env.BASE_URL}>{data.part}</a>
         <span> / </span>
         <span>Topic {data.number}</span>
       </div>
@@ -87,8 +87,8 @@ const connectionsHtml = (data.connections ?? []).map((c) => linkTopicRefs(render
     )}
 
     <nav class="topic-nav">
-      {prev ? <a href={`/topic/${prev.data.id}`} class="nav-link prev">← {prev.data.number}. {prev.data.title.replace(/\[.*?\]/g, '').trim()}</a> : <div />}
-      {next ? <a href={`/topic/${next.data.id}`} class="nav-link next">{next.data.number}. {next.data.title.replace(/\[.*?\]/g, '').trim()} →</a> : <div />}
+      {prev ? <a href={`${import.meta.env.BASE_URL}topic/${prev.data.id}`} class="nav-link prev">← {prev.data.number}. {prev.data.title.replace(/\[.*?\]/g, '').trim()}</a> : <div />}
+      {next ? <a href={`${import.meta.env.BASE_URL}topic/${next.data.id}`} class="nav-link next">{next.data.number}. {next.data.title.replace(/\[.*?\]/g, '').trim()} →</a> : <div />}
     </nav>
   </article>
 </BaseLayout>

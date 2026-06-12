@@ -4,17 +4,17 @@ import { SITE_TITLE } from '../../data/constants';
 
 <header class="header">
   <div class="header-inner">
-    <a href="/" class="logo">
+    <a href={import.meta.env.BASE_URL} class="logo">
       <span class="logo-icon">⚛</span>
       <span class="logo-text">{SITE_TITLE}</span>
     </a>
     <nav class="nav">
-      <a href="/" class="nav-link">Topics</a>
-      <a href="/study/flashcards" class="nav-link">Flashcards</a>
-      <a href="/study/quiz" class="nav-link">Quiz</a>
-      <a href="/study/practice" class="nav-link">Practice</a>
-      <a href="/strategy" class="nav-link">Strategy</a>
-      <a href="/progress" class="nav-link">Progress</a>
+      <a href={import.meta.env.BASE_URL} class="nav-link">Topics</a>
+      <a href={`${import.meta.env.BASE_URL}study/flashcards`} class="nav-link">Flashcards</a>
+      <a href={`${import.meta.env.BASE_URL}study/quiz`} class="nav-link">Quiz</a>
+      <a href={`${import.meta.env.BASE_URL}study/practice`} class="nav-link">Practice</a>
+      <a href={`${import.meta.env.BASE_URL}strategy`} class="nav-link">Strategy</a>
+      <a href={`${import.meta.env.BASE_URL}progress`} class="nav-link">Progress</a>
     </nav>
     <div class="header-actions">
       <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
@@ -22,7 +22,7 @@ import { SITE_TITLE } from '../../data/constants';
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
         </svg>
       </button>
-      <a href="/search" class="icon-btn" aria-label="Search">
+      <a href={`${import.meta.env.BASE_URL}search`} class="icon-btn" aria-label="Search">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
         </svg>

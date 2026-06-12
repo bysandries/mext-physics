@@ -20,8 +20,8 @@ const totalParts = PARTS.length;
         <div class="stat"><span class="stat-val">{totalParts}</span><span class="stat-label">Parts</span></div>
       </div>
       <div class="hero-actions">
-        <a href="/study/flashcards" class="btn btn-primary">Start Flashcards</a>
-        <a href="/study/quiz" class="btn btn-secondary">Take a Quiz</a>
+        <a href={`${import.meta.env.BASE_URL}study/flashcards`} class="btn btn-primary">Start Flashcards</a>
+        <a href={`${import.meta.env.BASE_URL}study/quiz`} class="btn btn-secondary">Take a Quiz</a>
       </div>
     </section>
 
