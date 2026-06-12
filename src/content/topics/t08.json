@@ -1,0 +1,58 @@
+{
+  "id": "t08",
+  "number": 8,
+  "title": "Work–Energy Theorem & Conservation of Energy",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t08",
+  "theory": "$W = Fd\\cos\\phi$; net work $= \\Delta KE$. With only conservative forces, $E = KE + PE$ is constant; friction drains $f \\times d_{rel}$ as heat; ideal tensions and normal forces do no net work. Two-body recoil systems (a spring between free masses) need **energy and momentum together**: momentum fixes the speed *ratio*, energy fixes the *scale*. Maximum-speed moments occur where acceleration is zero — for springs, at natural length.",
+  "formulas": [
+    {
+      "latex": "KE = \\frac{1}{2}mv^2",
+      "description": ""
+    },
+    {
+      "latex": "PE_{grav} = mgh",
+      "description": ""
+    },
+    {
+      "latex": "PE_{spring} = \\frac{1}{2}kx^2",
+      "description": "($x$ from natural length)"
+    },
+    {
+      "latex": "Mv_M = mv_m",
+      "description": "Isolated pair from rest — (opposite directions)"
+    },
+    {
+      "latex": "= f\\,d_{relative}",
+      "description": "friction loss"
+    }
+  ],
+  "framework": [
+    "Is momentum conserved (no external horizontal force)?",
+    "Is mechanical energy conserved (no friction, no sticking)?",
+    "Write both.",
+    "Identify *where* the asked extremum happens (usually natural length / lowest point)."
+  ],
+  "problems": [
+    {
+      "examRef": "2014-UG-Q1-(1)",
+      "title": "Two masses released with a stretched spring",
+      "year": 2014,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: masses $M$ and $m$ on a frictionless horizontal table, joined by a spring of constant $k$; released from rest with stretch $\\ell$.\n- Find: maximum speed of $m$.\n- Diagram: M —spring— m on a line; both fly apart as the spring relaxes.",
+          "formulas": "momentum $0 = Mv_M - mv_m$; energy $\\frac{1}{2}k\\ell^2 = \\frac{1}{2}Mv_M^2 + \\frac{1}{2}mv_m^2$; speeds peak at natural length.",
+          "calculations": "$v_M = \\frac{m}{M}v_m$; substitute:\n$\\frac{1}{2}k\\ell^2 = \\frac{1}{2}v_m^2\\!\\left(\\frac{m^2}{M} + m\\right) = \\frac{1}{2}v_m^2\\,\\frac{m(M+m)}{M}\n\\;\\Rightarrow\\; v_m = \\sqrt{\\dfrac{Mk\\ell^2}{m(M+m)}}$.",
+          "answer": "**(c)** $\\;\\sqrt{\\dfrac{Mk\\ell^2}{m(M+m)}}$",
+          "conclusion": "the speeds peak exactly when the spring crosses natural length (force, hence acceleration, flips sign there). Limit $M\\to\\infty$ recovers the fixed-wall result $\\sqrt{k\\ell^2/m}$ ✓ — that single limit eliminates four of the six options."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

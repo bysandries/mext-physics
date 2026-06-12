@@ -1,0 +1,15 @@
+{
+  "id": "t40",
+  "number": 40,
+  "title": "RC Circuits (charging)",
+  "part": "Electricity & Magnetism",
+  "partNumber": 4,
+  "anchor": "t40",
+  "theory": "Charging through R: $q(t) = C\\mathcal{E}\\left(1 - e^{-t/RC}\\right)$, $i(t) = \\dfrac{\\mathcal{E}}{R}e^{-t/RC}$; time constant $\\tau = RC$. **Exam shortcuts:** at $t = 0$ an uncharged capacitor behaves as a plain wire ($V = 0$); as $t \\to \\infty$, as an open switch ($i = 0$). Most MEXT items need only the two limits, not the exponential.",
+  "formulas": [],
+  "framework": [],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": true
+}

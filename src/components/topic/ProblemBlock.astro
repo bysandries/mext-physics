@@ -1,0 +1,57 @@
+---
+import ProblemReveal from '../../components/topic/ProblemReveal.tsx';
+
+export interface Props {
+  problem: {
+    examRef: string;
+    title?: string;
+    year: number;
+    parts: {
+      partNum: number;
+      title?: string;
+      parameters: string;
+      formulas: string;
+      calculations: string;
+      answer: string;
+      conclusion: string;
+    }[];
+  };
+  index: number;
+}
+
+const { problem, index } = Astro.props;
+const hasParts = problem.parts.length > 0;
+---
+
+<div class="problem-block">
+  <div class="problem-header">
+    <span class="problem-ref">{problem.examRef}</span>
+    {problem.title && <span class="problem-title">{problem.title}</span>}
+    <span class="problem-year">{problem.year}</span>
+  </div>
+  {hasParts ? (
+    <ProblemReveal parts={problem.parts} client:idle />
+  ) : (
+    <p class="problem-empty">See the full markdown for worked solution details.</p>
+  )}
+</div>
+
+<style>
+  .problem-block {
+    margin-bottom: 1.5rem; border: 1px solid var(--border);
+    border-radius: var(--radius-lg); overflow: hidden;
+  }
+  .problem-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0.75rem 1rem; background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+  }
+  .problem-ref { font-weight: 700; font-size: 0.95rem; }
+  .problem-title { flex: 1; font-size: 0.9rem; color: var(--text-secondary); }
+  .problem-year {
+    font-size: 0.8rem; padding: 0.2rem 0.6rem;
+    background: var(--bg-card); border-radius: 999px;
+    color: var(--text-muted); border: 1px solid var(--border);
+  }
+  .problem-empty { padding: 1.5rem; text-align: center; color: var(--text-muted); font-style: italic; }
+</style>

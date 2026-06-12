@@ -1,0 +1,43 @@
+{
+  "id": "t15",
+  "number": 15,
+  "title": "Internal Energy of a Monatomic Ideal Gas",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t15",
+  "theory": "$U = \\frac{3}{2}nRT = \\frac{3}{2}PV$. The second form is the exam weapon: **no need to know n or T separately** — read $PV$ off the diagram. $U$ is a *state function*: $\\Delta U$ depends only on the endpoints, never the path.",
+  "formulas": [
+    {
+      "latex": "U = \\frac{3}{2}nRT = \\frac{3}{2}PV",
+      "description": ""
+    },
+    {
+      "latex": "\\Delta U = \\frac{3}{2}nR\\,\\Delta T = \\frac{3}{2}\\,\\Delta(PV)",
+      "description": ""
+    }
+  ],
+  "framework": [
+    "Compute $\\Delta(PV)$ between endpoints along *any* convenient path; that is $\\frac{2}{3}^{-1}$… simply multiply by $\\frac{3}{2}$."
+  ],
+  "problems": [
+    {
+      "examRef": "2016-UG-Q1-(2)",
+      "title": "ΔU in an isobaric expansion",
+      "year": 2016,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: monatomic ideal gas expands $100\\ \\mathrm{cm^3} \\to 200\\ \\mathrm{cm^3}$ at constant $P = 1.0\\times10^5$ Pa.\n- Find: change in internal energy.",
+          "formulas": "$\\Delta U = \\frac{3}{2}P\\,\\Delta V$ (P constant).",
+          "calculations": "$\\Delta V = 100\\ \\mathrm{cm^3} = 1.0\\times10^{-4}\\ \\mathrm{m^3}$; $P\\Delta V = 10$ J; $\\Delta U = 15$ J.",
+          "answer": "**(c)** $\\;15$ J",
+          "conclusion": "$\\mathrm{cm^3 \\to m^3}$ is $\\times10^{-6}$ — THE classic slip (the 5 / 50 / 100 / 150 J options all bait it). Bonus: here $W = 10$ J and $Q = 25$ J — the universal **3 : 2 : 5 split** ($\\Delta U : W : Q$) of monatomic isobaric heating."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

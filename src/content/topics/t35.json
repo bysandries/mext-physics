@@ -1,0 +1,90 @@
+{
+  "id": "t35",
+  "number": 35,
+  "title": "Hall Effect",
+  "part": "Electricity & Magnetism",
+  "partNumber": 4,
+  "anchor": "t35",
+  "theory": "A conducting strip (thickness $a$, width $b$, length $c$) carries current $I$ via $n$ carriers per volume, charge magnitude $q$, drifting at $v$. **Box counting:** in time $t$, the carriers crossing a section fill a box of volume $(ab)(vt)$ ⇒ $N = nabvt$ ⇒ $I = qnabv$. Apply $B$ perpendicular to the broad face: the magnetic force $qvB$ shovels carriers sideways until the built-up transverse field balances it: $qE = qvB \\Rightarrow E = vB$; the Hall voltage spans the width **along the force**: $V_H = Eb = vBb$. Eliminating $v$ measures the carrier density — and the polarity of $V_H$ reveals the carrier **sign**: that is the Hall effect's whole point.",
+  "formulas": [
+    {
+      "latex": "I = qnabv",
+      "description": "($ab$ = cross-section ⊥ current)"
+    },
+    {
+      "latex": "E = vB",
+      "description": ""
+    },
+    {
+      "latex": "V_H = vBb",
+      "description": ""
+    },
+    {
+      "latex": "n = \\dfrac{BI}{qaV_H}",
+      "description": ""
+    }
+  ],
+  "framework": [
+    "Box-count for $N$ and $I$.",
+    "Transverse force balance for $E$.",
+    "Multiply by the dimension the voltage spans.",
+    "Eliminate $v$ between the two results."
+  ],
+  "problems": [
+    {
+      "examRef": "2014-UG-Q2",
+      "title": "Hall strip, the full chain (parts 1–5)",
+      "year": 2014,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Carriers crossing a section in time t",
+          "parameters": "- Given: strip of thickness $a$, width $b$, length $c$; current $I$ along the length; carrier density $n$, charge magnitude $q$, drift speed $v$; then a field $B$ applied perpendicular to the broad ($b\\times c$) face; a steady voltage $V$ appears across the width $b$.\n- Find: carriers passing in time $t$; the current; the magnetic force per carrier; the Hall voltage; $n$ in terms of measured quantities.",
+          "formulas": "swept volume $= (ab)(vt)$.",
+          "calculations": "$N = nabvt$.",
+          "answer": "**(d)** $\\;nabvt$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "Current",
+          "parameters": "- Given: strip of thickness $a$, width $b$, length $c$; current $I$ along the length; carrier density $n$, charge magnitude $q$, drift speed $v$; then a field $B$ applied perpendicular to the broad ($b\\times c$) face; a steady voltage $V$ appears across the width $b$.\n- Find: carriers passing in time $t$; the current; the magnetic force per carrier; the Hall voltage; $n$ in terms of measured quantities.",
+          "formulas": "",
+          "calculations": "$I = \\dfrac{Nq}{t} = qnabv$.",
+          "answer": "**(b)** $\\;qnabv$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 3,
+          "title": "Magnetic force on each carrier",
+          "parameters": "- Given: strip of thickness $a$, width $b$, length $c$; current $I$ along the length; carrier density $n$, charge magnitude $q$, drift speed $v$; then a field $B$ applied perpendicular to the broad ($b\\times c$) face; a steady voltage $V$ appears across the width $b$.\n- Find: carriers passing in time $t$; the current; the magnetic force per carrier; the Hall voltage; $n$ in terms of measured quantities.",
+          "formulas": "$v \\perp B$ ⇒ $F = qvB$.",
+          "calculations": "",
+          "answer": "**(e)** $\\;qvB$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 4,
+          "title": "Hall voltage across the width",
+          "parameters": "- Given: strip of thickness $a$, width $b$, length $c$; current $I$ along the length; carrier density $n$, charge magnitude $q$, drift speed $v$; then a field $B$ applied perpendicular to the broad ($b\\times c$) face; a steady voltage $V$ appears across the width $b$.\n- Find: carriers passing in time $t$; the current; the magnetic force per carrier; the Hall voltage; $n$ in terms of measured quantities.",
+          "formulas": "balance $qE = qvB$ ⇒ $E = vB$, spanning $b$.",
+          "calculations": "$V = vBb$.",
+          "answer": "**(f)** $\\;vBb$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 5,
+          "title": "Carrier density from measurements",
+          "parameters": "- Given: strip of thickness $a$, width $b$, length $c$; current $I$ along the length; carrier density $n$, charge magnitude $q$, drift speed $v$; then a field $B$ applied perpendicular to the broad ($b\\times c$) face; a steady voltage $V$ appears across the width $b$.\n- Find: carriers passing in time $t$; the current; the magnetic force per carrier; the Hall voltage; $n$ in terms of measured quantities.",
+          "formulas": "from (2): $v = \\dfrac{I}{qnab}$; insert into (4).",
+          "calculations": "$V = \\dfrac{BIb}{qnab} = \\dfrac{BI}{qna} \\;\\Rightarrow\\; n = \\dfrac{BI}{qaV}$.",
+          "answer": "**(b)** $\\;\\dfrac{BI}{qaV}$",
+          "conclusion": "the length $c$ **never appears** — discard any option containing it on sight. The voltage spans $b$, yet $b$ cancels from the final $n$: run the cancellation once so it's yours forever. Sign bonus: for negative carriers the accumulation side flips — which is how Hall measurements identify electrons vs. holes."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

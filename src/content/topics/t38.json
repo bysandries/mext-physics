@@ -1,0 +1,144 @@
+{
+  "id": "t38",
+  "number": 38,
+  "title": "Electromagnetic Induction (motional EMF, Lenz's law)",
+  "part": "Electricity & Magnetism",
+  "partNumber": 4,
+  "anchor": "t38",
+  "theory": "Flux $\\Phi = B_\\perp A$; EMF $= \\dfrac{\\Delta\\Phi}{\\Delta t}$; a rod of length $l$ sweeping perpendicular to a field component gives $\\mathcal{E} = B_\\perp l v$. **The projection rule that decides marks:** only the field component **perpendicular to the circuit plane** makes flux — if $B$ is vertical but the circuit lies on an incline of angle $\\theta$, use $B\\cos\\theta$. Lenz: the induced current opposes the *change* in flux. The force back on the induced current is $F = BIl$ — and if $B$ is vertical that force is **horizontal**, so its along-incline component carries a **second** $\\cos\\theta$. Terminal velocity: driving force = magnetic brake. Energy: at terminal speed, gravity's power = Joule heating (Topic 42).",
+  "formulas": [
+    {
+      "latex": "\\mathcal{E} = \\dfrac{\\Delta\\Phi}{\\Delta t} = B_\\perp l v",
+      "description": ""
+    },
+    {
+      "latex": "I = \\mathcal{E}/R",
+      "description": ""
+    },
+    {
+      "latex": "F = BIl",
+      "description": "(project onto the motion as needed)"
+    },
+    {
+      "latex": "\\Phi = Blvt",
+      "description": "Coil entering a field region — ⇒ $\\mathcal{E} = Blv$, constant during entry"
+    }
+  ],
+  "framework": [
+    "Define the circuit plane and its normal.",
+    "Project $B$ onto that normal.",
+    "EMF → $I = \\mathcal{E}/R$.",
+    "Direction by Lenz **and** by $F = q\\vec v\\times\\vec B$ on the carriers — they must agree.",
+    "Force on the conductor → dynamics.",
+    "Close the books with an energy audit."
+  ],
+  "problems": [
+    {
+      "examRef": "2015-UG-Q2",
+      "title": "Bar on inclined rails, VERTICAL field (parts 1–5)",
+      "year": 2015,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Direction of the induced current",
+          "parameters": "- Given: conducting bar of mass $m$ on frictionless rails (separation $d$) laid on an incline of angle $\\theta$; resistance $R$ across the top; uniform $B$ pointing **vertically up** (perpendicular to the *ground*, not to the incline); the bar is released, slides down, and eventually reaches terminal speed $u$.\n- Find: current direction in the bar (a→b or b→a); $I(v)$; the braking-force component along the incline; $u$; gravity's power at terminal speed.\n- Diagram: the circuit plane *is* the incline ⇒ flux uses $B\\cos\\theta$; the force on the bar ($I\\vec l\\times\\vec B$ with vertical $B$) is **horizontal**, so its along-slope component costs a second $\\cos\\theta$.",
+          "formulas": "*Two independent derivations (use both for any direction question):*\n- *Lorentz:* positive carriers in the bar move with the bar; the velocity component ∥ $B$ does nothing, the horizontal component crossed with vertical $B$ pushes carriers along the bar toward end a.\n- *Lenz:* sliding down grows the enclosed area, so the upward flux $BA\\cos\\theta$ grows; the induced current circulates to oppose it — through the bar from b to a.",
+          "calculations": "",
+          "answer": "**(b)** $\\;$from b to a",
+          "conclusion": "direction letters depend on the printed figure's labeling — **re-derive on your own copy with this two-route method**; the method is what earns the mark either way."
+        },
+        {
+          "partNum": 2,
+          "title": "Current as a function of speed v",
+          "parameters": "- Given: conducting bar of mass $m$ on frictionless rails (separation $d$) laid on an incline of angle $\\theta$; resistance $R$ across the top; uniform $B$ pointing **vertically up** (perpendicular to the *ground*, not to the incline); the bar is released, slides down, and eventually reaches terminal speed $u$.\n- Find: current direction in the bar (a→b or b→a); $I(v)$; the braking-force component along the incline; $u$; gravity's power at terminal speed.\n- Diagram: the circuit plane *is* the incline ⇒ flux uses $B\\cos\\theta$; the force on the bar ($I\\vec l\\times\\vec B$ with vertical $B$) is **horizontal**, so its along-slope component costs a second $\\cos\\theta$.",
+          "formulas": "$\\mathcal{E} = (B\\cos\\theta)\\,d\\,v$.",
+          "calculations": "$I = \\dfrac{vdB\\cos\\theta}{R}$.",
+          "answer": "**(f)** $\\;\\dfrac{vdB\\cos\\theta}{R}$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 3,
+          "title": "Braking force along the incline",
+          "parameters": "- Given: conducting bar of mass $m$ on frictionless rails (separation $d$) laid on an incline of angle $\\theta$; resistance $R$ across the top; uniform $B$ pointing **vertically up** (perpendicular to the *ground*, not to the incline); the bar is released, slides down, and eventually reaches terminal speed $u$.\n- Find: current direction in the bar (a→b or b→a); $I(v)$; the braking-force component along the incline; $u$; gravity's power at terminal speed.\n- Diagram: the circuit plane *is* the incline ⇒ flux uses $B\\cos\\theta$; the force on the bar ($I\\vec l\\times\\vec B$ with vertical $B$) is **horizontal**, so its along-slope component costs a second $\\cos\\theta$.",
+          "formulas": "force on the bar $F = BId$ — horizontal; its along-slope component is $F\\cos\\theta$.",
+          "calculations": "$F_\\parallel = \\dfrac{vd^2B^2\\cos^2\\theta}{R}$, directed up-slope.",
+          "answer": "**(c)** $\\;\\dfrac{vd^2B^2\\cos^2\\theta}{R}$",
+          "conclusion": "**two** $\\cos\\theta$ projections — flux first, force second. This is the single most-missed detail in the whole problem family. (If $B$ were instead perpendicular to the *incline surface*, both cosines disappear.)"
+        },
+        {
+          "partNum": 4,
+          "title": "Terminal speed",
+          "parameters": "- Given: conducting bar of mass $m$ on frictionless rails (separation $d$) laid on an incline of angle $\\theta$; resistance $R$ across the top; uniform $B$ pointing **vertically up** (perpendicular to the *ground*, not to the incline); the bar is released, slides down, and eventually reaches terminal speed $u$.\n- Find: current direction in the bar (a→b or b→a); $I(v)$; the braking-force component along the incline; $u$; gravity's power at terminal speed.\n- Diagram: the circuit plane *is* the incline ⇒ flux uses $B\\cos\\theta$; the force on the bar ($I\\vec l\\times\\vec B$ with vertical $B$) is **horizontal**, so its along-slope component costs a second $\\cos\\theta$.",
+          "formulas": "terminal ⇔ $mg\\sin\\theta = F_\\parallel(u)$.",
+          "calculations": "$mg\\sin\\theta = \\dfrac{ud^2B^2\\cos^2\\theta}{R} \\;\\Rightarrow\\; u = \\dfrac{mgR\\sin\\theta}{d^2B^2\\cos^2\\theta}$.",
+          "answer": "**(e)** $\\;\\dfrac{mgR\\sin\\theta}{d^2B^2\\cos^2\\theta}$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 5,
+          "title": "Power of gravity at terminal speed",
+          "parameters": "- Given: conducting bar of mass $m$ on frictionless rails (separation $d$) laid on an incline of angle $\\theta$; resistance $R$ across the top; uniform $B$ pointing **vertically up** (perpendicular to the *ground*, not to the incline); the bar is released, slides down, and eventually reaches terminal speed $u$.\n- Find: current direction in the bar (a→b or b→a); $I(v)$; the braking-force component along the incline; $u$; gravity's power at terminal speed.\n- Diagram: the circuit plane *is* the incline ⇒ flux uses $B\\cos\\theta$; the force on the bar ($I\\vec l\\times\\vec B$ with vertical $B$) is **horizontal**, so its along-slope component costs a second $\\cos\\theta$.",
+          "formulas": "$P = (mg\\sin\\theta)\\,u$.",
+          "calculations": "$P = \\dfrac{m^2g^2R\\sin^2\\theta}{d^2B^2\\cos^2\\theta} = \\dfrac{m^2g^2R\\tan^2\\theta}{d^2B^2}$.",
+          "answer": "**(e)** $\\;\\dfrac{m^2g^2R\\tan^2\\theta}{d^2B^2}$",
+          "conclusion": "energy audit: at terminal speed $P_{gravity} = I^2R = \\left(\\dfrac{udB\\cos\\theta}{R}\\right)^{\\!2}R$ — substitute $u$ and it matches ✓. That identity can replace part (5) entirely: nature balances the books, so should you."
+        }
+      ]
+    },
+    {
+      "examRef": "2018-UG-Q2",
+      "title": "Square coil entering a field region (parts 1–5)",
+      "year": 2018,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Flux through the coil",
+          "parameters": "- Given: square coil of side $l$, total resistance $R$, moving right at constant $v$; uniform $B$ out of the page fills the region beyond line XY; the leading side enters at $t = 0$; consider $0 < t < l/v$ (entry phase); corners labeled d (top-left), a (top-right), b (bottom-right), c (bottom-left).\n- Find: $\\Phi(t)$; EMF; current; its direction; the external force needed to keep $v$ constant.",
+          "formulas": "penetration depth $vt$ ⇒ immersed area $l\\cdot vt$.",
+          "calculations": "$\\Phi = Blvt$.",
+          "answer": "**(c)** $\\;vBlt$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "EMF magnitude",
+          "parameters": "- Given: square coil of side $l$, total resistance $R$, moving right at constant $v$; uniform $B$ out of the page fills the region beyond line XY; the leading side enters at $t = 0$; consider $0 < t < l/v$ (entry phase); corners labeled d (top-left), a (top-right), b (bottom-right), c (bottom-left).\n- Find: $\\Phi(t)$; EMF; current; its direction; the external force needed to keep $v$ constant.",
+          "formulas": "",
+          "calculations": "$\\mathcal{E} = \\dfrac{d\\Phi}{dt} = Blv$ — constant during entry.",
+          "answer": "**(b)** $\\;vBl$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 3,
+          "title": "Induced current",
+          "parameters": "- Given: square coil of side $l$, total resistance $R$, moving right at constant $v$; uniform $B$ out of the page fills the region beyond line XY; the leading side enters at $t = 0$; consider $0 < t < l/v$ (entry phase); corners labeled d (top-left), a (top-right), b (bottom-right), c (bottom-left).\n- Find: $\\Phi(t)$; EMF; current; its direction; the external force needed to keep $v$ constant.",
+          "formulas": "",
+          "calculations": "$I = \\dfrac{vBl}{R}$.",
+          "answer": "**(e)** $\\;\\dfrac{vBl}{R}$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 4,
+          "title": "Direction of the induced current",
+          "parameters": "- Given: square coil of side $l$, total resistance $R$, moving right at constant $v$; uniform $B$ out of the page fills the region beyond line XY; the leading side enters at $t = 0$; consider $0 < t < l/v$ (entry phase); corners labeled d (top-left), a (top-right), b (bottom-right), c (bottom-left).\n- Find: $\\Phi(t)$; EMF; current; its direction; the external force needed to keep $v$ constant.",
+          "formulas": "out-of-page flux increasing ⇒ Lenz wants into-page flux inside ⇒ **clockwise**.",
+          "calculations": "clockwise through the labels: a→b→c→d.",
+          "answer": "**(a)** $\\;$a→b→c→d",
+          "conclusion": ""
+        },
+        {
+          "partNum": 5,
+          "title": "External force for constant speed",
+          "parameters": "- Given: square coil of side $l$, total resistance $R$, moving right at constant $v$; uniform $B$ out of the page fills the region beyond line XY; the leading side enters at $t = 0$; consider $0 < t < l/v$ (entry phase); corners labeled d (top-left), a (top-right), b (bottom-right), c (bottom-left).\n- Find: $\\Phi(t)$; EMF; current; its direction; the external force needed to keep $v$ constant.",
+          "formulas": "the field drags the current-carrying entering side backward with $F = BIl$; match it.",
+          "calculations": "$F = \\dfrac{vB^2l^2}{R}$.",
+          "answer": "**(d)** $\\;\\dfrac{vB^2l^2}{R}$",
+          "conclusion": "while the coil is *fully inside*, $\\Phi$ is constant ⇒ $I = 0$ ⇒ $F = 0$ — a favorite follow-up; on exit everything repeats with reversed signs. Energy check: $Fv = \\dfrac{v^2B^2l^2}{R} = I^2R$ ✓ — the pushing hand funds the Joule heat, exactly."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

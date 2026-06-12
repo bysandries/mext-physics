@@ -1,0 +1,52 @@
+---
+import '../styles/reset.css';
+import '../styles/variables.css';
+import '../styles/components.css';
+import Header from '../components/layout/Header.astro';
+import Sidebar from '../components/layout/Sidebar.astro';
+import Footer from '../components/layout/Footer.astro';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  showSidebar?: boolean;
+}
+
+const { title = 'MEXT Physics Study', description = 'Interactive MEXT Physics exam study guide', showSidebar = true } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <style>
+    .layout { display: flex; min-height: calc(100vh - var(--header-height)); }
+    .main { flex: 1; padding: 2rem; max-width: 960px; margin: 0 auto; width: 100%; }
+    @media (max-width: 768px) {
+      .layout { flex-direction: column; }
+      .main { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <Header />
+  <div class="layout">
+    {showSidebar && <Sidebar />}
+    <main class="main">
+      <slot />
+    </main>
+  </div>
+  <Footer />
+</body>
+</html>
+
+<script>
+  // Theme toggle
+  const stored = localStorage.getItem('theme');
+  if (stored) document.documentElement.setAttribute('data-theme', stored);
+</script>

@@ -1,0 +1,15 @@
+{
+  "id": "t42",
+  "number": 42,
+  "title": "Joule Heating",
+  "part": "Electricity & Magnetism",
+  "partNumber": 4,
+  "anchor": "t42",
+  "theory": "$P = IV = I^2R = \\dfrac{V^2}{R}$; energy $= Pt$. In induction problems the resistor is the **energy sink**: gravity's terminal-speed power (2015-Q2-(5)) and the constant-speed pulling power (2018-Q2-(5)) both equal $I^2R$ — verified inside those solutions. Whenever an exam asks \"where did the energy go?\", the answer is the resistor, and the audit equation is one line.",
+  "formulas": [],
+  "framework": [],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

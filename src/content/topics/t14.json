@@ -1,0 +1,49 @@
+{
+  "id": "t14",
+  "number": 14,
+  "title": "Ideal Gas Law",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t14",
+  "theory": "$PV = nRT$ holds for every equilibrium state. With $n = m/M_{mol}$, a container at **fixed P and V** holds a mass $m \\propto 1/T$ — the key to \"air escapes a heated room\" problems (the room leaks; pressure and volume stay put, molecules leave). For multi-state or multi-container setups, write $PV = nRT$ once per container per moment and take ratios so constants cancel.",
+  "formulas": [
+    {
+      "latex": "PV = nRT",
+      "description": "[$P$: Pa; $V$: m³; $n$: mol; $T$: K]"
+    },
+    {
+      "latex": "P,V",
+      "description": "Fixed — $\\;mT = \\text{const}$"
+    },
+    {
+      "latex": "\\rho = \\dfrac{PM_{mol}}{RT}",
+      "description": "density"
+    }
+  ],
+  "framework": [
+    "Tabulate $(P, V, T, n)$ per state.",
+    "Identify the invariants (what is held fixed?).",
+    "Ratio out everything constant; only then insert numbers."
+  ],
+  "problems": [
+    {
+      "examRef": "2014-UG-Q1-(3)",
+      "title": "Air escaping a warming room",
+      "year": 2014,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: room $V = 100\\ \\mathrm{m^3}$ at constant $P = 1.0\\times10^5$ Pa; air density $1.3\\ \\mathrm{kg/m^3}$ at 270 K; room warmed 270 K → 300 K; air leaks so P stays atmospheric.\n- Find: mass of air that escapes.",
+          "formulas": "fixed $P, V \\Rightarrow mT = \\text{const}$.",
+          "calculations": "$m_1 = \\rho V = 1.3 \\times 100 = 130$ kg; $m_2 = 130 \\times \\frac{270}{300} = 117$ kg; escaped $= 130 - 117 = 13$ kg.",
+          "answer": "**(c)** $\\;13$ kg",
+          "conclusion": "the 0.13 / 1.3 / 13 ladder in the options is a pure decimal-slip test — carry units through. Quick estimate: $\\Delta m/m \\approx \\Delta T/T_{final} = 30/300 = 10\\%$ of 130 kg ✓."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

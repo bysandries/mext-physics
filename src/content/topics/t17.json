@@ -1,0 +1,17 @@
+{
+  "id": "t17",
+  "number": 17,
+  "title": "Isochoric Processes",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t17",
+  "theory": "$V$ constant ⇒ $W = 0$ and $Q = \\Delta U = \\frac{3}{2}\\,\\Delta(PV)$ (monatomic). Gay-Lussac: $P/T = \\text{const}$.",
+  "formulas": [],
+  "framework": [],
+  "problems": [],
+  "connections": [
+    "legs A→B and C→D of 2018-Q4; legs B→C and D→A of 2014-Q4 (both in Topic 22)."
+  ],
+  "tags": [],
+  "theoryOnly": false
+}

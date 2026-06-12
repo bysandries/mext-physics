@@ -1,0 +1,93 @@
+---
+import { PARTS } from '../../data/constants';
+import { getCollection } from 'astro:content';
+
+const topics = await getCollection('topics');
+const topicsByPart = new Map<string, typeof topics>();
+for (const topic of topics) {
+  const key = topic.data.part;
+  if (!topicsByPart.has(key)) topicsByPart.set(key, []);
+  topicsByPart.get(key)!.push(topic);
+}
+---
+
+<aside class="sidebar">
+  <div class="sidebar-inner">
+    {PARTS.map(part => {
+      const partTopics = topicsByPart.get(part.name) || [];
+      return (
+        <div class="part-group">
+          <div class="part-header" style={`border-left: 3px solid ${part.color}`}>
+            <span class="part-name">{part.name}</span>
+            <span class="part-count">{partTopics.length}</span>
+          </div>
+          <ul class="topic-list">
+            {partTopics
+              .sort((a, b) => a.data.number - b.data.number)
+              .map(t => (
+                <li>
+                  <a href={`/topic/${t.data.id}`} class="topic-link">
+                    <span class="topic-num">{t.data.number}</span>
+                    <span class="topic-title">{t.data.title.replace(/\[.*?\]/g, '').trim()}</span>
+                    {t.data.theoryOnly && <span class="badge-theory">theory</span>}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      );
+    })}
+  </div>
+</aside>
+
+<style>
+  .sidebar {
+    width: var(--sidebar-width); flex-shrink: 0;
+    border-right: 1px solid var(--border);
+    background: var(--bg-secondary);
+    height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+    position: sticky; top: var(--header-height);
+  }
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+      position: fixed; top: var(--header-height); left: 0;
+      width: 100%; height: calc(100vh - var(--header-height));
+      z-index: 99; background: var(--bg);
+    }
+    .sidebar.open { display: block; }
+  }
+  .sidebar-inner { padding: 1rem; }
+  .part-group { margin-bottom: 1.5rem; }
+  .part-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.5rem 0.75rem; margin-bottom: 0.25rem;
+    font-size: 0.8rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.05em; color: var(--text-secondary);
+  }
+  .part-count {
+    font-size: 0.7rem; font-weight: 500;
+    background: var(--border); color: var(--text-muted);
+    padding: 0.1rem 0.4rem; border-radius: 999px;
+  }
+  .topic-list { display: flex; flex-direction: column; gap: 1px; }
+  .topic-link {
+    display: flex; align-items: center; gap: 0.5rem;
+    padding: 0.4rem 0.75rem; border-radius: var(--radius);
+    font-size: 0.85rem; color: var(--text-secondary);
+    transition: background 0.15s, color 0.15s;
+  }
+  .topic-link:hover { background: var(--bg-card); color: var(--text); text-decoration: none; }
+  .topic-num {
+    font-size: 0.75rem; font-weight: 600; color: var(--text-muted);
+    width: 1.5rem; text-align: right; flex-shrink: 0;
+  }
+  .topic-title { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .badge-theory {
+    font-size: 0.65rem; padding: 0.1rem 0.4rem;
+    border-radius: 999px; background: var(--border); color: var(--text-muted);
+    flex-shrink: 0;
+  }
+</style>

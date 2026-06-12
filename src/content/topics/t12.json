@@ -1,0 +1,97 @@
+{
+  "id": "t12",
+  "number": 12,
+  "title": "Escape Velocity & Surface Gravity",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t12",
+  "theory": "Escape = barely reaching infinity with zero speed: $\\frac{1}{2}mv^2 - \\frac{GMm}{R} = 0$. With surface gravity $g = GM/R^2$ (so $GM = gR^2$), this becomes the exam-ready $v_{esc} = \\sqrt{2gR}$. Between planets, $v_{esc} \\propto \\sqrt{M/R}$.",
+  "formulas": [
+    {
+      "latex": "v_{esc} = \\sqrt{\\dfrac{2GM}{R}} = \\sqrt{2gR}",
+      "description": ""
+    },
+    {
+      "latex": "g = \\dfrac{GM}{R^2}",
+      "description": ""
+    },
+    {
+      "latex": "U = -\\dfrac{GMm}{r}",
+      "description": "(zero at infinity, always negative)"
+    }
+  ],
+  "framework": [
+    "Energy at surface = energy at infinity (= 0).",
+    "Swap $GM \\leftrightarrow gR^2$ to match the option set.",
+    "For ratios, cancel constants before any arithmetic."
+  ],
+  "problems": [
+    {
+      "examRef": "2014-UG-Q1-(2)",
+      "title": "Escape speed in terms of g and R",
+      "year": 2014,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: Earth radius $R$, surface gravity $g$; object launched from the surface.\n- Find: minimum speed to escape Earth's gravity.",
+          "formulas": "$\\frac{1}{2}v^2 = \\frac{GM}{R}$; $GM = gR^2$.",
+          "calculations": "$v = \\sqrt{2GM/R} = \\sqrt{2gR}$.",
+          "answer": "**(e)** $\\;\\sqrt{2gR}$",
+          "conclusion": "\"launched horizontally\" is a distractor — escape *energy* is direction-blind (ignoring rotation/atmosphere). Option (a) $\\sqrt{gR}$ is the surface circular-orbit speed; escape is $\\sqrt{2}$ times it. Know the pair."
+        }
+      ]
+    },
+    {
+      "examRef": "2018-UG-Q3-(1)",
+      "title": "Mass of the Earth from g and G",
+      "year": 2018,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: $g = 9.8\\ \\mathrm{m/s^2}$, $G = 6.67\\times10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$, $R = 6.4\\times10^3\\ \\mathrm{km} = 6.4\\times10^6\\ \\mathrm{m}$.\n- Find: Earth's mass $M$.",
+          "formulas": "$M = gR^2/G$.",
+          "calculations": "$R^2 = 4.10\\times10^{13}\\ \\mathrm{m^2}$; $gR^2 = 9.8 \\times 4.10\\times10^{13} = 4.01\\times10^{14}$; $M = \\dfrac{4.01\\times10^{14}}{6.67\\times10^{-11}} = 6.0\\times10^{24}\\ \\mathrm{kg}$.",
+          "answer": "**(a)** $\\;6.0\\times10^{24}\\ \\mathrm{kg}$",
+          "conclusion": "convert km → m **first** — the $10^{18}/10^{30}$ options exist purely to punish that slip. Two significant figures throughout."
+        }
+      ]
+    },
+    {
+      "examRef": "2018-UG-Q3-(2)",
+      "title": "Escape speed of the Earth (numeric)",
+      "year": 2018,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: $g$, $R$ as above.\n- Find: $v_{esc}$.",
+          "formulas": "$v_{esc} = \\sqrt{2gR}$.",
+          "calculations": "$2gR = 2(9.8)(6.4\\times10^6) = 1.25\\times10^8$; $v = 1.12\\times10^4 \\approx 1.1\\times10^4\\ \\mathrm{m/s}$.",
+          "answer": "**(c)** $\\;1.1\\times10^4\\ \\mathrm{m/s}$",
+          "conclusion": "≈ 11 km/s — a benchmark to cache. Option (e) $7.9\\times10^3$ m/s is the low-orbit speed, the *other* famous number; knowing both makes the distractor flag itself."
+        }
+      ]
+    },
+    {
+      "examRef": "2018-UG-Q3-(3)",
+      "title": "Jupiter/Earth escape-speed ratio",
+      "year": 2018,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: $M_J = 320\\,M_E$, $R_J = 11\\,R_E$.\n- Find: $v_{esc,J}/v_{esc,E}$.",
+          "formulas": "$v_{esc} \\propto \\sqrt{M/R}$.",
+          "calculations": "$\\sqrt{320/11} = \\sqrt{29.1} \\approx 5.4$.",
+          "answer": "**(b)** $\\;5.4$",
+          "conclusion": "pure ratio — $G$, $g$, radii in meters: none needed. Bracket the root: $\\sqrt{25}=5 < \\sqrt{29.1} < \\sqrt{36}=6$, closer to 5.4. Bracketing beats long division under time pressure."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

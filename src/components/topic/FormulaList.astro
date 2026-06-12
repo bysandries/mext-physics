@@ -1,0 +1,30 @@
+---
+import { renderLatex, renderInline } from '../../utils/render';
+
+export interface Props {
+  formulas: { latex: string; description: string }[];
+}
+
+const { formulas } = Astro.props;
+---
+
+<div class="formula-grid">
+  {formulas.filter(f => f.latex || f.description).map(f => (
+    <div class="formula-card">
+      {f.latex && <div class="formula-latex" set:html={renderLatex(f.latex, true)} />}
+      {f.description && <div class="formula-desc" set:html={renderInline(f.description)} />}
+    </div>
+  ))}
+</div>
+
+<style>
+  .formula-grid { display: grid; gap: 0.75rem; }
+  .formula-card {
+    padding: 1rem; border-radius: var(--radius);
+    border: 1px solid var(--border); background: var(--bg-secondary);
+  }
+  .formula-latex { font-size: 1.1rem; overflow-x: auto; }
+  .formula-latex :global(.katex) { font-size: 1.1rem; }
+  .formula-desc { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem; }
+  .formula-desc :global(.katex) { font-size: 1em; }
+</style>

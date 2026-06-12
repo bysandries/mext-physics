@@ -1,0 +1,35 @@
+{
+  "id": "t03",
+  "number": 3,
+  "title": "Newton's Laws & Action–Reaction Pairs",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t03",
+  "theory": "N2 ($\\Sigma F = ma$) applies to **each body separately**. N3 pairs are equal, opposite, of the same type, and act on **different** bodies — so they never cancel within one free-body diagram. MEXT's signature N3 setting is friction between stacked blocks: the plank drags the top block *forward* with $f$, and the top block drags the plank *backward* with the same $f$ (fully worked in 2016-Q3, Topic 4). System trick: when all bodies share one acceleration, treat them as a single mass to find $a$, then isolate one body to expose internal forces.",
+  "formulas": [
+    {
+      "latex": "\\Sigma\\vec F = m\\vec a",
+      "description": "per body"
+    },
+    {
+      "latex": "\\vec F_{A\\to B} = -\\vec F_{B\\to A}",
+      "description": ""
+    },
+    {
+      "latex": "mg",
+      "description": "weight — down."
+    }
+  ],
+  "framework": [
+    "One free-body diagram per body.",
+    "Axes along the motion.",
+    "N2 per body.",
+    "Couple the equations with N3 and constraints (same $a$, same string tension)."
+  ],
+  "problems": [],
+  "connections": [
+    "the friction pair is solved start-to-finish in **2016-UG-Q3** (Topic 4); tension chains appear in the Atwood machine (Topic 7, theory only in this set)."
+  ],
+  "tags": [],
+  "theoryOnly": false
+}

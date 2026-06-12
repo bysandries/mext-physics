@@ -1,0 +1,41 @@
+{
+  "id": "t32",
+  "number": 32,
+  "title": "Coulomb's Law, Field, and Electrostatic Potential Energy",
+  "part": "Electricity & Magnetism",
+  "partNumber": 4,
+  "anchor": "t32",
+  "theory": "$F = \\dfrac{1}{4\\pi\\varepsilon_0}\\dfrac{q_1q_2}{r^2}$ (repulsive for like signs); point-charge field $E = \\dfrac{1}{4\\pi\\varepsilon_0}\\dfrac{Q}{r^2}$; potential **energy** $U = \\dfrac{1}{4\\pi\\varepsilon_0}\\dfrac{q_1q_2}{r}$ (positive for like charges, zero at infinity). Energy conservation with $U(r)$ solves every \"closest approach\" problem: approaching a **fixed** charge head-on, the mover is momentarily at rest at minimum separation. (If both charges are free, they share a common velocity at closest approach — add momentum conservation.)",
+  "formulas": [
+    {
+      "latex": "F = \\dfrac{kq_1q_2}{r^2}",
+      "description": ", $\\;U = \\dfrac{kq_1q_2}{r}$, with $k = \\dfrac{1}{4\\pi\\varepsilon_0} \\approx 9.0\\times10^9\\ \\mathrm{N\\,m^2/C^2}$"
+    }
+  ],
+  "framework": [
+    "Conserve $E = KE + U$ between \"far\" and \"near\".",
+    "Fixed target ⇒ $v = 0$ at closest approach.",
+    "Solve for $r$; test limits."
+  ],
+  "problems": [
+    {
+      "examRef": "2015-UG-Q1-(4)",
+      "title": "Distance of closest approach",
+      "year": 2015,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: charge $q$ (mass $m$) moving at speed $v$ when at distance $L$ from a **fixed** charge $Q$; both positive; permittivity $\\varepsilon_0$.\n- Find: minimum separation $d$.",
+          "formulas": "$\\dfrac{1}{2}mv^2 + \\dfrac{qQ}{4\\pi\\varepsilon_0 L} = 0 + \\dfrac{qQ}{4\\pi\\varepsilon_0 d}$.",
+          "calculations": "$\\dfrac{qQ}{4\\pi\\varepsilon_0 d} = \\dfrac{qQ + 2\\pi\\varepsilon_0 mv^2L}{4\\pi\\varepsilon_0 L} \\;\\Rightarrow\\; d = \\dfrac{qQL}{qQ + 2\\pi\\varepsilon_0 mv^2 L}$.",
+          "answer": "**(c)** $\\;\\dfrac{qQL}{qQ + 2\\pi\\varepsilon_0 mv^2L}$",
+          "conclusion": "limits nail it instantly: $v \\to 0 \\Rightarrow d \\to L$ ✓; $v \\to \\infty \\Rightarrow d \\to 0$ ✓ — most other options fail one of the two. The **$2\\pi$** (not $4\\pi$) is the fingerprint of the correct option: the $\\frac{1}{2}$ from kinetic energy merged into it."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

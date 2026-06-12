@@ -1,0 +1,81 @@
+{
+  "id": "t26",
+  "number": 26,
+  "title": "Traveling Waves & Sound as a Pressure Wave",
+  "part": "Waves & Sound",
+  "partNumber": 3,
+  "anchor": "t26",
+  "theory": "$v = f\\lambda$, $f = 1/T$. There are **two graph types — never mix them**: a graph vs. **time** at fixed position reveals the period $T$; a **snapshot** vs. position at fixed time reveals the wavelength $\\lambda$. Sound is a longitudinal *pressure* wave: **maximum density ⇔ maximum pressure** (peak of $\\Delta P$). The displacement wave is 90° out of phase with the pressure wave — a pressure antinode is a displacement node.",
+  "formulas": [
+    {
+      "latex": "y = A\\sin\\!\\left[2\\pi\\!\\left(\\dfrac{t}{T} - \\dfrac{x}{\\lambda}\\right)\\right]",
+      "description": "(wave moving toward $+x$)"
+    },
+    {
+      "latex": "v = f\\lambda = \\lambda/T",
+      "description": ""
+    },
+    {
+      "latex": "\\Delta P",
+      "description": "Pressure amplitude = peak of the — axis"
+    },
+    {
+      "latex": "",
+      "description": "peak→adjacent trough = half a period (or half a wavelength)"
+    }
+  ],
+  "framework": [
+    "Identify which graph you hold.",
+    "Read $A$ and $T$ (or $\\lambda$) directly.",
+    "Convert with $v = f\\lambda$.",
+    "Density questions → the $\\Delta P$ curve, not the displacement curve."
+  ],
+  "problems": [
+    {
+      "examRef": "2018-UG-Q5",
+      "title": "Sound wave read from a ΔP–t graph and a snapshot (parts 1–4)",
+      "year": 2018,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Amplitude of the pressure variation",
+          "parameters": "- Given: sound travels toward $+x$ at speed $v$; at a fixed point, $\\Delta P(t)$ is sinusoidal with maximum $+A$ at $t_1$ and the next minimum $-A$ at $t_2$; a later $\\Delta P(x)$ snapshot marks axis points a, b, c, d, with the curve at its maximum at d.\n- Find: pressure amplitude; period; wavelength; the highest-density point on the snapshot.",
+          "formulas": "",
+          "calculations": "peak value of the curve $= A$.",
+          "answer": "**(c)** $\\;A$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "Period",
+          "parameters": "- Given: sound travels toward $+x$ at speed $v$; at a fixed point, $\\Delta P(t)$ is sinusoidal with maximum $+A$ at $t_1$ and the next minimum $-A$ at $t_2$; a later $\\Delta P(x)$ snapshot marks axis points a, b, c, d, with the curve at its maximum at d.\n- Find: pressure amplitude; period; wavelength; the highest-density point on the snapshot.",
+          "formulas": "maximum → next minimum spans **half** a cycle.",
+          "calculations": "$\\frac{T}{2} = t_2 - t_1 \\Rightarrow T = 2(t_2 - t_1)$.",
+          "answer": "**(c)** $\\;2(t_2 - t_1)$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 3,
+          "title": "Wavelength",
+          "parameters": "- Given: sound travels toward $+x$ at speed $v$; at a fixed point, $\\Delta P(t)$ is sinusoidal with maximum $+A$ at $t_1$ and the next minimum $-A$ at $t_2$; a later $\\Delta P(x)$ snapshot marks axis points a, b, c, d, with the curve at its maximum at d.\n- Find: pressure amplitude; period; wavelength; the highest-density point on the snapshot.",
+          "formulas": "$\\lambda = vT$.",
+          "calculations": "$\\lambda = 2v(t_2 - t_1)$.",
+          "answer": "**(a)** $\\;2v(t_2 - t_1)$",
+          "conclusion": "(2)→(3) chain — a period error doubles through. Always re-derive (2) before trusting (3)."
+        },
+        {
+          "partNum": 4,
+          "title": "Point of highest air density",
+          "parameters": "- Given: sound travels toward $+x$ at speed $v$; at a fixed point, $\\Delta P(t)$ is sinusoidal with maximum $+A$ at $t_1$ and the next minimum $-A$ at $t_2$; a later $\\Delta P(x)$ snapshot marks axis points a, b, c, d, with the curve at its maximum at d.\n- Find: pressure amplitude; period; wavelength; the highest-density point on the snapshot.",
+          "formulas": "highest density ⇔ maximum $\\Delta P$ on the snapshot.",
+          "calculations": "the curve peaks at point d.",
+          "answer": "**(d)** $\\;$point d",
+          "conclusion": "compressions live at pressure **maxima**. If a year instead shows the *displacement* snapshot, the compression sits where displacement crosses zero with negative slope (for $+x$ travel) — know both pictures so neither version surprises you."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

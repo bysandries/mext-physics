@@ -1,0 +1,15 @@
+{
+  "id": "t31",
+  "number": 31,
+  "title": "Beats",
+  "part": "Waves & Sound",
+  "partNumber": 3,
+  "anchor": "t31",
+  "theory": "Two nearby frequencies superpose into a slow amplitude envelope: $f_{beat} = |f_1 - f_2|$ — the number of loud–soft cycles per second. On MEXT it arrives welded to Doppler (one direct path, one shifted path). For $v \\ll V$, a source-motion beat is $\\approx \\dfrac{2fv}{V}$ — a handy first-order check on exact answers like 2014-Q5-(3) above.",
+  "formulas": [],
+  "framework": [],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

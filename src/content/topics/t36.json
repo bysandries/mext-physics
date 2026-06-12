@@ -1,0 +1,17 @@
+{
+  "id": "t36",
+  "number": 36,
+  "title": "Lorentz Force",
+  "part": "Electricity & Magnetism",
+  "partNumber": 4,
+  "anchor": "t36",
+  "theory": "$\\vec F = q\\vec v\\times\\vec B$, magnitude $qvB\\sin\\phi$. It is always perpendicular to $\\vec v$, so it **does no work**: speed is constant, only direction changes. For negative charges, reverse the right-hand result. With both fields: $\\vec F = q(\\vec E + \\vec v\\times\\vec B)$ — the balance behind the Hall effect (Topic 35).",
+  "formulas": [],
+  "framework": [
+    "Right hand: fingers along $\\vec v$, curl toward $\\vec B$, thumb gives $\\vec F$ for positive $q$. Worked through in Topic 37's problem."
+  ],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

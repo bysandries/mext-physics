@@ -1,0 +1,63 @@
+{
+  "id": "t25",
+  "number": 25,
+  "title": "Piston–Cylinder Systems",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t25",
+  "theory": "A frictionless piston in mechanical equilibrium **pins the gas pressure**: vertical cylinder, gas below ⇒ $P_{gas}S = P_{atm}S + Mg$. Heating \"slowly\" cannot change that balance, so the process is automatically **isobaric** and Topic 16 takes over. ($S$ = piston area, Japanese notation.)",
+  "formulas": [],
+  "framework": [
+    "Free-body the piston → $P_{gas}$.",
+    "Gas law for the initial T (or n).",
+    "Isobaric machinery: $W = P\\Delta V = PS\\,\\Delta h$; $\\Delta U = \\frac{3}{2}\\Delta(PV)$; $Q = \\Delta U + W$."
+  ],
+  "problems": [
+    {
+      "examRef": "2015-UG-Q4",
+      "title": "Vertical cylinder with a massive piston (parts 1–4)",
+      "year": 2015,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Piston mass",
+          "parameters": "- Given: vertical cylinder, frictionless piston of mass $M$ and area $S$; 1 mol of monatomic ideal gas beneath; atmospheric pressure $p_0$; initial gas pressure $2p_0$ and gas-column height $h$; gas heated slowly until the height is $\\frac{3}{2}h$; constants $R$, $g$.\n- Find: $M$; the initial temperature; work done by the gas; heat supplied.\n- Diagram: atmosphere above, piston, gas column of height $h$ below.",
+          "formulas": "piston equilibrium: $2p_0S = p_0S + Mg$.",
+          "calculations": "$M = \\dfrac{p_0S}{g}$.",
+          "answer": "**(d)** $\\;\\dfrac{p_0S}{g}$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "Initial temperature",
+          "parameters": "- Given: vertical cylinder, frictionless piston of mass $M$ and area $S$; 1 mol of monatomic ideal gas beneath; atmospheric pressure $p_0$; initial gas pressure $2p_0$ and gas-column height $h$; gas heated slowly until the height is $\\frac{3}{2}h$; constants $R$, $g$.\n- Find: $M$; the initial temperature; work done by the gas; heat supplied.\n- Diagram: atmosphere above, piston, gas column of height $h$ below.",
+          "formulas": "$PV = nRT$, $n = 1$, $V = Sh$.",
+          "calculations": "$T = \\dfrac{2p_0Sh}{R}$.",
+          "answer": "**(i)** $\\;\\dfrac{2p_0Sh}{R}$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 3,
+          "title": "Work done by the gas",
+          "parameters": "- Given: vertical cylinder, frictionless piston of mass $M$ and area $S$; 1 mol of monatomic ideal gas beneath; atmospheric pressure $p_0$; initial gas pressure $2p_0$ and gas-column height $h$; gas heated slowly until the height is $\\frac{3}{2}h$; constants $R$, $g$.\n- Find: $M$; the initial temperature; work done by the gas; heat supplied.\n- Diagram: atmosphere above, piston, gas column of height $h$ below.",
+          "formulas": "isobaric at $2p_0$ (piston balance is unchanged): $W = P\\,\\Delta V$.",
+          "calculations": "$W = 2p_0 \\cdot S\\cdot\\frac{h}{2} = p_0Sh$.",
+          "answer": "**(c)** $\\;p_0Sh$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 4,
+          "title": "Heat supplied",
+          "parameters": "- Given: vertical cylinder, frictionless piston of mass $M$ and area $S$; 1 mol of monatomic ideal gas beneath; atmospheric pressure $p_0$; initial gas pressure $2p_0$ and gas-column height $h$; gas heated slowly until the height is $\\frac{3}{2}h$; constants $R$, $g$.\n- Find: $M$; the initial temperature; work done by the gas; heat supplied.\n- Diagram: atmosphere above, piston, gas column of height $h$ below.",
+          "formulas": "$\\Delta U = \\frac{3}{2}\\Delta(PV)$; $Q = \\Delta U + W$.",
+          "calculations": "$\\Delta U = \\frac{3}{2}\\left(2p_0S\\cdot\\frac{h}{2}\\right) = \\frac{3}{2}p_0Sh$; $\\;Q = \\frac{3}{2}p_0Sh + p_0Sh = \\frac{5}{2}p_0Sh$.",
+          "answer": "**(d)** $\\;\\frac{5}{2}p_0Sh$",
+          "conclusion": "\"heated slowly\" + free piston = **isobaric, always**. And once more the monatomic isobaric split $\\Delta U : W : Q = 3 : 2 : 5$ — knowing the ratio answers (4) from (3) with zero algebra."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

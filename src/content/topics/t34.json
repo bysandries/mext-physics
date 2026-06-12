@@ -1,0 +1,65 @@
+{
+  "id": "t34",
+  "number": 34,
+  "title": "Capacitors: Parallel-Plate Physics & Networks",
+  "part": "Electricity & Magnetism",
+  "partNumber": 4,
+  "anchor": "t34",
+  "theory": "$Q = CV$; parallel plate $C = \\dfrac{\\varepsilon_0 S}{d}$ ($S$ = plate area, Japanese notation); the field inside is uniform: $E = \\dfrac{V}{d} = \\dfrac{Q}{Cd}$. **Identify the constraint first**: a capacitor *disconnected* from its battery keeps $Q$ fixed; one *still connected* keeps $V$ fixed. In a DC circuit \"after a sufficient time\", capacitors carry no current — analyze by voltages. Combinations: **parallel adds C** (same $V$); **series adds reciprocals** (same $Q$ on each).",
+  "formulas": [
+    {
+      "latex": "C_{par} = C_1 + C_2",
+      "description": ""
+    },
+    {
+      "latex": "\\dfrac{C_1C_2}{C_1+C_2}",
+      "description": "series pair"
+    },
+    {
+      "latex": "\\dfrac{1}{2}CV^2 = \\dfrac{Q^2}{2C}",
+      "description": "energy"
+    }
+  ],
+  "framework": [
+    "Reduce the network from the outside in.",
+    "Push total charge/voltage back through the reduction tree (series branches share $Q$; parallel branches share $V$).",
+    "Stop at the element asked."
+  ],
+  "problems": [
+    {
+      "examRef": "2016-UG-Q1-(3)",
+      "title": "Field inside an isolated charged capacitor",
+      "year": 2016,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: capacitance $C$, plate separation $d$, charge $Q$; battery disconnected.\n- Find: electric field between the plates.",
+          "formulas": "$V = Q/C$; $E = V/d$.",
+          "calculations": "$E = \\dfrac{Q}{Cd}$.",
+          "answer": "**(f)** $\\;\\dfrac{Q}{Cd}$",
+          "conclusion": "disconnection froze $Q$ — irrelevant here, decisive the moment plates move (then $E = Q/\\varepsilon_0S$ is *separation-independent*). Units: $\\mathrm{C/(F\\cdot m)} = \\mathrm{V/m}$ ✓."
+        }
+      ]
+    },
+    {
+      "examRef": "2014-UG-Q1-(4)",
+      "title": "Charge on C₁ in a battery network",
+      "year": 2014,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: battery EMF $E$ with switch closed long ago; $C_1$ parallel $C_2$, that pair in series with $C_3$ across the battery.\n- Find: charge stored on $C_1$.",
+          "formulas": "$C_{12} = C_1 + C_2$; series voltage division; $Q_1 = C_1V_{12}$.",
+          "calculations": "total $C = \\dfrac{C_{12}C_3}{C_{12} + C_3}$; the series pair shares one charge, so $V_{12} = \\dfrac{E\\,C_3}{C_1 + C_2 + C_3}$; then $Q_1 = \\dfrac{C_1C_3}{C_1 + C_2 + C_3}E$.",
+          "answer": "**(b)** $\\;\\dfrac{C_1C_3}{C_1+C_2+C_3}E$",
+          "conclusion": "\"after a sufficient period\" = steady state, zero current, pure voltage bookkeeping. Limits: $C_3 \\to \\infty \\Rightarrow V_{12} \\to E,\\ Q_1 \\to C_1E$ ✓; $C_3 \\to 0 \\Rightarrow Q_1 \\to 0$ ✓ — the two limits uniquely select (b)."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

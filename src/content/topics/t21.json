@@ -1,0 +1,15 @@
+{
+  "id": "t21",
+  "number": 21,
+  "title": "Molar Specific Heats (C_V, C_P)",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t21",
+  "theory": "Monatomic: $C_V = \\frac{3}{2}R$, $C_P = \\frac{5}{2}R$; Mayer: $C_P = C_V + R$; $\\gamma = C_P/C_V = \\frac{5}{3}$. Heats: isochoric $Q = nC_V\\Delta T$, isobaric $Q = nC_P\\Delta T$. **The PV shortcut:** $nR\\Delta T = \\Delta(PV)$, hence\n$$Q_V = \\tfrac{3}{2}\\Delta(PV), \\qquad Q_P = \\tfrac{5}{2}\\Delta(PV)$$\n— exactly how the cycle problems below are cracked in seconds, with no n and no T.",
+  "formulas": [],
+  "framework": [],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

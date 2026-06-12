@@ -1,0 +1,15 @@
+{
+  "id": "t29",
+  "number": 29,
+  "title": "Speed of Sound Determination",
+  "part": "Waves & Sound",
+  "partNumber": 3,
+  "anchor": "t29",
+  "theory": "$V = f\\lambda$ with $\\lambda$ extracted from resonance geometry (Topic 28) is *the* standard determination. $V$ grows with temperature ($V \\approx 331.5 + 0.6\\,t[°C]$ m/s — MEXT tests the direction, not the coefficient). **Worked variants:** 2015-Q5 parts (2) and (4) above.",
+  "formulas": [],
+  "framework": [],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

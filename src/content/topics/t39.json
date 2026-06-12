@@ -1,0 +1,32 @@
+{
+  "id": "t39",
+  "number": 39,
+  "title": "Magnetic Fields from Current-Carrying Wires",
+  "part": "Electricity & Magnetism",
+  "partNumber": 4,
+  "anchor": "t39",
+  "theory": "",
+  "formulas": [
+    {
+      "latex": "B = \\dfrac{\\mu_0 I}{2\\pi r}",
+      "description": "Long straight wire — (circles by the right hand)"
+    },
+    {
+      "latex": "B = \\dfrac{\\mu_0 I}{2R}",
+      "description": "loop center"
+    },
+    {
+      "latex": "B = \\mu_0 n I",
+      "description": "long solenoid — ($n$ = turns per length)"
+    },
+    {
+      "latex": "= \\dfrac{\\mu_0 I_1 I_2}{2\\pi d}",
+      "description": "Parallel wires: same direction **attract**, opposite **repel**; force per length — ."
+    }
+  ],
+  "framework": [],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": true
+}

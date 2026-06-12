@@ -1,0 +1,85 @@
+{
+  "id": "t37",
+  "number": 37,
+  "title": "Circular Motion of a Charge in a Magnetic Field",
+  "part": "Electricity & Magnetism",
+  "partNumber": 4,
+  "anchor": "t37",
+  "theory": "Uniform $B \\perp v$ bends the path into a circle: $qvB = \\dfrac{mv^2}{r}$ ⇒ $r = \\dfrac{mv}{qB}$, with period $T = \\dfrac{2\\pi m}{qB}$ — **independent of speed** (the cyclotron principle). The charge's sign is read from the *first bend* via $\\vec F = q\\vec v\\times\\vec B$.",
+  "formulas": [
+    {
+      "latex": "r = \\dfrac{mv}{qB}",
+      "description": ""
+    },
+    {
+      "latex": "T = \\dfrac{2\\pi m}{qB}",
+      "description": ""
+    },
+    {
+      "latex": "f_c = \\dfrac{qB}{2\\pi m}",
+      "description": ""
+    }
+  ],
+  "framework": [
+    "Sign from the first bend.",
+    "$r$ and $T$ from the boxed formulas.",
+    "Parameter changes are **ratios** — never recompute from scratch."
+  ],
+  "problems": [
+    {
+      "examRef": "2016-UG-Q2",
+      "title": "Semicircle in a half-plane field (parts 1–5)",
+      "year": 2016,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Sign of the charge",
+          "parameters": "- Given: $B$ out of the page fills the region $x > 0$; a particle of mass $m$, charge magnitude $q$, enters at the origin O along $+x$ with speed $v$; its path is a semicircle ending at point P on the $-y$ axis.\n- Find: charge sign; force magnitude; radius; time O→P; the new radius if $B \\to 2B$ and $v \\to 3v$.",
+          "formulas": "first bend is toward $-y$; with $\\vec v = v\\hat x$, $\\vec B = B\\hat z$: $\\hat x\\times\\hat z = -\\hat y$.",
+          "calculations": "$q\\vec v\\times\\vec B \\parallel -\\hat y$ requires $q > 0$.",
+          "answer": "**(a)** $\\;$positive",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "Force magnitude",
+          "parameters": "- Given: $B$ out of the page fills the region $x > 0$; a particle of mass $m$, charge magnitude $q$, enters at the origin O along $+x$ with speed $v$; its path is a semicircle ending at point P on the $-y$ axis.\n- Find: charge sign; force magnitude; radius; time O→P; the new radius if $B \\to 2B$ and $v \\to 3v$.",
+          "formulas": "",
+          "calculations": "",
+          "answer": "**(e)** $\\;qvB$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 3,
+          "title": "Radius",
+          "parameters": "- Given: $B$ out of the page fills the region $x > 0$; a particle of mass $m$, charge magnitude $q$, enters at the origin O along $+x$ with speed $v$; its path is a semicircle ending at point P on the $-y$ axis.\n- Find: charge sign; force magnitude; radius; time O→P; the new radius if $B \\to 2B$ and $v \\to 3v$.",
+          "formulas": "",
+          "calculations": "$r = \\dfrac{mv}{qB}$.",
+          "answer": "**(d)** $\\;\\dfrac{mv}{qB}$",
+          "conclusion": "geometry check: P sits one diameter below O, at $(0, -2r)$."
+        },
+        {
+          "partNum": 4,
+          "title": "Time from O to P",
+          "parameters": "- Given: $B$ out of the page fills the region $x > 0$; a particle of mass $m$, charge magnitude $q$, enters at the origin O along $+x$ with speed $v$; its path is a semicircle ending at point P on the $-y$ axis.\n- Find: charge sign; force magnitude; radius; time O→P; the new radius if $B \\to 2B$ and $v \\to 3v$.",
+          "formulas": "a semicircle is half a period.",
+          "calculations": "$t = \\dfrac{T}{2} = \\dfrac{\\pi m}{qB}$.",
+          "answer": "**(b)** $\\;\\dfrac{\\pi m}{qB}$",
+          "conclusion": "independent of $v$ — doubling the speed doubles the radius, not the lap time."
+        },
+        {
+          "partNum": 5,
+          "title": "Radius after B → 2B, v → 3v",
+          "parameters": "- Given: $B$ out of the page fills the region $x > 0$; a particle of mass $m$, charge magnitude $q$, enters at the origin O along $+x$ with speed $v$; its path is a semicircle ending at point P on the $-y$ axis.\n- Find: charge sign; force magnitude; radius; time O→P; the new radius if $B \\to 2B$ and $v \\to 3v$.",
+          "formulas": "$r \\propto \\dfrac{v}{B}$.",
+          "calculations": "factor $\\dfrac{3}{2}$ ⇒ $r' = \\dfrac{3}{2}r$.",
+          "answer": "**(a)** $\\;\\dfrac{3}{2}r$",
+          "conclusion": ""
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

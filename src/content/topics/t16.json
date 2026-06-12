@@ -1,0 +1,34 @@
+{
+  "id": "t16",
+  "number": 16,
+  "title": "Isobaric Processes",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t16",
+  "theory": "$P$ constant ⇒ $W_{by} = P\\,\\Delta V$ and (monatomic) $Q = \\frac{5}{2}\\,\\Delta(PV)$, $\\Delta U = \\frac{3}{2}\\,\\Delta(PV)$. Charles: $V/T = \\text{const}$. A **free, frictionless piston in equilibrium pins the pressure**, so \"heated slowly\" with a free piston always means isobaric (Topic 25).",
+  "formulas": [
+    {
+      "latex": "W = P\\Delta V",
+      "description": ""
+    },
+    {
+      "latex": "Q = \\frac{5}{2}\\Delta(PV)",
+      "description": ""
+    },
+    {
+      "latex": "\\Delta U = \\frac{3}{2}\\Delta(PV)",
+      "description": ""
+    },
+    {
+      "latex": "V/T = \\text{const}",
+      "description": ""
+    }
+  ],
+  "framework": [],
+  "problems": [],
+  "connections": [
+    "2015-Q4 parts (3)(4) — Topic 25; the horizontal legs of both rectangle cycles — Topic 22."
+  ],
+  "tags": [],
+  "theoryOnly": false
+}

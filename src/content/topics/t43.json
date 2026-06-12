@@ -1,0 +1,66 @@
+{
+  "id": "t43",
+  "number": 43,
+  "title": "Snell's Law & Refraction",
+  "part": "Optics",
+  "partNumber": 5,
+  "anchor": "t43",
+  "theory": "$n_1\\sin\\theta_1 = n_2\\sin\\theta_2$, with angles measured **from the normal**. Bending *toward* the normal ⇒ entering a higher-$n$ (slower) medium; *away* ⇒ lower $n$. Inside a medium of index $n$: speed $c/n$, wavelength $\\lambda/n$, frequency unchanged. **Sphere/droplet geometry:** the normal at the hit point is the radius, so a ray aimed with perpendicular offset $h$ at a sphere of radius $r$ meets the surface at incidence $\\sin\\theta_i = h/r$ — no protractor needed.",
+  "formulas": [
+    {
+      "latex": "n_1\\sin\\theta_1 = n_2\\sin\\theta_2",
+      "description": ""
+    },
+    {
+      "latex": "\\sin\\theta_i = \\dfrac{h}{r}",
+      "description": "sphere entry"
+    },
+    {
+      "latex": "v = \\dfrac{c}{n}",
+      "description": ", $\\;\\lambda_n = \\dfrac{\\lambda}{n}$"
+    }
+  ],
+  "framework": [
+    "Draw the normal at the hit point.",
+    "Extract $\\sin$(incidence) from geometry.",
+    "Snell across the boundary.",
+    "Through parallel layers, $n\\sin\\theta$ is invariant — jump layers freely."
+  ],
+  "problems": [
+    {
+      "examRef": "2014-UG-Q1-(5)",
+      "title": "Refraction into a water droplet",
+      "year": 2014,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: spherical droplet of radius $r$, index $n$, center O; a horizontal ray strikes the surface at P, aimed with perpendicular offset $h$ from the line through O; refraction angle $\\phi$ inside.\n- Find: $\\sin\\phi$.\n- Diagram: the normal at P lies along OP; the offset $h$ is the perpendicular distance from O to the incoming ray.",
+          "formulas": "$\\sin\\theta_i = \\dfrac{h}{r}$; Snell: $1\\cdot\\sin\\theta_i = n\\sin\\phi$.",
+          "calculations": "$\\sin\\phi = \\dfrac{h}{nr}$.",
+          "answer": "**(f)** $\\;\\dfrac{h}{nr}$",
+          "conclusion": "the whole problem is *recognizing* $\\sin\\theta_i = h/r$. Limits: $h \\to 0$ (central hit) ⇒ $\\phi \\to 0$ ✓; $h \\to r$ (grazing) ⇒ $\\sin\\phi \\to 1/n$ — exactly the critical-angle sine, a beautiful consistency check."
+        }
+      ]
+    },
+    {
+      "examRef": "2015-UG-Q1-(5)",
+      "title": "Comparing indices across an interface",
+      "year": 2015,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: a ray crosses from a slab of index $n_1$ into a slab of index $n_2$; the printed figure shows the ray bending **away from the normal** in $n_2$ (the angle to the normal grows).\n- Find: the relation between $n_1$ and $n_2$.",
+          "formulas": "$n_1\\sin\\theta_1 = n_2\\sin\\theta_2$.",
+          "calculations": "bending away ⇒ $\\theta_2 > \\theta_1$ ⇒ $\\sin\\theta_2 > \\sin\\theta_1$ ⇒ $n_2 < n_1$.",
+          "answer": "**(a)** $\\;n_1 > n_2$",
+          "conclusion": "a pure figure-reading question — **confirm the bend direction on your own printed copy** (a toward-the-normal bend flips the answer). One line to rehearse: *away from the normal = faster medium = smaller n*."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

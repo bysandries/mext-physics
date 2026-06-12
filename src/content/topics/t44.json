@@ -1,0 +1,81 @@
+{
+  "id": "t44",
+  "number": 44,
+  "title": "Total Internal Reflection",
+  "part": "Optics",
+  "partNumber": 5,
+  "anchor": "t44",
+  "theory": "TIR happens only going from **high $n$ to low $n$**; critical angle $\\sin\\theta_c = \\dfrac{n_2}{n_1}$; beyond it, 100% reflection — the optical-fiber principle. **The waveguide complement trick:** if a ray inside the slab makes angle $\\phi$ with the slab **axis** (i.e. with the entry-face normal), its incidence on the *walls* is $90°-\\phi$, so the TIR condition becomes $\\cos\\phi > \\dfrac{n_2}{n_1}$. Zigzag bookkeeping: over an axial length $L$, the geometric path is $L/\\cos\\phi$, traveled at speed $c/n_1$.",
+  "formulas": [
+    {
+      "latex": "\\sin\\theta_c = \\dfrac{n_2}{n_1}",
+      "description": "($n_1 > n_2$)"
+    },
+    {
+      "latex": "\\cos\\phi > \\dfrac{n_2}{n_1}",
+      "description": "wall condition"
+    },
+    {
+      "latex": "= \\dfrac{L}{\\cos\\phi}",
+      "description": "path"
+    },
+    {
+      "latex": "= \\dfrac{c}{n_1}",
+      "description": "speed"
+    }
+  ],
+  "framework": [
+    "Snell at the entry face.",
+    "Complement the angle at the walls ($\\sin \\leftrightarrow \\cos$).",
+    "Impose TIR.",
+    "Time = geometric path ÷ medium speed."
+  ],
+  "problems": [
+    {
+      "examRef": "2016-UG-Q5",
+      "title": "Glass-slab waveguide (parts 1–4)",
+      "year": 2016,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Refraction at the entry face",
+          "parameters": "- Given: core slab of index $n_1$ sandwiched by cladding $n_2$ above and below; a ray enters from vacuum at A on the end face with incidence $\\theta$, refracting to angle $\\phi$ from the axis; it zigzags by total internal reflection to B; the axial separation between the A and B faces is $L$; vacuum light speed $c$.\n- Find: $\\sin\\phi$; the index condition enabling TIR; the angle condition on $\\phi$; the travel time A→B.",
+          "formulas": "Snell, vacuum side: $\\sin\\theta = n_1\\sin\\phi$.",
+          "calculations": "$\\sin\\phi = \\dfrac{\\sin\\theta}{n_1}$.",
+          "answer": "**(c)** $\\;\\dfrac{\\sin\\theta}{n_1}$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "Index condition for TIR at the walls",
+          "parameters": "- Given: core slab of index $n_1$ sandwiched by cladding $n_2$ above and below; a ray enters from vacuum at A on the end face with incidence $\\theta$, refracting to angle $\\phi$ from the axis; it zigzags by total internal reflection to B; the axial separation between the A and B faces is $L$; vacuum light speed $c$.\n- Find: $\\sin\\phi$; the index condition enabling TIR; the angle condition on $\\phi$; the travel time A→B.",
+          "formulas": "TIR requires the core denser than the cladding.",
+          "calculations": "$\\dfrac{n_1}{n_2} > 1$.",
+          "answer": "**(c)** $\\;\\dfrac{n_1}{n_2} > 1$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 3,
+          "title": "Angle condition for guided propagation",
+          "parameters": "- Given: core slab of index $n_1$ sandwiched by cladding $n_2$ above and below; a ray enters from vacuum at A on the end face with incidence $\\theta$, refracting to angle $\\phi$ from the axis; it zigzags by total internal reflection to B; the axial separation between the A and B faces is $L$; vacuum light speed $c$.\n- Find: $\\sin\\phi$; the index condition enabling TIR; the angle condition on $\\phi$; the travel time A→B.",
+          "formulas": "wall incidence $= 90° - \\phi$; TIR: $\\sin(90°-\\phi) > \\dfrac{n_2}{n_1}$.",
+          "calculations": "$\\cos\\phi > \\dfrac{n_2}{n_1}$.",
+          "answer": "**(e)** $\\;\\cos\\phi > \\dfrac{n_2}{n_1}$",
+          "conclusion": "the complement step ($\\sin \\to \\cos$) is where the marks are lost. Physically this is why fibers accept only a cone of entry angles — the numerical aperture."
+        },
+        {
+          "partNum": 4,
+          "title": "Travel time from A to B",
+          "parameters": "- Given: core slab of index $n_1$ sandwiched by cladding $n_2$ above and below; a ray enters from vacuum at A on the end face with incidence $\\theta$, refracting to angle $\\phi$ from the axis; it zigzags by total internal reflection to B; the axial separation between the A and B faces is $L$; vacuum light speed $c$.\n- Find: $\\sin\\phi$; the index condition enabling TIR; the angle condition on $\\phi$; the travel time A→B.",
+          "formulas": "fold the zigzag flat: total path $= \\dfrac{L}{\\cos\\phi}$, at speed $\\dfrac{c}{n_1}$.",
+          "calculations": "$t = \\dfrac{L n_1}{c\\cos\\phi}$.",
+          "answer": "**(a)** $\\;\\dfrac{Ln_1}{c\\cos\\phi}$",
+          "conclusion": "the number of bounces never matters — reflections don't change the axial-progress bookkeeping. Limits: $\\phi \\to 0$ ⇒ $t \\to Ln_1/c$, the straight-shot time ✓."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

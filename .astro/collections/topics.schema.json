@@ -1,0 +1,154 @@
+{
+  "$ref": "#/definitions/topics",
+  "definitions": {
+    "topics": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "number": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "part": {
+          "type": "string"
+        },
+        "partNumber": {
+          "type": "number"
+        },
+        "anchor": {
+          "type": "string"
+        },
+        "theory": {
+          "type": "string"
+        },
+        "formulas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "latex": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "latex",
+              "description"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "framework": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "problems": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "examRef": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string",
+                "default": ""
+              },
+              "year": {
+                "type": "number"
+              },
+              "parts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "partNum": {
+                      "type": "number"
+                    },
+                    "title": {
+                      "type": "string",
+                      "default": ""
+                    },
+                    "parameters": {
+                      "type": "string"
+                    },
+                    "formulas": {
+                      "type": "string"
+                    },
+                    "calculations": {
+                      "type": "string"
+                    },
+                    "answer": {
+                      "type": "string"
+                    },
+                    "conclusion": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "partNum",
+                    "parameters",
+                    "formulas",
+                    "calculations",
+                    "answer",
+                    "conclusion"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "examRef",
+              "year",
+              "parts"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "connections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "theoryOnly": {
+          "type": "boolean"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "number",
+        "title",
+        "part",
+        "partNumber",
+        "anchor",
+        "theory",
+        "formulas",
+        "framework",
+        "problems",
+        "tags",
+        "theoryOnly"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

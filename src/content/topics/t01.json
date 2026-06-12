@@ -1,0 +1,53 @@
+{
+  "id": "t01",
+  "number": 1,
+  "title": "Uniform Acceleration Kinematics & v–t Graphs",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t01",
+  "theory": "Constant acceleration $a$ means the v–t graph is a straight line of slope $a$; **displacement = area under the v–t curve**; the average velocity over any interval is $(v_i+v_f)/2$. When a problem says \"accelerates uniformly from rest to $v$ in time $t$\", draw the triangle — the answer is its area.",
+  "formulas": [
+    {
+      "latex": "v = v_0 + at",
+      "description": "[$v$: speed, m/s; $a$: acceleration, m/s²; $t$: time, s]"
+    },
+    {
+      "latex": "x = v_0 t + \\frac{1}{2}at^2",
+      "description": "position from start, m"
+    },
+    {
+      "latex": "v^2 = v_0^2 + 2ax",
+      "description": "time-free form"
+    },
+    {
+      "latex": "x = \\frac{(v_0+v)}{2}\\,t",
+      "description": "acceleration-free form (average velocity)"
+    }
+  ],
+  "framework": [
+    "List knowns/unknowns.",
+    "Choose the kinematic equation that omits the variable you neither know nor need.",
+    "For graphs: slope = acceleration, area = displacement."
+  ],
+  "problems": [
+    {
+      "examRef": "2016-UG-Q1-(1)",
+      "title": "Distance from a v–t triangle",
+      "year": 2016,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: car starts from rest, reaches speed $v$ after time $t$, uniform acceleration.\n- Find: distance traveled during $t$.\n- Diagram: v–t graph = right triangle, base $t$, height $v$.",
+          "formulas": "$x = \\frac{(v_0+v)}{2}t$ (equivalently, triangle area).",
+          "calculations": "$x = \\frac{(0+v)}{2}t = \\frac{1}{2}vt$.",
+          "answer": "**(b)** $\\;\\tfrac{1}{2}vt$",
+          "conclusion": "One line via the area — $a$ is never needed. Trap (a) $vt$ assumes constant speed; sanity: with acceleration from rest the distance must be *less* than $vt$. A 20-second problem — bank the time."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

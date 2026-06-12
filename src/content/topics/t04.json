@@ -1,0 +1,103 @@
+{
+  "id": "t04",
+  "number": 4,
+  "title": "Friction (static/kinetic, inclines, stacked blocks)",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t04",
+  "theory": "Static friction adjusts itself up to $f_s \\le \\mu_s N$; sliding starts when demand exceeds supply. Kinetic friction is fixed at $f_k = \\mu_k N$ and points opposite the **relative** sliding of the two surfaces — not necessarily opposite the body's motion. On an incline, $N = mg\\cos\\theta$ and the slide condition is $\\tan\\theta > \\mu$. In stacked blocks the friction from below is the **only** horizontal force on the top block, so it *accelerates* it forward; its N3 reaction decelerates the lower block. The pair vanishes the instant the velocities match.",
+  "formulas": [
+    {
+      "latex": "f_s \\le \\mu_s N",
+      "description": "; $\\;f_k = \\mu_k N$"
+    },
+    {
+      "latex": "\\Leftrightarrow \\mu < \\tan\\theta",
+      "description": "incline: slide — ; sliding acceleration $a = g(\\sin\\theta - \\mu\\cos\\theta)$"
+    },
+    {
+      "latex": "=",
+      "description": "Heat generated — friction force × **relative** sliding distance."
+    }
+  ],
+  "framework": [
+    "Static or kinetic (is there relative sliding *now*)?",
+    "Direction of $f_k$: opposite this surface's motion relative to the other.",
+    "$N$ from the perpendicular balance.",
+    "N2 per body.",
+    "Find when sliding stops (equal velocities) and switch regimes."
+  ],
+  "problems": [
+    {
+      "examRef": "2016-UG-Q1-(4)",
+      "title": "Sliding condition on an incline",
+      "year": 2016,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: box of mass $m$ on incline angle $\\theta$; static coefficient $\\mu$.\n- Find: condition for the box to slide.",
+          "formulas": "driving force $mg\\sin\\theta$ vs. max static friction $\\mu mg\\cos\\theta$.",
+          "calculations": "slides $\\Leftrightarrow mg\\sin\\theta > \\mu mg\\cos\\theta \\Leftrightarrow \\tan\\theta > \\mu \\Leftrightarrow \\mu < \\tan\\theta$.",
+          "answer": "**(a)** $\\;\\mu < \\tan\\theta$",
+          "conclusion": "$m$ and $g$ cancel — pure geometry. The critical angle ($\\tan\\theta_c = \\mu$) is the \"angle of repose\"; memorize the equivalence both ways."
+        }
+      ]
+    },
+    {
+      "examRef": "2016-UG-Q3",
+      "title": "Block riding a sliding plank (parts 1–5)",
+      "year": 2016,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Force acting on Q",
+          "parameters": "- Given: plank P (mass $M$) on a smooth floor; block Q (mass $m$) on top; both at rest; at $t=0$ P receives speed $v_0$ (rightward $= +$); kinetic coefficient $\\mu$ between P and Q; velocities become equal at $t = T$.\n- Find: forces on Q and on P; $v_P(t)$; $T$; relative sliding distance.\n- Diagram: Q rides on P; for $0<t<T$, P moves right faster than Q, so P's surface slides rightward **relative to Q**.",
+          "formulas": "$f_k = \\mu N$, $N = mg$; direction = direction the surface under Q moves relative to Q $= +$.",
+          "calculations": "$F_Q = +\\mu m g$.",
+          "answer": "**(a)** $\\;\\mu mg$",
+          "conclusion": "friction is the only horizontal force on Q and it pushes Q **forward**. \"Friction opposes motion\" is wrong as stated — it opposes *relative* motion."
+        },
+        {
+          "partNum": 2,
+          "title": "Force acting on P",
+          "parameters": "- Given: plank P (mass $M$) on a smooth floor; block Q (mass $m$) on top; both at rest; at $t=0$ P receives speed $v_0$ (rightward $= +$); kinetic coefficient $\\mu$ between P and Q; velocities become equal at $t = T$.\n- Find: forces on Q and on P; $v_P(t)$; $T$; relative sliding distance.\n- Diagram: Q rides on P; for $0<t<T$, P moves right faster than Q, so P's surface slides rightward **relative to Q**.",
+          "formulas": "Newton's third law; smooth floor ⇒ nothing else horizontal.",
+          "calculations": "$F_P = -\\mu m g$.",
+          "answer": "**(b)** $\\;-\\mu mg$",
+          "conclusion": "a textbook action–reaction pair. Note it is $\\mu mg$, **not** $\\mu Mg$ — the normal force in this pair comes from Q's weight only."
+        },
+        {
+          "partNum": 3,
+          "title": "Velocity of P at time t",
+          "parameters": "- Given: plank P (mass $M$) on a smooth floor; block Q (mass $m$) on top; both at rest; at $t=0$ P receives speed $v_0$ (rightward $= +$); kinetic coefficient $\\mu$ between P and Q; velocities become equal at $t = T$.\n- Find: forces on Q and on P; $v_P(t)$; $T$; relative sliding distance.\n- Diagram: Q rides on P; for $0<t<T$, P moves right faster than Q, so P's surface slides rightward **relative to Q**.",
+          "formulas": "$a_P = F_P/M = -\\mu mg/M$; $v = v_0 + at$.",
+          "calculations": "$v_P(t) = v_0 - \\frac{m}{M}\\mu g\\,t$.",
+          "answer": "**(d)** $\\;v_0 - \\frac{m}{M}\\mu g t$",
+          "conclusion": "deceleration scales with $m/M$. Meanwhile Q obeys $v_Q = \\mu g t$ — independent of any mass."
+        },
+        {
+          "partNum": 4,
+          "title": "Time T when the velocities coincide",
+          "parameters": "- Given: plank P (mass $M$) on a smooth floor; block Q (mass $m$) on top; both at rest; at $t=0$ P receives speed $v_0$ (rightward $= +$); kinetic coefficient $\\mu$ between P and Q; velocities become equal at $t = T$.\n- Find: forces on Q and on P; $v_P(t)$; $T$; relative sliding distance.\n- Diagram: Q rides on P; for $0<t<T$, P moves right faster than Q, so P's surface slides rightward **relative to Q**.",
+          "formulas": "set $v_P = v_Q$.",
+          "calculations": "$v_0 - \\frac{m}{M}\\mu gT = \\mu gT \\Rightarrow v_0 = \\mu g T\\,\\frac{M+m}{M} \\Rightarrow T = \\frac{M}{M+m}\\cdot\\frac{v_0}{\\mu g}$.",
+          "answer": "**(g)** $\\;\\dfrac{M}{M+m}\\dfrac{v_0}{\\mu g}$",
+          "conclusion": "faster route — momentum conservation (frictionless floor): $v_f = \\frac{Mv_0}{M+m}$, then $T = v_f/(\\mu g)$. Same result, half the algebra. Always keep two routes."
+        },
+        {
+          "partNum": 5,
+          "title": "Distance Q slides against P (0 → T)",
+          "parameters": "- Given: plank P (mass $M$) on a smooth floor; block Q (mass $m$) on top; both at rest; at $t=0$ P receives speed $v_0$ (rightward $= +$); kinetic coefficient $\\mu$ between P and Q; velocities become equal at $t = T$.\n- Find: forces on Q and on P; $v_P(t)$; $T$; relative sliding distance.\n- Diagram: Q rides on P; for $0<t<T$, P moves right faster than Q, so P's surface slides rightward **relative to Q**.",
+          "formulas": "relative speed $v_{rel}(t) = v_P - v_Q = v_0\\!\\left(1 - \\frac{t}{T}\\right)$ falls linearly ⇒ relative displacement = triangle area $\\frac{1}{2}v_0T$.",
+          "calculations": "$d = \\frac{v_0T}{2} = \\dfrac{Mv_0^2}{2(M+m)\\mu g}$.",
+          "answer": "**(f)** $\\;\\dfrac{Mv_0^2}{2(M+m)\\mu g}$",
+          "conclusion": "energy audit: KE lost $= \\frac{1}{2}Mv_0^2 - \\frac{1}{2}(M+m)v_f^2 = \\frac{Mm\\,v_0^2}{2(M+m)}$; dividing by $\\mu mg$ returns the same $d$ ✓. \"Heat = friction × relative slide\" is a recurring MEXT identity — own it."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

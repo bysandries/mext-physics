@@ -1,0 +1,117 @@
+{
+  "id": "t11",
+  "number": 11,
+  "title": "Simple Harmonic Motion (spring–mass: period, amplitude, max velocity)",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t11",
+  "theory": "SHM = restoring force proportional to displacement from equilibrium: $F = -kx \\Rightarrow \\omega = \\sqrt{k/m}$, $T = 2\\pi\\sqrt{m/k}$ — independent of amplitude **and of gravity**. A vertical spring merely shifts the equilibrium down by $mg/k$; the oscillation about it is unchanged. Energy: $\\frac{1}{2}kA^2 = \\frac{1}{2}mv^2 + \\frac{1}{2}kx^2$ with **x measured from equilibrium**. $v_{max} = A\\omega$ at equilibrium; $a_{max} = A\\omega^2$ at the turning points. From an x–t graph: amplitude = peak value, period = repeat time, $v_{max} = 2\\pi A/T$.",
+  "formulas": [
+    {
+      "latex": "\\omega = \\sqrt{k/m}",
+      "description": ""
+    },
+    {
+      "latex": "T = 2\\pi\\sqrt{m/k}",
+      "description": ""
+    },
+    {
+      "latex": "v_{max} = A\\omega",
+      "description": ""
+    },
+    {
+      "latex": "a_{max} = A\\omega^2",
+      "description": ""
+    },
+    {
+      "latex": "\\frac{1}{2}kA^2 = \\frac{1}{2}mv^2 + \\frac{1}{2}kx^2",
+      "description": ""
+    },
+    {
+      "latex": "= mg/k",
+      "description": "vertical equilibrium shift"
+    }
+  ],
+  "framework": [
+    "Find the equilibrium.",
+    "Measure displacement from it.",
+    "Pin the amplitude from energy or a stated extreme point.",
+    "$T$ uses the **total** oscillating mass.",
+    "Graphs: read $A$ and $T$; never differentiate by hand."
+  ],
+  "problems": [
+    {
+      "examRef": "2016-UG-Q1-(5)",
+      "title": "Maximum speed from an x–t graph",
+      "year": 2016,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: sinusoidal $x$–$t$ curve, amplitude $A$, completing one full cycle every $2t_0$ (zero crossings at $t_0$ and $2t_0$).\n- Find: maximum speed.",
+          "formulas": "$T = 2t_0$; $v_{max} = \\dfrac{2\\pi A}{T}$.",
+          "calculations": "$v_{max} = \\dfrac{2\\pi A}{2t_0} = \\dfrac{\\pi A}{t_0}$.",
+          "answer": "**(d)** $\\;\\dfrac{\\pi A}{t_0}$",
+          "conclusion": "read $T$ off the graph **first**. Trap (f) $A/t_0$ forgets the $2\\pi$ of the circular-motion projection; trap (b) halves it by misreading the period."
+        }
+      ]
+    },
+    {
+      "examRef": "2015-UG-Q3",
+      "title": "Ball sticks to a hanging spring–mass (parts 1–5)",
+      "year": 2015,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Stretch before the collision",
+          "parameters": "- Given: mass $M$ hangs in equilibrium from a spring $k$; a ball $m$ moving **up** at $v$ strikes and sticks; the pair then performs SHM; gravity $g$. Extra fact for (5): at the **highest** point of the motion the spring is at its **natural length**.\n- Find: initial stretch; speed just after sticking; KE lost; period; the ball's KE just before impact.\n- Diagram: ceiling — spring — $M$, with $m$ rising into it from below.",
+          "formulas": "equilibrium of $M$: $kx_0 = Mg$.",
+          "calculations": "$x_0 = \\dfrac{Mg}{k}$.",
+          "answer": "**(e)** $\\;\\dfrac{Mg}{k}$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "Speed just after sticking",
+          "parameters": "- Given: mass $M$ hangs in equilibrium from a spring $k$; a ball $m$ moving **up** at $v$ strikes and sticks; the pair then performs SHM; gravity $g$. Extra fact for (5): at the **highest** point of the motion the spring is at its **natural length**.\n- Find: initial stretch; speed just after sticking; KE lost; period; the ball's KE just before impact.\n- Diagram: ceiling — spring — $M$, with $m$ rising into it from below.",
+          "formulas": "momentum across the instant: $mv = (M+m)V$.",
+          "calculations": "$V = \\dfrac{m}{M+m}\\,v$.",
+          "answer": "**(c)** $\\;\\dfrac{m}{M+m}v$",
+          "conclusion": "spring and gravity impulses are negligible during the instant — collisions are treated as instantaneous."
+        },
+        {
+          "partNum": 3,
+          "title": "Kinetic energy lost",
+          "parameters": "- Given: mass $M$ hangs in equilibrium from a spring $k$; a ball $m$ moving **up** at $v$ strikes and sticks; the pair then performs SHM; gravity $g$. Extra fact for (5): at the **highest** point of the motion the spring is at its **natural length**.\n- Find: initial stretch; speed just after sticking; KE lost; period; the ball's KE just before impact.\n- Diagram: ceiling — spring — $M$, with $m$ rising into it from below.",
+          "formulas": "$\\Delta KE = \\frac{1}{2}mv^2 - \\frac{1}{2}(M+m)V^2$.",
+          "calculations": "$= \\frac{1}{2}mv^2\\left(1 - \\frac{m}{M+m}\\right) = \\dfrac{Mm}{2(M+m)}v^2$.",
+          "answer": "**(d)** $\\;\\dfrac{Mm}{2(M+m)}v^2$",
+          "conclusion": "matches the reduced-mass formula with $v_{rel} = v$ ✓ — next time skip the algebra entirely."
+        },
+        {
+          "partNum": 4,
+          "title": "Period of the SHM",
+          "parameters": "- Given: mass $M$ hangs in equilibrium from a spring $k$; a ball $m$ moving **up** at $v$ strikes and sticks; the pair then performs SHM; gravity $g$. Extra fact for (5): at the **highest** point of the motion the spring is at its **natural length**.\n- Find: initial stretch; speed just after sticking; KE lost; period; the ball's KE just before impact.\n- Diagram: ceiling — spring — $M$, with $m$ rising into it from below.",
+          "formulas": "$T = 2\\pi\\sqrt{m_{tot}/k}$.",
+          "calculations": "$T = 2\\pi\\sqrt{\\dfrac{M+m}{k}}$.",
+          "answer": "**(d)** $\\;2\\pi\\sqrt{\\dfrac{M+m}{k}}$",
+          "conclusion": "gravity never appears — it only relocates the equilibrium."
+        },
+        {
+          "partNum": 5,
+          "title": "KE of the ball just before impact",
+          "parameters": "- Given: mass $M$ hangs in equilibrium from a spring $k$; a ball $m$ moving **up** at $v$ strikes and sticks; the pair then performs SHM; gravity $g$. Extra fact for (5): at the **highest** point of the motion the spring is at its **natural length**.\n- Find: initial stretch; speed just after sticking; KE lost; period; the ball's KE just before impact.\n- Diagram: ceiling — spring — $M$, with $m$ rising into it from below.",
+          "formulas": "new equilibrium stretch $x_{eq} = \\frac{(M+m)g}{k}$; at the impact instant the displacement above it is $x_1 = x_{eq} - x_0 = \\frac{mg}{k}$; \"natural length at the top\" ⇒ amplitude $A = x_{eq} = \\frac{(M+m)g}{k}$; SHM energy: $\\frac{1}{2}(M+m)V^2 + \\frac{1}{2}kx_1^2 = \\frac{1}{2}kA^2$.",
+          "calculations": "$\\frac{1}{2}(M+m)V^2 = \\frac{g^2}{2k}\\left[(M+m)^2 - m^2\\right] = \\frac{g^2}{2k}\\,M(M+2m)$\n$\\Rightarrow V^2 = \\dfrac{g^2 M(M+2m)}{k(M+m)}$; with $v = \\frac{M+m}{m}V$:\n$\\frac{1}{2}mv^2 = \\frac{1}{2}\\,\\frac{(M+m)^2}{m}\\,V^2 = \\dfrac{M(M+m)(M+2m)g^2}{2km}$.",
+          "answer": "**(f)** $\\;\\dfrac{M(M+m)(M+2m)g^2}{2km}$",
+          "conclusion": "two bookkeeping facts decide everything — displacement is measured from the **new** equilibrium, and \"natural length at the top\" pins $A = (M+m)g/k$. Pitfall: assuming $A = mg/k$ (that is only the initial offset)."
+        }
+      ]
+    }
+  ],
+  "connections": [
+    "2014-Q1-(1) (Topic 8) is spring **energy without SHM**; 2018-Q1-(2) (Topic 5) is a spring in **circular** motion — don't reach for $T = 2\\pi\\sqrt{m/k}$ by reflex."
+  ],
+  "tags": [],
+  "theoryOnly": false
+}

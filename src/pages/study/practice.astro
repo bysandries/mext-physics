@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PracticeSession from '../../components/study/PracticeSession.tsx';
+import { getCollection } from 'astro:content';
+
+const topics = await getCollection('topics');
+const topicsJson = topics.map(t => t.data);
+---
+
+<BaseLayout title="Practice — MEXT Physics" description="Practice problems for MEXT Physics exam">
+  <div class="page">
+    <h1>Practice Problems</h1>
+    <p class="page-desc">Work through exam problems with a step-by-step reveal mode.</p>
+    <PracticeSession topics={topicsJson} client:visible />
+  </div>
+</BaseLayout>
+
+<style>
+  .page { max-width: 700px; margin: 0 auto; }
+  h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; }
+  .page-desc { color: var(--text-secondary); margin-bottom: 2rem; }
+</style>

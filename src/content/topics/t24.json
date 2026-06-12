@@ -1,0 +1,73 @@
+{
+  "id": "t24",
+  "number": 24,
+  "title": "Gas Mixing / Multi-Container Equilibrium",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t24",
+  "theory": "Rigid, insulated containers joined by a cock: no work leaves ($V_{tot}$ fixed), no heat leaves ⇒ the **two conserved quantities are total moles n and total internal energy U**. Final temperature is the *mole-weighted* energy balance — never the average of the temperatures. Final pressure from $P_f V_{tot} = n_{tot}RT_f$.",
+  "formulas": [],
+  "framework": [
+    "$n_i = P_iV_i/(RT_i)$ per container.",
+    "$U_i = \\frac{3}{2}P_iV_i$ per container.",
+    "Conserve $\\sum n$ and $\\sum U$.",
+    "$T_f$ from $U_{tot} = \\frac{3}{2}n_{tot}RT_f$; $P_f$ from the gas law on the combined volume."
+  ],
+  "problems": [
+    {
+      "examRef": "2016-UG-Q4",
+      "title": "Two insulated containers joined by a cock (parts 1–5)",
+      "year": 2016,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Moles in A",
+          "parameters": "- Given: containers A and B, volume $V$ each; A holds monatomic gas at $(P, T)$; B at $(2P, 3T)$; connecting-tube volume negligible; no heat to the surroundings or walls; the cock is opened and equilibrium $(T_f, P_f)$ is reached.\n- Find: $n_A$; $n_B/n_A$; $U_B/U_A$; $T_f$; $P_f$.",
+          "formulas": "",
+          "calculations": "$n_A = \\dfrac{PV}{RT}$.",
+          "answer": "**(e)** $\\;\\dfrac{PV}{RT}$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "Mole ratio n_B/n_A",
+          "parameters": "- Given: containers A and B, volume $V$ each; A holds monatomic gas at $(P, T)$; B at $(2P, 3T)$; connecting-tube volume negligible; no heat to the surroundings or walls; the cock is opened and equilibrium $(T_f, P_f)$ is reached.\n- Find: $n_A$; $n_B/n_A$; $U_B/U_A$; $T_f$; $P_f$.",
+          "formulas": "",
+          "calculations": "$n_B = \\dfrac{2PV}{R\\cdot3T} = \\dfrac{2PV}{3RT}$ ⇒ ratio $= \\dfrac{2}{3}$.",
+          "answer": "**(f)** $\\;\\dfrac{2}{3}$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 3,
+          "title": "Internal-energy ratio U_B/U_A",
+          "parameters": "- Given: containers A and B, volume $V$ each; A holds monatomic gas at $(P, T)$; B at $(2P, 3T)$; connecting-tube volume negligible; no heat to the surroundings or walls; the cock is opened and equilibrium $(T_f, P_f)$ is reached.\n- Find: $n_A$; $n_B/n_A$; $U_B/U_A$; $T_f$; $P_f$.",
+          "formulas": "$U = \\frac{3}{2}PV$ — temperatures not needed!",
+          "calculations": "$U_A = \\frac{3}{2}PV$, $U_B = \\frac{3}{2}(2P)V = 3PV$ ⇒ ratio $= 2$.",
+          "answer": "**(c)** $\\;2$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 4,
+          "title": "Final temperature",
+          "parameters": "- Given: containers A and B, volume $V$ each; A holds monatomic gas at $(P, T)$; B at $(2P, 3T)$; connecting-tube volume negligible; no heat to the surroundings or walls; the cock is opened and equilibrium $(T_f, P_f)$ is reached.\n- Find: $n_A$; $n_B/n_A$; $U_B/U_A$; $T_f$; $P_f$.",
+          "formulas": "conserve $n$ and $U$: $U_{tot} = \\frac{3}{2}n_{tot}RT_f$.",
+          "calculations": "$U_{tot} = \\frac{3}{2}PV(1 + 2) = \\frac{9}{2}PV$; $n_{tot} = \\frac{PV}{RT}\\left(1 + \\frac{2}{3}\\right) = \\frac{5}{3}\\frac{PV}{RT}$.\n$\\frac{9}{2}PV = \\frac{3}{2}\\cdot\\frac{5}{3}\\frac{PV}{RT}\\cdot RT_f = \\frac{5}{2}PV\\,\\frac{T_f}{T} \\;\\Rightarrow\\; T_f = \\frac{9}{5}T$.",
+          "answer": "**(f)** $\\;\\frac{9}{5}T$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 5,
+          "title": "Final pressure",
+          "parameters": "- Given: containers A and B, volume $V$ each; A holds monatomic gas at $(P, T)$; B at $(2P, 3T)$; connecting-tube volume negligible; no heat to the surroundings or walls; the cock is opened and equilibrium $(T_f, P_f)$ is reached.\n- Find: $n_A$; $n_B/n_A$; $U_B/U_A$; $T_f$; $P_f$.",
+          "formulas": "",
+          "calculations": "$P_f(2V) = n_{tot}RT_f = \\frac{5}{3}\\frac{PV}{T}\\cdot\\frac{9}{5}T = 3PV \\;\\Rightarrow\\; P_f = \\frac{3}{2}P$.",
+          "answer": "**(g)** $\\;\\frac{3}{2}P$",
+          "conclusion": "the naive \"average the temperatures\" gives $2T$ — wrong, because the containers hold different mole counts. Sanity: $T < T_f = 1.8T < 3T$ ✓ and $P < P_f = 1.5P < 2P$ ✓, each weighted toward the bigger reservoir of moles."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

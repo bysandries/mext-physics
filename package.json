@@ -1,0 +1,29 @@
+{
+  "name": "mext-physics-study",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "parse": "node scripts/parse-markdown.js",
+    "build": "npm run parse && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/preact": "^3.5.0",
+    "astro": "^4.5.0",
+    "katex": "^0.16.9",
+    "rehype-katex": "^7.0.0",
+    "remark-math": "^6.0.0",
+    "preact": "^10.19.0",
+    "fuse.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "unist-util-visit": "^5.0.0",
+    "hast-util-to-html": "^9.0.0",
+    "mdast-util-from-markdown": "^2.0.0",
+    "mdast-util-to-markdown": "^2.1.0",
+    "gray-matter": "^4.0.3"
+  }
+}

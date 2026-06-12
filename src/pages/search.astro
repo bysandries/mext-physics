@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchPage from '../components/ui/SearchPage.tsx';
+import { getCollection } from 'astro:content';
+
+const topics = await getCollection('topics');
+const topicsJson = topics.map(t => t.data);
+---
+
+<BaseLayout title="Search — MEXT Physics" showSidebar={false}>
+  <div class="search-page">
+    <h1>Search Topics</h1>
+    <SearchPage topics={topicsJson} client:visible />
+  </div>
+</BaseLayout>
+
+<style>
+  .search-page { max-width: 700px; margin: 0 auto; }
+  h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 1.5rem; }
+</style>

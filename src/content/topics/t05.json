@@ -1,0 +1,52 @@
+{
+  "id": "t05",
+  "number": 5,
+  "title": "Circular Motion & Centripetal Force",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t05",
+  "theory": "Uniform circular motion at speed $v$, radius $r$ has acceleration $v^2/r$ pointing at the center. \"Centripetal force\" is **not a new force** — it is the net radial component of real forces (tension, gravity, spring, normal, Coulomb, magnetic…). Identify the radius carefully: it can be a *stretched* spring length, or shrink mid-problem when a string catches a nail.",
+  "formulas": [
+    {
+      "latex": "a_c = \\frac{v^2}{r} = r\\omega^2",
+      "description": ""
+    },
+    {
+      "latex": "\\;\\Sigma F_{radial} = \\frac{mv^2}{r}",
+      "description": ""
+    },
+    {
+      "latex": "\\;v = r\\omega",
+      "description": ", $\\;T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi r}{v}$"
+    }
+  ],
+  "framework": [
+    "Locate the center and the radius *now*.",
+    "Sum the radial components of real forces.",
+    "Set equal to $mv^2/r$.",
+    "If heights change, get $v$ from energy first."
+  ],
+  "problems": [
+    {
+      "examRef": "2018-UG-Q1-(2)",
+      "title": "Spring as the centripetal force",
+      "year": 2018,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: mass $m$ on a frictionless table; spring constant $k$, natural length $l_0$, extension $\\alpha l_0$ ($\\alpha>0$); uniform circular motion about the spring's fixed end O.\n- Find: speed $v$.\n- Diagram: spring from O to the orbiting mass; orbit radius = full stretched length.",
+          "formulas": "spring force $k(\\alpha l_0)$; radius $r = (1+\\alpha)l_0$; $F = mv^2/r$.",
+          "calculations": "$k\\alpha l_0 = \\dfrac{mv^2}{(1+\\alpha)l_0} \\Rightarrow v^2 = \\dfrac{\\alpha(1+\\alpha)k\\,l_0^2}{m} \\Rightarrow v = \\sqrt{\\dfrac{(1+\\alpha)\\alpha k}{m}}\\;l_0$.",
+          "answer": "**(e)** $\\;\\sqrt{\\dfrac{(1+\\alpha)\\alpha k}{m}}\\,l_0$",
+          "conclusion": "both classic traps in one line: the **radius** is the stretched length $(1+\\alpha)l_0$, while the **force** uses only the extension $\\alpha l_0$. Dimensions: $\\sqrt{(N/m)/kg}\\cdot m =$ m/s ✓."
+        }
+      ]
+    }
+  ],
+  "connections": [
+    "vertical circle with a changing radius → 2014-Q3 (Topic 6); circular motion from a magnetic force → 2016-Q2 (Topic 37); gravitational orbits → 2018-Q3 (Topics 12–13)."
+  ],
+  "tags": [],
+  "theoryOnly": false
+}

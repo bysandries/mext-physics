@@ -1,0 +1,15 @@
+{
+  "id": "t41",
+  "number": 41,
+  "title": "RL Circuits & LC Oscillations",
+  "part": "Electricity & Magnetism",
+  "partNumber": 4,
+  "anchor": "t41",
+  "theory": "An inductor opposes current *change*: $\\mathcal{E}_L = -L\\dfrac{dI}{dt}$; at $t = 0$ it is an **open switch**, as $t\\to\\infty$ a **plain wire** — the mirror image of the capacitor rules; $\\tau = L/R$. LC circuit: charge sloshes with $T = 2\\pi\\sqrt{LC}$, energy trading $\\dfrac{q^2}{2C} \\leftrightarrow \\dfrac{1}{2}LI^2$.",
+  "formulas": [],
+  "framework": [],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": true
+}

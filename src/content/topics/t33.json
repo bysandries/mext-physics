@@ -1,0 +1,53 @@
+{
+  "id": "t33",
+  "number": 33,
+  "title": "Electric Potential & Uniform-Field Dynamics",
+  "part": "Electricity & Magnetism",
+  "partNumber": 4,
+  "anchor": "t33",
+  "theory": "$V = kQ/r$ is a scalar — just add contributions. A charge crossing a potential difference $U$ gains $\\Delta KE = qU$. Between parallel plates the field is uniform, $E = V/d$, the force is $F = qE$, and the rest is **pure kinematics with $a = qE/m$** — projectile motion with gravity replaced.",
+  "formulas": [
+    {
+      "latex": "V = \\dfrac{kQ}{r}",
+      "description": ""
+    },
+    {
+      "latex": "E = \\dfrac{V}{d}",
+      "description": ""
+    },
+    {
+      "latex": "F = qE",
+      "description": ""
+    },
+    {
+      "latex": "a = \\dfrac{qE}{m}",
+      "description": ""
+    },
+    {
+      "latex": "d = \\frac{1}{2}at^2",
+      "description": "from rest — , $\\;v = \\sqrt{\\dfrac{2qEd}{m}}$"
+    }
+  ],
+  "framework": [],
+  "problems": [
+    {
+      "examRef": "2018-UG-Q1-(3)",
+      "title": "Time to cross a distance in a uniform field",
+      "year": 2018,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: charge $q$, mass $m$, released from rest in a uniform field $E$.\n- Find: time $t$ to travel a distance $d$.",
+          "formulas": "$a = \\dfrac{qE}{m}$; $d = \\dfrac{1}{2}at^2$.",
+          "calculations": "$t = \\sqrt{\\dfrac{2d}{a}} = \\sqrt{\\dfrac{2md}{qE}}$.",
+          "answer": "**(f)** $\\;\\sqrt{\\dfrac{2md}{qE}}$",
+          "conclusion": "identical to dropping a mass with $g \\to qE/m$. The trap option differs only by a factor-2 slip inside the root — write the kinematics line *before* looking at the options."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

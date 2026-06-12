@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FormulaList from '../../components/topic/FormulaList.astro';
+import ProblemBlock from '../../components/topic/ProblemBlock.astro';
+import { getCollection } from 'astro:content';
+import { renderInlineMath, renderInline, linkTopicRefs } from '../../utils/render';
+
+export async function getStaticPaths() {
+  const topics = await getCollection('topics');
+  return topics.map(t => ({
+    params: { slug: t.data.id },
+    props: { topic: t },
+  }));
+}
+
+const { topic } = Astro.props;
+const data = topic.data;
+
+const allTopics = await getCollection('topics');
+const samePart = allTopics
+  .filter(t => t.data.part === data.part && !t.data.theoryOnly)
+  .sort((a, b) => a.data.number - b.data.number);
+const curIdx = samePart.findIndex(t => t.data.id === data.id);
+const prev = curIdx > 0 ? samePart[curIdx - 1] : null;
+const next = curIdx < samePart.length - 1 ? samePart[curIdx + 1] : null;
+
+const theoryHtml = data.theory ? linkTopicRefs(renderInlineMath(data.theory)) : '';
+const connectionsHtml = (data.connections ?? []).map((c) => linkTopicRefs(renderInline(c)));
+---
+
+<BaseLayout title={`${data.number}. ${data.title} — MEXT Physics`} showSidebar={true}>
+  <article class="topic-page">
+    <header class="topic-header">
+      <div class="topic-breadcrumb">
+        <a href="/">{data.part}</a>
+        <span> / </span>
+        <span>Topic {data.number}</span>
+      </div>
+      <h1 class="topic-title">{data.title}</h1>
+      {data.theoryOnly && <div class="theory-banner">📘 Theory only — appears in non-uploaded exam years</div>}
+    </header>
+
+    <section class="topic-section">
+      <h2>Theory</h2>
+      <div class="theory-content" set:html={theoryHtml} />
+    </section>
+
+    {data.formulas.length > 0 && (
+      <section class="topic-section">
+        <h2>Key Formulas</h2>
+        <FormulaList formulas={data.formulas} />
+      </section>
+    )}
+
+    {data.framework.length > 0 && (
+      <section class="topic-section">
+        <h2>Problem-Solving Framework</h2>
+        <ol class="framework-steps">
+          {data.framework.map((step, i) => (
+            <li>
+              <span class="step-num">{i + 1}</span>
+              <span class="step-text" set:html={renderInline(step)} />
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    {connectionsHtml.length > 0 && (
+      <section class="topic-section">
+        <h2>Connections</h2>
+        <ul class="connections-list">
+          {connectionsHtml.map((c) => (
+            <li set:html={c} />
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {data.problems.length > 0 && (
+      <section class="topic-section">
+        <h2>Worked Problems ({data.problems.length})</h2>
+        {data.problems.map((problem, i) => (
+          <ProblemBlock problem={problem} index={i} />
+        ))}
+      </section>
+    )}
+
+    <nav class="topic-nav">
+      {prev ? <a href={`/topic/${prev.data.id}`} class="nav-link prev">← {prev.data.number}. {prev.data.title.replace(/\[.*?\]/g, '').trim()}</a> : <div />}
+      {next ? <a href={`/topic/${next.data.id}`} class="nav-link next">{next.data.number}. {next.data.title.replace(/\[.*?\]/g, '').trim()} →</a> : <div />}
+    </nav>
+  </article>
+</BaseLayout>
+
+<style>
+  .topic-page { max-width: 800px; }
+  .topic-header { margin-bottom: 2rem; }
+  .topic-breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  .topic-breadcrumb a { color: var(--text-secondary); }
+  .topic-title { font-size: 1.75rem; font-weight: 800; line-height: 1.3; }
+  .theory-banner {
+    margin-top: 0.75rem; padding: 0.75rem 1rem;
+    background: var(--bg-secondary); border-radius: var(--radius);
+    font-size: 0.9rem; color: var(--text-secondary);
+    border: 1px solid var(--border);
+  }
+  .topic-section { margin-bottom: 2rem; }
+  .topic-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+  .theory-content { line-height: 1.8; color: var(--text-secondary); font-size: 0.95rem; }
+  .theory-content :global(p) { margin-bottom: 0.75rem; }
+  .connections-list { display: flex; flex-direction: column; gap: 0.5rem; }
+  .connections-list li {
+    padding: 0.6rem 0.9rem; font-size: 0.9rem; line-height: 1.6;
+    background: var(--bg-secondary); border: 1px solid var(--border);
+    border-radius: var(--radius); color: var(--text-secondary);
+  }
+  .framework-steps { display: flex; flex-direction: column; gap: 0.75rem; }
+  .framework-steps li {
+    display: flex; gap: 0.75rem; align-items: flex-start;
+    font-size: 0.95rem; line-height: 1.5;
+  }
+  .step-num {
+    display: flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--accent); color: white; font-size: 0.75rem; font-weight: 700;
+    flex-shrink: 0; margin-top: 0.2rem;
+  }
+  .step-text { flex: 1; }
+  .step-text :global(p) { margin: 0; }
+  .topic-nav {
+    display: flex; justify-content: space-between; gap: 1rem;
+    margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+  }
+  .nav-link {
+    font-size: 0.9rem; padding: 0.5rem 1rem; border-radius: var(--radius);
+    border: 1px solid var(--border); transition: all 0.15s;
+    max-width: 45%; color: var(--text);
+  }
+  .nav-link:hover { border-color: var(--accent); text-decoration: none; }
+  .nav-link.next { text-align: right; }
+</style>

@@ -1,0 +1,15 @@
+{
+  "id": "t23",
+  "number": 23,
+  "title": "Gas Density / Temperature Relations",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t23",
+  "theory": "$\\rho = \\dfrac{m}{V} = \\dfrac{PM_{mol}}{RT}$: at fixed pressure $\\rho \\propto 1/T$ (hot air is thin); at fixed temperature $\\rho \\propto P$. **Host example:** 2014-Q1-(3) (Topic 14) — a density quoted at one temperature fixes the contained mass at every other temperature through $mT = \\text{const}$.",
+  "formulas": [],
+  "framework": [],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

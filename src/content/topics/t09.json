@@ -1,0 +1,17 @@
+{
+  "id": "t09",
+  "number": 9,
+  "title": "Coefficient of Restitution & Bouncing Balls",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t09",
+  "theory": "$e = \\dfrac{\\text{relative separation speed}}{\\text{relative approach speed}}$, with $0 \\le e \\le 1$. Floor bounce: rebound speed $v' = ev$, rebound height $h' = e^2 h$, and after $n$ bounces $h_n = e^{2n}h_0$. $e = 1$: elastic (KE conserved). $e = 0$: perfectly inelastic — the bodies stick (Topic 10).",
+  "formulas": [],
+  "framework": [
+    "For two-body collisions pair the restitution equation with momentum conservation (two equations, two final speeds). For ball–floor, momentum goes to the Earth and only $e$ matters."
+  ],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": true
+}

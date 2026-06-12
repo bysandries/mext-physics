@@ -1,0 +1,171 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const speedRules = [
+  { rule: '**Dimensional analysis first.** It kills 2–3 options per question before any physics.' },
+  { rule: '**Limiting cases** (let m→0, θ→0° or 90°, M→∞, b→a…) eliminate near-miss options instantly.' },
+  { rule: '**Answer in your head before reading the options** — the options are engineered around predictable mistakes.' },
+  { rule: 'In multi-part questions, **part (n) feeds part (n+1)**. A wrong early answer cascades; sanity-check part (1) hard.' },
+  { rule: '**2 sig figs:** carry 3 digits through the arithmetic, round once at the end.' },
+  { rule: 'Memorize: √2≈1.41, √3≈1.73, √5≈2.24, √10≈3.16; triangles **3-4-5** (and its 9-12-15 disguise), 5-12-13.' },
+  { rule: '**Energy first, forces second.** Conservation laws answer most MEXT mechanics in two lines.' },
+  { rule: 'For any **direction question** (current, charge sign), derive it twice: Lenz’s law AND F = qv×B. They must agree.' },
+  { rule: '**Never integrate.** Every MEXT answer is reachable with algebra, conservation laws, and areas of rectangles/triangles.' },
+  { rule: '**Skip and return.** A stuck part rarely blocks the next sub-question — they often re-state what you need.' },
+];
+
+function md(s: string) {
+  return s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+}
+---
+
+<BaseLayout title="Exam Strategy — MEXT Physics" showSidebar={true}>
+  <article class="strategy-page">
+    <header class="topic-header">
+      <h1 class="topic-title">Exam Strategy</h1>
+      <p class="subtitle">
+        The compensatory layer: how the exam works, the reflexes that buy time, and the numbers
+        worth caching. Read this before drilling topics — it converts knowledge into marks.
+      </p>
+    </header>
+
+    <section class="topic-section">
+      <h2>How the exam works (test-day facts)</h2>
+      <ul class="fact-list">
+        <li><strong>60 minutes</strong>, 5 numbered questions. Question 1 is five independent short problems spanning the whole syllabus; Questions 2–5 are single-scenario multi-part problems (mechanics, thermodynamics, waves, E&amp;M in some order).</li>
+        <li>Roughly <strong>22–25 answers total → budget ≈ 2.5 min per answer</strong>.</li>
+        <li>Answers are <strong>letters (a)–(o)</strong> on a separate answer sheet. <strong>No partial credit. No calculator.</strong></li>
+        <li>Most answers are <strong>symbolic</strong>; numeric answers use <strong>2 significant figures</strong> and <strong>g = 9.8 m/s²</strong>.</li>
+        <li>Japanese conventions: 物理 = Physics; print your full name and <strong>underline the family name</strong>; first law is <strong>Q = ΔU + W (work done BY the gas)</strong>; capacitor plate area is <strong>S</strong>; sound speed is <strong>V</strong> (lowercase v is reserved for object speeds).</li>
+      </ul>
+    </section>
+
+    <section class="topic-section">
+      <h2>The ten speed rules</h2>
+      <p class="section-note">Read twice, then live by them.</p>
+      <ol class="rules-list">
+        {speedRules.map((r, i) => (
+          <li>
+            <span class="rule-num">{i + 1}</span>
+            <span class="rule-text" set:html={md(r.rule)} />
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="topic-section">
+      <h2>Constants &amp; benchmarks to cache</h2>
+      <div class="card-grid">
+        <div class="info-card">
+          <h3>Given constants</h3>
+          <ul>
+            <li>g = 9.8 m/s²</li>
+            <li>G = 6.67×10⁻¹¹ N·m²/kg²</li>
+            <li>Earth radius R = 6.4×10⁶ m</li>
+            <li>1 day = 8.64×10⁴ s</li>
+            <li>Coulomb k = 1/(4πε₀) ≈ 9.0×10⁹ N·m²/C²</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>Monatomic ideal gas</h3>
+          <ul>
+            <li>C_V = (3/2)R · C_P = (5/2)R · γ = 5/3</li>
+            <li>U = (3/2)PV · nRΔT = Δ(PV)</li>
+            <li>Isobaric split ΔU : W : Q = <strong>3 : 2 : 5</strong></li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>Benchmark numbers</h3>
+          <ul>
+            <li>Earth escape ≈ 1.1×10⁴ m/s</li>
+            <li>Low-orbit speed ≈ 7.9×10³ m/s</li>
+            <li>Geostationary radius ≈ 4.2×10⁷ m</li>
+            <li>Earth mass ≈ 6.0×10²⁴ kg</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>Conversions that decide answers</h3>
+          <ul>
+            <li>1 cm³ = 10⁻⁶ m³</li>
+            <li>1 km = 10³ m</li>
+            <li>K = °C + 273</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-section">
+      <h2>Mental-math toolkit (no calculator!)</h2>
+      <div class="card-grid">
+        <div class="info-card">
+          <h3>Roots</h3>
+          <p>√2 ≈ 1.41 · √3 ≈ 1.73 · √5 ≈ 2.24 · √7 ≈ 2.65 · √10 ≈ 3.16. Bracket unknown roots between neighboring perfect squares (e.g. √29: between 5 and 6, nearer 5.4).</p>
+        </div>
+        <div class="info-card">
+          <h3>Pi</h3>
+          <p>π ≈ 3.14, π² ≈ 9.87 ≈ 10, <strong>4π² ≈ 39.5 ≈ 40</strong> — the last one runs every Kepler computation.</p>
+        </div>
+        <div class="info-card">
+          <h3>Triangles</h3>
+          <p>3-4-5 (and disguises: 6-8-10, <strong>9-12-15</strong>), 5-12-13. The 2018 Doppler problem is decided by spotting 9-12-15 in two seconds.</p>
+        </div>
+        <div class="info-card">
+          <h3>Cube roots</h3>
+          <p>Rewrite as n×10³ᵏ so the exponent divides by 3; root the mantissa by bracketing (4³ = 64, 5³ = 125).</p>
+        </div>
+        <div class="info-card">
+          <h3>2-sig-fig discipline</h3>
+          <p>Carry 3 digits through the arithmetic, round once at the very end. Never round intermediate results to 1 digit.</p>
+        </div>
+        <div class="info-card">
+          <h3>Fast checks (run at least one per answer)</h3>
+          <p>Dimensions; limiting cases (θ→0°, 90°; m→0; M→∞); sign/sanity (a "toward" Doppler must raise pitch; η below Carnot; final T between initial T's).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-section">
+      <h2>How to drill with this site</h2>
+      <ol class="pass-list">
+        <li><strong>Pass 1 — Map.</strong> Read each topic's theory + framework. Don't grind: if a topic is already solid, mark it and move on (the topic grid tracks this).</li>
+        <li><strong>Pass 2 — Re-derive.</strong> Cover the solutions and re-derive every worked example against the clock (2.5 min each) using the step-by-step reveal in Practice mode.</li>
+        <li><strong>Pass 3 — Simulate.</strong> Take a full paper in 60 minutes, grading only at the end. Speed comes from the fast checks above becoming reflexes.</li>
+      </ol>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .strategy-page { max-width: 800px; }
+  .topic-header { margin-bottom: 2rem; }
+  .topic-title { font-size: 1.75rem; font-weight: 800; line-height: 1.3; }
+  .subtitle { margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; }
+  .topic-section { margin-bottom: 2.5rem; }
+  .topic-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+  .section-note { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+  .fact-list { display: flex; flex-direction: column; gap: 0.6rem; }
+  .fact-list li {
+    padding: 0.6rem 0.9rem; font-size: 0.9rem; line-height: 1.6;
+    background: var(--bg-secondary); border: 1px solid var(--border);
+    border-radius: var(--radius); color: var(--text-secondary); list-style: none;
+  }
+  .rules-list { display: flex; flex-direction: column; gap: 0.75rem; }
+  .rules-list li { display: flex; gap: 0.75rem; align-items: flex-start; font-size: 0.95rem; line-height: 1.5; list-style: none; }
+  .rule-num {
+    display: flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--accent); color: white; font-size: 0.75rem; font-weight: 700;
+    flex-shrink: 0; margin-top: 0.2rem;
+  }
+  .rule-text { flex: 1; color: var(--text-secondary); }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.75rem; }
+  .info-card {
+    padding: 1rem; border-radius: var(--radius);
+    border: 1px solid var(--border); background: var(--bg-secondary);
+  }
+  .info-card h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .info-card p, .info-card li { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
+  .info-card ul { padding-left: 1rem; }
+  .pass-list { display: flex; flex-direction: column; gap: 0.75rem; padding-left: 1.25rem; }
+  .pass-list li { font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); }
+</style>

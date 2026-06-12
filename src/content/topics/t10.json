@@ -1,0 +1,34 @@
+{
+  "id": "t10",
+  "number": 10,
+  "title": "Inelastic Collisions",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t10",
+  "theory": "Momentum is conserved in **every** collision; kinetic energy is **not** (except $e=1$). Perfectly inelastic onto a resting target: $V = \\frac{mv}{M+m}$; the KE lost is $\\frac{1}{2}\\frac{Mm}{M+m}v_{rel}^2$ (the *reduced-mass form* — worth memorizing, it answers loss questions in one line). Friction dragging two bodies to a common velocity (2016-Q3) is a \"slow perfectly inelastic collision\": identical final-speed formula.",
+  "formulas": [
+    {
+      "latex": "p_{before} = p_{after}",
+      "description": ""
+    },
+    {
+      "latex": "V = \\dfrac{mv}{M+m}",
+      "description": "stick"
+    },
+    {
+      "latex": "\\Delta KE_{lost} = \\dfrac{Mm}{2(M+m)}\\,v_{rel}^2",
+      "description": ""
+    }
+  ],
+  "framework": [
+    "Conserve momentum across the instant (external forces have no time to act).",
+    "Never conserve mechanical energy across a sticking collision.",
+    "Compute energies before/after separately if the loss is asked."
+  ],
+  "problems": [],
+  "connections": [
+    "2015-UG-Q3 parts (2)(3) — solved inside the full problem in Topic 11; 2016-UG-Q3-(4) common velocity (Topic 4)."
+  ],
+  "tags": [],
+  "theoryOnly": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "t18",
+  "number": 18,
+  "title": "Isothermal Processes",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t18",
+  "theory": "$T$ constant ⇒ $\\Delta U = 0$ ⇒ $Q = W$. Quasi-static work $W = nRT\\ln(V_f/V_i)$; $PV = \\text{const}$ (Boyle). MEXT multiple choice rarely demands the logarithm — what is tested is recognizing $PV = \\text{const}$ on a diagram and that **all heat absorbed converts to work**.",
+  "formulas": [],
+  "framework": [],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": true
+}

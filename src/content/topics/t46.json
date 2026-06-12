@@ -1,0 +1,17 @@
+{
+  "id": "t46",
+  "number": 46,
+  "title": "Light Path Through Multiple Media",
+  "part": "Optics",
+  "partNumber": 5,
+  "anchor": "t46",
+  "theory": "Across any stack of **parallel** interfaces, $n\\sin\\theta$ is conserved at every boundary (the *Snell invariant*) — so the exit ray into the original medium is **parallel to the entry ray** (laterally shifted only), and you may jump directly between any two layers: $n_1\\sin\\theta_1 = n_3\\sin\\theta_3$ without solving the middle layer. Within each layer: speed $c/n$, wavelength $\\lambda/n$, frequency fixed.",
+  "formulas": [],
+  "framework": [],
+  "problems": [],
+  "connections": [
+    "the two-slab comparison 2015-Q1-(5) (Topic 43); the time-cost of travel inside a medium, 2016-Q5-(4) (Topic 44): $t \\propto n \\times$ geometric path."
+  ],
+  "tags": [],
+  "theoryOnly": false
+}

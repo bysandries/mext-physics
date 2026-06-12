@@ -1,0 +1,98 @@
+{
+  "id": "t06",
+  "number": 6,
+  "title": "Pendulum Motion (simple, and with a nail constraint)",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t06",
+  "theory": "Tension does no work, so **energy conservation gives the speed at any height**; the **radial Newton equation gives the tension**. With a nail a distance $b$ below the pivot, the instant the string touches it the radius shrinks from $a$ to $a-b$ and the center jumps to the nail. The string stays taut only while $T \\ge 0$: at angle $\\theta$ from the *upward* vertical of the current center, $T = \\frac{mv^2}{r} - mg\\cos\\theta$, so slack begins when $v^2 = gr\\cos\\theta$. Completing a full loop of radius $r$ requires $v_{top}^2 \\ge gr$. (Plain small-angle pendulum: $T = 2\\pi\\sqrt{L/g}$ — mass- and amplitude-independent.)",
+  "formulas": [
+    {
+      "latex": "v^2 = 2g\\,\\Delta h",
+      "description": "(from rest)"
+    },
+    {
+      "latex": "T - mg = \\frac{mv^2}{r}",
+      "description": "lowest point"
+    },
+    {
+      "latex": "T + mg = \\frac{mv^2}{r}",
+      "description": "top of circle"
+    },
+    {
+      "latex": "T = \\frac{mv^2}{r} - mg\\cos\\theta",
+      "description": "General (θ from the top)"
+    },
+    {
+      "latex": "\\Leftrightarrow v^2 < gr\\cos\\theta",
+      "description": "slack"
+    },
+    {
+      "latex": "\\Leftrightarrow v_{top}^2 \\ge gr",
+      "description": "full loop"
+    }
+  ],
+  "framework": [
+    "Bookkeep **depths below the release level**.",
+    "Energy → $v^2$ at the point of interest.",
+    "Radial N2 with the *current* center/radius.",
+    "Impose $T\\ge0$ (or $T=0$ at critical points)."
+  ],
+  "problems": [
+    {
+      "examRef": "2014-UG-Q3",
+      "title": "Pendulum catching a nail (parts 1–5)",
+      "year": 2014,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Speed at B",
+          "parameters": "- Given: ball $m$ on a string of length $a$ from pivot O; released from rest at A, level with O; a nail at C, a distance $b$ straight below O, with $a/2 < b < a$; B is the lowest point (depth $a$); D is the top of the small circle about C; gravity $g$; no air resistance.\n- Find: speed and tension at B; tension at D; taut-string condition; slack speed for $b=a/2$.\n- Diagram: big circle (radius $a$, center O) down to B; past B the string wraps the nail → small circle (radius $a-b$, center C); D sits $a-b$ above C, i.e. at depth $2b-a$ below O.",
+          "formulas": "$v^2 = 2g\\Delta h$, $\\Delta h = a$.",
+          "calculations": "$v_B = \\sqrt{2ga}$.",
+          "answer": "**(g)** $\\;\\sqrt{2ga}$",
+          "conclusion": "the nail is irrelevant until the string is vertical — energy only sees depth."
+        },
+        {
+          "partNum": 2,
+          "title": "Tension just before B",
+          "parameters": "- Given: ball $m$ on a string of length $a$ from pivot O; released from rest at A, level with O; a nail at C, a distance $b$ straight below O, with $a/2 < b < a$; B is the lowest point (depth $a$); D is the top of the small circle about C; gravity $g$; no air resistance.\n- Find: speed and tension at B; tension at D; taut-string condition; slack speed for $b=a/2$.\n- Diagram: big circle (radius $a$, center O) down to B; past B the string wraps the nail → small circle (radius $a-b$, center C); D sits $a-b$ above C, i.e. at depth $2b-a$ below O.",
+          "formulas": "radius still $a$ (center O): $T - mg = \\frac{mv_B^2}{a}$.",
+          "calculations": "$T = mg + \\frac{m(2ga)}{a} = 3mg$.",
+          "answer": "**(c)** $\\;3mg$",
+          "conclusion": "the universal \"released from the pivot's level\" result: **T = 3mg at the bottom**. Memorize it."
+        },
+        {
+          "partNum": 3,
+          "title": "Tension at D (top of the small circle)",
+          "parameters": "- Given: ball $m$ on a string of length $a$ from pivot O; released from rest at A, level with O; a nail at C, a distance $b$ straight below O, with $a/2 < b < a$; B is the lowest point (depth $a$); D is the top of the small circle about C; gravity $g$; no air resistance.\n- Find: speed and tension at B; tension at D; taut-string condition; slack speed for $b=a/2$.\n- Diagram: big circle (radius $a$, center O) down to B; past B the string wraps the nail → small circle (radius $a-b$, center C); D sits $a-b$ above C, i.e. at depth $2b-a$ below O.",
+          "formulas": "depth of D below O: $b - (a-b) = 2b-a$ ⇒ $v_D^2 = 2g(2b-a)$; top of circle: $T + mg = \\frac{mv_D^2}{a-b}$.",
+          "calculations": "$T = \\dfrac{2mg(2b-a)}{a-b} - mg = \\dfrac{\\left[\\,2(2b-a)-(a-b)\\,\\right]mg}{a-b} = \\dfrac{-3a+5b}{a-b}\\,mg$.",
+          "answer": "**(f)** $\\;\\dfrac{-3a+5b}{a-b}mg$",
+          "conclusion": "with $a/2<b<a$ the denominator is positive, so the sign of $(5b-3a)$ decides everything — which is exactly part (4)."
+        },
+        {
+          "partNum": 4,
+          "title": "Condition to reach D with the string taut",
+          "parameters": "- Given: ball $m$ on a string of length $a$ from pivot O; released from rest at A, level with O; a nail at C, a distance $b$ straight below O, with $a/2 < b < a$; B is the lowest point (depth $a$); D is the top of the small circle about C; gravity $g$; no air resistance.\n- Find: speed and tension at B; tension at D; taut-string condition; slack speed for $b=a/2$.\n- Diagram: big circle (radius $a$, center O) down to B; past B the string wraps the nail → small circle (radius $a-b$, center C); D sits $a-b$ above C, i.e. at depth $2b-a$ below O.",
+          "formulas": "$T \\ge 0$ from (3).",
+          "calculations": "$5b - 3a \\ge 0 \\Rightarrow a < \\frac{5}{3}b$.",
+          "answer": "**(d)** $\\;a < \\frac{5}{3}b$",
+          "conclusion": "equivalently $b > \\frac{3}{5}a$. Same physics as the loop-the-loop criterion, dressed for the exam."
+        },
+        {
+          "partNum": 5,
+          "title": "Slack speed when b = a/2",
+          "parameters": "- Given: ball $m$ on a string of length $a$ from pivot O; released from rest at A, level with O; a nail at C, a distance $b$ straight below O, with $a/2 < b < a$; B is the lowest point (depth $a$); D is the top of the small circle about C; gravity $g$; no air resistance.\n- Find: speed and tension at B; tension at D; taut-string condition; slack speed for $b=a/2$.\n- Diagram: big circle (radius $a$, center O) down to B; past B the string wraps the nail → small circle (radius $a-b$, center C); D sits $a-b$ above C, i.e. at depth $2b-a$ below O.",
+          "formulas": "radius $r = a/2$; at angle $\\theta$ from C's upward vertical: energy $v^2 = 2g\\left(b - r\\cos\\theta\\right) = ga(1-\\cos\\theta)$; slack: $v^2 = gr\\cos\\theta = \\frac{ga}{2}\\cos\\theta$.",
+          "calculations": "$ga(1-\\cos\\theta) = \\frac{ga}{2}\\cos\\theta \\Rightarrow \\cos\\theta = \\frac{2}{3}$; then $v^2 = \\frac{ga}{2}\\cdot\\frac{2}{3} = \\frac{ga}{3}$, so $v = \\sqrt{ga/3}$.",
+          "answer": "**(j)** $\\;\\sqrt{\\dfrac{ga}{3}}$",
+          "conclusion": "two equations (energy, $T=0$) in two unknowns ($v$, $\\theta$). $\\cos\\theta = 2/3 > 0$ means the string goes slack *above* C's horizontal — projectile motion follows (the classic continuation question in other years)."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

@@ -1,0 +1,117 @@
+{
+  "id": "t22",
+  "number": 22,
+  "title": "PV Diagrams & Cyclic Processes",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t22",
+  "theory": "Net work per cycle = **enclosed area**: positive if the cycle runs **clockwise** on standard P–V axes, negative if counter-clockwise. Over a full cycle $\\Delta U = 0$, so $Q_{net} = W_{net}$. Thermal efficiency $\\eta = \\dfrac{W_{net}}{Q_{in}}$, where $Q_{in}$ sums **only the heat-absorbing legs** (exhaust legs are not \"negative input\"). Rectangle cycles have only isobaric/isochoric legs — pure $\\Delta(PV)$ arithmetic via Topic 21.",
+  "formulas": [],
+  "framework": [
+    "Tabulate $(P, V)$ — and hence $PV \\propto T$ — at the corners.",
+    "Per leg: $\\Delta(PV)$ → $Q$, $W$, $\\Delta U$.",
+    "$W_{net}$ = area with the orientation sign.",
+    "$\\eta$ from positive-Q legs only.",
+    "Sanity: the Q column must sum to the signed area."
+  ],
+  "problems": [
+    {
+      "examRef": "2014-UG-Q4",
+      "title": "Counter-clockwise rectangle cycle (parts 1–5)",
+      "year": 2014,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Temperature ratio T_A : T_C",
+          "parameters": "- Given: 1 mol monatomic ideal gas; A$(V_0, p_0)$ → B$(3V_0, p_0)$ → C$(3V_0, 4p_0)$ → D$(V_0, 4p_0)$ → A. (Right along the bottom, up, left along the top, down: **counter-clockwise**.)\n- Find: $T_A/T_C$; work on A→B; the leg of maximum heat absorption and its value; net heat exchanged per cycle.\n- Diagram: rectangle of width $2V_0$, height $3p_0$ on P–V axes.",
+          "formulas": "fixed n ⇒ $T \\propto PV$.",
+          "calculations": "$PV|_A = p_0V_0$; $PV|_C = 12\\,p_0V_0$ ⇒ $T_A = \\frac{1}{12}T_C$.",
+          "answer": "**(a)** $\\;T_A = \\frac{1}{12}T_C$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "Work done by the gas on A→B",
+          "parameters": "- Given: 1 mol monatomic ideal gas; A$(V_0, p_0)$ → B$(3V_0, p_0)$ → C$(3V_0, 4p_0)$ → D$(V_0, 4p_0)$ → A. (Right along the bottom, up, left along the top, down: **counter-clockwise**.)\n- Find: $T_A/T_C$; work on A→B; the leg of maximum heat absorption and its value; net heat exchanged per cycle.\n- Diagram: rectangle of width $2V_0$, height $3p_0$ on P–V axes.",
+          "formulas": "isobaric: $W = P\\Delta V$.",
+          "calculations": "$W = p_0(3V_0 - V_0) = 2p_0V_0$.",
+          "answer": "**(f)** $\\;2p_0V_0$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 3,
+          "title": "Which leg absorbs the most heat?",
+          "parameters": "- Given: 1 mol monatomic ideal gas; A$(V_0, p_0)$ → B$(3V_0, p_0)$ → C$(3V_0, 4p_0)$ → D$(V_0, 4p_0)$ → A. (Right along the bottom, up, left along the top, down: **counter-clockwise**.)\n- Find: $T_A/T_C$; work on A→B; the leg of maximum heat absorption and its value; net heat exchanged per cycle.\n- Diagram: rectangle of width $2V_0$, height $3p_0$ on P–V axes.",
+          "formulas": "$Q_P = \\frac{5}{2}\\Delta(PV)$, $Q_V = \\frac{3}{2}\\Delta(PV)$.",
+          "calculations": "A→B: $\\frac{5}{2}(2) = 5$; B→C: $\\frac{3}{2}(9) = \\frac{27}{2}$; C→D: $\\frac{5}{2}(-8) = -20$; D→A: $\\frac{3}{2}(-3) = -\\frac{9}{2}$. Maximum: **B→C**.",
+          "answer": "**(b)** $\\;$B→C",
+          "conclusion": ""
+        },
+        {
+          "partNum": 4,
+          "title": "Heat absorbed on that leg",
+          "parameters": "- Given: 1 mol monatomic ideal gas; A$(V_0, p_0)$ → B$(3V_0, p_0)$ → C$(3V_0, 4p_0)$ → D$(V_0, 4p_0)$ → A. (Right along the bottom, up, left along the top, down: **counter-clockwise**.)\n- Find: $T_A/T_C$; work on A→B; the leg of maximum heat absorption and its value; net heat exchanged per cycle.\n- Diagram: rectangle of width $2V_0$, height $3p_0$ on P–V axes.",
+          "formulas": "",
+          "calculations": "$Q_{B\\to C} = \\frac{27}{2}p_0V_0$.",
+          "answer": "**(g)** $\\;\\frac{27}{2}p_0V_0$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 5,
+          "title": "Net heat over one full cycle",
+          "parameters": "- Given: 1 mol monatomic ideal gas; A$(V_0, p_0)$ → B$(3V_0, p_0)$ → C$(3V_0, 4p_0)$ → D$(V_0, 4p_0)$ → A. (Right along the bottom, up, left along the top, down: **counter-clockwise**.)\n- Find: $T_A/T_C$; work on A→B; the leg of maximum heat absorption and its value; net heat exchanged per cycle.\n- Diagram: rectangle of width $2V_0$, height $3p_0$ on P–V axes.",
+          "formulas": "$Q_{net} = W_{net} = \\pm$ area; counter-clockwise ⇒ negative.",
+          "calculations": "area $= (2V_0)(3p_0) = 6p_0V_0$ ⇒ $W_{net} = -6p_0V_0$ ⇒ the gas **emits** $6p_0V_0$. Check by summing the legs: $5 + \\frac{27}{2} - 20 - \\frac{9}{2} = -6$ ✓.",
+          "answer": "**(f)** $\\;$emits $6p_0V_0$",
+          "conclusion": "a CCW cycle is refrigerator-like: net work done **on** the gas, net heat **out**. Reading the arrow direction on the figure is worth two of the five marks here — circle it before computing anything."
+        }
+      ]
+    },
+    {
+      "examRef": "2018-UG-Q4",
+      "title": "Clockwise rectangle cycle with efficiency (parts 1–4)",
+      "year": 2018,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Heat absorbed A→B (isochoric)",
+          "parameters": "- Given: 1 mol monatomic gas ($C_V = \\frac{3}{2}R$); A$(V_0, P_0)$ →isochoric→ B$(V_0, 4P_0)$ →isobaric→ C$(4V_0, 4P_0)$ →isochoric→ D$(4V_0, P_0)$ →isobaric→ A. **Clockwise.**\n- Find: $Q_{AB}$; $Q_{BC}$; net work per cycle; thermal efficiency.",
+          "formulas": "$Q_V = \\frac{3}{2}\\Delta(PV)$.",
+          "calculations": "$\\Delta(PV) = (4P_0 - P_0)V_0 = 3P_0V_0$ ⇒ $Q_{AB} = \\frac{9}{2}P_0V_0$.",
+          "answer": "**(e)** $\\;\\frac{9}{2}P_0V_0$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "Heat absorbed B→C (isobaric)",
+          "parameters": "- Given: 1 mol monatomic gas ($C_V = \\frac{3}{2}R$); A$(V_0, P_0)$ →isochoric→ B$(V_0, 4P_0)$ →isobaric→ C$(4V_0, 4P_0)$ →isochoric→ D$(4V_0, P_0)$ →isobaric→ A. **Clockwise.**\n- Find: $Q_{AB}$; $Q_{BC}$; net work per cycle; thermal efficiency.",
+          "formulas": "$Q_P = \\frac{5}{2}\\Delta(PV)$.",
+          "calculations": "$\\Delta(PV) = 4P_0(4V_0 - V_0) = 12P_0V_0$ ⇒ $Q_{BC} = 30P_0V_0$.",
+          "answer": "**(c)** $\\;30P_0V_0$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 3,
+          "title": "Net work per cycle",
+          "parameters": "- Given: 1 mol monatomic gas ($C_V = \\frac{3}{2}R$); A$(V_0, P_0)$ →isochoric→ B$(V_0, 4P_0)$ →isobaric→ C$(4V_0, 4P_0)$ →isochoric→ D$(4V_0, P_0)$ →isobaric→ A. **Clockwise.**\n- Find: $Q_{AB}$; $Q_{BC}$; net work per cycle; thermal efficiency.",
+          "formulas": "clockwise ⇒ $W_{net} = +$area.",
+          "calculations": "$W = (3P_0)(3V_0) = 9P_0V_0$.",
+          "answer": "**(f)** $\\;9P_0V_0$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 4,
+          "title": "Thermal efficiency",
+          "parameters": "- Given: 1 mol monatomic gas ($C_V = \\frac{3}{2}R$); A$(V_0, P_0)$ →isochoric→ B$(V_0, 4P_0)$ →isobaric→ C$(4V_0, 4P_0)$ →isochoric→ D$(4V_0, P_0)$ →isobaric→ A. **Clockwise.**\n- Find: $Q_{AB}$; $Q_{BC}$; net work per cycle; thermal efficiency.",
+          "formulas": "$\\eta = \\dfrac{W_{net}}{Q_{in}}$, with $Q_{in}$ = positive-Q legs only (AB and BC here; CD and DA reject heat).",
+          "calculations": "$Q_{in} = \\frac{9}{2} + 30 = \\frac{69}{2}\\,P_0V_0$; $\\;\\eta = \\dfrac{9}{69/2} = \\dfrac{18}{69} = \\dfrac{6}{23}$.",
+          "answer": "**(d)** $\\;\\dfrac{6}{23}$",
+          "conclusion": "$\\eta \\approx 26\\%$, well below the Carnot bound between the same temperature extremes ($T_C = 16\\,T_A$ ⇒ Carnot $= 15/16$) — a sanity reflex worth running every time. The #1 error is subtracting the exhaust legs inside $Q_{in}$: exhaust is exhaust, not negative input."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

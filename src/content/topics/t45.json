@@ -1,0 +1,36 @@
+{
+  "id": "t45",
+  "number": 45,
+  "title": "Interference: Young's Double Slit & Thin Films",
+  "part": "Optics",
+  "partNumber": 5,
+  "anchor": "t45",
+  "theory": "**double slit.** Path difference at small angle: $d\\sin\\theta \\approx \\dfrac{dy}{L}$. **Bright:** $= m\\lambda$; **dark:** $= \\left(m + \\frac{1}{2}\\right)\\lambda$, $m = 0, 1, 2, \\dots$; fringe spacing $\\Delta y = \\dfrac{\\lambda L}{d}$. The $k$-th dark line from the center sits at $y = \\left(k - \\frac{1}{2}\\right)\\dfrac{\\lambda L}{d}$ — darks at $\\frac{1}{2}, \\frac{3}{2}, \\frac{5}{2}, \\dots$ in units of $\\lambda L/d$.\n\n**thin film, thickness $t$, index $n$, near-normal [theory only in this set].** Optical path difference between the two reflections: $2nt$, **plus a half-wave flip at any reflection off a higher-$n$ medium**. With exactly one flip (air–film–air): bright ⇔ $2nt = \\left(m+\\frac{1}{2}\\right)\\lambda$, dark ⇔ $2nt = m\\lambda$. With zero or two flips, the conditions swap. Count the flips first, always.",
+  "formulas": [],
+  "framework": [
+    "Write the path difference.",
+    "Choose bright/dark condition (films: count phase flips).",
+    "**Count the fringes out loud** — the first dark is $m = 0$ (half-integer $\\frac{1}{2}$), the third is $\\frac{5}{2}$."
+  ],
+  "problems": [
+    {
+      "examRef": "2018-UG-Q1-(4)",
+      "title": "Position of the third dark fringe",
+      "year": 2018,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: slit spacing $d$, screen distance $L$ (large), wavelength $\\lambda$; O = central bright spot.\n- Find: distance from O to the **third** dark line.",
+          "formulas": "dark: $\\dfrac{dy}{L} = \\left(m + \\frac{1}{2}\\right)\\lambda$; third dark ⇒ $m = 2$ ⇒ path difference $\\frac{5}{2}\\lambda$.",
+          "calculations": "$y = \\dfrac{5\\lambda L}{2d}$.",
+          "answer": "**(f)** $\\;\\dfrac{5L\\lambda}{2d}$",
+          "conclusion": "counting is the entire game: darks at $\\frac{1}{2}, \\frac{3}{2}, \\frac{5}{2}$ — \"third\" means $\\frac{5}{2}$, not 3. The option $\\frac{3\\lambda L}{2d}$ is the *second* dark (one miscount), and $\\frac{3\\lambda L}{d}$ is the third **bright**. Recite the ladder before answering."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

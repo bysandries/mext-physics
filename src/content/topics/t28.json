@@ -1,0 +1,73 @@
+{
+  "id": "t28",
+  "number": 28,
+  "title": "Sound Resonance in Pipes (open–closed)",
+  "part": "Waves & Sound",
+  "partNumber": 3,
+  "anchor": "t28",
+  "theory": "Closed end (piston) = displacement node; open end ≈ displacement antinode. An open–closed column of length $L$ resonates when $L = (2k-1)\\dfrac{\\lambda}{4}$, $k = 1, 2, 3, \\dots$ — odd quarter-wavelengths only — giving frequencies $f_k = (2k-1)\\dfrac{V}{4L}$ (**odd harmonics only**). Successive resonance *positions* at fixed frequency are spaced $\\lambda/2$, which conveniently cancels the end correction. (Open–open pipes: $L = k\\lambda/2$, all harmonics.)",
+  "formulas": [],
+  "framework": [
+    "Sketch the quarter-wave ladder.",
+    "First resonance fixes $\\lambda$ (or $L$).",
+    "Use the $\\lambda/2$ spacing between resonances as the robust measurement.",
+    "$V = f\\lambda$."
+  ],
+  "problems": [
+    {
+      "examRef": "2015-UG-Q5",
+      "title": "Piston-tube resonance (parts 1–5)",
+      "year": 2015,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Wavelength",
+          "parameters": "- Given: horizontal tube, open at the left where a speaker of frequency $f$ plays; a movable piston closes it at distance $x$ from the opening; loud sound (resonance) occurs first at $x = l$ and next at $x = 3l$.\n- Find: $\\lambda$; the speed of sound; the interior point of maximum density variation at the second resonance; how $l$ shifts on a hot day; the next resonance frequency with the piston fixed at $3l$.\n- Diagram: speaker | ←— air column of length $x$ —→ | piston.",
+          "formulas": "open–closed ladder: $l = \\frac{\\lambda}{4}$ and $3l = \\frac{3\\lambda}{4}$ — consistent.",
+          "calculations": "$\\lambda = 4l$.",
+          "answer": "**(i)** $\\;4l$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "Speed of sound",
+          "parameters": "- Given: horizontal tube, open at the left where a speaker of frequency $f$ plays; a movable piston closes it at distance $x$ from the opening; loud sound (resonance) occurs first at $x = l$ and next at $x = 3l$.\n- Find: $\\lambda$; the speed of sound; the interior point of maximum density variation at the second resonance; how $l$ shifts on a hot day; the next resonance frequency with the piston fixed at $3l$.\n- Diagram: speaker | ←— air column of length $x$ —→ | piston.",
+          "formulas": "$V = f\\lambda$.",
+          "calculations": "$V = 4fl$.",
+          "answer": "**(j)** $\\;4fl$",
+          "conclusion": "cross-check: resonance spacing $3l - l = 2l$ must equal $\\lambda/2$ ✓ — in lab-style questions use the spacing as the primary measurement (end corrections cancel)."
+        },
+        {
+          "partNum": 3,
+          "title": "Maximum density variation at the second resonance",
+          "parameters": "- Given: horizontal tube, open at the left where a speaker of frequency $f$ plays; a movable piston closes it at distance $x$ from the opening; loud sound (resonance) occurs first at $x = l$ and next at $x = 3l$.\n- Find: $\\lambda$; the speed of sound; the interior point of maximum density variation at the second resonance; how $l$ shifts on a hot day; the next resonance frequency with the piston fixed at $3l$.\n- Diagram: speaker | ←— air column of length $x$ —→ | piston.",
+          "formulas": "density variation is maximal at **displacement nodes**: the piston face $x = 3l$ and every $\\lambda/2 = 2l$ toward the opening.",
+          "calculations": "interior node at $3l - 2l = l$.",
+          "answer": "**(b)** $\\;x = l$",
+          "conclusion": "the open end ($x=0$) is an antinode — zero density variation. Nodes carry the pressure action."
+        },
+        {
+          "partNum": 4,
+          "title": "Effect of higher air temperature on l",
+          "parameters": "- Given: horizontal tube, open at the left where a speaker of frequency $f$ plays; a movable piston closes it at distance $x$ from the opening; loud sound (resonance) occurs first at $x = l$ and next at $x = 3l$.\n- Find: $\\lambda$; the speed of sound; the interior point of maximum density variation at the second resonance; how $l$ shifts on a hot day; the next resonance frequency with the piston fixed at $3l$.\n- Diagram: speaker | ←— air column of length $x$ —→ | piston.",
+          "formulas": "$V$ increases with temperature ⇒ $\\lambda = V/f$ increases ⇒ $l = \\lambda/4$ increases.",
+          "calculations": "",
+          "answer": "**(a)** $\\;l$ increases",
+          "conclusion": "qualitative chain $T\\uparrow \\Rightarrow V\\uparrow \\Rightarrow \\lambda\\uparrow \\Rightarrow l\\uparrow$ — MEXT loves this one-step inference."
+        },
+        {
+          "partNum": 5,
+          "title": "Next resonance frequency, piston fixed at L = 3l",
+          "parameters": "- Given: horizontal tube, open at the left where a speaker of frequency $f$ plays; a movable piston closes it at distance $x$ from the opening; loud sound (resonance) occurs first at $x = l$ and next at $x = 3l$.\n- Find: $\\lambda$; the speed of sound; the interior point of maximum density variation at the second resonance; how $l$ shifts on a hot day; the next resonance frequency with the piston fixed at $3l$.\n- Diagram: speaker | ←— air column of length $x$ —→ | piston.",
+          "formulas": "$f_k = (2k-1)\\dfrac{V}{4L} = (2k-1)\\dfrac{4fl}{12l} = \\dfrac{2k-1}{3}f$.",
+          "calculations": "modes: $\\frac{f}{3}, f, \\frac{5f}{3}, \\dots$ — the current resonance is $f$ ($k=2$); the next above it is $\\frac{5}{3}f$.",
+          "answer": "**(g)** $\\;\\frac{5}{3}f$",
+          "conclusion": "only **odd** multiples of $f/3$ exist in an open–closed tube — the step from $f$ is $\\frac{2}{3}f$, not $\\frac{1}{3}f$, because the even mode does not exist."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

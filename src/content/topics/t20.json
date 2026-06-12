@@ -1,0 +1,17 @@
+{
+  "id": "t20",
+  "number": 20,
+  "title": "First Law of Thermodynamics (sign conventions!)",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t20",
+  "theory": "MEXT uses the Japanese-convention statement: $\\;Q = \\Delta U + W_{by}\\;$ — heat **added to** the gas equals the internal-energy rise plus the work done **by** the gas. Signs: $Q > 0$ into the gas; $W_{by} > 0$ when the gas expands. $\\Delta U$ is a state function; $Q$ and $W$ are path functions.",
+  "formulas": [],
+  "framework": [
+    "For any multi-leg process build a small table with columns $Q$, $W$, $\\Delta U$ per leg: fill any two, the first law fills the third. Over a closed cycle $\\Delta U = 0 \\Rightarrow Q_{net} = W_{net}$."
+  ],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

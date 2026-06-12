@@ -1,0 +1,26 @@
+{
+  "id": "t27",
+  "number": 27,
+  "title": "Standing Waves & Superposition",
+  "part": "Waves & Sound",
+  "partNumber": 3,
+  "anchor": "t27",
+  "theory": "Two identical counter-propagating waves superpose into a standing wave: adjacent **nodes are λ/2 apart**, antinodes midway. In sound tubes, the air **density/pressure oscillates most strongly at displacement nodes** (the closed end / piston face) and not at all at displacement antinodes (the open end). Resonance = the source frequency matches a normal mode of the cavity.",
+  "formulas": [
+    {
+      "latex": "= \\lambda/2",
+      "description": "Node spacing"
+    },
+    {
+      "latex": "",
+      "description": "pressure antinode ↔ displacement node"
+    }
+  ],
+  "framework": [],
+  "problems": [],
+  "connections": [
+    "the density-maximum location inside 2015-Q5-(3), Topic 28 below."
+  ],
+  "tags": [],
+  "theoryOnly": false
+}

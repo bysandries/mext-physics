@@ -1,0 +1,26 @@
+{
+  "id": "t07",
+  "number": 7,
+  "title": "Atwood Machine",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t07",
+  "theory": "Two masses $M > m$ over an ideal pulley share one inextensible string ⇒ equal $|a|$, equal $T$.",
+  "formulas": [
+    {
+      "latex": "a = \\dfrac{(M-m)g}{M+m}",
+      "description": ""
+    },
+    {
+      "latex": "\\;T = \\dfrac{2Mmg}{M+m}",
+      "description": ""
+    }
+  ],
+  "framework": [
+    "Whole-system N2 ($\\,(M+m)a = (M-m)g\\,$) for $a$; then single-body N2 for $T$. Checks: $M=m \\Rightarrow a=0,\\ T=mg$ ✓; $m\\to0 \\Rightarrow a\\to g,\\ T\\to0$ ✓."
+  ],
+  "problems": [],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": true
+}

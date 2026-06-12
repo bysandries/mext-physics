@@ -1,0 +1,110 @@
+{
+  "id": "t30",
+  "number": 30,
+  "title": "Doppler Effect (moving source/observer/wall, angled motion)",
+  "part": "Waves & Sound",
+  "partNumber": 3,
+  "anchor": "t30",
+  "theory": "With sound speed $V$, source speed $v_s$ and observer speed $v_o$ **along the line of sight**:\n$$f' = f\\,\\frac{V \\pm v_o}{V \\mp v_s} \\qquad \\text{(upper signs for approach)}$$\nMnemonic: **observer motion edits the numerator** (how fast wavefronts are met); **source motion edits the denominator** (the wavelength itself is changed). A reflecting **wall is a two-step device**: it first *hears* as an observer, then *re-emits* that frequency as a source. Only the **radial** velocity component shifts pitch — resolve angled motion first.",
+  "formulas": [
+    {
+      "latex": "f\\dfrac{V}{V - v_s}",
+      "description": "Source toward static observer"
+    },
+    {
+      "latex": "f\\dfrac{V}{V + v_s}",
+      "description": "away"
+    },
+    {
+      "latex": "f\\dfrac{V + v_o}{V}",
+      "description": "Observer toward static source"
+    },
+    {
+      "latex": "f\\dfrac{V - v_o}{V}",
+      "description": "away"
+    },
+    {
+      "latex": "",
+      "description": "Wall: compose (receive as observer) × (re-emit as source)"
+    }
+  ],
+  "framework": [
+    "Draw the line of sight.",
+    "Project every velocity onto it.",
+    "Apply the formula leg by leg (source→wall, wall→listener).",
+    "For beats, subtract the two received frequencies."
+  ],
+  "problems": [
+    {
+      "examRef": "2014-UG-Q5",
+      "title": "Speaker between a wall and a listener (parts 1–5)",
+      "year": 2014,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "Direct sound at A (source approaching)",
+          "parameters": "- Given (left→right): wall D with rider C on its front face — B, a speaker of frequency $f$ — A, an observer; sound speed $V$. Parts (1)–(3): B moves **right** at $v$ (toward A, away from D); everything else static. Parts (4)–(5): B and A static; D and C move **right** at $v$ (toward B).\n- Find: direct frequency at A; wall-reflected frequency at A; beat rate at A; frequency heard at C; reflected frequency at A with the wall moving.",
+          "formulas": "",
+          "calculations": "$f_1 = f\\,\\dfrac{V}{V - v}$.",
+          "answer": "**(d)** $\\;\\dfrac{V}{V-v}f$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 2,
+          "title": "Wall-reflected sound at A (source receding from the wall)",
+          "parameters": "- Given (left→right): wall D with rider C on its front face — B, a speaker of frequency $f$ — A, an observer; sound speed $V$. Parts (1)–(3): B moves **right** at $v$ (toward A, away from D); everything else static. Parts (4)–(5): B and A static; D and C move **right** at $v$ (toward B).\n- Find: direct frequency at A; wall-reflected frequency at A; beat rate at A; frequency heard at C; reflected frequency at A with the wall moving.",
+          "formulas": "static wall receives $f\\frac{V}{V+v}$ and re-emits it unchanged; A is static.",
+          "calculations": "$f_2 = f\\,\\dfrac{V}{V + v}$.",
+          "answer": "**(c)** $\\;\\dfrac{V}{V+v}f$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 3,
+          "title": "Beat frequency at A",
+          "parameters": "- Given (left→right): wall D with rider C on its front face — B, a speaker of frequency $f$ — A, an observer; sound speed $V$. Parts (1)–(3): B moves **right** at $v$ (toward A, away from D); everything else static. Parts (4)–(5): B and A static; D and C move **right** at $v$ (toward B).\n- Find: direct frequency at A; wall-reflected frequency at A; beat rate at A; frequency heard at C; reflected frequency at A with the wall moving.",
+          "formulas": "$f_{beat} = f_1 - f_2$.",
+          "calculations": "$fV\\!\\left(\\dfrac{1}{V-v} - \\dfrac{1}{V+v}\\right) = \\dfrac{2fVv}{V^2 - v^2}$.",
+          "answer": "**(g)** $\\;\\dfrac{2Vvf}{V^2 - v^2}$",
+          "conclusion": "for $v \\ll V$ this is $\\approx 2fv/V$ — the standard first-order beat estimate (see Topic 31)."
+        },
+        {
+          "partNum": 4,
+          "title": "Frequency at C (observer approaching a static source)",
+          "parameters": "- Given (left→right): wall D with rider C on its front face — B, a speaker of frequency $f$ — A, an observer; sound speed $V$. Parts (1)–(3): B moves **right** at $v$ (toward A, away from D); everything else static. Parts (4)–(5): B and A static; D and C move **right** at $v$ (toward B).\n- Find: direct frequency at A; wall-reflected frequency at A; beat rate at A; frequency heard at C; reflected frequency at A with the wall moving.",
+          "formulas": "",
+          "calculations": "$f_C = f\\,\\dfrac{V + v}{V}$.",
+          "answer": "**(a)** $\\;\\dfrac{V+v}{V}f$",
+          "conclusion": ""
+        },
+        {
+          "partNum": 5,
+          "title": "Reflected frequency at A with the wall moving toward B",
+          "parameters": "- Given (left→right): wall D with rider C on its front face — B, a speaker of frequency $f$ — A, an observer; sound speed $V$. Parts (1)–(3): B moves **right** at $v$ (toward A, away from D); everything else static. Parts (4)–(5): B and A static; D and C move **right** at $v$ (toward B).\n- Find: direct frequency at A; wall-reflected frequency at A; beat rate at A; frequency heard at C; reflected frequency at A with the wall moving.",
+          "formulas": "wall as observer (approaching): receives $f\\frac{V+v}{V}$; wall as source (approaching A): multiply by $\\frac{V}{V-v}$.",
+          "calculations": "$f' = f\\,\\dfrac{V+v}{V}\\cdot\\dfrac{V}{V-v} = f\\,\\dfrac{V+v}{V-v}$.",
+          "answer": "**(e)** $\\;\\dfrac{V+v}{V-v}f$",
+          "conclusion": "the $V$'s always cancel in the wall composition — a moving-mirror reflection is **always** $\\frac{V+v}{V-v}$ on approach. Sanity sweep: every \"toward\" configuration must *raise* the pitch; all five answers comply."
+        }
+      ]
+    },
+    {
+      "examRef": "2018-UG-Q1-(5)",
+      "title": "Doppler with angled motion (numeric)",
+      "year": 2018,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: source frequency $f = 660$ Hz; sound speed $V = 330$ m/s; observer walks at 5 m/s along the ground, directly away from the point O below the source; the source S sits 9 m horizontally and 12 m vertically from the observer's position.\n- Find: observed frequency, 2 significant figures.",
+          "formulas": "distance SO via right triangle; radial speed = (speed) × (horizontal leg / hypotenuse); $f' = f\\dfrac{V - v_r}{V}$ (receding observer).",
+          "calculations": "hypotenuse: $9$–$12$–$15$ (a 3-4-5 triangle ×3) ⇒ 15 m; $v_r = 5 \\times \\frac{9}{15} = 3$ m/s; $f' = 660 \\times \\frac{330 - 3}{330} = 2 \\times 327 = 654$ Hz.",
+          "answer": "**(c)** $\\;654$ Hz",
+          "conclusion": "only the **line-of-sight component** (3 m/s) shifts the pitch — plugging the full 5 m/s gives 650 Hz, option (a), the planted trap. Spot 9-12-15 instantly, and note $660/330 = 2$ turns the whole computation into one multiplication."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

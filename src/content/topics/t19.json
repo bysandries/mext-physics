@@ -1,0 +1,41 @@
+{
+  "id": "t19",
+  "number": 19,
+  "title": "Adiabatic Processes (including free expansion)",
+  "part": "Thermodynamics",
+  "partNumber": 2,
+  "anchor": "t19",
+  "theory": "$Q = 0$ — but there are two *very* different cases:\n- **Quasi-static adiabatic** (slow, pushing a piston): $PV^\\gamma = \\text{const}$, $TV^{\\gamma-1} = \\text{const}$, $\\gamma = 5/3$ monatomic. The gas **cools on expansion** because $W_{by} > 0$ and $\\Delta U = -W_{by}$.\n- **Free expansion into vacuum** (membrane bursts): nothing is pushed ⇒ $W = 0$, and $Q = 0$ ⇒ $\\Delta U = 0$ ⇒ **T unchanged** (ideal gas) ⇒ pressure simply drops by the volume ratio. $PV^\\gamma$ does **not** apply — the process is not quasi-static.",
+  "formulas": [
+    {
+      "latex": "\\Delta U = -W_{by}",
+      "description": "Quasi-static — , $PV^{5/3} = \\text{const}$"
+    },
+    {
+      "latex": "T_f = T_i",
+      "description": "Free expansion — , $\\;P_f = P_i\\dfrac{V_i}{V_f}$"
+    }
+  ],
+  "framework": [],
+  "problems": [
+    {
+      "examRef": "2015-UG-Q1-(3)",
+      "title": "Free expansion into vacuum",
+      "year": 2015,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: gas at $(P, V)$; the partition to an evacuated volume $V'$ is opened; walls insulated (no heat exchange).\n- Find: final pressure.",
+          "formulas": "free expansion ⇒ T constant ⇒ Boyle: $PV = P_f(V + V')$.",
+          "calculations": "$P_f = \\dfrac{V}{V+V'}\\,P$.",
+          "answer": "**(a)** $\\;\\dfrac{PV}{V+V'}$",
+          "conclusion": "the word **\"vacuum\" is the trigger**: no work, no heat, no ΔT. Anyone reflexively applying $PV^{5/3} = \\text{const}$ lands on a planted wrong option. Limit: $V' \\to 0 \\Rightarrow P_f \\to P$ ✓."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}

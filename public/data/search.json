@@ -1,0 +1,416 @@
+[
+  {
+    "id": "t01",
+    "number": 1,
+    "title": "Uniform Acceleration Kinematics & v–t Graphs",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t02",
+    "number": 2,
+    "title": "Projectile Motion (flat ground, cliffs, inclined landing)",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t03",
+    "number": 3,
+    "title": "Newton's Laws & Action–Reaction Pairs",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t04",
+    "number": 4,
+    "title": "Friction (static/kinetic, inclines, stacked blocks)",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t05",
+    "number": 5,
+    "title": "Circular Motion & Centripetal Force",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t06",
+    "number": 6,
+    "title": "Pendulum Motion (simple, and with a nail constraint)",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t07",
+    "number": 7,
+    "title": "Atwood Machine",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": true
+  },
+  {
+    "id": "t08",
+    "number": 8,
+    "title": "Work–Energy Theorem & Conservation of Energy",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t09",
+    "number": 9,
+    "title": "Coefficient of Restitution & Bouncing Balls",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": true
+  },
+  {
+    "id": "t10",
+    "number": 10,
+    "title": "Inelastic Collisions",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t11",
+    "number": 11,
+    "title": "Simple Harmonic Motion (spring–mass: period, amplitude, max velocity)",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t12",
+    "number": 12,
+    "title": "Escape Velocity & Surface Gravity",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t13",
+    "number": 13,
+    "title": "Kepler's Third Law & Orbital Mechanics",
+    "part": "Mechanics",
+    "partNumber": 1,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t14",
+    "number": 14,
+    "title": "Ideal Gas Law",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t15",
+    "number": 15,
+    "title": "Internal Energy of a Monatomic Ideal Gas",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t16",
+    "number": 16,
+    "title": "Isobaric Processes",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t17",
+    "number": 17,
+    "title": "Isochoric Processes",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t18",
+    "number": 18,
+    "title": "Isothermal Processes",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": true
+  },
+  {
+    "id": "t19",
+    "number": 19,
+    "title": "Adiabatic Processes (including free expansion)",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t20",
+    "number": 20,
+    "title": "First Law of Thermodynamics (sign conventions!)",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t21",
+    "number": 21,
+    "title": "Molar Specific Heats (C_V, C_P)",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t22",
+    "number": 22,
+    "title": "PV Diagrams & Cyclic Processes",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t23",
+    "number": 23,
+    "title": "Gas Density / Temperature Relations",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t24",
+    "number": 24,
+    "title": "Gas Mixing / Multi-Container Equilibrium",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t25",
+    "number": 25,
+    "title": "Piston–Cylinder Systems",
+    "part": "Thermodynamics",
+    "partNumber": 2,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t26",
+    "number": 26,
+    "title": "Traveling Waves & Sound as a Pressure Wave",
+    "part": "Waves & Sound",
+    "partNumber": 3,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t27",
+    "number": 27,
+    "title": "Standing Waves & Superposition",
+    "part": "Waves & Sound",
+    "partNumber": 3,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t28",
+    "number": 28,
+    "title": "Sound Resonance in Pipes (open–closed)",
+    "part": "Waves & Sound",
+    "partNumber": 3,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t29",
+    "number": 29,
+    "title": "Speed of Sound Determination",
+    "part": "Waves & Sound",
+    "partNumber": 3,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t30",
+    "number": 30,
+    "title": "Doppler Effect (moving source/observer/wall, angled motion)",
+    "part": "Waves & Sound",
+    "partNumber": 3,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t31",
+    "number": 31,
+    "title": "Beats",
+    "part": "Waves & Sound",
+    "partNumber": 3,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t32",
+    "number": 32,
+    "title": "Coulomb's Law, Field, and Electrostatic Potential Energy",
+    "part": "Electricity & Magnetism",
+    "partNumber": 4,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t33",
+    "number": 33,
+    "title": "Electric Potential & Uniform-Field Dynamics",
+    "part": "Electricity & Magnetism",
+    "partNumber": 4,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t34",
+    "number": 34,
+    "title": "Capacitors: Parallel-Plate Physics & Networks",
+    "part": "Electricity & Magnetism",
+    "partNumber": 4,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t35",
+    "number": 35,
+    "title": "Hall Effect",
+    "part": "Electricity & Magnetism",
+    "partNumber": 4,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t36",
+    "number": 36,
+    "title": "Lorentz Force",
+    "part": "Electricity & Magnetism",
+    "partNumber": 4,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t37",
+    "number": 37,
+    "title": "Circular Motion of a Charge in a Magnetic Field",
+    "part": "Electricity & Magnetism",
+    "partNumber": 4,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t38",
+    "number": 38,
+    "title": "Electromagnetic Induction (motional EMF, Lenz's law)",
+    "part": "Electricity & Magnetism",
+    "partNumber": 4,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t39",
+    "number": 39,
+    "title": "Magnetic Fields from Current-Carrying Wires",
+    "part": "Electricity & Magnetism",
+    "partNumber": 4,
+    "tags": [],
+    "theoryOnly": true
+  },
+  {
+    "id": "t40",
+    "number": 40,
+    "title": "RC Circuits (charging)",
+    "part": "Electricity & Magnetism",
+    "partNumber": 4,
+    "tags": [],
+    "theoryOnly": true
+  },
+  {
+    "id": "t41",
+    "number": 41,
+    "title": "RL Circuits & LC Oscillations",
+    "part": "Electricity & Magnetism",
+    "partNumber": 4,
+    "tags": [],
+    "theoryOnly": true
+  },
+  {
+    "id": "t42",
+    "number": 42,
+    "title": "Joule Heating",
+    "part": "Electricity & Magnetism",
+    "partNumber": 4,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t43",
+    "number": 43,
+    "title": "Snell's Law & Refraction",
+    "part": "Optics",
+    "partNumber": 5,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t44",
+    "number": 44,
+    "title": "Total Internal Reflection",
+    "part": "Optics",
+    "partNumber": 5,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t45",
+    "number": 45,
+    "title": "Interference: Young's Double Slit & Thin Films",
+    "part": "Optics",
+    "partNumber": 5,
+    "tags": [],
+    "theoryOnly": false
+  },
+  {
+    "id": "t46",
+    "number": 46,
+    "title": "Light Path Through Multiple Media",
+    "part": "Optics",
+    "partNumber": 5,
+    "tags": [],
+    "theoryOnly": false
+  }
+]

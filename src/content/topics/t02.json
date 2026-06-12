@@ -1,0 +1,62 @@
+{
+  "id": "t02",
+  "number": 2,
+  "title": "Projectile Motion (flat ground, cliffs, inclined landing)",
+  "part": "Mechanics",
+  "partNumber": 1,
+  "anchor": "t02",
+  "theory": "Decompose: horizontal motion is uniform ($a_x=0$), vertical is uniform acceleration $-g$. The **time of flight comes from the vertical motion alone**; feed it into the horizontal. Impact angles come from velocity components, never from position. Three standard launches: angled from level ground, horizontal from a height, and off a cliff.",
+  "formulas": [
+    {
+      "latex": "v",
+      "description": "Level ground, speed — at angle $\\theta$: flight time $t_f = \\frac{2v\\sin\\theta}{g}$; range $L = \\frac{2v^2\\sin\\theta\\cos\\theta}{g} = \\frac{v^2\\sin 2\\theta}{g}$ (max at 45°); apex $H = \\frac{v^2\\sin^2\\theta}{2g}$."
+    },
+    {
+      "latex": "h",
+      "description": "Horizontal launch from height — $t = \\sqrt{2h/g}$; $x = vt$; $v_y = gt = \\sqrt{2gh}$; impact angle $\\tan\\theta = v_y/v_x$."
+    }
+  ],
+  "framework": [
+    "Axes at the launch point.",
+    "Vertical equation → time.",
+    "Time → horizontal distance.",
+    "Velocity components → angles/speeds at impact."
+  ],
+  "problems": [
+    {
+      "examRef": "2015-UG-Q1-(1)",
+      "title": "Range on level ground",
+      "year": 2015,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: particle mass $m$ (irrelevant), launch speed $v$, angle $\\theta$, gravity $g$.\n- Find: horizontal distance $L$ to landing.\n- Diagram: standard parabola from ground to ground.",
+          "formulas": "$t_f = \\frac{2v\\sin\\theta}{g}$, then $L = (v\\cos\\theta)\\,t_f$.",
+          "calculations": "$L = v\\cos\\theta\\cdot\\frac{2v\\sin\\theta}{g} = \\frac{2v^2\\sin\\theta\\cos\\theta}{g}$.",
+          "answer": "**(b)** $\\;\\dfrac{2v^2\\sin\\theta\\cos\\theta}{g}$",
+          "conclusion": "Mass never enters projectile motion. Limit test: $\\theta\\to 0 \\Rightarrow L\\to 0$ — options (a)/(c)/(d)/(f) fail it or the $\\theta\\to90°$ twin. The identity $2\\sin\\theta\\cos\\theta=\\sin2\\theta$ is why 45° maximizes range."
+        }
+      ]
+    },
+    {
+      "examRef": "2018-UG-Q1-(1)",
+      "title": "Impact angle of a horizontal launch",
+      "year": 2018,
+      "parts": [
+        {
+          "partNum": 1,
+          "title": "",
+          "parameters": "- Given: horizontal launch speed $v$ from height $h$; gravity $g$; $\\theta$ = impact angle with ground.\n- Find: $\\tan\\theta$.\n- Diagram: half-parabola from a ledge of height $h$.",
+          "formulas": "$v_y = \\sqrt{2gh}$ (free fall), $v_x = v$ (unchanged), $\\tan\\theta = v_y/v_x$.",
+          "calculations": "$\\tan\\theta = \\dfrac{\\sqrt{2gh}}{v}$.",
+          "answer": "**(a)** $\\;\\dfrac{\\sqrt{2gh}}{v}$",
+          "conclusion": "Dimension check: (m/s)/(m/s) — dimensionless ✓. Limits: $h\\to0\\Rightarrow\\theta\\to0$ ✓; $v\\to0\\Rightarrow\\theta\\to90°$ ✓. Pitfall: the impact angle uses *velocity* components, not the displacement ratio $h/x$."
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [],
+  "theoryOnly": false
+}
