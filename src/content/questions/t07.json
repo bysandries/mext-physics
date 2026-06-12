@@ -1,0 +1,155 @@
+{
+  "topicId": "t07",
+  "questions": [
+    {
+      "id": "t07-q01",
+      "source": "adapted: 2014-CoT-Q1-(1)",
+      "question": "A massless cord passing over a frictionless pulley has a block of mass $5.0\\ \\mathrm{kg}$ tied on one end and a block of mass $2.0\\ \\mathrm{kg}$ on the other end. Let $g = 9.8\\ \\mathrm{m/s^2}$. Find the magnitude of the acceleration of the blocks.",
+      "choices": [
+        "$1.4\\ \\mathrm{m/s^2}$",
+        "$2.8\\ \\mathrm{m/s^2}$",
+        "$4.2\\ \\mathrm{m/s^2}$",
+        "$5.6\\ \\mathrm{m/s^2}$",
+        "$7.0\\ \\mathrm{m/s^2}$",
+        "$9.8\\ \\mathrm{m/s^2}$"
+      ],
+      "correctIndex": 2,
+      "explanation": "$a = \\frac{(M-m)g}{M+m} = \\frac{3.0}{7.0}\\times 9.8 = 4.2\\ \\mathrm{m/s^2}$. The *difference* in weights drives the *total* mass. Trap (f) $9.8\\ \\mathrm{m/s^2}$ would require the light block to be massless."
+    },
+    {
+      "id": "t07-q02",
+      "source": "adapted: 2014-CoT-Q1-(2)",
+      "question": "In the same Atwood machine ($5.0\\ \\mathrm{kg}$ and $2.0\\ \\mathrm{kg}$ over a frictionless pulley, $g = 9.8\\ \\mathrm{m/s^2}$), find the tension of the cord.",
+      "choices": [
+        "$20\\ \\mathrm{N}$",
+        "$25\\ \\mathrm{N}$",
+        "$28\\ \\mathrm{N}$",
+        "$34\\ \\mathrm{N}$",
+        "$49\\ \\mathrm{N}$",
+        "$69\\ \\mathrm{N}$"
+      ],
+      "correctIndex": 2,
+      "explanation": "$T = \\frac{2Mmg}{M+m} = \\frac{2(5.0)(2.0)(9.8)}{7.0} = 28\\ \\mathrm{N}$. Or N2 on the light block: $T = m(g+a) = 2.0 \\times 14 = 28\\ \\mathrm{N}$. Sanity check: $T$ must lie *between* the two weights, $19.6\\ \\mathrm{N} < 28 < 49\\ \\mathrm{N}$ ✓ — traps (a) and (e) are the weights themselves."
+    },
+    {
+      "id": "t07-q03",
+      "source": "original",
+      "question": "Two blocks of masses $M$ and $m$ (with $M > m$) hang from the ends of a light string over a frictionless, massless pulley. The acceleration of gravity is $g$. Find the magnitude of the acceleration of the blocks.",
+      "choices": [
+        "$\\dfrac{(M-m)g}{M}$",
+        "$\\dfrac{(M-m)g}{M+m}$",
+        "$\\dfrac{Mg}{M+m}$",
+        "$\\dfrac{(M+m)g}{M-m}$",
+        "$\\dfrac{(M-m)g}{m}$",
+        "$g$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Whole-system N2 along the string: net driving force $(M-m)g$ accelerates total mass $M+m$, so $a = \\frac{(M-m)g}{M+m}$. Checks: $M = m \\Rightarrow a = 0$ ✓; $m \\to 0 \\Rightarrow a \\to g$ ✓ — these limits kill most distractors instantly."
+    },
+    {
+      "id": "t07-q04",
+      "source": "original",
+      "question": "For the same Atwood machine (masses $M > m$, ideal pulley and string, gravity $g$), find the tension in the string while the blocks move.",
+      "choices": [
+        "$\\dfrac{Mmg}{M+m}$",
+        "$\\dfrac{2Mmg}{M+m}$",
+        "$\\dfrac{(M+m)g}{2}$",
+        "$Mg - mg$",
+        "$mg$",
+        "$\\dfrac{m(M-m)g}{M+m}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "N2 on the light block: $T - mg = ma$ with $a = \\frac{(M-m)g}{M+m}$ gives $T = \\frac{2Mmg}{M+m}$. Checks: $M = m \\Rightarrow T = mg$ ✓; $m \\to 0 \\Rightarrow T \\to 0$ ✓. Trap (e) $mg$ holds only when the system doesn't accelerate."
+    },
+    {
+      "id": "t07-q05",
+      "source": "original",
+      "question": "In an Atwood machine the two hanging masses are made equal ($M = m$), and the system is released from rest. Which statement is correct?",
+      "choices": [
+        "$a = 0$ and $T = 0$",
+        "$a = 0$ and $T = mg$",
+        "$a = 0$ and $T = 2mg$",
+        "$a = g$ and $T = mg$",
+        "$a = \\dfrac{g}{2}$ and $T = \\dfrac{mg}{2}$",
+        "The system oscillates about its initial position"
+      ],
+      "correctIndex": 1,
+      "explanation": "With equal weights nothing drives the system: $a = 0$, and each block hangs in equilibrium, so $T = mg$. Trap (c) $2mg$ confuses the string tension with the force on the *pulley axle*, which supports both blocks."
+    },
+    {
+      "id": "t07-q06",
+      "source": "original",
+      "question": "An Atwood machine with masses $M$ and $m$ ($M > m$) on a massless, frictionless pulley is released and accelerates. The acceleration of gravity is $g$. Find the force exerted on the pulley axle by the string.",
+      "choices": [
+        "$(M+m)g$",
+        "$\\dfrac{4Mmg}{M+m}$",
+        "$\\dfrac{2Mmg}{M+m}$",
+        "$(M-m)g$",
+        "$\\dfrac{Mmg}{M+m}$",
+        "$2(M+m)g$"
+      ],
+      "correctIndex": 1,
+      "explanation": "The axle feels both string segments: $F = 2T = \\frac{4Mmg}{M+m}$. Trap (a) $(M+m)g$ is the *static* answer — while the blocks accelerate, $\\frac{4Mmg}{M+m} < (M+m)g$, because the system's center of mass is accelerating downward."
+    },
+    {
+      "id": "t07-q07",
+      "source": "original",
+      "question": "A block of mass $M$ on a frictionless horizontal table is connected by a light string over a frictionless pulley at the table's edge to a block of mass $m$ hanging vertically. The acceleration of gravity is $g$. Find the magnitude of the acceleration.",
+      "choices": [
+        "$g$",
+        "$\\dfrac{mg}{M+m}$",
+        "$\\dfrac{mg}{M}$",
+        "$\\dfrac{Mg}{M+m}$",
+        "$\\dfrac{(M-m)g}{M+m}$",
+        "$\\dfrac{mg}{M-m}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Only the hanging weight $mg$ drives the system, but it must accelerate the total mass: $a = \\frac{mg}{M+m}$. Trap (e) is the standard (two-hanging-mass) Atwood formula — here the table supports $M$'s weight, so $M$ contributes inertia but no driving force."
+    },
+    {
+      "id": "t07-q08",
+      "source": "original",
+      "question": "In the same setup (mass $M$ on a frictionless table, mass $m$ hanging over an ideal edge pulley, gravity $g$), find the tension in the string.",
+      "choices": [
+        "$mg$",
+        "$\\dfrac{Mmg}{M+m}$",
+        "$Mg$",
+        "$\\dfrac{2Mmg}{M+m}$",
+        "$\\dfrac{mg}{2}$",
+        "$(M+m)g$"
+      ],
+      "correctIndex": 1,
+      "explanation": "N2 on the table block: $T = Ma = \\frac{Mmg}{M+m}$. Trap (a) $mg$ would mean the hanging block doesn't accelerate; since it falls, $T$ must be *less* than $mg$. Limit $M \\to \\infty$: $T \\to mg$ (the string nearly holds the block still) ✓."
+    },
+    {
+      "id": "t07-q09",
+      "source": "original",
+      "question": "An Atwood machine with masses $M$ and $m$ ($M > m$) is released from rest. The acceleration of gravity is $g$. Find the distance the heavier block falls in a time $t$.",
+      "choices": [
+        "$\\dfrac{1}{2}gt^2$",
+        "$\\dfrac{(M-m)gt^2}{2(M+m)}$",
+        "$\\dfrac{(M-m)gt^2}{M+m}$",
+        "$\\dfrac{Mgt^2}{2(M+m)}$",
+        "$\\dfrac{(M-m)gt}{2(M+m)}$",
+        "$\\dfrac{(M+m)gt^2}{2(M-m)}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Constant acceleration from rest: $d = \\frac{1}{2}at^2$ with $a = \\frac{(M-m)g}{M+m}$, so $d = \\frac{(M-m)gt^2}{2(M+m)}$. Choice (e) is dimensionally a speed × time error — it lacks one factor of $t$; a units check removes it."
+    },
+    {
+      "id": "t07-q10",
+      "source": "original",
+      "question": "In an Atwood machine, one block has mass $3m$ and the other has mass $m$. The acceleration of gravity is $g$. Find the magnitude of the acceleration of the blocks.",
+      "choices": [
+        "$\\dfrac{g}{4}$",
+        "$\\dfrac{g}{3}$",
+        "$\\dfrac{g}{2}$",
+        "$\\dfrac{2g}{3}$",
+        "$\\dfrac{3g}{4}$",
+        "$g$"
+      ],
+      "correctIndex": 2,
+      "explanation": "$a = \\frac{(3m - m)g}{3m + m} = \\frac{2m}{4m}g = \\frac{g}{2}$. Trap (d) $\\frac{2g}{3}$ divides the weight difference by the heavy mass only — the string forces *both* blocks to accelerate together."
+    }
+  ]
+}

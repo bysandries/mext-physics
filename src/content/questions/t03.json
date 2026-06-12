@@ -1,0 +1,154 @@
+{
+  "topicId": "t03",
+  "questions": [
+    {
+      "id": "t03-q01",
+      "source": "original",
+      "question": "Two blocks of masses $m_1$ and $m_2$ are in contact on a frictionless horizontal surface. A horizontal force $F$ is applied to $m_1$, pushing both blocks. Find the magnitude of the contact force that $m_1$ exerts on $m_2$.",
+      "choices": [
+        "$F$",
+        "$\\dfrac{m_2 F}{m_1 + m_2}$",
+        "$\\dfrac{m_1 F}{m_1 + m_2}$",
+        "$\\dfrac{F}{2}$",
+        "$\\dfrac{m_2 F}{m_1}$",
+        "$\\dfrac{(m_1 + m_2)F}{m_2}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "System: $a = \\frac{F}{m_1+m_2}$. The only horizontal force on $m_2$ is the contact force, so $N = m_2 a = \\frac{m_2 F}{m_1+m_2}$. Trap (a): $F$ is not transmitted whole — part of it accelerates $m_1$ itself."
+    },
+    {
+      "id": "t03-q02",
+      "source": "original",
+      "question": "A person of mass $m$ stands on the floor of an elevator that is accelerating upward with acceleration $a$. The acceleration of gravity is $g$. Find the magnitude of the normal force the floor exerts on the person.",
+      "choices": [
+        "$mg$",
+        "$m(g + a)$",
+        "$m(g - a)$",
+        "$ma$",
+        "$m(a - g)$",
+        "$2mg$"
+      ],
+      "correctIndex": 1,
+      "explanation": "N2 on the person (up positive): $N - mg = ma$, so $N = m(g+a)$ — you feel heavier. Trap (c) $m(g-a)$ is the *downward*-acceleration case; the sign of $a$ in $N = m(g \\pm a)$ follows the direction of the acceleration, not of the motion."
+    },
+    {
+      "id": "t03-q03",
+      "source": "original",
+      "question": "Three identical blocks, each of mass $m$, are connected in a line by light strings on a frictionless horizontal surface. A horizontal force $F$ pulls the front block, and all three accelerate together. Find the tension in the string attached to the rearmost block.",
+      "choices": [
+        "$F$",
+        "$\\dfrac{F}{2}$",
+        "$\\dfrac{F}{3}$",
+        "$\\dfrac{2F}{3}$",
+        "$\\dfrac{F}{6}$",
+        "$3F$"
+      ],
+      "correctIndex": 2,
+      "explanation": "System: $a = \\frac{F}{3m}$. The rear string is the only force on the last block: $T = ma = \\frac{F}{3}$. Trap (d) $\\frac{2F}{3}$ is the tension in the *front* string, which must drag two blocks."
+    },
+    {
+      "id": "t03-q04",
+      "source": "original",
+      "question": "A book rests on a horizontal table. According to Newton's third law, what is the reaction force to the gravitational force that Earth exerts on the book?",
+      "choices": [
+        "The normal force from the table on the book",
+        "The gravitational force the book exerts on Earth",
+        "The normal force the book exerts on the table",
+        "The weight of the book",
+        "There is no reaction force, because the book is in equilibrium"
+      ],
+      "correctIndex": 1,
+      "explanation": "An N3 pair is the *same type* of force with the two bodies swapped: Earth pulls book $\\leftrightarrow$ book pulls Earth. Trap (a): the normal force is equal and opposite to the weight here, but it acts on the *same* body and is a different type of force — that's equilibrium (N1), not an action–reaction pair."
+    },
+    {
+      "id": "t03-q05",
+      "source": "original",
+      "question": "A small ball hangs by a light string from the ceiling of a car moving on a horizontal road. While the car accelerates uniformly, the string makes a constant angle $\\theta$ with the vertical. The acceleration of gravity is $g$. Find the acceleration of the car.",
+      "choices": [
+        "$g\\tan\\theta$",
+        "$g\\sin\\theta$",
+        "$g\\cos\\theta$",
+        "$\\dfrac{g}{\\tan\\theta}$",
+        "$g\\sin\\theta\\cos\\theta$",
+        "$g$"
+      ],
+      "correctIndex": 0,
+      "explanation": "On the ball: $T\\sin\\theta = ma$ (horizontal) and $T\\cos\\theta = mg$ (vertical). Dividing gives $\\tan\\theta = \\frac{a}{g}$, so $a = g\\tan\\theta$. Both $m$ and $T$ cancel — the angle alone encodes the acceleration."
+    },
+    {
+      "id": "t03-q06",
+      "source": "original",
+      "question": "A force $F$ is applied to a block of mass $m$ on a frictionless horizontal surface, directed at an angle $\\theta$ above the horizontal. The block remains on the surface. Find the magnitude of the block's acceleration.",
+      "choices": [
+        "$\\dfrac{F}{m}$",
+        "$\\dfrac{F\\cos\\theta}{m}$",
+        "$\\dfrac{F\\sin\\theta}{m}$",
+        "$\\dfrac{F}{m\\cos\\theta}$",
+        "$\\dfrac{F\\tan\\theta}{m}$",
+        "$\\dfrac{F(\\cos\\theta + \\sin\\theta)}{m}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Only the horizontal component $F\\cos\\theta$ accelerates the block; the vertical component is absorbed by the normal force (the block stays on the surface). Trap (a) $\\frac{F}{m}$ ignores that part of $F$ points where the block cannot go."
+    },
+    {
+      "id": "t03-q07",
+      "source": "original",
+      "question": "A person of mass $50\\ \\mathrm{kg}$ stands on a scale in an elevator. The elevator accelerates downward at $2.0\\ \\mathrm{m/s^2}$. Let $g = 9.8\\ \\mathrm{m/s^2}$. Find the reading of the scale.",
+      "choices": [
+        "$100\\ \\mathrm{N}$",
+        "$390\\ \\mathrm{N}$",
+        "$490\\ \\mathrm{N}$",
+        "$590\\ \\mathrm{N}$",
+        "$690\\ \\mathrm{N}$",
+        "$980\\ \\mathrm{N}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "$N = m(g - a) = 50 \\times 7.8 = 390\\ \\mathrm{N}$. Trap (c) $490\\ \\mathrm{N}$ is the true weight $mg$; trap (d) $590\\ \\mathrm{N}$ uses $g+a$ — that would require *upward* acceleration. Note: whether the elevator moves up or down is irrelevant; only the acceleration direction matters."
+    },
+    {
+      "id": "t03-q08",
+      "source": "original",
+      "question": "An object of mass $m$ moving in a straight line speeds up from $v$ to $3v$ in a time $t$ under a constant net force. Find the magnitude of that net force.",
+      "choices": [
+        "$\\dfrac{mv}{t}$",
+        "$\\dfrac{2mv}{t}$",
+        "$\\dfrac{3mv}{t}$",
+        "$\\dfrac{4mv}{t}$",
+        "$\\dfrac{mv}{2t}$",
+        "$\\dfrac{6mv}{t}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "$F = ma = m\\frac{\\Delta v}{t} = m\\frac{3v - v}{t} = \\frac{2mv}{t}$. Trap (c) $\\frac{3mv}{t}$ uses the final velocity instead of the *change* in velocity — N2 cares only about $\\Delta v$."
+    },
+    {
+      "id": "t03-q09",
+      "source": "original",
+      "question": "A uniform rope of mass $m$ lies straight on a frictionless horizontal surface. A horizontal force $F$ is applied to one end, pulling the rope along its length. Find the tension at the midpoint of the rope.",
+      "choices": [
+        "$F$",
+        "$\\dfrac{F}{2}$",
+        "$\\dfrac{F}{4}$",
+        "$0$",
+        "$2F$",
+        "$\\dfrac{3F}{4}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "The whole rope has $a = F/m$. The rear half (mass $m/2$) is pulled only by the midpoint tension: $T = \\frac{m}{2}a = \\frac{F}{2}$. Trap (a): tension equals $F$ only at the pulled end; it decreases linearly to zero at the free end because the rope has mass."
+    },
+    {
+      "id": "t03-q10",
+      "source": "adapted: 2016-UG-Q3",
+      "question": "A plank of mass $M$ rests on a frictionless floor, and a block of mass $m$ rests on top of the plank. A horizontal force $F$ is applied to the plank, and the block and plank accelerate together without slipping. Find the magnitude of the friction force acting on the block.",
+      "choices": [
+        "$\\dfrac{mF}{M + m}$",
+        "$\\dfrac{MF}{M + m}$",
+        "$F$",
+        "$\\mu mg$",
+        "$\\dfrac{F}{2}$",
+        "$\\dfrac{mF}{M}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "System: $a = \\frac{F}{M+m}$. Friction is the *only* horizontal force on the block, so $f = ma = \\frac{mF}{M+m}$, pointing forward. Trap (d) $\\mu mg$ is the maximum *available* static friction, not the amount actually exerted — static friction supplies only what N2 demands."
+    }
+  ]
+}

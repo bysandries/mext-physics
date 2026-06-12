@@ -1,0 +1,155 @@
+{
+  "topicId": "t04",
+  "questions": [
+    {
+      "id": "t04-q01",
+      "source": "2016-UG-Q1-(4)",
+      "question": "A box of mass $m$ is placed on an incline that makes an angle $\\theta$ with the horizontal. The coefficient of static friction between the box and the incline is $\\mu$. Find the condition for the box to begin to slide.",
+      "choices": [
+        "$\\mu > \\tan\\theta$",
+        "$\\mu < \\tan\\theta$",
+        "$\\mu < \\sin\\theta$",
+        "$\\mu < \\cos\\theta$",
+        "$\\mu > \\sin\\theta$",
+        "$\\mu < 1$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Slides when the driving force exceeds the maximum static friction: $mg\\sin\\theta > \\mu mg\\cos\\theta \\Leftrightarrow \\tan\\theta > \\mu$. Both $m$ and $g$ cancel — the condition is pure geometry. The critical angle $\\tan\\theta_c = \\mu$ is the angle of repose."
+    },
+    {
+      "id": "t04-q02",
+      "source": "adapted: 2016-UG-Q3-(1)",
+      "question": "A plank P of mass $M$ rests on a smooth (frictionless) floor, and a block Q of mass $m$ rests on top of P. At $t = 0$, P is suddenly given a speed $v_0$ to the right while Q is still at rest. The coefficient of kinetic friction between P and Q is $\\mu$, and the acceleration of gravity is $g$. Find the friction force acting on Q just after $t = 0$.",
+      "choices": [
+        "$\\mu mg$, directed to the right",
+        "$\\mu mg$, directed to the left",
+        "$\\mu Mg$, directed to the right",
+        "$\\mu (M+m)g$, directed to the right",
+        "$0$",
+        "$\\mu mg$, directed vertically downward"
+      ],
+      "correctIndex": 0,
+      "explanation": "P's surface slides *rightward relative to Q*, so kinetic friction drags Q to the right with $f = \\mu N = \\mu mg$. \"Friction opposes motion\" is wrong as stated — it opposes *relative* motion, and here it is the force that *accelerates* Q forward. The normal force comes from Q's weight only, so (c) $\\mu Mg$ is wrong."
+    },
+    {
+      "id": "t04-q03",
+      "source": "adapted: 2016-UG-Q3-(4)",
+      "question": "In the same setup, plank P (mass $M$) slides on the frictionless floor with initial speed $v_0$ while block Q (mass $m$) starts at rest on top; the coefficient of kinetic friction between them is $\\mu$. Find the time $T$ at which the two velocities become equal.",
+      "choices": [
+        "$\\dfrac{v_0}{\\mu g}$",
+        "$\\dfrac{M}{M+m}\\cdot\\dfrac{v_0}{\\mu g}$",
+        "$\\dfrac{m}{M+m}\\cdot\\dfrac{v_0}{\\mu g}$",
+        "$\\dfrac{M+m}{M}\\cdot\\dfrac{v_0}{\\mu g}$",
+        "$\\dfrac{M}{m}\\cdot\\dfrac{v_0}{\\mu g}$",
+        "$\\dfrac{v_0}{2\\mu g}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fast route: the floor is frictionless, so momentum is conserved — $v_f = \\frac{Mv_0}{M+m}$. Q accelerates at $\\mu g$, so $T = \\frac{v_f}{\\mu g} = \\frac{M}{M+m}\\frac{v_0}{\\mu g}$. Trap (a) is the answer for an infinitely heavy plank that never slows down."
+    },
+    {
+      "id": "t04-q04",
+      "source": "adapted: 2016-UG-Q3-(5)",
+      "question": "In the same setup (plank P of mass $M$ at initial speed $v_0$, block Q of mass $m$ at rest on top, kinetic coefficient $\\mu$, frictionless floor), find the total distance that Q slides relative to P before their velocities become equal.",
+      "choices": [
+        "$\\dfrac{v_0^2}{2\\mu g}$",
+        "$\\dfrac{M v_0^2}{2(M+m)\\mu g}$",
+        "$\\dfrac{M v_0^2}{(M+m)\\mu g}$",
+        "$\\dfrac{m v_0^2}{2(M+m)\\mu g}$",
+        "$\\dfrac{(M+m) v_0^2}{2M\\mu g}$",
+        "$\\dfrac{v_0^2}{\\mu g}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "The relative speed falls linearly from $v_0$ to $0$ in time $T$, so the relative displacement is the triangle area $\\frac{1}{2}v_0 T = \\frac{Mv_0^2}{2(M+m)\\mu g}$. Check: multiplying by $\\mu mg$ reproduces the kinetic energy lost — \"heat = friction × relative slide\" is a recurring MEXT identity."
+    },
+    {
+      "id": "t04-q05",
+      "source": "original",
+      "question": "A block slides along a horizontal floor with initial speed $v$. The coefficient of kinetic friction between the block and the floor is $\\mu$, and the acceleration of gravity is $g$. Find the distance the block travels before stopping.",
+      "choices": [
+        "$\\dfrac{v^2}{\\mu g}$",
+        "$\\dfrac{v^2}{2g}$",
+        "$\\dfrac{v^2}{2\\mu g}$",
+        "$\\dfrac{2v^2}{\\mu g}$",
+        "$\\dfrac{\\mu v^2}{2g}$",
+        "$\\dfrac{v}{\\mu g}$"
+      ],
+      "correctIndex": 2,
+      "explanation": "Energy: $\\frac{1}{2}mv^2 = \\mu mg\\,d$, so $d = \\frac{v^2}{2\\mu g}$ — the mass cancels. Trap (a) forgets the $\\frac{1}{2}$; choice (f) is dimensionally a time, not a distance."
+    },
+    {
+      "id": "t04-q06",
+      "source": "original",
+      "question": "A block slides down an incline of angle $\\theta$. The coefficient of kinetic friction between the block and the incline is $\\mu$, and the acceleration of gravity is $g$. Find the magnitude of the block's acceleration.",
+      "choices": [
+        "$g\\sin\\theta$",
+        "$g(\\sin\\theta - \\mu\\cos\\theta)$",
+        "$g(\\cos\\theta - \\mu\\sin\\theta)$",
+        "$g(\\sin\\theta + \\mu\\cos\\theta)$",
+        "$\\mu g\\cos\\theta$",
+        "$g(1 - \\mu)\\sin\\theta$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Along the incline: $ma = mg\\sin\\theta - \\mu N$ with $N = mg\\cos\\theta$, giving $a = g(\\sin\\theta - \\mu\\cos\\theta)$. Trap (d) with the $+$ sign is the deceleration of a block sliding *up* the incline — friction flips with the direction of relative sliding."
+    },
+    {
+      "id": "t04-q07",
+      "source": "original",
+      "question": "A block of mass $m$ is held against a vertical wall by a horizontal force $F$. The coefficient of static friction between the block and the wall is $\\mu$, and the acceleration of gravity is $g$. Find the minimum force $F$ that keeps the block from sliding down.",
+      "choices": [
+        "$\\mu mg$",
+        "$\\dfrac{mg}{\\mu}$",
+        "$mg$",
+        "$mg(1 - \\mu)$",
+        "$\\dfrac{mg}{1 + \\mu}$",
+        "$\\dfrac{\\mu mg}{2}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Here $F$ itself is the normal force: friction $\\le \\mu F$ must support the weight, so $\\mu F \\ge mg$, i.e. $F \\ge \\frac{mg}{\\mu}$. Trap (a) $\\mu mg$ mixes up the roles — on a wall the applied force creates $N$, it doesn't fight friction."
+    },
+    {
+      "id": "t04-q08",
+      "source": "original",
+      "question": "A block of mass $m$ rests *without sliding* on an incline of angle $\\theta$. The coefficient of static friction is $\\mu$ (with $\\tan\\theta < \\mu$), and the acceleration of gravity is $g$. Find the magnitude of the friction force acting on the block.",
+      "choices": [
+        "$\\mu mg\\cos\\theta$",
+        "$mg\\sin\\theta$",
+        "$\\mu mg$",
+        "$mg\\cos\\theta$",
+        "$\\mu mg\\sin\\theta$",
+        "$0$"
+      ],
+      "correctIndex": 1,
+      "explanation": "The block is in equilibrium, so friction exactly balances the driving force: $f = mg\\sin\\theta$. Trap (a) $\\mu mg\\cos\\theta$ is the *maximum available* static friction — static friction is self-adjusting and only supplies what is needed; $f_s \\le \\mu N$ is an inequality, not an equation."
+    },
+    {
+      "id": "t04-q09",
+      "source": "original",
+      "question": "A $2.0\\ \\mathrm{kg}$ block slides along a horizontal floor with an initial speed of $7.0\\ \\mathrm{m/s}$. The coefficient of kinetic friction is $0.50$ and $g = 9.8\\ \\mathrm{m/s^2}$. Find the distance the block travels before it stops.",
+      "choices": [
+        "$1.4\\ \\mathrm{m}$",
+        "$2.5\\ \\mathrm{m}$",
+        "$5.0\\ \\mathrm{m}$",
+        "$7.1\\ \\mathrm{m}$",
+        "$10\\ \\mathrm{m}$",
+        "$25\\ \\mathrm{m}$"
+      ],
+      "correctIndex": 2,
+      "explanation": "$d = \\frac{v^2}{2\\mu g} = \\frac{49}{2(0.50)(9.8)} = \\frac{49}{9.8} = 5.0\\ \\mathrm{m}$. The mass never enters. Trap (e) $10\\ \\mathrm{m}$ drops the factor $\\frac{1}{2}$."
+    },
+    {
+      "id": "t04-q10",
+      "source": "original",
+      "question": "A block of mass $m$ is dragged at constant velocity along a rough horizontal floor by a force $F$ directed at an angle $\\theta$ above the horizontal. The coefficient of kinetic friction is $\\mu$ and the acceleration of gravity is $g$. Find $F$.",
+      "choices": [
+        "$\\mu mg$",
+        "$\\dfrac{\\mu mg}{\\cos\\theta + \\mu\\sin\\theta}$",
+        "$\\dfrac{\\mu mg}{\\cos\\theta - \\mu\\sin\\theta}$",
+        "$\\mu mg\\cos\\theta$",
+        "$\\dfrac{mg}{\\cos\\theta + \\mu\\sin\\theta}$",
+        "$\\dfrac{\\mu mg}{\\cos\\theta}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "The upward component of $F$ reduces the normal force: $N = mg - F\\sin\\theta$. Constant velocity: $F\\cos\\theta = \\mu N = \\mu(mg - F\\sin\\theta)$, so $F = \\frac{\\mu mg}{\\cos\\theta + \\mu\\sin\\theta}$. Trap (a) $\\mu mg$ forgets that pulling at an angle lightens the load on the floor."
+    }
+  ]
+}

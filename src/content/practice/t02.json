@@ -1,0 +1,65 @@
+{
+  "topicId": "t02",
+  "questions": [
+    {
+      "id": "t02-p01",
+      "source": "original",
+      "question": "A ball is thrown **horizontally** from a cliff of height $45\\ \\mathrm{m}$ at speed $15\\ \\mathrm{m/s}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the time of flight, (b) the horizontal distance from the base of the cliff, (c) the speed of the ball just before impact.",
+      "answer": "**(a)** Vertical free fall: $h = \\frac{1}{2}gt^2 \\Rightarrow t = \\sqrt{\\frac{2h}{g}} = \\sqrt{9} = 3\\ \\mathrm{s}$\n\n**(b)** $x = v_0 t = 15 \\times 3 = 45\\ \\mathrm{m}$\n\n**(c)** $v_x = 15\\ \\mathrm{m/s}$, $v_y = gt = 30\\ \\mathrm{m/s}$\n\n$v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{225 + 900} = \\sqrt{1125} = 15\\sqrt{5} \\approx 33.5\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t02-p02",
+      "source": "2018-UG-Q1-(1)",
+      "question": "An object is launched **horizontally** with speed $v$ from a height $h$ above the ground. The object strikes the ground at angle $\\theta$ below the horizontal. Express $\\tan\\theta$ in terms of $v$, $g$, and $h$.",
+      "answer": "Horizontal speed is unchanged throughout: $v_x = v$\n\nVertical speed at impact (free fall from height $h$): $v_y = \\sqrt{2gh}$\n\nThe impact angle satisfies $\\tan\\theta = v_y/v_x$, so:\n\n$$\\tan\\theta = \\frac{\\sqrt{2gh}}{v}$$\n\nCheck limits: as $h \\to 0$, $\\theta \\to 0°$ ✓; as $v \\to 0$ (nearly dropped vertically), $\\theta \\to 90°$ ✓."
+    },
+    {
+      "id": "t02-p03",
+      "source": "2015-UG-Q1-(1)",
+      "question": "A projectile is launched from level ground with initial speed $v$ at angle $\\theta$ above the horizontal. Gravity is $g$. Derive the formula for the horizontal range $L$.",
+      "answer": "Decompose: $v_x = v\\cos\\theta$, $v_{y0} = v\\sin\\theta$\n\n**Time of flight** (vertical returns to zero):\n\n$0 = v_{y0}t - \\frac{1}{2}gt^2 \\Rightarrow T = \\frac{2v\\sin\\theta}{g}$\n\n**Range:**\n\n$L = v_x \\times T = v\\cos\\theta \\cdot \\frac{2v\\sin\\theta}{g} = \\frac{2v^2\\sin\\theta\\cos\\theta}{g}$\n\n$$L = \\frac{v^2\\sin 2\\theta}{g}$$\n\nMaximum range occurs at $\\theta = 45°$ where $\\sin 90° = 1$."
+    },
+    {
+      "id": "t02-p04",
+      "source": "original",
+      "question": "A ball is launched from level ground at $20\\ \\mathrm{m/s}$ and $45°$ above horizontal. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the maximum height, (b) the total time of flight, (c) the range.",
+      "answer": "$v_x = v_y = 20\\cos 45° = 10\\sqrt{2}\\ \\mathrm{m/s}$\n\n**(a)** $H = \\dfrac{v_y^2}{2g} = \\dfrac{200}{20} = 10\\ \\mathrm{m}$\n\n**(b)** $T = \\dfrac{2v_y}{g} = \\dfrac{20\\sqrt{2}}{10} = 2\\sqrt{2} \\approx 2.83\\ \\mathrm{s}$\n\n**(c)** $R = \\dfrac{v^2\\sin 90°}{g} = \\dfrac{400}{10} = 40\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t02-p05",
+      "source": "original",
+      "question": "A ball launched from the ground at $30°$ above horizontal lands $20\\sqrt{3}\\ \\mathrm{m}$ away. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the initial speed, (b) the maximum height.",
+      "answer": "**(a)** $R = \\dfrac{v_0^2 \\sin 60°}{g} \\Rightarrow 20\\sqrt{3} = \\dfrac{v_0^2 \\cdot (\\sqrt{3}/2)}{10}$\n\n$v_0^2 = \\dfrac{20\\sqrt{3} \\times 20}{\\sqrt{3}} = 400 \\Rightarrow v_0 = 20\\ \\mathrm{m/s}$\n\n**(b)** $H = \\dfrac{v_0^2 \\sin^2 30°}{2g} = \\dfrac{400 \\times \\frac{1}{4}}{20} = 5\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t02-p06",
+      "source": "original",
+      "question": "A stone is thrown at $60°$ above horizontal with speed $20\\ \\mathrm{m/s}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the horizontal and vertical components of the initial velocity, (b) the maximum height, (c) the total time in the air.",
+      "answer": "**(a)** $v_x = 20\\cos 60° = 10\\ \\mathrm{m/s}$; $\\quad v_{y0} = 20\\sin 60° = 10\\sqrt{3}\\ \\mathrm{m/s}$\n\n**(b)** $H = \\dfrac{v_{y0}^2}{2g} = \\dfrac{300}{20} = 15\\ \\mathrm{m}$\n\n**(c)** $T = \\dfrac{2v_{y0}}{g} = \\dfrac{20\\sqrt{3}}{10} = 2\\sqrt{3} \\approx 3.46\\ \\mathrm{s}$"
+    },
+    {
+      "id": "t02-p07",
+      "source": "original",
+      "question": "Ball A is projected at $30°$ and ball B at $60°$ above horizontal, both from the same point and with the same initial speed $v$. Compare: (a) their ranges, (b) their maximum heights.",
+      "answer": "**(a) Ranges:**\n\n$R_A = \\dfrac{v^2 \\sin 60°}{g}$, $\\quad R_B = \\dfrac{v^2 \\sin 120°}{g} = \\dfrac{v^2 \\sin 60°}{g}$\n\n$R_A = R_B$ — complementary angles ($30° + 60° = 90°$) give equal ranges.\n\n**(b) Maximum heights:**\n\n$H_A = \\dfrac{v^2 \\sin^2 30°}{2g} = \\dfrac{v^2}{8g}$, $\\quad H_B = \\dfrac{v^2 \\sin^2 60°}{2g} = \\dfrac{3v^2}{8g}$\n\n$H_B = 3H_A$ — ball B reaches three times the height of ball A."
+    },
+    {
+      "id": "t02-p08",
+      "source": "original",
+      "question": "A cannonball is fired **horizontally** from a cliff $80\\ \\mathrm{m}$ high at speed $40\\ \\mathrm{m/s}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the time to hit the ground, (b) the horizontal range, (c) the impact angle below horizontal, (d) the speed at impact.",
+      "answer": "**(a)** $t = \\sqrt{\\dfrac{2h}{g}} = \\sqrt{16} = 4\\ \\mathrm{s}$\n\n**(b)** $x = 40 \\times 4 = 160\\ \\mathrm{m}$\n\n**(c)** $v_y = gt = 40\\ \\mathrm{m/s}$; $\\tan\\theta = v_y/v_x = 40/40 = 1 \\Rightarrow \\theta = 45°$\n\n**(d)** $v = \\sqrt{40^2 + 40^2} = 40\\sqrt{2} \\approx 56.6\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t02-p09",
+      "source": "original",
+      "question": "A ball is thrown from level ground and reaches its maximum height of $20\\ \\mathrm{m}$ at $t = 2\\ \\mathrm{s}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the initial vertical speed, (b) the total time of flight, (c) the initial horizontal speed if the total range is $60\\ \\mathrm{m}$.",
+      "answer": "**(a)** At maximum height $v_y = 0$: $v_{y0} = g t_{\\text{up}} = 10 \\times 2 = 20\\ \\mathrm{m/s}$\n\nCheck: $H = v_{y0} t - \\frac{1}{2}g t^2 = 40 - 20 = 20\\ \\mathrm{m}$ ✓\n\n**(b)** $T = 2 t_{\\text{up}} = 4\\ \\mathrm{s}$\n\n**(c)** $v_x = R/T = 60/4 = 15\\ \\mathrm{m/s}$\n\nLaunch speed: $v_0 = \\sqrt{15^2 + 20^2} = \\sqrt{625} = 25\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t02-p10",
+      "source": "2019-UG-Q3 adapted",
+      "question": "An object is launched **horizontally** with speed $v$ from a cliff of height $h$. Take the launch point as the origin with $x$ horizontal and $y$ upward. A slope descends from the launch point at angle $\\theta$ below horizontal (i.e., $y = -x\\tan\\theta$). Find the $x$-coordinate where the object lands on the slope.",
+      "answer": "Trajectory: $x = vt$, $y = -\\tfrac{1}{2}gt^2$\n\nOn the slope: $y = -x\\tan\\theta$\n\nSubstitute $x = vt$: $-\\tfrac{1}{2}gt^2 = -vt\\tan\\theta$\n\nDivide both sides by $t$ (non-zero): $\\tfrac{1}{2}gt = v\\tan\\theta \\Rightarrow t = \\dfrac{2v\\tan\\theta}{g}$\n\nLanding $x$-coordinate:\n\n$$x = vt = \\frac{2v^2\\tan\\theta}{g}$$\n\nAs a check: when $\\theta \\to 0$ (flat ground) $x \\to 0$, meaning the object never lands on the slope ✓."
+    }
+  ]
+}

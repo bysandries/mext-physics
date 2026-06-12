@@ -5,13 +5,15 @@ import { getCollection } from 'astro:content';
 
 const topics = await getCollection('topics');
 const topicsJson = topics.map(t => t.data);
+const banks = await getCollection('questions');
+const banksJson = banks.map(b => b.data);
 ---
 
 <BaseLayout title="Quiz — MEXT Physics" description="Practice quiz for MEXT Physics exam">
   <div class="page">
     <h1>Quiz Mode</h1>
-    <p class="page-desc">Test yourself with timed multiple-choice questions from real exam problems.</p>
-    <QuizPanel topics={topicsJson} client:visible />
+    <p class="page-desc">Test yourself with multiple-choice questions in the style of the real MEXT exams.</p>
+    <QuizPanel topics={topicsJson} banks={banksJson} client:visible />
   </div>
 </BaseLayout>
 

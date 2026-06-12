@@ -24,6 +24,20 @@ export interface Problem {
   parts: ProblemPart[];
 }
 
+export interface QuestionBank {
+  topicId: string;
+  questions: BankQuestion[];
+}
+
+export interface BankQuestion {
+  id: string;
+  source: string;
+  question: string;
+  choices: string[];
+  correctIndex: number;
+  explanation: string;
+}
+
 export interface ProblemPart {
   partNum: number;
   parameters: string;

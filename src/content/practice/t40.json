@@ -1,0 +1,65 @@
+{
+  "topicId": "t40",
+  "questions": [
+    {
+      "id": "t40-p01",
+      "source": "original",
+      "question": "A $C = 100\\ \\mu\\mathrm{F}$ capacitor is charged through a $R = 1000\\ \\Omega$ resistor from a $V_0 = 12\\ \\mathrm{V}$ battery. Find: (a) the time constant $\\tau$, (b) the voltage across the capacitor at $t = \\tau$.",
+      "answer": "**(a)** $\\tau = RC = 1000 \\times 100\\times10^{-6} = 0.1\\ \\mathrm{s}$\n\n**(b)** $V_C(t) = V_0(1 - e^{-t/\\tau})$\n\nAt $t = \\tau$: $V_C = V_0(1 - e^{-1}) = 12(1 - 0.368) = 12 \\times 0.632 = 7.58\\ \\mathrm{V}$\n\nAfter one time constant, the capacitor has charged to $\\approx 63.2\\%$ of the final voltage."
+    },
+    {
+      "id": "t40-p02",
+      "source": "original",
+      "question": "Derive the charging equation $V_C(t) = V_0(1 - e^{-t/RC})$ for a series RC circuit with battery $V_0$ starting from an uncharged capacitor.",
+      "answer": "Apply Kirchhoff's voltage law:\n\n$V_0 = V_R + V_C = IR + \\dfrac{q}{C}$\n\nSince $I = dq/dt$:\n\n$V_0 = RC\\dfrac{dq}{dt} + \\dfrac{q}{C} \\cdot C^{-1} \\cdot C$... let $q_\\infty = CV_0$ (final charge):\n\n$RC\\dfrac{dq}{dt} = V_0 - \\dfrac{q}{C} = \\dfrac{q_\\infty - q}{C} \\cdot C^{-1}$...\n\nLet $u = q_\\infty - q$: $du/dt = -dq/dt$\n\n$-RC\\dfrac{du}{dt} = u/C \\cdot C = u$... \n\nSimpler: $RC\\dfrac{dV_C}{dt} = V_0 - V_C$ (since $V_C = q/C$, $dV_C/dt = I/C$)\n\nSeparate: $\\dfrac{dV_C}{V_0 - V_C} = \\dfrac{dt}{RC}$\n\nIntegrate: $-\\ln(V_0 - V_C) = t/(RC) + K$\n\nAt $t=0$: $V_C = 0 \\Rightarrow K = -\\ln V_0$\n\n$V_0 - V_C = V_0 e^{-t/RC}$\n\n$$V_C(t) = V_0(1 - e^{-t/RC})$$ ✓"
+    },
+    {
+      "id": "t40-p03",
+      "source": "2016-UG adapted",
+      "question": "A charged capacitor ($C = 50\\ \\mu\\mathrm{F}$, initial voltage $V_0 = 20\\ \\mathrm{V}$) is discharged through $R = 2000\\ \\Omega$. Find: (a) $\\tau$, (b) $V_C$ at $t = 0.2\\ \\mathrm{s}$, (c) the initial discharge current.",
+      "answer": "**(a)** $\\tau = RC = 2000 \\times 50\\times10^{-6} = 0.1\\ \\mathrm{s}$\n\n**(b)** Discharge: $V_C(t) = V_0 e^{-t/\\tau} = 20e^{-0.2/0.1} = 20e^{-2} = 20 \\times 0.1353 = 2.71\\ \\mathrm{V}$\n\n**(c)** $I_0 = V_0/R = 20/2000 = 0.01\\ \\mathrm{A} = 10\\ \\mathrm{mA}$"
+    },
+    {
+      "id": "t40-p04",
+      "source": "original",
+      "question": "In an RC charging circuit ($V_0 = 10\\ \\mathrm{V}$, $R$, $C$), after 5 time constants ($t = 5\\tau$), what voltage does the capacitor have? How long until it reaches $V = 9.99\\ \\mathrm{V}$?",
+      "answer": "At $t = 5\\tau$:\n\n$V_C = V_0(1 - e^{-5}) = 10(1 - 0.00674) = 9.933\\ \\mathrm{V}$ (99.33% charged)\n\nFor $V = 9.99\\ \\mathrm{V}$:\n\n$9.99 = 10(1 - e^{-t/\\tau})$\n\n$e^{-t/\\tau} = 0.001$\n\n$t/\\tau = \\ln(1000) = 6.908$\n\n$t \\approx 6.9\\tau$\n\nTypically, RC circuits are considered \"fully charged\" after $5\\tau$ ($99.3\\%$)."
+    },
+    {
+      "id": "t40-p05",
+      "source": "2018-UG adapted",
+      "question": "An RC circuit has $R = 500\\ \\Omega$ and $C = 200\\ \\mu\\mathrm{F}$. It charges from $V_0 = 15\\ \\mathrm{V}$. Find: (a) the charge on the capacitor at $t = 0$, $t = \\tau$, and $t = \\infty$, (b) the current at $t = 0$ and $t = \\tau$.",
+      "answer": "**(a)** $\\tau = RC = 500 \\times 200\\times10^{-6} = 0.1\\ \\mathrm{s}$\n\n$q(t) = CV_0(1 - e^{-t/\\tau})$\n\n$q(0) = 0$\n\n$q(\\tau) = CV_0(1-e^{-1}) = 200\\times10^{-6} \\times 15 \\times 0.632 = 1.896\\times10^{-3}\\ \\mathrm{C} = 1.90\\ \\mathrm{mC}$\n\n$q(\\infty) = CV_0 = 200\\times10^{-6} \\times 15 = 3\\times10^{-3}\\ \\mathrm{C} = 3\\ \\mathrm{mC}$\n\n**(b)** $I(t) = \\dfrac{V_0}{R}e^{-t/\\tau}$\n\n$I(0) = V_0/R = 15/500 = 0.03\\ \\mathrm{A} = 30\\ \\mathrm{mA}$\n\n$I(\\tau) = 0.03 \\times e^{-1} = 0.03 \\times 0.368 = 11.04\\ \\mathrm{mA}$"
+    },
+    {
+      "id": "t40-p06",
+      "source": "original",
+      "question": "At what time does the voltage across the resistor in a charging RC circuit equal the voltage across the capacitor?",
+      "answer": "Kirchhoff's law: $V_0 = V_R + V_C$, so $V_R = V_0 - V_C$.\n\n$V_R(t) = V_0 e^{-t/\\tau}$ and $V_C(t) = V_0(1 - e^{-t/\\tau})$\n\nSet equal: $V_0 e^{-t/\\tau} = V_0(1 - e^{-t/\\tau})$\n\n$e^{-t/\\tau} = 1 - e^{-t/\\tau}$\n\n$2e^{-t/\\tau} = 1$\n\n$e^{-t/\\tau} = 0.5$\n\n$t = \\tau\\ln 2 \\approx 0.693\\tau$\n\nAt $t \\approx 0.693\\tau$, both $V_R = V_C = V_0/2$."
+    },
+    {
+      "id": "t40-p07",
+      "source": "original",
+      "question": "Explain physically what the time constant $\\tau = RC$ means in terms of how quickly the capacitor charges.",
+      "answer": "**Physical meaning of $\\tau$:**\n\n- At $t = 0$: Maximum current flows ($I_0 = V_0/R$) because $V_C = 0$ and the full battery voltage drives current. The capacitor charges quickly.\n\n- As charge builds up, $V_C$ increases, reducing the voltage across $R$, and therefore the current decreases.\n\n- After $\\tau$: capacitor is at $63.2\\%$ of final voltage; current is $36.8\\%$ of initial.\n\n- After $5\\tau$: effectively fully charged ($>99\\%$).\n\n**$\\tau = RC$** balances two effects:\n- Large $R$: slow current $\\Rightarrow$ slow charging\n- Large $C$: more charge needed $\\Rightarrow$ longer to fill\n- Both increase $\\tau$"
+    },
+    {
+      "id": "t40-p08",
+      "source": "2019-CoT adapted",
+      "question": "A $C = 10\\ \\mu\\mathrm{F}$ capacitor charges from $V_0 = 5\\ \\mathrm{V}$ through $R$. The voltage reaches $V_C = 4\\ \\mathrm{V}$ at $t = 20\\ \\mu\\mathrm{s}$. Find $R$.",
+      "answer": "$V_C(t) = V_0(1-e^{-t/RC})$\n\n$4 = 5(1-e^{-t/RC})$\n\n$e^{-t/RC} = 1 - 0.8 = 0.2$\n\n$-t/RC = \\ln 0.2 = -1.609$\n\n$RC = t/1.609 = 20\\times10^{-6}/1.609 = 1.243\\times10^{-5}\\ \\mathrm{s}$\n\n$R = \\dfrac{1.243\\times10^{-5}}{C} = \\dfrac{1.243\\times10^{-5}}{10\\times10^{-6}} = 1.243\\ \\Omega \\approx 1.24\\ \\Omega$"
+    },
+    {
+      "id": "t40-p09",
+      "source": "original",
+      "question": "The energy stored in a charging RC circuit: find the total energy delivered by the battery, the energy stored in the capacitor, and the energy dissipated in the resistor when the capacitor is fully charged.",
+      "answer": "Fully charged: $q_\\infty = CV_0$\n\n**Energy stored in capacitor:**\n$U_C = \\frac{1}{2}CV_0^2$\n\n**Energy delivered by battery:**\n\nThe battery moves charge $q_\\infty = CV_0$ through voltage $V_0$:\n\n$W_{\\text{battery}} = V_0 \\times q_\\infty = V_0 \\times CV_0 = CV_0^2$\n\n**Energy dissipated in resistor:**\n\n$Q_R = W_{\\text{battery}} - U_C = CV_0^2 - \\frac{1}{2}CV_0^2 = \\frac{1}{2}CV_0^2$\n\n**Exactly half** the battery's energy is lost in the resistor, regardless of $R$! The other half is stored in the capacitor."
+    },
+    {
+      "id": "t40-p10",
+      "source": "2015-UG adapted",
+      "question": "A camera flash uses a capacitor ($C = 200\\ \\mu\\mathrm{F}$) that charges from $V_0 = 300\\ \\mathrm{V}$ through $R = 10\\ \\mathrm{k\\Omega}$. (a) Find $\\tau$. (b) How long until the flash is ready (90% charged)? (c) What energy is stored?",
+      "answer": "**(a)** $\\tau = RC = 10\\times10^3 \\times 200\\times10^{-6} = 2\\ \\mathrm{s}$\n\n**(b)** $0.90 = 1 - e^{-t/\\tau}$: $e^{-t/\\tau} = 0.10$: $t = \\tau\\ln 10 = 2 \\times 2.303 \\approx 4.6\\ \\mathrm{s}$\n\n**(c)** $U = \\frac{1}{2}CV_0^2 = \\frac{1}{2} \\times 200\\times10^{-6} \\times (300)^2 = 0.5 \\times 200\\times10^{-6} \\times 9\\times10^4 = 9\\ \\mathrm{J}$"
+    }
+  ]
+}

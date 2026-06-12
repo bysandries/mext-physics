@@ -35,4 +35,32 @@ const topics = defineCollection({
   }),
 });
 
-export const collections = { topics };
+const practice = defineCollection({
+  type: 'data',
+  schema: z.object({
+    topicId: z.string(),
+    questions: z.array(z.object({
+      id: z.string(),
+      source: z.string(),
+      question: z.string(),
+      answer: z.string(),
+    })),
+  }),
+});
+
+const questions = defineCollection({
+  type: 'data',
+  schema: z.object({
+    topicId: z.string(),
+    questions: z.array(z.object({
+      id: z.string(),
+      source: z.string(),
+      question: z.string(),
+      choices: z.array(z.string()).min(4).max(6),
+      correctIndex: z.number(),
+      explanation: z.string(),
+    })),
+  }),
+});
+
+export const collections = { topics, questions, practice };

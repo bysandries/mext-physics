@@ -1,0 +1,65 @@
+{
+  "topicId": "t10",
+  "questions": [
+    {
+      "id": "t10-p01",
+      "source": "original",
+      "question": "A $3\\ \\mathrm{kg}$ cart moving at $8\\ \\mathrm{m/s}$ collides with a stationary $5\\ \\mathrm{kg}$ cart on a frictionless track. They stick together. Find: (a) the final velocity, (b) the kinetic energy lost.",
+      "answer": "**(a)** Conservation of momentum:\n\n$m_1 v_1 = (m_1 + m_2)v_f$\n\n$v_f = \\dfrac{m_1 v_1}{m_1 + m_2} = \\dfrac{3 \\times 8}{3 + 5} = \\dfrac{24}{8} = 3\\ \\mathrm{m/s}$\n\n**(b)** $\\Delta KE = \\frac{1}{2}m_1 v_1^2 - \\frac{1}{2}(m_1+m_2)v_f^2$\n\n$= \\frac{1}{2}(3)(64) - \\frac{1}{2}(8)(9) = 96 - 36 = 60\\ \\mathrm{J}$ lost"
+    },
+    {
+      "id": "t10-p02",
+      "source": "original",
+      "question": "A $4\\ \\mathrm{kg}$ object moving at $6\\ \\mathrm{m/s}$ and a $2\\ \\mathrm{kg}$ object moving at $3\\ \\mathrm{m/s}$ in the **opposite** direction collide and stick together. Find: (a) the final velocity, (b) the energy dissipated.",
+      "answer": "Taking the $4\\ \\mathrm{kg}$ direction as positive:\n\n**(a)** $p_{\\text{total}} = 4(6) + 2(-3) = 24 - 6 = 18\\ \\mathrm{kg\\cdot m/s}$\n\n$v_f = \\dfrac{18}{4+2} = \\dfrac{18}{6} = 3\\ \\mathrm{m/s}$ (in the direction of the heavier object)\n\n**(b)** $KE_i = \\frac{1}{2}(4)(36) + \\frac{1}{2}(2)(9) = 72 + 9 = 81\\ \\mathrm{J}$\n\n$KE_f = \\frac{1}{2}(6)(9) = 27\\ \\mathrm{J}$\n\n$\\Delta KE = 81 - 27 = 54\\ \\mathrm{J}$ dissipated"
+    },
+    {
+      "id": "t10-p03",
+      "source": "original",
+      "question": "A bullet of mass $10\\ \\mathrm{g}$ traveling at $400\\ \\mathrm{m/s}$ embeds itself in a wooden block of mass $1.99\\ \\mathrm{kg}$ initially at rest on a frictionless surface. Find: (a) the speed of the block+bullet system after impact, (b) the fraction of the original kinetic energy that is lost.",
+      "answer": "**(a)** $m = 0.010\\ \\mathrm{kg}$, $M = 1.990\\ \\mathrm{kg}$\n\n$v_f = \\dfrac{mv_0}{m + M} = \\dfrac{0.010 \\times 400}{2.000} = \\dfrac{4}{2} = 2\\ \\mathrm{m/s}$\n\n**(b)** $KE_i = \\frac{1}{2}(0.010)(400)^2 = \\frac{1}{2}(0.010)(160{,}000) = 800\\ \\mathrm{J}$\n\n$KE_f = \\frac{1}{2}(2.000)(2)^2 = 4\\ \\mathrm{J}$\n\nFraction lost $= \\dfrac{800 - 4}{800} = \\dfrac{796}{800} = 0.995 = 99.5\\%$\n\nAlmost all the bullet's KE is converted to heat and deformation."
+    },
+    {
+      "id": "t10-p04",
+      "source": "original",
+      "question": "A ballistic pendulum is used to measure bullet speed. A bullet of mass $m = 15\\ \\mathrm{g}$ embeds in a block of mass $M = 3\\ \\mathrm{kg}$ suspended by a string. The block (with bullet) swings up by height $h = 0.12\\ \\mathrm{m}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find the bullet's initial speed.",
+      "answer": "**Step 1 — Inelastic collision** (momentum conserved):\n\n$mv_0 = (m + M)V$\n\n**Step 2 — Swing** (energy conserved after collision):\n\n$\\frac{1}{2}(m+M)V^2 = (m+M)gh$\n\n$V = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 0.12} = \\sqrt{2.4} \\approx 1.549\\ \\mathrm{m/s}$\n\n**Combine:**\n\n$v_0 = \\dfrac{m+M}{m}V = \\dfrac{3.015}{0.015} \\times 1.549 = 201 \\times 1.549 \\approx 311\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t10-p05",
+      "source": "2015-UG-Q3 adapted",
+      "question": "An object of mass $M$ hangs at rest from a spring (spring constant $k$). A small ball of mass $m$ moves **upward** at speed $v$ and collides with the object, sticking to it. Find: (a) the speed of the combined system just after collision, (b) the energy lost in the collision.",
+      "answer": "**(a)** The ball moves upward at $v$, the object is at rest. Taking upward as positive, momentum conservation during the very short collision:\n\n$mv = (m + M)V \\Rightarrow V = \\dfrac{mv}{m + M}$\n\n**(b)** $KE_i = \\dfrac{1}{2}mv^2$ (only the ball moves before collision)\n\n$KE_f = \\dfrac{1}{2}(m+M)V^2 = \\dfrac{1}{2}(m+M)\\cdot\\dfrac{m^2v^2}{(m+M)^2} = \\dfrac{m^2v^2}{2(m+M)}$\n\n$\\Delta KE = \\dfrac{1}{2}mv^2 - \\dfrac{m^2v^2}{2(m+M)} = \\dfrac{mv^2}{2}\\cdot\\dfrac{M}{m+M}$\n\n$$\\Delta KE = \\frac{Mmv^2}{2(M+m)}$$"
+    },
+    {
+      "id": "t10-p06",
+      "source": "original",
+      "question": "Two identical $0.5\\ \\mathrm{kg}$ clay balls are moving **toward each other** at $4\\ \\mathrm{m/s}$ and $6\\ \\mathrm{m/s}$ respectively when they collide and stick together. Find: (a) the final velocity, (b) the kinetic energy lost.",
+      "answer": "Take the direction of the $6\\ \\mathrm{m/s}$ ball as positive.\n\n**(a)** Total momentum: $p = (0.5)(6) + (0.5)(-4) = 3 - 2 = 1\\ \\mathrm{kg\\cdot m/s}$\n\n$v_f = \\dfrac{p}{m_1+m_2} = \\dfrac{1}{1.0} = 1\\ \\mathrm{m/s}$ (in the direction of the faster ball)\n\n**(b)** $KE_i = \\frac{1}{2}(0.5)(36) + \\frac{1}{2}(0.5)(16) = 9 + 4 = 13\\ \\mathrm{J}$\n\n$KE_f = \\frac{1}{2}(1.0)(1)^2 = 0.5\\ \\mathrm{J}$\n\n$\\Delta KE = 13 - 0.5 = 12.5\\ \\mathrm{J}$ lost"
+    },
+    {
+      "id": "t10-p07",
+      "source": "original",
+      "question": "A $5\\ \\mathrm{kg}$ block slides at $10\\ \\mathrm{m/s}$ on a frictionless surface and collides with a stationary $15\\ \\mathrm{kg}$ block. They stick together and then slide $d\\ \\mathrm{m}$ before stopping due to friction ($\\mu_k = 0.25$). Take $g = 10\\ \\mathrm{m/s^2}$. Find $d$.",
+      "answer": "**Collision (inelastic):**\n\n$v_f = \\dfrac{5 \\times 10}{5 + 15} = \\dfrac{50}{20} = 2.5\\ \\mathrm{m/s}$\n\n**Sliding to stop (work-energy):**\n\n$\\frac{1}{2}(20)(2.5)^2 = \\mu_k (20)(10) \\cdot d$\n\n$\\frac{1}{2}(20)(6.25) = 50 d$\n\n$62.5 = 50 d \\Rightarrow d = 1.25\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t10-p08",
+      "source": "original",
+      "question": "A $2\\ \\mathrm{kg}$ block moving at $9\\ \\mathrm{m/s}$ collides with a stationary $7\\ \\mathrm{kg}$ block on a rough surface ($\\mu_k = 0.4$). They stick together. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the velocity just after the collision, (b) the distance traveled before stopping, (c) the total energy dissipated (collision + friction combined).",
+      "answer": "**(a)** $v_f = \\dfrac{2 \\times 9}{2 + 7} = \\dfrac{18}{9} = 2\\ \\mathrm{m/s}$\n\n**(b)** Kinematic deceleration due to friction: $a = \\mu_k g = 0.4 \\times 10 = 4\\ \\mathrm{m/s^2}$\n\n$v^2 = v_f^2 - 2ad \\Rightarrow 0 = 4 - 2(4)d \\Rightarrow d = 0.5\\ \\mathrm{m}$\n\n**(c)** Total energy dissipated = initial KE − final KE (final KE = 0):\n\n$\\Delta E_{\\text{total}} = \\frac{1}{2}(2)(81) = 81\\ \\mathrm{J}$\n\n- Collision loss: $KE_i - KE_{f,\\text{collision}} = 81 - \\frac{1}{2}(9)(4) = 81 - 18 = 63\\ \\mathrm{J}$\n- Friction loss: $\\mu_k(m_1+m_2)g \\cdot d = 0.4(9)(10)(0.5) = 18\\ \\mathrm{J}$\n- Total: $63 + 18 = 81\\ \\mathrm{J}$ ✓"
+    },
+    {
+      "id": "t10-p09",
+      "source": "original",
+      "question": "A grenade of mass $M = 2\\ \\mathrm{kg}$ at rest explodes into two fragments. Fragment A ($0.5\\ \\mathrm{kg}$) flies to the right at $60\\ \\mathrm{m/s}$. Find: (a) the velocity of fragment B, (b) the total kinetic energy released.",
+      "answer": "This is a \"reverse inelastic collision\": total momentum before = 0 (at rest).\n\n**(a)** Conservation of momentum:\n\n$0 = m_A v_A + m_B v_B$\n\n$m_B = M - m_A = 2 - 0.5 = 1.5\\ \\mathrm{kg}$\n\n$v_B = -\\dfrac{m_A v_A}{m_B} = -\\dfrac{0.5 \\times 60}{1.5} = -20\\ \\mathrm{m/s}$\n\nFragment B moves to the **left** at $20\\ \\mathrm{m/s}$.\n\n**(b)** $KE = \\frac{1}{2}(0.5)(60)^2 + \\frac{1}{2}(1.5)(20)^2 = 900 + 300 = 1200\\ \\mathrm{J}$\n\nAll this energy came from the chemical explosion (the grenade was initially at rest with zero KE)."
+    },
+    {
+      "id": "t10-p10",
+      "source": "original",
+      "question": "Show that in a perfectly inelastic collision between mass $m_1$ (moving at $v_1$) and a stationary mass $m_2$, the fraction of kinetic energy lost is $\\dfrac{m_2}{m_1 + m_2}$.",
+      "answer": "Final velocity: $v_f = \\dfrac{m_1 v_1}{m_1 + m_2}$\n\nInitial KE: $KE_i = \\dfrac{1}{2}m_1 v_1^2$\n\nFinal KE: $KE_f = \\dfrac{1}{2}(m_1 + m_2)v_f^2 = \\dfrac{1}{2}(m_1+m_2)\\cdot\\dfrac{m_1^2 v_1^2}{(m_1+m_2)^2} = \\dfrac{m_1^2 v_1^2}{2(m_1+m_2)}$\n\nKE lost: $\\Delta KE = KE_i - KE_f = \\dfrac{m_1 v_1^2}{2} - \\dfrac{m_1^2 v_1^2}{2(m_1+m_2)} = \\dfrac{m_1 v_1^2}{2} \\cdot \\dfrac{m_2}{m_1+m_2}$\n\nFraction lost:\n\n$$\\frac{\\Delta KE}{KE_i} = \\frac{m_2}{m_1 + m_2}$$ ✓\n\nCheck: if $m_2 \\gg m_1$, fraction $\\to 1$ (nearly all energy lost — like a bullet hitting a wall) ✓.\nIf $m_2 = 0$, fraction $= 0$ (no second object, no collision) ✓."
+    }
+  ]
+}

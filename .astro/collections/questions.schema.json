@@ -1,0 +1,62 @@
+{
+  "$ref": "#/definitions/questions",
+  "definitions": {
+    "questions": {
+      "type": "object",
+      "properties": {
+        "topicId": {
+          "type": "string"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "question": {
+                "type": "string"
+              },
+              "choices": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 4,
+                "maxItems": 6
+              },
+              "correctIndex": {
+                "type": "number"
+              },
+              "explanation": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "source",
+              "question",
+              "choices",
+              "correctIndex",
+              "explanation"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "topicId",
+        "questions"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

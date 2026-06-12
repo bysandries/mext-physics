@@ -1,0 +1,65 @@
+{
+  "topicId": "t24",
+  "questions": [
+    {
+      "id": "t24-p01",
+      "source": "original",
+      "question": "Container A ($V_A = 2\\ \\mathrm{L}$) holds gas at $P_A = 3\\times10^5\\ \\mathrm{Pa}$ and $T = 300\\ \\mathrm{K}$. Container B ($V_B = 3\\ \\mathrm{L}$) holds gas at $P_B = 2\\times10^5\\ \\mathrm{Pa}$ and $T = 300\\ \\mathrm{K}$. A valve connects them. Find the final pressure (at the same temperature $T = 300\\ \\mathrm{K}$).",
+      "answer": "Total moles (conserved): $n_{\\text{total}} = n_A + n_B = \\dfrac{P_A V_A + P_B V_B}{RT}$\n\nFinal state: same $T$, total volume $V_A + V_B = 5\\ \\mathrm{L}$:\n\n$P_f = \\dfrac{n_{\\text{total}} RT}{V_A + V_B} = \\dfrac{P_A V_A + P_B V_B}{V_A + V_B}$\n\n$= \\dfrac{3\\times10^5 \\times 2 + 2\\times10^5 \\times 3}{5} = \\dfrac{6\\times10^5 + 6\\times10^5}{5} = \\dfrac{12\\times10^5}{5} = 2.4\\times10^5\\ \\mathrm{Pa}$"
+    },
+    {
+      "id": "t24-p02",
+      "source": "2015-UG adapted",
+      "question": "Two containers hold the same gas. Container 1: $n_1 = 0.5\\ \\mathrm{mol}$, $T_1 = 400\\ \\mathrm{K}$, $V_1 = 5\\ \\mathrm{L}$. Container 2: $n_2 = 1\\ \\mathrm{mol}$, $T_2 = 200\\ \\mathrm{K}$, $V_2 = 5\\ \\mathrm{L}$. They are connected. Assuming no heat loss, find the final equilibrium temperature and pressure.",
+      "answer": "**Temperature:** Energy is conserved (monatomic gas, $U = \\frac{3}{2}nRT$):\n\n$n_1 T_1 + n_2 T_2 = (n_1 + n_2)T_f$\n\n$T_f = \\dfrac{n_1 T_1 + n_2 T_2}{n_1 + n_2} = \\dfrac{0.5 \\times 400 + 1 \\times 200}{1.5} = \\dfrac{200 + 200}{1.5} = \\dfrac{400}{1.5} \\approx 266.7\\ \\mathrm{K}$\n\n**Pressure:**\n\n$P_f = \\dfrac{(n_1 + n_2)RT_f}{V_1 + V_2} = \\dfrac{1.5 \\times 8.31 \\times 266.7}{10\\times10^{-3}} = \\dfrac{3323.5}{0.01} = 3.32\\times10^5\\ \\mathrm{Pa}$"
+    },
+    {
+      "id": "t24-p03",
+      "source": "original",
+      "question": "The general formula for the final pressure when two containers at the same temperature are connected is $P_f = (P_1 V_1 + P_2 V_2)/(V_1 + V_2)$. Derive this formula.",
+      "answer": "Mole conservation: $n_f = n_1 + n_2$\n\n$\\dfrac{P_f(V_1+V_2)}{RT_f} = \\dfrac{P_1 V_1}{RT_1} + \\dfrac{P_2 V_2}{RT_2}$\n\nWhen $T_1 = T_2 = T_f = T$ (isothermal connection):\n\n$P_f(V_1+V_2)/T = P_1 V_1/T + P_2 V_2/T$\n\n$P_f = \\dfrac{P_1 V_1 + P_2 V_2}{V_1 + V_2}$ ✓\n\nThis is a weighted average of pressures, weighted by volume."
+    },
+    {
+      "id": "t24-p04",
+      "source": "original",
+      "question": "Container A ($V = 4\\ \\mathrm{L}$, $P = 5\\times10^5\\ \\mathrm{Pa}$) is connected to an initially evacuated container B ($V = 6\\ \\mathrm{L}$, $P = 0$). Temperature stays constant. Find $P_f$.",
+      "answer": "$P_f = \\dfrac{P_A V_A + P_B V_B}{V_A + V_B} = \\dfrac{5\\times10^5 \\times 4 + 0 \\times 6}{4 + 6}$\n\n$= \\dfrac{20\\times10^5}{10} = 2\\times10^5\\ \\mathrm{Pa}$\n\nThe gas expands isothermally into the vacuum. This is an example of free expansion — note that pressure drops by the ratio of original to total volume: $P_f = P_A \\times V_A/(V_A + V_B) = 5\\times10^5 \\times 0.4 = 2\\times10^5\\ \\mathrm{Pa}$."
+    },
+    {
+      "id": "t24-p05",
+      "source": "2018-UG adapted",
+      "question": "Three containers at the same temperature $T = 300\\ \\mathrm{K}$ are connected: A ($V = 1\\ \\mathrm{L}$, $P = 6\\times10^5\\ \\mathrm{Pa}$), B ($V = 2\\ \\mathrm{L}$, $P = 3\\times10^5\\ \\mathrm{Pa}$), C ($V = 3\\ \\mathrm{L}$, $P = 1\\times10^5\\ \\mathrm{Pa}$). Find the final pressure.",
+      "answer": "$P_f = \\dfrac{P_A V_A + P_B V_B + P_C V_C}{V_A + V_B + V_C}$\n\n$= \\dfrac{6\\times10^5 \\times 1 + 3\\times10^5 \\times 2 + 1\\times10^5 \\times 3}{1 + 2 + 3}$\n\n$= \\dfrac{6 + 6 + 3}{6} \\times 10^5 = \\dfrac{15\\times10^5}{6} = 2.5\\times10^5\\ \\mathrm{Pa}$"
+    },
+    {
+      "id": "t24-p06",
+      "source": "original",
+      "question": "Container 1 ($V_1 = 3\\ \\mathrm{L}$, $T_1 = 600\\ \\mathrm{K}$, $P_1 = 2\\times10^5\\ \\mathrm{Pa}$) and Container 2 ($V_2 = 3\\ \\mathrm{L}$, $T_2 = 300\\ \\mathrm{K}$, $P_2 = 1\\times10^5\\ \\mathrm{Pa}$) are connected (rigid, insulated walls except between containers). Find the equilibrium temperature $T_f$ for a monatomic ideal gas.",
+      "answer": "Moles: $n_1 = P_1 V_1/(RT_1) = 2\\times10^5 \\times 3\\times10^{-3}/(8.31 \\times 600) = 600/4986 \\approx 0.1203\\ \\mathrm{mol}$\n\n$n_2 = P_2 V_2/(RT_2) = 1\\times10^5 \\times 3\\times10^{-3}/(8.31 \\times 300) = 300/2493 \\approx 0.1203\\ \\mathrm{mol}$\n\nEqual moles! Energy conservation:\n\n$T_f = \\dfrac{n_1 T_1 + n_2 T_2}{n_1 + n_2} = \\dfrac{0.1203 \\times 600 + 0.1203 \\times 300}{2 \\times 0.1203} = \\dfrac{600 + 300}{2} = 450\\ \\mathrm{K}$\n\n$P_f = \\dfrac{(n_1+n_2)RT_f}{V_1+V_2} = \\dfrac{0.2406 \\times 8.31 \\times 450}{6\\times10^{-3}} = \\dfrac{899.7}{6\\times10^{-3}} \\approx 1.5\\times10^5\\ \\mathrm{Pa}$"
+    },
+    {
+      "id": "t24-p07",
+      "source": "original",
+      "question": "Two containers are connected by a tube with a closed valve. Left: $n_L = 2\\ \\mathrm{mol}$ at $T_L = 400\\ \\mathrm{K}$. Right: $n_R = 1\\ \\mathrm{mol}$ at $T_R = 100\\ \\mathrm{K}$. Both have volume $V$. After opening the valve (thermal equilibrium, monatomic ideal gas), find $T_f$.",
+      "answer": "Energy conservation ($U = \\frac{3}{2}nRT$):\n\n$n_L T_L + n_R T_R = (n_L + n_R)T_f$\n\n$T_f = \\dfrac{n_L T_L + n_R T_R}{n_L + n_R} = \\dfrac{2 \\times 400 + 1 \\times 100}{3} = \\dfrac{800 + 100}{3} = \\dfrac{900}{3} = 300\\ \\mathrm{K}$\n\nThe final temperature is the **mole-weighted average** of the initial temperatures."
+    },
+    {
+      "id": "t24-p08",
+      "source": "2019-UG adapted",
+      "question": "A gas-filled piston-cylinder (volume $V_1$, pressure $P_1$, temperature $T$) is connected to a rigid container (volume $V_2$, initially evacuated). The piston is free to move and maintains constant pressure $P_1$ throughout. Find the final volume of the cylinder after the gas expands.",
+      "answer": "The gas expands at constant pressure $P_1$ until the total amount of gas fills both the cylinder (final volume $V_f$) and the container $V_2$.\n\nMole conservation (at temperature $T$, constant pressure $P_1$):\n\n$n_{\\text{total}} = \\dfrac{P_1 V_1}{RT}$ (initially in cylinder)\n\nFinal state: cylinder volume $V_f$ (piston moved) + container $V_2$, all at pressure $P_1$:\n\n$\\dfrac{P_1(V_f + V_2)}{RT} = \\dfrac{P_1 V_1}{RT}$\n\n$V_f + V_2 = V_1 \\Rightarrow V_f = V_1 - V_2$\n\nThe cylinder volume decreases by $V_2$ (gas flows into the container), and the total volume remains $V_1$."
+    },
+    {
+      "id": "t24-p09",
+      "source": "original",
+      "question": "Container A holds $n_A = 3\\ \\mathrm{mol}$ of monatomic ideal gas at $T_A$. Container B holds $n_B = 1\\ \\mathrm{mol}$ at $T_B = 100\\ \\mathrm{K}$. After connecting (insulated rigid walls), the final temperature is $T_f = 325\\ \\mathrm{K}$. Find $T_A$.",
+      "answer": "Energy conservation:\n\n$n_A T_A + n_B T_B = (n_A + n_B)T_f$\n\n$3 T_A + 1 \\times 100 = 4 \\times 325$\n\n$3 T_A = 1300 - 100 = 1200$\n\n$T_A = 400\\ \\mathrm{K}$"
+    },
+    {
+      "id": "t24-p10",
+      "source": "original",
+      "question": "Two containers A and B (both volume $V = 5\\ \\mathrm{L}$) hold helium. After connecting, the final state is $T_f = 300\\ \\mathrm{K}$, $P_f = 2\\times10^5\\ \\mathrm{Pa}$. Initially, container A was at $T_A = 500\\ \\mathrm{K}$ and container B at $T_B = 100\\ \\mathrm{K}$. Find the initial pressures $P_A$ and $P_B$.",
+      "answer": "From conservation of energy:\n\n$n_A T_A + n_B T_B = (n_A + n_B)T_f$\n\n$n_A \\times 500 + n_B \\times 100 = (n_A + n_B) \\times 300$\n\n$500 n_A + 100 n_B = 300 n_A + 300 n_B$\n\n$200 n_A = 200 n_B \\Rightarrow n_A = n_B$\n\nFrom mole conservation and final state:\n\n$n_A + n_B = \\dfrac{P_f \\times 2V}{RT_f} = \\dfrac{2\\times10^5 \\times 10\\times10^{-3}}{8.31 \\times 300} = \\dfrac{2000}{2493} \\approx 0.8023\\ \\mathrm{mol}$\n\n$n_A = n_B = 0.4012\\ \\mathrm{mol}$\n\n$P_A = \\dfrac{n_A RT_A}{V} = \\dfrac{0.4012 \\times 8.31 \\times 500}{5\\times10^{-3}} = \\dfrac{1665.8}{5\\times10^{-3}} \\approx 3.33\\times10^5\\ \\mathrm{Pa}$\n\n$P_B = \\dfrac{n_B RT_B}{V} = \\dfrac{0.4012 \\times 8.31 \\times 100}{5\\times10^{-3}} \\approx 0.667\\times10^5\\ \\mathrm{Pa}$"
+    }
+  ]
+}

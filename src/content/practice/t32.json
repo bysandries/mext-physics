@@ -1,0 +1,65 @@
+{
+  "topicId": "t32",
+  "questions": [
+    {
+      "id": "t32-p01",
+      "source": "original",
+      "question": "Two point charges $q_1 = 3\\ \\mu\\mathrm{C}$ and $q_2 = 5\\ \\mu\\mathrm{C}$ are separated by $r = 0.3\\ \\mathrm{m}$. Find the electrostatic force between them. Is it attractive or repulsive? Use $k = 9\\times10^9\\ \\mathrm{N\\cdot m^2/C^2}$.",
+      "answer": "$F = k\\dfrac{|q_1||q_2|}{r^2} = 9\\times10^9 \\times \\dfrac{3\\times10^{-6} \\times 5\\times10^{-6}}{(0.3)^2}$\n\n$= 9\\times10^9 \\times \\dfrac{15\\times10^{-12}}{0.09} = 9\\times10^9 \\times 1.667\\times10^{-10} = 1.5\\ \\mathrm{N}$\n\nBoth charges are positive $\\Rightarrow$ **repulsive** force."
+    },
+    {
+      "id": "t32-p02",
+      "source": "original",
+      "question": "A point charge $q = 2\\ \\mu\\mathrm{C}$ creates an electric field. Find the field magnitude at $r = 0.5\\ \\mathrm{m}$ from the charge. Use $k = 9\\times10^9\\ \\mathrm{N\\cdot m^2/C^2}$.",
+      "answer": "$E = k\\dfrac{|q|}{r^2} = 9\\times10^9 \\times \\dfrac{2\\times10^{-6}}{(0.5)^2}$\n\n$= 9\\times10^9 \\times \\dfrac{2\\times10^{-6}}{0.25} = 9\\times10^9 \\times 8\\times10^{-6} = 72{,}000\\ \\mathrm{N/C} = 7.2\\times10^4\\ \\mathrm{N/C}$"
+    },
+    {
+      "id": "t32-p03",
+      "source": "2016-UG adapted",
+      "question": "Two charges $q_1 = +4\\ \\mu\\mathrm{C}$ and $q_2 = -4\\ \\mu\\mathrm{C}$ are placed $d = 0.2\\ \\mathrm{m}$ apart. Find the electric field at the midpoint between them.",
+      "answer": "At the midpoint, $r = d/2 = 0.1\\ \\mathrm{m}$ from each charge.\n\n$E_1 = k\\dfrac{q_1}{r^2} = 9\\times10^9 \\times \\dfrac{4\\times10^{-6}}{0.01} = 3.6\\times10^6\\ \\mathrm{N/C}$, pointing **away** from $+q_1$ (toward $-q_2$)\n\n$E_2 = k\\dfrac{|q_2|}{r^2} = 3.6\\times10^6\\ \\mathrm{N/C}$, pointing **toward** $-q_2$ (same direction!)\n\nBoth fields point in the **same direction** (from $+$ to $-$):\n\n$E = E_1 + E_2 = 7.2\\times10^6\\ \\mathrm{N/C}$ (pointing from $q_1$ toward $q_2$)"
+    },
+    {
+      "id": "t32-p04",
+      "source": "original",
+      "question": "Find the electrostatic potential energy of a system of two charges $q_1 = 2\\ \\mu\\mathrm{C}$ and $q_2 = -3\\ \\mu\\mathrm{C}$ separated by $r = 0.4\\ \\mathrm{m}$.",
+      "answer": "$U = k\\dfrac{q_1 q_2}{r} = 9\\times10^9 \\times \\dfrac{(2\\times10^{-6})(-3\\times10^{-6})}{0.4}$\n\n$= 9\\times10^9 \\times \\dfrac{-6\\times10^{-12}}{0.4} = 9\\times10^9 \\times (-1.5\\times10^{-11})$\n\n$= -0.135\\ \\mathrm{J}$\n\nNegative potential energy indicates the charges attract each other (bound system)."
+    },
+    {
+      "id": "t32-p05",
+      "source": "2018-UG adapted",
+      "question": "Three equal charges $q = 1\\ \\mu\\mathrm{C}$ are placed at the corners of an equilateral triangle with side $a = 0.1\\ \\mathrm{m}$. Find: (a) the net force on one charge, (b) the total potential energy of the system.",
+      "answer": "**(a)** Force from each of the other two charges:\n\n$F = k\\dfrac{q^2}{a^2} = 9\\times10^9 \\times \\dfrac{10^{-12}}{0.01} = 0.9\\ \\mathrm{N}$\n\nThese forces are at $60°$ to each other (by symmetry, the triangle gives $60°$ between them). By vector addition:\n\n$|F_{\\text{net}}| = 2F\\cos(30°) = 2 \\times 0.9 \\times \\dfrac{\\sqrt{3}}{2} = 0.9\\sqrt{3} \\approx 1.56\\ \\mathrm{N}$ (pointing outward from the centroid)\n\n**(b)** There are 3 pairs, each with $U = kq^2/a$:\n\n$U_{\\text{total}} = 3 \\times \\dfrac{kq^2}{a} = 3 \\times \\dfrac{9\\times10^9 \\times 10^{-12}}{0.1} = 3 \\times 0.09 = 0.27\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t32-p06",
+      "source": "original",
+      "question": "Charge $q_1 = +6\\ \\mu\\mathrm{C}$ is at the origin. Charge $q_2 = -2\\ \\mu\\mathrm{C}$ is at $x = 0.4\\ \\mathrm{m}$. Find the point on the $x$-axis (excluding between the charges) where the net electric field is zero.",
+      "answer": "Outside the segment, the zero-field point is on the side of the smaller magnitude charge (to the right of $q_2$).\n\nAt position $x > 0.4\\ \\mathrm{m}$, let $x$ be the distance from origin:\n\n$E_1 = k\\dfrac{6}{x^2}$ (rightward, away from $+q_1$)\n\n$E_2 = k\\dfrac{2}{(x-0.4)^2}$ (leftward, toward $-q_2$)\n\nSet equal: $\\dfrac{6}{x^2} = \\dfrac{2}{(x-0.4)^2}$\n\n$3(x-0.4)^2 = x^2$\n\n$\\sqrt{3}(x-0.4) = x$ (taking positive root)\n\n$(\\sqrt{3}-1)x = 0.4\\sqrt{3}$\n\n$x = \\dfrac{0.4\\sqrt{3}}{\\sqrt{3}-1} = \\dfrac{0.693}{0.732} \\approx 0.946\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t32-p07",
+      "source": "original",
+      "question": "A charge $q = -5\\ \\mu\\mathrm{C}$ is moved from a point where $V_A = 200\\ \\mathrm{V}$ to a point where $V_B = 800\\ \\mathrm{V}$. Find the work done by the electric force.",
+      "answer": "Work done by the electric force:\n\n$W = q(V_A - V_B) = (-5\\times10^{-6})(200 - 800) = (-5\\times10^{-6})(-600) = 3\\times10^{-3}\\ \\mathrm{J} = 3\\ \\mathrm{mJ}$\n\nPositive work done by electric force on the negative charge moving to higher potential — consistent with the fact that negative charges move naturally toward higher potential."
+    },
+    {
+      "id": "t32-p08",
+      "source": "2015-UG adapted",
+      "question": "Two point charges $q_1 = +q$ and $q_2 = -q$ are separated by distance $2d$. Find the electric potential at the midpoint between them.",
+      "answer": "At the midpoint, the distance to each charge is $d$.\n\n$V = V_1 + V_2 = k\\dfrac{q}{d} + k\\dfrac{-q}{d} = k\\dfrac{q}{d} - k\\dfrac{q}{d} = 0$\n\nThe electric **potential** is zero at the midpoint, but the electric **field** is not zero (it points from $+q$ toward $-q$ and both fields add)."
+    },
+    {
+      "id": "t32-p09",
+      "source": "original",
+      "question": "An electron ($q = -1.6\\times10^{-19}\\ \\mathrm{C}$, $m = 9.11\\times10^{-31}\\ \\mathrm{kg}$) is accelerated through a potential difference of $\\Delta V = 100\\ \\mathrm{V}$. Find its final speed (starting from rest).",
+      "answer": "Work-energy theorem: $q\\Delta V = \\frac{1}{2}mv^2$\n\nThe electron gains kinetic energy equal to $|q|\\Delta V$ (since $q < 0$ and $\\Delta V$ is applied to accelerate it):\n\n$\\frac{1}{2}mv^2 = |q|\\Delta V = 1.6\\times10^{-19} \\times 100 = 1.6\\times10^{-17}\\ \\mathrm{J}$\n\n$v = \\sqrt{\\dfrac{2 \\times 1.6\\times10^{-17}}{9.11\\times10^{-31}}} = \\sqrt{3.513\\times10^{13}} \\approx 5.93\\times10^6\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t32-p10",
+      "source": "2019-UG adapted",
+      "question": "Show that the electric potential energy of two point charges can be written as $U = kq_1q_2/r$, starting from the work done to bring $q_2$ from infinity to distance $r$ from $q_1$.",
+      "answer": "Start with $q_1$ fixed at the origin. The force on test charge $q_2$ at position $r'$ is:\n\n$F = k\\dfrac{q_1 q_2}{r'^2}$ (along $\\hat{r}$)\n\nWork done by electric force to bring $q_2$ from $\\infty$ to $r$:\n\n$W = \\int_\\infty^r F\\,dr' = \\int_\\infty^r k\\dfrac{q_1 q_2}{r'^2}\\,dr'$\n\n$= kq_1q_2 \\left[-\\dfrac{1}{r'}\\right]_\\infty^r = kq_1q_2\\left(-\\dfrac{1}{r} + 0\\right) = -\\dfrac{kq_1q_2}{r}$\n\nPotential energy = $-W$ (= work done **against** the force):\n\n$$U = \\dfrac{kq_1q_2}{r}$$\n\nFor like charges ($q_1q_2 > 0$): $U > 0$ (repulsive, need to do work to bring them together)\nFor unlike charges ($q_1q_2 < 0$): $U < 0$ (attractive, energy is released)"
+    }
+  ]
+}

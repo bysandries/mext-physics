@@ -1,0 +1,65 @@
+{
+  "topicId": "t14",
+  "questions": [
+    {
+      "id": "t14-p01",
+      "source": "original",
+      "question": "A sealed container holds $n = 2\\ \\mathrm{mol}$ of an ideal gas at $T = 300\\ \\mathrm{K}$ and $P = 1.0\\times10^5\\ \\mathrm{Pa}$. Find the volume $V$. Use $R = 8.31\\ \\mathrm{J/(mol\\cdot K)}$.",
+      "answer": "Ideal Gas Law: $PV = nRT$\n\n$V = \\dfrac{nRT}{P} = \\dfrac{2 \\times 8.31 \\times 300}{1.0\\times10^5} = \\dfrac{4986}{10^5} \\approx 0.0499\\ \\mathrm{m^3} \\approx 49.9\\ \\mathrm{L}$"
+    },
+    {
+      "id": "t14-p02",
+      "source": "original",
+      "question": "A fixed-volume container holds an ideal gas at $P_1 = 1.2\\times10^5\\ \\mathrm{Pa}$ and $T_1 = 300\\ \\mathrm{K}$. The gas is heated to $T_2 = 450\\ \\mathrm{K}$. Find the new pressure $P_2$.",
+      "answer": "At constant volume, $P/T = $ const:\n\n$\\dfrac{P_2}{P_1} = \\dfrac{T_2}{T_1} = \\dfrac{450}{300} = 1.5$\n\n$P_2 = 1.5 \\times 1.2\\times10^5 = 1.8\\times10^5\\ \\mathrm{Pa}$"
+    },
+    {
+      "id": "t14-p03",
+      "source": "2015-UG adapted",
+      "question": "A gas occupies $V_1 = 4\\ \\mathrm{L}$ at $T_1 = 27^\\circ\\mathrm{C}$ and $P_1 = 1\\ \\mathrm{atm}$. It is compressed to $V_2 = 1\\ \\mathrm{L}$ while the temperature is raised to $T_2 = 127^\\circ\\mathrm{C}$. Find the final pressure $P_2$.",
+      "answer": "Convert temperatures to Kelvin: $T_1 = 300\\ \\mathrm{K}$, $T_2 = 400\\ \\mathrm{K}$.\n\nCombined gas law: $\\dfrac{P_1 V_1}{T_1} = \\dfrac{P_2 V_2}{T_2}$\n\n$P_2 = P_1 \\cdot \\dfrac{V_1}{V_2} \\cdot \\dfrac{T_2}{T_1} = 1 \\times \\dfrac{4}{1} \\times \\dfrac{400}{300} = \\dfrac{16}{3} \\approx 5.33\\ \\mathrm{atm}$"
+    },
+    {
+      "id": "t14-p04",
+      "source": "original",
+      "question": "At standard conditions ($T = 273\\ \\mathrm{K}$, $P = 1.013\\times10^5\\ \\mathrm{Pa}$), $1\\ \\mathrm{mol}$ of an ideal gas occupies $22.4\\ \\mathrm{L}$. Verify this using $R = 8.31\\ \\mathrm{J/(mol\\cdot K)}$.",
+      "answer": "$V = \\dfrac{nRT}{P} = \\dfrac{1 \\times 8.31 \\times 273}{1.013\\times10^5} = \\dfrac{2268.6}{1.013\\times10^5} = 0.02239\\ \\mathrm{m^3}$\n\n$= 22.39\\ \\mathrm{L} \\approx 22.4\\ \\mathrm{L}$ ✓\n\nThis is the standard molar volume of an ideal gas at STP."
+    },
+    {
+      "id": "t14-p05",
+      "source": "2018-CoT adapted",
+      "question": "A cylinder contains $n = 0.5\\ \\mathrm{mol}$ of ideal gas at $T = 400\\ \\mathrm{K}$. The piston maintains constant pressure $P = 2.0\\times10^5\\ \\mathrm{Pa}$. The gas cools to $T' = 200\\ \\mathrm{K}$. Find: (a) the initial and final volumes, (b) the work done by the gas.",
+      "answer": "**(a)** $V = nRT/P$\n\n$V_1 = \\dfrac{0.5 \\times 8.31 \\times 400}{2.0\\times10^5} = \\dfrac{1662}{2\\times10^5} = 8.31\\times10^{-3}\\ \\mathrm{m^3}$\n\n$V_2 = \\dfrac{0.5 \\times 8.31 \\times 200}{2.0\\times10^5} = \\dfrac{831}{2\\times10^5} = 4.155\\times10^{-3}\\ \\mathrm{m^3}$\n\n**(b)** Work done by gas at constant pressure:\n\n$W = P(V_2 - V_1) = 2.0\\times10^5 \\times (4.155 - 8.31)\\times10^{-3} = 2.0\\times10^5 \\times (-4.155\\times10^{-3})$\n\n$W = -831\\ \\mathrm{J}$\n\n(Negative: gas is compressed, work is done **on** the gas.)"
+    },
+    {
+      "id": "t14-p06",
+      "source": "original",
+      "question": "A weather balloon contains helium at $T = 20^\\circ\\mathrm{C}$, $P = 1.0\\times10^5\\ \\mathrm{Pa}$, $V = 1.0\\ \\mathrm{m^3}$. At altitude, $P$ drops to $0.4\\times10^5\\ \\mathrm{Pa}$ and $T$ drops to $-20^\\circ\\mathrm{C}$. Find the new volume.",
+      "answer": "$T_1 = 293\\ \\mathrm{K}$, $T_2 = 253\\ \\mathrm{K}$\n\n$V_2 = V_1 \\cdot \\dfrac{P_1}{P_2} \\cdot \\dfrac{T_2}{T_1} = 1.0 \\times \\dfrac{1.0\\times10^5}{0.4\\times10^5} \\times \\dfrac{253}{293}$\n\n$= 2.5 \\times 0.864 = 2.16\\ \\mathrm{m^3}$\n\nThe balloon expands to 2.16 times its original volume."
+    },
+    {
+      "id": "t14-p07",
+      "source": "original",
+      "question": "A room has dimensions $5\\ \\mathrm{m} \\times 4\\ \\mathrm{m} \\times 3\\ \\mathrm{m}$ and contains air at $P = 1.0\\times10^5\\ \\mathrm{Pa}$ and $T = 300\\ \\mathrm{K}$. Find the number of moles of air in the room. Use $R = 8.31\\ \\mathrm{J/(mol\\cdot K)}$.",
+      "answer": "$V = 5 \\times 4 \\times 3 = 60\\ \\mathrm{m^3}$\n\n$n = \\dfrac{PV}{RT} = \\dfrac{1.0\\times10^5 \\times 60}{8.31 \\times 300} = \\dfrac{6.0\\times10^6}{2493} \\approx 2406\\ \\mathrm{mol}$\n\nWith molar mass of air $\\approx 29\\ \\mathrm{g/mol}$: mass $\\approx 2406 \\times 0.029 \\approx 69.8\\ \\mathrm{kg}$"
+    },
+    {
+      "id": "t14-p08",
+      "source": "2014-UG adapted",
+      "question": "A gas is enclosed in a container of fixed volume. When the temperature is $T_1 = 17^\\circ\\mathrm{C}$, the pressure is $P_1 = 1.2\\times10^5\\ \\mathrm{Pa}$. At what temperature (in $^\\circ\\mathrm{C}$) will the pressure be $P_2 = 1.6\\times10^5\\ \\mathrm{Pa}$?",
+      "answer": "$T_1 = 17 + 273 = 290\\ \\mathrm{K}$\n\nAt constant $V$: $P \\propto T$\n\n$T_2 = T_1 \\cdot \\dfrac{P_2}{P_1} = 290 \\times \\dfrac{1.6}{1.2} = 290 \\times \\dfrac{4}{3} \\approx 386.7\\ \\mathrm{K}$\n\n$T_2 = 386.7 - 273 \\approx 113.7^\\circ\\mathrm{C}$"
+    },
+    {
+      "id": "t14-p09",
+      "source": "original",
+      "question": "A gas occupies $V_1 = 10\\ \\mathrm{L}$ at $T = 300\\ \\mathrm{K}$. It is compressed isothermally until $V_2 = 2\\ \\mathrm{L}$. By what factor does the pressure change? If the original pressure was $P_1 = 1.0\\times10^5\\ \\mathrm{Pa}$, find $P_2$.",
+      "answer": "Isothermal process: $P_1 V_1 = P_2 V_2$\n\n$\\dfrac{P_2}{P_1} = \\dfrac{V_1}{V_2} = \\dfrac{10}{2} = 5$\n\n$P_2 = 5 \\times 1.0\\times10^5 = 5.0\\times10^5\\ \\mathrm{Pa}$\n\nCompressing to 1/5 the volume multiplies pressure by 5."
+    },
+    {
+      "id": "t14-p10",
+      "source": "original",
+      "question": "A container is divided into two equal compartments by a removable partition. The left side holds gas A: $n_A = 2\\ \\mathrm{mol}$, $T = 300\\ \\mathrm{K}$. The right side holds gas B: $n_B = 3\\ \\mathrm{mol}$, $T = 300\\ \\mathrm{K}$. Both sides have the same volume $V_0$. When the partition is removed, find the final pressure (assume $T$ stays at $300\\ \\mathrm{K}$).",
+      "answer": "Initial pressures:\n\n$P_A = \\dfrac{n_A RT}{V_0}$, $P_B = \\dfrac{n_B RT}{V_0}$\n\nAfter mixing: total moles $= n_A + n_B = 5$, total volume $= 2V_0$, temperature unchanged.\n\n$P_f = \\dfrac{(n_A + n_B)RT}{2V_0} = \\dfrac{5RT}{2V_0}$\n\nCompare to initial: $P_A = 2RT/V_0$, $P_B = 3RT/V_0$\n\n$P_f = \\dfrac{5RT}{2V_0} = 2.5 \\dfrac{RT}{V_0}$\n\nThis equals the average of the partial pressures: $\\frac{P_A + P_B}{2} = \\frac{2+3}{2}\\dfrac{RT}{V_0} = 2.5\\dfrac{RT}{V_0}$ ✓"
+    }
+  ]
+}

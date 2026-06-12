@@ -1,0 +1,65 @@
+{
+  "topicId": "t29",
+  "questions": [
+    {
+      "id": "t29-p01",
+      "source": "original",
+      "question": "In a resonance tube experiment, a $440\\ \\mathrm{Hz}$ tuning fork is held over a closed tube. The first two resonance lengths are $L_1 = 18.75\\ \\mathrm{cm}$ and $L_2 = 56.25\\ \\mathrm{cm}$. Find the speed of sound and the end correction.",
+      "answer": "**Speed of sound:**\n\n$\\lambda/2 = L_2 - L_1 = 56.25 - 18.75 = 37.5\\ \\mathrm{cm} = 0.375\\ \\mathrm{m}$\n\n$\\lambda = 0.75\\ \\mathrm{m}$\n\n$v = f\\lambda = 440 \\times 0.75 = 330\\ \\mathrm{m/s}$\n\n**End correction:**\n\n$L_1 + e = \\lambda/4 = 0.1875\\ \\mathrm{m}$\n\n$e = 0.1875 - 0.1875 = 0$ in this case (exact resonance, no end correction needed here)."
+    },
+    {
+      "id": "t29-p02",
+      "source": "2016-CoT adapted",
+      "question": "Sound travels $d = 1020\\ \\mathrm{m}$ in $t = 3\\ \\mathrm{s}$. Find: (a) the speed of sound, (b) the wavelength for a $510\\ \\mathrm{Hz}$ note.",
+      "answer": "**(a)** $v = d/t = 1020/3 = 340\\ \\mathrm{m/s}$\n\n**(b)** $\\lambda = v/f = 340/510 = \\dfrac{2}{3}\\ \\mathrm{m} \\approx 0.667\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t29-p03",
+      "source": "original",
+      "question": "The speed of sound in air at $T = 0^\\circ\\mathrm{C}$ is $v_0 = 331\\ \\mathrm{m/s}$. It increases by approximately $0.6\\ \\mathrm{m/s}$ per degree Celsius. Find the speed at $T = 20^\\circ\\mathrm{C}$ and $T = 100^\\circ\\mathrm{C}$.",
+      "answer": "$v(T) \\approx 331 + 0.6T\\ \\mathrm{m/s}$ (where $T$ is in $^\\circ\\mathrm{C}$)\n\n$v(20) = 331 + 0.6 \\times 20 = 331 + 12 = 343\\ \\mathrm{m/s}$\n\n$v(100) = 331 + 0.6 \\times 100 = 331 + 60 = 391\\ \\mathrm{m/s}$\n\n**Physical reason:** Sound speed $\\propto \\sqrt{T_{\\text{abs}}}$. Warmer air $\\Rightarrow$ faster molecular motion $\\Rightarrow$ faster pressure disturbance propagation."
+    },
+    {
+      "id": "t29-p04",
+      "source": "2018-UG adapted",
+      "question": "An open pipe resonates at $f = 300\\ \\mathrm{Hz}$ and $f = 500\\ \\mathrm{Hz}$ as consecutive harmonics. Find: (a) the fundamental frequency, (b) the length of the pipe. ($v = 340\\ \\mathrm{m/s}$)",
+      "answer": "**(a)** Consecutive harmonics of an open pipe differ by $f_1$:\n\n$f_1 = 500 - 300 = 200\\ \\mathrm{Hz}$\n\nVerify: $300 = 1.5 \\times 200$ — not integer! So these can't be consecutive in an open pipe.\n\nActually for open pipe, $f_n = n f_1$ with integer $n$. $300/200 = 1.5$ — not integer.\n\nTry closed pipe: $f_n = (2n-1)f_1$, difference = $2f_1$. So $f_1 = (500-300)/2 = 100\\ \\mathrm{Hz}$.\n\nCheck: $300/100 = 3$ (odd ✓), $500/100 = 5$ (odd ✓) — **closed pipe**.\n\n$f_1 = 100\\ \\mathrm{Hz}$\n\n**(b)** $L = v/(4f_1) = 340/(4 \\times 100) = 0.85\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t29-p05",
+      "source": "original",
+      "question": "A thunder is heard $t = 4\\ \\mathrm{s}$ after a lightning flash is seen. How far away is the thunderstorm? (Use $v_{\\text{sound}} = 340\\ \\mathrm{m/s}$; light is essentially instantaneous.)",
+      "answer": "$d = v_{\\text{sound}} \\times t = 340 \\times 4 = 1360\\ \\mathrm{m} = 1.36\\ \\mathrm{km}$\n\n**Practical rule:** 3 seconds per km (or 5 seconds per mile) — the storm is $1360/1000 \\approx 1.4$ km away."
+    },
+    {
+      "id": "t29-p06",
+      "source": "original",
+      "question": "Using the exact formula $v = v_0\\sqrt{T/T_0}$ (where $T$ is absolute temperature), calculate the speed of sound at $T = 27^\\circ\\mathrm{C}$ given $v_0 = 331\\ \\mathrm{m/s}$ at $T_0 = 0^\\circ\\mathrm{C} = 273\\ \\mathrm{K}$.",
+      "answer": "$v = v_0 \\sqrt{\\dfrac{T}{T_0}} = 331 \\times \\sqrt{\\dfrac{300}{273}} = 331 \\times \\sqrt{1.099}$\n\n$= 331 \\times 1.048 = 346.9\\ \\mathrm{m/s}$\n\nLinear approximation: $v \\approx 331 + 0.6 \\times 27 = 347.2\\ \\mathrm{m/s}$ — very close ✓"
+    },
+    {
+      "id": "t29-p07",
+      "source": "2015-UG adapted",
+      "question": "In a resonance experiment, a tube of length $L = 30\\ \\mathrm{cm}$ resonates at its third harmonic with a source of frequency $f = 850\\ \\mathrm{Hz}$. Is this an open or closed pipe? Find the speed of sound.",
+      "answer": "**Try closed pipe, 3rd harmonic ($n=2$, i.e., $f = 3f_1$):**\n\n$f = \\dfrac{3v}{4L} \\Rightarrow v = \\dfrac{4Lf}{3} = \\dfrac{4 \\times 0.3 \\times 850}{3} = \\dfrac{1020}{3} = 340\\ \\mathrm{m/s}$ ✓\n\n**Verify with open pipe, 3rd harmonic:**\n\n$v = 2Lf/3 = 2 \\times 0.3 \\times 850/3 = 170\\ \\mathrm{m/s}$ — too slow for air.\n\nThis is a **closed pipe** at its 3rd harmonic (1st overtone for a closed pipe).\n\n$v = 340\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t29-p08",
+      "source": "original",
+      "question": "A bat uses echolocation. It emits a pulse at $f = 50{,}000\\ \\mathrm{Hz}$ and hears the echo $t = 0.005\\ \\mathrm{s}$ later. How far away is the obstacle? ($v = 340\\ \\mathrm{m/s}$)",
+      "answer": "The sound travels to the obstacle and back, so total distance $= 2d$:\n\n$2d = v \\times t = 340 \\times 0.005 = 1.7\\ \\mathrm{m}$\n\n$d = 0.85\\ \\mathrm{m}$\n\nThe obstacle is $0.85\\ \\mathrm{m}$ away."
+    },
+    {
+      "id": "t29-p09",
+      "source": "2014-UG adapted",
+      "question": "The speed of sound in water is $v_w = 1500\\ \\mathrm{m/s}$. A ship's sonar sends a pulse and detects the echo from the seafloor after $t = 1.2\\ \\mathrm{s}$. Find the depth of the ocean.",
+      "answer": "$d = \\dfrac{v_w \\times t}{2} = \\dfrac{1500 \\times 1.2}{2} = \\dfrac{1800}{2} = 900\\ \\mathrm{m}$\n\nThe ocean is $900\\ \\mathrm{m}$ deep at this location."
+    },
+    {
+      "id": "t29-p10",
+      "source": "original",
+      "question": "In an open resonance tube, resonances are observed at $f_1 = 250\\ \\mathrm{Hz}$ and $f_2 = 750\\ \\mathrm{Hz}$ (with one harmonic between them). What is the harmonic number of $f_2$? Is this an open or closed pipe, and what is its length? ($v = 340\\ \\mathrm{m/s}$)",
+      "answer": "If there is one resonance between $f_1$ and $f_2$, then $f_2/f_1 = 3$ (ratio of harmonic numbers).\n\n$750/250 = 3$ ✓\n\n**Open pipe:** harmonics at $f_1, 2f_1, 3f_1, \\ldots$. If $f_1 = 250$, then $f_2 = 500$ (next), $f_3 = 750$. So $f_2 = 750\\ \\mathrm{Hz}$ is the **3rd harmonic**. There is one harmonic ($500\\ \\mathrm{Hz}$) between them. ✓\n\n**Length:** $L = v/(2f_1) = 340/(2 \\times 250) = 0.68\\ \\mathrm{m}$\n\nAlternatively, **closed pipe** with $f_1 = 250$ and $f_2 = 750$: this would be the 3rd harmonic (first overtone). But a closed pipe would have only one resonance between: $f_1 = 250$, $f_3 = 750$, so also one resonance... except for closed pipes there's no resonance at $500$, so the count is 0, not 1.\n\nCheck for closed pipe: between $250$ and $750$, the closed pipe has no resonance (next is $f_3 = 750$ itself). So **open pipe** is correct. Length $= 0.68\\ \\mathrm{m}$."
+    }
+  ]
+}

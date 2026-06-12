@@ -1,0 +1,65 @@
+{
+  "topicId": "t31",
+  "questions": [
+    {
+      "id": "t31-p01",
+      "source": "original",
+      "question": "Two tuning forks vibrate at $f_1 = 440\\ \\mathrm{Hz}$ and $f_2 = 444\\ \\mathrm{Hz}$. Find the beat frequency.",
+      "answer": "$f_{\\text{beat}} = |f_1 - f_2| = |440 - 444| = 4\\ \\mathrm{Hz}$\n\nThe loudness of the combined sound pulses 4 times per second."
+    },
+    {
+      "id": "t31-p02",
+      "source": "original",
+      "question": "Derive the beat frequency formula $f_{\\text{beat}} = |f_1 - f_2|$ by adding two cosine waves of slightly different frequencies.",
+      "answer": "$y = \\cos(2\\pi f_1 t) + \\cos(2\\pi f_2 t)$\n\nUsing sum-to-product:\n\n$y = 2\\cos\\left(\\pi(f_1-f_2)t\\right)\\cos\\left(\\pi(f_1+f_2)t\\right)$\n\nLet $\\bar{f} = (f_1+f_2)/2$ (average frequency, audible tone) and $\\delta f = (f_1-f_2)/2$:\n\n$y = 2\\cos(2\\pi \\delta f\\, t) \\cdot \\cos(2\\pi\\bar{f}\\, t)$\n\nThe amplitude $2\\cos(2\\pi\\delta f\\, t)$ oscillates at frequency $|\\delta f| = |f_1-f_2|/2$.\n\nThe **intensity** (proportional to amplitude squared) peaks twice per cycle of the amplitude envelope: beat frequency $= 2 \\times |\\delta f| = |f_1 - f_2|$."
+    },
+    {
+      "id": "t31-p03",
+      "source": "2016-UG adapted",
+      "question": "A standard tuning fork ($A = 440\\ \\mathrm{Hz}$) and an unknown fork produce 6 beats/s. The unknown fork is tightened (increasing its frequency) and the beats decrease to 2/s. Find the original and final frequencies of the unknown fork.",
+      "answer": "Unknown fork produces 6 beats with 440 Hz: $f_u = 440 \\pm 6$, so either $446$ or $434\\ \\mathrm{Hz}$.\n\nAfter tightening (increasing $f_u$), beats decrease to 2/s. If $f_u$ increases and beats decrease, then $f_u$ was moving **closer** to 440:\n\n- If $f_u = 434$: increasing gives $f_u \\to 436$, beats $= |436-440| = 4$ (not 2)\n- If $f_u = 434$: to get 2 beats, $f_u$ must reach $442$\n- Actually: if $f_u$ was $446$ (above 440), increasing would give more beats, not fewer.\n\n$f_u$ was $434\\ \\mathrm{Hz}$ originally. After tightening: $f_u = 438\\ \\mathrm{Hz}$ (gives 2 beats with 440) ✓\n\nBut wait: $434 \\to 438$ means 4 Hz increase. Or: $f_u$ was $434$, after tightening $f_u = 438$ giving $|438-440|=2$ ✓.\n\n**Answer:** Original $f_u = 434\\ \\mathrm{Hz}$; after tightening, $f_u = 438\\ \\mathrm{Hz}$."
+    },
+    {
+      "id": "t31-p04",
+      "source": "original",
+      "question": "A guitar string is tuned to $f_0 = 330\\ \\mathrm{Hz}$. When played with a $335\\ \\mathrm{Hz}$ reference tone, 5 beats/s are heard. The string is loosened slightly (decreasing tension). The beats become faster. Is the string frequency above or below $335\\ \\mathrm{Hz}$?",
+      "answer": "5 beats/s means the string is at $330\\ \\mathrm{Hz}$ or $340\\ \\mathrm{Hz}$.\n\nWait — the string was tuned to 330 Hz originally, but the question says 5 beats with 335 Hz reference, so string is at $335 \\pm 5 = 330$ or $340$ Hz.\n\nIf string is at **330 Hz** and we **loosen** (decrease frequency, say to 328 Hz): beats = $|328 - 335| = 7$ → more beats ✓\n\nIf string is at **340 Hz** and we **loosen** (decrease to 338 Hz): beats = $|338 - 335| = 3$ → fewer beats ✗\n\n**The string frequency is below $335\\ \\mathrm{Hz}$** (at $330\\ \\mathrm{Hz}$). Loosening moves it further from 335 Hz, increasing beat frequency."
+    },
+    {
+      "id": "t31-p05",
+      "source": "2018-CoT adapted",
+      "question": "Two sources emit sounds of $f_1 = 512\\ \\mathrm{Hz}$ and $f_2 = 508\\ \\mathrm{Hz}$. Find: (a) the beat frequency, (b) the period of the beats, (c) the average audible frequency.",
+      "answer": "**(a)** $f_{\\text{beat}} = |512 - 508| = 4\\ \\mathrm{Hz}$\n\n**(b)** $T_{\\text{beat}} = 1/f_{\\text{beat}} = 1/4 = 0.25\\ \\mathrm{s}$\n\n**(c)** Average frequency: $\\bar{f} = (512 + 508)/2 = 510\\ \\mathrm{Hz}$ — this is the pitch you hear fluctuating at 4 Hz."
+    },
+    {
+      "id": "t31-p06",
+      "source": "original",
+      "question": "Two strings on a musical instrument have frequencies $f_1 = 396\\ \\mathrm{Hz}$ and $f_2 = 400\\ \\mathrm{Hz}$. They are plucked simultaneously at $t = 0$. At what times $t > 0$ do the two waves first constructively interfere (maximum beat)?",
+      "answer": "Beat period: $T_{\\text{beat}} = 1/f_{\\text{beat}} = 1/|f_1-f_2| = 1/4 = 0.25\\ \\mathrm{s}$\n\nAt $t = 0$, both waves start in phase (maximum constructive interference).\n\nThe next maximum (beat peak) occurs one full beat cycle later:\n\n$t = T_{\\text{beat}} = 0.25\\ \\mathrm{s}$, $0.50\\ \\mathrm{s}$, $0.75\\ \\mathrm{s}$, $\\ldots$\n\nMinimum (destructive interference, silence) occurs at:\n\n$t = T_{\\text{beat}}/2 = 0.125\\ \\mathrm{s}$, $0.375\\ \\mathrm{s}$, $\\ldots$"
+    },
+    {
+      "id": "t31-p07",
+      "source": "original",
+      "question": "A piano technician is tuning a string to middle C ($f_0 = 261.6\\ \\mathrm{Hz}$). She hears 3 beats/s. After slightly tightening the string, she hears 4 beats/s. Was the string originally too high or too low in frequency?",
+      "answer": "3 beats/s: string is at $261.6 \\pm 3\\ \\mathrm{Hz}$, so $258.6$ or $264.6\\ \\mathrm{Hz}$.\n\nAfter tightening (increasing frequency): 4 beats/s.\n\nIf string was at **264.6** (above): increasing gives, say, 266 Hz, beats = $|266-261.6| = 4.4 \\approx 4$ ✓ (moving further away)\n\nIf string was at **258.6** (below): increasing gives, say, 260.6 Hz, beats = $|260.6-261.6| = 1$ — fewer beats, not 4. ✗\n\n**The string was too high** ($264.6\\ \\mathrm{Hz}$). Tightening moved it further from $261.6\\ \\mathrm{Hz}$, increasing beats."
+    },
+    {
+      "id": "t31-p08",
+      "source": "2019-UG adapted",
+      "question": "Two speakers emit at $f_1 = 1000\\ \\mathrm{Hz}$ and $f_2 = 1003\\ \\mathrm{Hz}$. How many times per second does a listener hear a loud burst of sound (beat maximum)?",
+      "answer": "$f_{\\text{beat}} = |f_1 - f_2| = |1000 - 1003| = 3\\ \\mathrm{Hz}$\n\nThe listener hears **3 loud bursts per second**.\n\nEach loud burst corresponds to the two waves being momentarily in phase (maximum constructive interference)."
+    },
+    {
+      "id": "t31-p09",
+      "source": "original",
+      "question": "Two identical tuning forks vibrate at $f_0 = 500\\ \\mathrm{Hz}$. A small piece of wax is attached to one fork, reducing its frequency. 8 beats/s are observed. Find the new frequency of the wax-loaded fork.",
+      "answer": "Adding wax increases mass, which decreases frequency.\n\n$f_{\\text{wax}} = f_0 - f_{\\text{beat}} = 500 - 8 = 492\\ \\mathrm{Hz}$\n\n(We know it's below 500 because wax lowers the frequency.)\n\n$f_{\\text{beat}} = |500 - 492| = 8\\ \\mathrm{Hz}$ ✓"
+    },
+    {
+      "id": "t31-p10",
+      "source": "original",
+      "question": "A listener walks between two loudspeakers emitting the same frequency. One speaker is stationary, the other moves away at $v_s = 2\\ \\mathrm{m/s}$. The listener (stationary) hears beats. Find the beat frequency if $f_0 = 680\\ \\mathrm{Hz}$ and $v = 340\\ \\mathrm{m/s}$.",
+      "answer": "Stationary speaker frequency heard: $f_1 = 680\\ \\mathrm{Hz}$\n\nMoving speaker (receding at $v_s = 2\\ \\mathrm{m/s}$) frequency heard:\n\n$f_2 = f_0 \\cdot \\dfrac{v}{v + v_s} = 680 \\times \\dfrac{340}{342} \\approx 680 \\times 0.9942 \\approx 676\\ \\mathrm{Hz}$\n\n$f_{\\text{beat}} = f_1 - f_2 = 680 - 676 = 4\\ \\mathrm{Hz}$"
+    }
+  ]
+}

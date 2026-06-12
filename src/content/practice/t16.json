@@ -1,0 +1,65 @@
+{
+  "topicId": "t16",
+  "questions": [
+    {
+      "id": "t16-p01",
+      "source": "original",
+      "question": "In an isobaric process, $n = 2\\ \\mathrm{mol}$ of a monatomic ideal gas is heated from $T_1 = 300\\ \\mathrm{K}$ to $T_2 = 500\\ \\mathrm{K}$ at constant pressure $P = 1.0\\times10^5\\ \\mathrm{Pa}$. Find: (a) the work done by the gas, (b) $\\Delta U$, (c) the heat absorbed $Q$.",
+      "answer": "**(a)** Work in isobaric process: $W = P\\Delta V = nR\\Delta T$\n\n$W = 2 \\times 8.31 \\times 200 = 3324\\ \\mathrm{J}$\n\n**(b)** $\\Delta U = \\dfrac{3}{2}nR\\Delta T = \\dfrac{3}{2} \\times 2 \\times 8.31 \\times 200 = 4986\\ \\mathrm{J}$\n\n**(c)** $Q = \\Delta U + W = 4986 + 3324 = 8310\\ \\mathrm{J}$\n\nAlternatively: $Q = nC_P\\Delta T = n\\cdot\\dfrac{5}{2}R\\cdot\\Delta T = 2 \\times \\dfrac{5}{2} \\times 8.31 \\times 200 = 8310\\ \\mathrm{J}$ ✓"
+    },
+    {
+      "id": "t16-p02",
+      "source": "original",
+      "question": "In an isobaric process, an ideal gas does $W = 600\\ \\mathrm{J}$ of work. The internal energy increases by $\\Delta U = 900\\ \\mathrm{J}$. Find: (a) the heat absorbed by the gas, (b) how $Q$ is distributed.",
+      "answer": "**(a)** First Law: $Q = \\Delta U + W = 900 + 600 = 1500\\ \\mathrm{J}$\n\n**(b)** Of the $1500\\ \\mathrm{J}$ of heat absorbed:\n- $900\\ \\mathrm{J}$ (60%) increases the internal energy (raises the temperature)\n- $600\\ \\mathrm{J}$ (40%) is converted to mechanical work done by the expanding gas"
+    },
+    {
+      "id": "t16-p03",
+      "source": "2015-CoT adapted",
+      "question": "A gas expands isobarically at $P = 2.0\\times10^5\\ \\mathrm{Pa}$ from $V_1 = 3.0\\ \\mathrm{L}$ to $V_2 = 8.0\\ \\mathrm{L}$. Find the work done by the gas.",
+      "answer": "$W = P(V_2 - V_1) = 2.0\\times10^5 \\times (8.0 - 3.0)\\times10^{-3}$\n\n$= 2.0\\times10^5 \\times 5.0\\times10^{-3} = 1000\\ \\mathrm{J} = 1\\ \\mathrm{kJ}$"
+    },
+    {
+      "id": "t16-p04",
+      "source": "original",
+      "question": "For a monatomic ideal gas, show that in an isobaric process the heat added is split as: $\\tfrac{3}{5}$ goes to internal energy and $\\tfrac{2}{5}$ goes to work.",
+      "answer": "In an isobaric process:\n\n$Q = nC_P\\Delta T = n\\cdot\\dfrac{5}{2}R\\cdot\\Delta T$\n\n$\\Delta U = nC_V\\Delta T = n\\cdot\\dfrac{3}{2}R\\cdot\\Delta T$\n\n$W = nR\\Delta T$\n\nFractions:\n\n$\\dfrac{\\Delta U}{Q} = \\dfrac{\\frac{3}{2}R}{\\frac{5}{2}R} = \\dfrac{3}{5}$ ✓\n\n$\\dfrac{W}{Q} = \\dfrac{R}{\\frac{5}{2}R} = \\dfrac{2}{5}$ ✓\n\n$\\dfrac{3}{5} + \\dfrac{2}{5} = 1$ ✓"
+    },
+    {
+      "id": "t16-p05",
+      "source": "original",
+      "question": "During an isobaric cooling, $n = 1\\ \\mathrm{mol}$ of monatomic ideal gas releases $Q = -1500\\ \\mathrm{J}$ of heat. Find: (a) the temperature change, (b) the work done by the gas.",
+      "answer": "**(a)** $Q = nC_P\\Delta T = n \\cdot \\dfrac{5}{2}R \\cdot \\Delta T$\n\n$\\Delta T = \\dfrac{2Q}{5nR} = \\dfrac{2(-1500)}{5 \\times 1 \\times 8.31} = \\dfrac{-3000}{41.55} \\approx -72.2\\ \\mathrm{K}$\n\nTemperature decreases by $72.2\\ \\mathrm{K}$.\n\n**(b)** $W = nR\\Delta T = 1 \\times 8.31 \\times (-72.2) \\approx -600\\ \\mathrm{J}$\n\nNegative work: the environment does work **on** the gas as it contracts."
+    },
+    {
+      "id": "t16-p06",
+      "source": "2018-UG adapted",
+      "question": "A monatomic ideal gas expands isobarically from state A ($T = 300\\ \\mathrm{K}$, $V = 2\\ \\mathrm{L}$) to state B ($T = 600\\ \\mathrm{K}$, $V = 4\\ \\mathrm{L}$). Find: (a) the pressure, (b) the number of moles, (c) $\\Delta U$, $W$, and $Q$.",
+      "answer": "**(a)** From Charles's law ($V/T = $ const): $\\dfrac{V_A}{T_A} = \\dfrac{2}{300} = \\dfrac{4}{600}$ ✓. Pressure from PV = nRT.\n\n**(b)** At state A: $n = \\dfrac{P V_A}{R T_A}$. From the isobaric law: $\\dfrac{V_B}{T_B} = \\dfrac{V_A}{T_A}$, so $P$ is unchanged. Assume $P = 1.0\\times10^5\\ \\mathrm{Pa}$:\n\n$n = \\dfrac{1.0\\times10^5 \\times 2\\times10^{-3}}{8.31 \\times 300} = \\dfrac{200}{2493} \\approx 0.0803\\ \\mathrm{mol}$\n\n**(c)** $\\Delta T = 300\\ \\mathrm{K}$\n\n$\\Delta U = \\dfrac{3}{2}nR\\Delta T = \\dfrac{3}{2} \\times 0.0803 \\times 8.31 \\times 300 \\approx 300\\ \\mathrm{J}$\n\n$W = nR\\Delta T = 0.0803 \\times 8.31 \\times 300 \\approx 200\\ \\mathrm{J}$\n\n$Q = \\Delta U + W = 500\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t16-p07",
+      "source": "original",
+      "question": "Why is more heat required to raise the temperature of an ideal gas by $\\Delta T$ at constant pressure than at constant volume? Explain using $C_P > C_V$.",
+      "answer": "At **constant volume**: all added heat goes into increasing internal energy (raising temperature).\n\n$Q_V = nC_V\\Delta T$\n\nAt **constant pressure**: the gas expands as it is heated. Some of the added heat is \"used up\" doing expansion work against the constant external pressure:\n\n$Q_P = nC_P\\Delta T = n(C_V + R)\\Delta T = nC_V\\Delta T + nR\\Delta T$\n\nThe extra $nR\\Delta T$ is the work done by the gas during expansion.\n\nTherefore $C_P = C_V + R > C_V$: you must supply extra heat at constant pressure to achieve the same temperature rise, because some heat leaves the system as work."
+    },
+    {
+      "id": "t16-p08",
+      "source": "original",
+      "question": "A gas is heated isobarically and its volume increases from $V_1 = 5\\ \\mathrm{L}$ to $V_2 = 9\\ \\mathrm{L}$. During this process $\\Delta U = 1200\\ \\mathrm{J}$. Find: (a) the pressure, (b) the heat added.",
+      "answer": "**(a)** The work done:\n\n$W = P\\Delta V = P(V_2 - V_1) = P \\times 4\\times10^{-3}\\ \\mathrm{m^3}$\n\nFor a monatomic ideal gas, $W = \\frac{2}{3}\\Delta U$:\n\n$W = \\frac{2}{3} \\times 1200 = 800\\ \\mathrm{J}$\n\n$P = \\dfrac{W}{\\Delta V} = \\dfrac{800}{4\\times10^{-3}} = 2.0\\times10^5\\ \\mathrm{Pa}$\n\n**(b)** $Q = \\Delta U + W = 1200 + 800 = 2000\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t16-p09",
+      "source": "original",
+      "question": "For a diatomic ideal gas (5 degrees of freedom), $C_V = \\frac{5}{2}R$ and $C_P = \\frac{7}{2}R$. Compare the heat needed to raise $n = 1\\ \\mathrm{mol}$ by $\\Delta T = 100\\ \\mathrm{K}$: (a) at constant volume, (b) at constant pressure.",
+      "answer": "**(a)** $Q_V = nC_V\\Delta T = 1 \\times \\dfrac{5}{2} \\times 8.31 \\times 100 = 2077.5\\ \\mathrm{J}$\n\n**(b)** $Q_P = nC_P\\Delta T = 1 \\times \\dfrac{7}{2} \\times 8.31 \\times 100 = 2908.5\\ \\mathrm{J}$\n\nDifference: $Q_P - Q_V = nR\\Delta T = 831\\ \\mathrm{J}$ = the work done by the gas in the isobaric case."
+    },
+    {
+      "id": "t16-p10",
+      "source": "original",
+      "question": "A piston–cylinder device contains $n = 3\\ \\mathrm{mol}$ of monatomic ideal gas. The gas is heated at constant pressure from $T_1 = 250\\ \\mathrm{K}$ until the volume doubles. Find: (a) the final temperature, (b) $Q$, $W$, $\\Delta U$.",
+      "answer": "**(a)** Isobaric: $V \\propto T$. If volume doubles, temperature doubles:\n\n$T_2 = 2T_1 = 500\\ \\mathrm{K}$, so $\\Delta T = 250\\ \\mathrm{K}$\n\n**(b)** $W = nR\\Delta T = 3 \\times 8.31 \\times 250 = 6232.5\\ \\mathrm{J}$\n\n$\\Delta U = \\dfrac{3}{2}nR\\Delta T = \\dfrac{3}{2} \\times 6232.5 = 9348.75\\ \\mathrm{J}$ (or $= \\frac{3}{2} \\times 3 \\times 8.31 \\times 250$)\n\n$Q = \\Delta U + W = 9348.75 + 6232.5 = 15{,}581.25\\ \\mathrm{J} \\approx 15.6\\ \\mathrm{kJ}$"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "topicId": "t17",
+  "questions": [
+    {
+      "id": "t17-p01",
+      "source": "original",
+      "question": "In an isochoric process, $n = 1\\ \\mathrm{mol}$ of monatomic ideal gas absorbs $Q = 1247\\ \\mathrm{J}$ of heat. Find: (a) $\\Delta U$, (b) $W$, (c) $\\Delta T$.",
+      "answer": "**(a)** At constant volume, $W = 0$, so by the First Law:\n\n$\\Delta U = Q = 1247\\ \\mathrm{J}$\n\n**(b)** $W = 0$ (no volume change)\n\n**(c)** $\\Delta U = \\dfrac{3}{2}nR\\Delta T \\Rightarrow \\Delta T = \\dfrac{2\\Delta U}{3nR} = \\dfrac{2 \\times 1247}{3 \\times 1 \\times 8.31} = \\dfrac{2494}{24.93} \\approx 100\\ \\mathrm{K}$"
+    },
+    {
+      "id": "t17-p02",
+      "source": "original",
+      "question": "A rigid container holds $n = 2\\ \\mathrm{mol}$ of monatomic ideal gas at $T_1 = 200\\ \\mathrm{K}$ and $P_1 = 8.31\\times10^4\\ \\mathrm{Pa}$. The gas is heated to $T_2 = 400\\ \\mathrm{K}$. Find: (a) $P_2$, (b) $\\Delta U$, (c) $Q$.",
+      "answer": "**(a)** At constant volume, $P \\propto T$:\n\n$P_2 = P_1 \\cdot \\dfrac{T_2}{T_1} = 8.31\\times10^4 \\times 2 = 16.62\\times10^4\\ \\mathrm{Pa}$\n\n**(b)** $\\Delta U = \\dfrac{3}{2}nR\\Delta T = \\dfrac{3}{2} \\times 2 \\times 8.31 \\times 200 = 4986\\ \\mathrm{J}$\n\n**(c)** Constant volume $\\Rightarrow W = 0$, so $Q = \\Delta U = 4986\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t17-p03",
+      "source": "original",
+      "question": "What is the difference in heat required to raise $n = 1\\ \\mathrm{mol}$ of monatomic ideal gas by $\\Delta T = 200\\ \\mathrm{K}$: (a) at constant volume vs. (b) at constant pressure?",
+      "answer": "**(a)** Isochoric: $Q_V = nC_V\\Delta T = 1 \\times \\dfrac{3}{2} \\times 8.31 \\times 200 = 2493\\ \\mathrm{J}$\n\n**(b)** Isobaric: $Q_P = nC_P\\Delta T = 1 \\times \\dfrac{5}{2} \\times 8.31 \\times 200 = 4155\\ \\mathrm{J}$\n\nDifference: $Q_P - Q_V = nR\\Delta T = 1 \\times 8.31 \\times 200 = 1662\\ \\mathrm{J}$\n\nThe extra heat in the isobaric case equals the work done by the expanding gas."
+    },
+    {
+      "id": "t17-p04",
+      "source": "2016-CoT adapted",
+      "question": "A gas in a rigid container has its pressure doubled by heating. If the initial pressure is $P_0 = 1.5\\times10^5\\ \\mathrm{Pa}$ and initial temperature is $T_0 = 300\\ \\mathrm{K}$, find: (a) the final temperature, (b) the ratio $\\Delta U / U_0$ for a monatomic ideal gas.",
+      "answer": "**(a)** $V = $ const, $P \\propto T$:\n\n$T_f = T_0 \\times \\dfrac{P_f}{P_0} = 300 \\times 2 = 600\\ \\mathrm{K}$\n\n**(b)** $U_0 = \\dfrac{3}{2}nRT_0$, $U_f = \\dfrac{3}{2}nRT_f$\n\n$\\dfrac{\\Delta U}{U_0} = \\dfrac{U_f - U_0}{U_0} = \\dfrac{T_f - T_0}{T_0} = \\dfrac{300}{300} = 1$\n\nThe internal energy doubles (same factor as pressure and temperature)."
+    },
+    {
+      "id": "t17-p05",
+      "source": "original",
+      "question": "In an isochoric process, $Q = -800\\ \\mathrm{J}$ of heat flows out of a monatomic ideal gas. The gas contains $n = 0.5\\ \\mathrm{mol}$. Find: (a) $\\Delta U$, (b) $\\Delta T$, (c) the change in pressure if $V = 5\\ \\mathrm{L}$.",
+      "answer": "**(a)** $\\Delta U = Q = -800\\ \\mathrm{J}$ (internal energy decreases)\n\n**(b)** $\\Delta T = \\dfrac{2\\Delta U}{3nR} = \\dfrac{2(-800)}{3 \\times 0.5 \\times 8.31} = \\dfrac{-1600}{12.465} \\approx -128.4\\ \\mathrm{K}$\n\n**(c)** $\\Delta P = \\dfrac{nR\\Delta T}{V} = \\dfrac{0.5 \\times 8.31 \\times (-128.4)}{5\\times10^{-3}} = \\dfrac{-533.3}{5\\times10^{-3}} = -1.067\\times10^5\\ \\mathrm{Pa}$"
+    },
+    {
+      "id": "t17-p06",
+      "source": "original",
+      "question": "An isochoric process is represented on a $P$-$V$ diagram. What does the process look like, and how does the area under the curve relate to work done?",
+      "answer": "On a $P$-$V$ diagram, an isochoric process is a **vertical line** at constant volume $V = $ const.\n\nThe work done by the gas equals the area under the $P$-$V$ curve (from $V_1$ to $V_2$).\n\nFor an isochoric process, $V_1 = V_2$, so the \"width\" of the area under the curve is **zero**:\n\n$W = \\int_{V_1}^{V_2} P\\,dV = 0$\n\nNo area is enclosed, confirming that no work is done in an isochoric process — all heat input goes directly into changing the internal energy."
+    },
+    {
+      "id": "t17-p07",
+      "source": "original",
+      "question": "A $2\\ \\mathrm{L}$ rigid container holds $n = 0.1\\ \\mathrm{mol}$ of monatomic ideal gas. A $100\\ \\mathrm{W}$ heater runs for $t = 30\\ \\mathrm{s}$. Assuming no heat loss, find: (a) the heat added, (b) the temperature rise.",
+      "answer": "**(a)** $Q = P_{\\text{heater}} \\times t = 100 \\times 30 = 3000\\ \\mathrm{J}$\n\n**(b)** Rigid container $\\Rightarrow$ isochoric, $\\Delta U = Q$:\n\n$\\Delta T = \\dfrac{2Q}{3nR} = \\dfrac{2 \\times 3000}{3 \\times 0.1 \\times 8.31} = \\dfrac{6000}{2.493} \\approx 2407\\ \\mathrm{K}$\n\n(Large rise because $n$ is small; the pressure would also increase by the same factor.)"
+    },
+    {
+      "id": "t17-p08",
+      "source": "2018-UG adapted",
+      "question": "In an isochoric process, a monatomic ideal gas goes from state 1 ($P_1 = 1\\times10^5\\ \\mathrm{Pa}$, $V = 10\\ \\mathrm{L}$) to state 2 ($P_2 = 3\\times10^5\\ \\mathrm{Pa}$, $V = 10\\ \\mathrm{L}$). Find: (a) $T_1$ and $T_2$ (if $n = 0.4\\ \\mathrm{mol}$), (b) $\\Delta U$ and $Q$.",
+      "answer": "**(a)** $T = PV/(nR)$\n\n$T_1 = \\dfrac{1\\times10^5 \\times 10\\times10^{-3}}{0.4 \\times 8.31} = \\dfrac{1000}{3.324} \\approx 300.8\\ \\mathrm{K} \\approx 301\\ \\mathrm{K}$\n\n$T_2 = \\dfrac{3\\times10^5 \\times 10\\times10^{-3}}{0.4 \\times 8.31} = 3 \\times 300.8 \\approx 903\\ \\mathrm{K}$\n\n**(b)** $\\Delta U = \\dfrac{3}{2}nR\\Delta T = \\dfrac{3}{2} \\times 0.4 \\times 8.31 \\times 602 \\approx 2999\\ \\mathrm{J} \\approx 3000\\ \\mathrm{J}$\n\n$W = 0$, so $Q = \\Delta U = 3000\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t17-p09",
+      "source": "original",
+      "question": "During an isochoric process, the pressure of a gas triples while the temperature changes from $T_1 = 100\\ \\mathrm{K}$. At the end, $Q = 6000\\ \\mathrm{J}$ was added. How many moles $n$ of monatomic ideal gas are in the container?",
+      "answer": "Pressure triples at constant volume $\\Rightarrow T$ triples:\n\n$T_2 = 3 \\times 100 = 300\\ \\mathrm{K}$, $\\Delta T = 200\\ \\mathrm{K}$\n\nIsochoric: $Q = \\Delta U = \\dfrac{3}{2}nR\\Delta T$\n\n$n = \\dfrac{2Q}{3R\\Delta T} = \\dfrac{2 \\times 6000}{3 \\times 8.31 \\times 200} = \\dfrac{12000}{4986} \\approx 2.41\\ \\mathrm{mol}$"
+    },
+    {
+      "id": "t17-p10",
+      "source": "original",
+      "question": "A monatomic ideal gas undergoes a two-step process: first an isochoric pressure increase from $P_1$ to $P_2 = 2P_1$ at $V = V_0$, then an isobaric expansion from $V_0$ to $V_3 = 2V_0$ at $P = P_2$. If $P_1 = 1\\times10^5\\ \\mathrm{Pa}$, $V_0 = 5\\ \\mathrm{L}$, $n = 0.2\\ \\mathrm{mol}$, find the total $Q$ and $W$ for the entire process.",
+      "answer": "First, $T_1 = P_1 V_0 / (nR)$:\n\n$T_1 = \\dfrac{1\\times10^5 \\times 5\\times10^{-3}}{0.2 \\times 8.31} = \\dfrac{500}{1.662} \\approx 300.8\\ \\mathrm{K}$\n\n**Step 1 (isochoric):** $P: P_1 \\to 2P_1$, so $T: T_1 \\to 2T_1 = 601.6\\ \\mathrm{K}$\n\n$W_1 = 0$; $Q_1 = \\Delta U_1 = \\dfrac{3}{2}nR\\Delta T = \\dfrac{3}{2}(0.2)(8.31)(300.8) \\approx 750\\ \\mathrm{J}$\n\n**Step 2 (isobaric):** $V: V_0 \\to 2V_0$, so $T: 2T_1 \\to 4T_1$ (since $T \\propto V$ at const $P$)\n\n$\\Delta T_2 = 2T_1 \\approx 601.6\\ \\mathrm{K}$\n\n$W_2 = nR\\Delta T_2 = 0.2 \\times 8.31 \\times 601.6 \\approx 1000\\ \\mathrm{J}$\n\n$Q_2 = nC_P\\Delta T_2 = \\frac{5}{2}nR\\Delta T_2 \\approx 2500\\ \\mathrm{J}$\n\n**Totals:** $W = W_1 + W_2 = 1000\\ \\mathrm{J}$; $Q = Q_1 + Q_2 = 3250\\ \\mathrm{J}$"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "topicId": "t05",
+  "questions": [
+    {
+      "id": "t05-q01",
+      "source": "2018-UG-Q1-(2)",
+      "question": "An object of mass $m$ is attached to a light spring with force constant $k$ and natural length $l_0$. The object moves on a frictionless horizontal table in uniform circular motion about the spring's other end, which is fixed at the center O. During this motion the spring is extended by $\\alpha l_0$ ($\\alpha > 0$) from its natural length. Find the speed $v$ of the object.",
+      "choices": [
+        "$\\sqrt{\\dfrac{(1+\\alpha)\\alpha m}{k}}\\,l_0$",
+        "$\\sqrt{\\dfrac{m}{k}}\\,(1+\\alpha)l_0$",
+        "$\\sqrt{\\dfrac{m}{k}}\\,\\alpha l_0$",
+        "$\\sqrt{\\dfrac{k}{m}}\\,\\alpha l_0$",
+        "$\\sqrt{\\dfrac{(1+\\alpha)\\alpha k}{m}}\\,l_0$",
+        "$\\sqrt{\\dfrac{k}{m}}\\,(1+\\alpha)l_0$"
+      ],
+      "correctIndex": 4,
+      "explanation": "The spring force uses only the *extension*: $k\\alpha l_0$. The radius is the full *stretched length*: $r = (1+\\alpha)l_0$. Then $k\\alpha l_0 = \\frac{mv^2}{(1+\\alpha)l_0}$ gives $v = \\sqrt{\\frac{(1+\\alpha)\\alpha k}{m}}\\,l_0$. Both classic traps in one line: (d) uses the extension as the radius; (a) has $m$ and $k$ inverted (dimensionally wrong)."
+    },
+    {
+      "id": "t05-q02",
+      "source": "original",
+      "question": "A conical pendulum consists of a ball on a string of length $L$ that traces a horizontal circle, the string making a constant angle $\\theta$ with the vertical. The acceleration of gravity is $g$. Find the period of the motion.",
+      "choices": [
+        "$2\\pi\\sqrt{\\dfrac{L}{g}}$",
+        "$2\\pi\\sqrt{\\dfrac{L\\cos\\theta}{g}}$",
+        "$2\\pi\\sqrt{\\dfrac{L\\sin\\theta}{g}}$",
+        "$2\\pi\\sqrt{\\dfrac{L}{g\\cos\\theta}}$",
+        "$2\\pi\\sqrt{\\dfrac{L\\tan\\theta}{g}}$",
+        "$2\\pi\\sqrt{\\dfrac{g}{L\\cos\\theta}}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Vertical: $T\\cos\\theta = mg$; horizontal: $T\\sin\\theta = m\\omega^2 (L\\sin\\theta)$. Dividing gives $\\omega^2 = \\frac{g}{L\\cos\\theta}$, so the period is $2\\pi\\sqrt{\\frac{L\\cos\\theta}{g}}$. Trap (a) is the *small-angle simple pendulum* formula — the conical pendulum's period shrinks as it swings wider."
+    },
+    {
+      "id": "t05-q03",
+      "source": "original",
+      "question": "A car rounds a flat (unbanked) curve of radius $r$. The coefficient of static friction between the tires and the road is $\\mu$, and the acceleration of gravity is $g$. Find the maximum speed at which the car can take the curve without skidding.",
+      "choices": [
+        "$\\mu gr$",
+        "$\\sqrt{gr}$",
+        "$\\sqrt{\\mu gr}$",
+        "$\\sqrt{\\dfrac{gr}{\\mu}}$",
+        "$\\mu\\sqrt{gr}$",
+        "$\\sqrt{2\\mu gr}$"
+      ],
+      "correctIndex": 2,
+      "explanation": "Friction supplies the centripetal force: $\\mu mg = \\frac{mv^2}{r}$, so $v_{max} = \\sqrt{\\mu gr}$ — independent of the car's mass. Choice (a) is dimensionally wrong (speed squared), a quick units check removes it."
+    },
+    {
+      "id": "t05-q04",
+      "source": "original",
+      "question": "A puck of mass $m$ on a frictionless table moves in a circle of radius $r$. It is attached to a string that passes through a small hole at the center of the circle and supports a hanging mass $M$ below the table. The system is in equilibrium ($M$ hangs at rest) and the acceleration of gravity is $g$. Find the speed of the puck.",
+      "choices": [
+        "$\\sqrt{gr}$",
+        "$\\sqrt{\\dfrac{Mgr}{m}}$",
+        "$\\sqrt{\\dfrac{mgr}{M}}$",
+        "$\\dfrac{Mgr}{m}$",
+        "$\\sqrt{\\dfrac{(M+m)gr}{m}}$",
+        "$\\sqrt{\\dfrac{Mg}{mr}}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "The hanging mass fixes the tension: $T = Mg$. That tension is the puck's centripetal force: $Mg = \\frac{mv^2}{r}$, so $v = \\sqrt{\\frac{Mgr}{m}}$. \"Centripetal force\" is not a new force — here it is simply the string tension, set by the other body."
+    },
+    {
+      "id": "t05-q05",
+      "source": "original",
+      "question": "An object moves in a circle of radius $r$ with constant speed, completing one revolution every period $T$. Find the magnitude of its acceleration.",
+      "choices": [
+        "$\\dfrac{2\\pi r}{T^2}$",
+        "$\\dfrac{4\\pi^2 r}{T^2}$",
+        "$\\dfrac{2\\pi r}{T}$",
+        "$\\dfrac{4\\pi^2 r^2}{T^2}$",
+        "$\\dfrac{r}{T^2}$",
+        "$\\dfrac{\\pi^2 r}{T^2}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "$\\omega = \\frac{2\\pi}{T}$ and $a = r\\omega^2 = \\frac{4\\pi^2 r}{T^2}$. Trap (c) $\\frac{2\\pi r}{T}$ is the *speed*, not the acceleration; (a) squares the period but forgets to square the $2\\pi$."
+    },
+    {
+      "id": "t05-q06",
+      "source": "original",
+      "question": "An object of mass $0.50\\ \\mathrm{kg}$ moves in a circle of radius $2.0\\ \\mathrm{m}$ at a constant speed of $4.0\\ \\mathrm{m/s}$. Find the magnitude of the net force acting on it.",
+      "choices": [
+        "$0.50\\ \\mathrm{N}$",
+        "$2.0\\ \\mathrm{N}$",
+        "$4.0\\ \\mathrm{N}$",
+        "$8.0\\ \\mathrm{N}$",
+        "$16\\ \\mathrm{N}$",
+        "$1.0\\ \\mathrm{N}$"
+      ],
+      "correctIndex": 2,
+      "explanation": "$F = \\frac{mv^2}{r} = \\frac{0.50 \\times 16}{2.0} = 4.0\\ \\mathrm{N}$. Trap (b) $2.0\\ \\mathrm{N}$ uses $v$ instead of $v^2$; trap (d) $8.0\\ \\mathrm{N}$ forgets to divide by $r$."
+    },
+    {
+      "id": "t05-q07",
+      "source": "original",
+      "question": "An object moves in uniform circular motion under a centripetal force of magnitude $F$. If its speed is doubled and the radius of the circle is also doubled, what is the new centripetal force?",
+      "choices": [
+        "$F$",
+        "$2F$",
+        "$4F$",
+        "$\\dfrac{F}{2}$",
+        "$8F$",
+        "$\\sqrt{2}\\,F$"
+      ],
+      "correctIndex": 1,
+      "explanation": "$F' = \\frac{m(2v)^2}{2r} = \\frac{4}{2}\\cdot\\frac{mv^2}{r} = 2F$. The speed appears *squared* but the radius only to the first power. Trap (c) $4F$ counts the speed change and ignores the radius change."
+    },
+    {
+      "id": "t05-q08",
+      "source": "original",
+      "question": "A ball on a string moves in a *vertical* circle of radius $r$. The acceleration of gravity is $g$. Find the minimum speed the ball can have at the top of the circle while keeping the string taut.",
+      "choices": [
+        "$\\sqrt{2gr}$",
+        "$\\sqrt{gr}$",
+        "$\\sqrt{\\dfrac{gr}{2}}$",
+        "$2\\sqrt{gr}$",
+        "$gr$",
+        "$\\sqrt{5gr}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "At the top with $T = 0$, gravity alone provides the centripetal force: $mg = \\frac{mv^2}{r}$, so $v_{min} = \\sqrt{gr}$. Trap (f) $\\sqrt{5gr}$ is the minimum speed at the *bottom* needed to arrive at the top with $\\sqrt{gr}$ — know which point the question asks about."
+    },
+    {
+      "id": "t05-q09",
+      "source": "original",
+      "question": "A curve of radius $r$ is banked at an angle $\\theta$ so that a car can round it at speed $v$ with no friction at all. The acceleration of gravity is $g$. Find $v$.",
+      "choices": [
+        "$\\sqrt{gr\\sin\\theta}$",
+        "$\\sqrt{gr\\tan\\theta}$",
+        "$\\sqrt{gr\\cos\\theta}$",
+        "$\\sqrt{\\dfrac{gr}{\\tan\\theta}}$",
+        "$gr\\tan\\theta$",
+        "$\\sqrt{2gr\\tan\\theta}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "With no friction the normal force does both jobs: $N\\cos\\theta = mg$ and $N\\sin\\theta = \\frac{mv^2}{r}$. Dividing gives $\\tan\\theta = \\frac{v^2}{gr}$, so $v = \\sqrt{gr\\tan\\theta}$ — the same $\\tan\\theta = a/g$ pattern as the pendulum in an accelerating car."
+    },
+    {
+      "id": "t05-q10",
+      "source": "original",
+      "question": "A ball is whirled on a string in uniform circular motion on a frictionless horizontal table. At some instant the string suddenly breaks. Which best describes the ball's subsequent motion on the table?",
+      "choices": [
+        "It continues to move along the same circle",
+        "It moves in a straight line along the tangent to the circle",
+        "It moves in a straight line radially outward",
+        "It moves in a straight line radially inward",
+        "It spirals gradually outward",
+        "It immediately stops"
+      ],
+      "correctIndex": 1,
+      "explanation": "With the tension gone, no horizontal force remains, so by N1 the ball keeps its instantaneous velocity — which always points along the tangent. Trap (c) \"flies outward\" is the centrifugal illusion: there was never an outward force, only an inward one that has now vanished."
+    }
+  ]
+}

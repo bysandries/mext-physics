@@ -1,0 +1,65 @@
+{
+  "topicId": "t38",
+  "questions": [
+    {
+      "id": "t38-p01",
+      "source": "original",
+      "question": "A rectangular loop of area $A = 0.04\\ \\mathrm{m^2}$ is in a magnetic field $B = 0.5\\ \\mathrm{T}$ perpendicular to the loop. The field is reduced to zero in $\\Delta t = 0.02\\ \\mathrm{s}$. Find the induced EMF.",
+      "answer": "Faraday's Law: $\\mathcal{E} = -\\dfrac{\\Delta\\Phi}{\\Delta t}$\n\n$\\Delta\\Phi = B_f A - B_i A = 0 - 0.5 \\times 0.04 = -0.02\\ \\mathrm{Wb}$\n\n$|\\mathcal{E}| = \\left|\\dfrac{\\Delta\\Phi}{\\Delta t}\\right| = \\dfrac{0.02}{0.02} = 1\\ \\mathrm{V}$"
+    },
+    {
+      "id": "t38-p02",
+      "source": "original",
+      "question": "A conducting rod of length $L = 0.5\\ \\mathrm{m}$ moves at $v = 3\\ \\mathrm{m/s}$ perpendicular to a magnetic field $B = 0.4\\ \\mathrm{T}$. Find the motional EMF induced in the rod.",
+      "answer": "Motional EMF: $\\mathcal{E} = BvL$\n\n$\\mathcal{E} = 0.4 \\times 3 \\times 0.5 = 0.6\\ \\mathrm{V}$\n\n**Physical explanation:** The magnetic force on positive charges in the rod is $F = qvB$ (by Lorentz force law), driving them along the rod. The rod acts like a battery with EMF $= BvL$."
+    },
+    {
+      "id": "t38-p03",
+      "source": "2016-UG adapted",
+      "question": "A square loop of side $a = 0.2\\ \\mathrm{m}$ and resistance $R = 4\\ \\Omega$ moves at $v = 5\\ \\mathrm{m/s}$ into a region of uniform field $B = 0.5\\ \\mathrm{T}$ (perpendicular to loop). Find the induced EMF and current while entering the field.",
+      "answer": "As the loop enters the field, the flux increases at rate:\n\n$\\dfrac{d\\Phi}{dt} = B \\cdot a \\cdot v = 0.5 \\times 0.2 \\times 5 = 0.5\\ \\mathrm{Wb/s}$\n\n$|\\mathcal{E}| = 0.5\\ \\mathrm{V}$\n\n$I = \\mathcal{E}/R = 0.5/4 = 0.125\\ \\mathrm{A}$\n\nBy Lenz's law, the induced current opposes the increasing flux — it creates a field opposing $B$ (i.e., out of the page if $B$ is into the page)."
+    },
+    {
+      "id": "t38-p04",
+      "source": "original",
+      "question": "State Lenz's Law and explain how it is consistent with conservation of energy.",
+      "answer": "**Lenz's Law:** The direction of the induced current (or EMF) is such that it opposes the change in magnetic flux that caused it.\n\nMathematically: $\\mathcal{E} = -d\\Phi/dt$ (the minus sign encodes Lenz's law).\n\n**Consistency with energy conservation:**\n\nIf the induced current reinforced the change in flux, it would amplify itself indefinitely — creating energy from nothing (perpetual motion).\n\nInstead, Lenz's law ensures:\n- The induced current creates a force **opposing the motion** that creates the EMF\n- An external agent must do work to maintain the motion\n- That work becomes electrical energy in the circuit\n\nElectrical energy comes from mechanical work — no energy is created."
+    },
+    {
+      "id": "t38-p05",
+      "source": "2018-UG adapted",
+      "question": "A solenoid has $N = 200$ turns, length $\\ell = 0.25\\ \\mathrm{m}$, and cross-sectional area $A = 10\\ \\mathrm{cm^2} = 10^{-3}\\ \\mathrm{m^2}$. The magnetic flux through it changes from $\\Phi = 0$ to $\\Phi = 2\\times10^{-3}\\ \\mathrm{Wb}$ in $t = 0.01\\ \\mathrm{s}$. Find the induced EMF.",
+      "answer": "$|\\mathcal{E}| = N\\left|\\dfrac{\\Delta\\Phi}{\\Delta t}\\right| = 200 \\times \\dfrac{2\\times10^{-3} - 0}{0.01} = 200 \\times 0.2 = 40\\ \\mathrm{V}$"
+    },
+    {
+      "id": "t38-p06",
+      "source": "original",
+      "question": "A rod of length $L = 0.3\\ \\mathrm{m}$ slides along conducting rails separated by $L$ in a field $B = 0.8\\ \\mathrm{T}$. The rod moves at $v = 4\\ \\mathrm{m/s}$. The circuit has resistance $R = 2\\ \\Omega$. Find: (a) the induced EMF, (b) the current, (c) the braking force on the rod.",
+      "answer": "**(a)** $\\mathcal{E} = BvL = 0.8 \\times 4 \\times 0.3 = 0.96\\ \\mathrm{V}$\n\n**(b)** $I = \\mathcal{E}/R = 0.96/2 = 0.48\\ \\mathrm{A}$\n\n**(c)** The braking force on the rod (Lenz's law — opposes motion):\n\n$F = BIL = 0.8 \\times 0.48 \\times 0.3 = 0.115\\ \\mathrm{N}$\n\n**Check (power):** Power dissipated $= I^2R = (0.48)^2 \\times 2 = 0.461\\ \\mathrm{W}$\nPower input by force $= Fv = 0.115 \\times 4 = 0.461\\ \\mathrm{W}$ ✓"
+    },
+    {
+      "id": "t38-p07",
+      "source": "2019-UG adapted",
+      "question": "A circular loop of radius $r = 0.1\\ \\mathrm{m}$ is placed in a time-varying field $B(t) = B_0\\sin(\\omega t)$ with $B_0 = 0.2\\ \\mathrm{T}$ and $\\omega = 100\\pi\\ \\mathrm{rad/s}$. Find the maximum induced EMF.",
+      "answer": "$\\Phi = B(t) \\cdot A = B_0\\sin(\\omega t) \\times \\pi r^2$\n\n$\\mathcal{E} = -\\dfrac{d\\Phi}{dt} = -B_0 \\omega \\pi r^2 \\cos(\\omega t)$\n\nMaximum EMF:\n\n$|\\mathcal{E}|_{\\max} = B_0 \\omega \\pi r^2 = 0.2 \\times 100\\pi \\times \\pi \\times (0.1)^2$\n\n$= 0.2 \\times 100\\pi \\times 0.01\\pi = 0.2\\pi^2 \\approx 1.97\\ \\mathrm{V}$"
+    },
+    {
+      "id": "t38-p08",
+      "source": "original",
+      "question": "A transformer has $N_p = 500$ turns on the primary and $N_s = 100$ turns on the secondary. The primary is connected to $V_p = 220\\ \\mathrm{V}$ AC. Find: (a) the secondary voltage, (b) if the secondary current is $I_s = 2\\ \\mathrm{A}$, find the primary current (assuming ideal transformer).",
+      "answer": "**(a)** $\\dfrac{V_s}{V_p} = \\dfrac{N_s}{N_p}$\n\n$V_s = V_p \\times \\dfrac{N_s}{N_p} = 220 \\times \\dfrac{100}{500} = 44\\ \\mathrm{V}$\n\n**(b)** For ideal transformer (power conserved):\n\n$V_p I_p = V_s I_s$\n\n$I_p = \\dfrac{V_s I_s}{V_p} = \\dfrac{44 \\times 2}{220} = 0.4\\ \\mathrm{A}$\n\n(Or: $I_p/I_s = N_s/N_p = 100/500 = 1/5 \\Rightarrow I_p = 2/5 = 0.4\\ \\mathrm{A}$ ✓)"
+    },
+    {
+      "id": "t38-p09",
+      "source": "original",
+      "question": "The self-inductance of a coil is $L = 0.1\\ \\mathrm{H}$. The current changes from $I_1 = 2\\ \\mathrm{A}$ to $I_2 = 8\\ \\mathrm{A}$ in $\\Delta t = 0.05\\ \\mathrm{s}$. Find the self-induced EMF.",
+      "answer": "$\\mathcal{E} = -L\\dfrac{\\Delta I}{\\Delta t} = -0.1 \\times \\dfrac{8-2}{0.05} = -0.1 \\times 120 = -12\\ \\mathrm{V}$\n\nMagnitude: $|\\mathcal{E}| = 12\\ \\mathrm{V}$\n\nNegative sign (Lenz's law): the induced EMF **opposes** the increasing current."
+    },
+    {
+      "id": "t38-p10",
+      "source": "2014-UG adapted",
+      "question": "A rectangular loop ($a = 0.1\\ \\mathrm{m}$, $b = 0.2\\ \\mathrm{m}$, $R = 5\\ \\Omega$) is pulled out of a uniform field $B = 0.3\\ \\mathrm{T}$ at speed $v = 2\\ \\mathrm{m/s}$ (with the field perpendicular to the loop). Find: (a) the induced EMF, (b) the current, (c) the power dissipated.",
+      "answer": "**(a)** $\\mathcal{E} = Bva = 0.3 \\times 2 \\times 0.1 = 0.06\\ \\mathrm{V}$\n\n($a$ is the side perpendicular to the direction of motion)\n\n**(b)** $I = \\mathcal{E}/R = 0.06/5 = 0.012\\ \\mathrm{A} = 12\\ \\mathrm{mA}$\n\n**(c)** $P = I^2R = (0.012)^2 \\times 5 = 7.2\\times10^{-4}\\ \\mathrm{W} = 0.72\\ \\mathrm{mW}$\n\nThis equals the power of the braking force: $P = Fv = BIa \\times v = 0.3 \\times 0.012 \\times 0.1 \\times 2 = 7.2\\times10^{-4}\\ \\mathrm{W}$ ✓"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "topicId": "t30",
+  "questions": [
+    {
+      "id": "t30-p01",
+      "source": "original",
+      "question": "An ambulance siren emits at $f_0 = 800\\ \\mathrm{Hz}$ and moves toward a stationary observer at $v_s = 34\\ \\mathrm{m/s}$. Speed of sound $v = 340\\ \\mathrm{m/s}$. Find the frequency heard by the observer.",
+      "answer": "Doppler formula: $f' = f_0 \\cdot \\dfrac{v \\pm v_o}{v \\mp v_s}$\n\nSource approaching, observer stationary: use $v + v_o = v$ (no observer motion), $v - v_s$ in denominator:\n\n$f' = f_0 \\cdot \\dfrac{v}{v - v_s} = 800 \\times \\dfrac{340}{340 - 34} = 800 \\times \\dfrac{340}{306}$\n\n$= 800 \\times 1.111 = 888.9 \\approx 889\\ \\mathrm{Hz}$\n\nApproaching source $\\Rightarrow$ higher pitch."
+    },
+    {
+      "id": "t30-p02",
+      "source": "original",
+      "question": "The same ambulance from the previous problem is now moving **away** from the observer at $v_s = 34\\ \\mathrm{m/s}$. Find the observed frequency.",
+      "answer": "Source moving away: denominator uses $v + v_s$:\n\n$f' = f_0 \\cdot \\dfrac{v}{v + v_s} = 800 \\times \\dfrac{340}{340 + 34} = 800 \\times \\dfrac{340}{374}$\n\n$= 800 \\times 0.9091 = 727.3 \\approx 727\\ \\mathrm{Hz}$\n\nReceding source $\\Rightarrow$ lower pitch."
+    },
+    {
+      "id": "t30-p03",
+      "source": "2016-UG adapted",
+      "question": "A stationary source emits $f_0 = 500\\ \\mathrm{Hz}$. An observer moves toward the source at $v_o = 17\\ \\mathrm{m/s}$. Then the observer moves away at the same speed. Find both observed frequencies. ($v = 340\\ \\mathrm{m/s}$)",
+      "answer": "**Observer moving toward stationary source:**\n\n$f' = f_0 \\cdot \\dfrac{v + v_o}{v} = 500 \\times \\dfrac{340 + 17}{340} = 500 \\times \\dfrac{357}{340} = 500 \\times 1.05 = 525\\ \\mathrm{Hz}$\n\n**Observer moving away from stationary source:**\n\n$f' = f_0 \\cdot \\dfrac{v - v_o}{v} = 500 \\times \\dfrac{340 - 17}{340} = 500 \\times \\dfrac{323}{340} = 500 \\times 0.95 = 475\\ \\mathrm{Hz}$"
+    },
+    {
+      "id": "t30-p04",
+      "source": "original",
+      "question": "State and derive the Doppler formula for sound: $f' = f_0\\dfrac{v + v_o}{v - v_s}$, where $v_o$ is the observer speed (positive toward source) and $v_s$ is the source speed (positive toward observer). Include sign convention.",
+      "answer": "**Wavelength emitted:** The source emits $f_0$ cycles/second. As the source moves toward the observer at $v_s$, each wavefront is \"compressed\": the effective wavelength seen ahead of the source is:\n\n$\\lambda' = \\dfrac{v - v_s}{f_0}$ (compressed wavelengths ahead of approaching source)\n\n**Frequency received:** The observer moving toward the source at $v_o$ intercepts wavefronts at rate:\n\n$f' = \\dfrac{v + v_o}{\\lambda'} = \\dfrac{(v + v_o)f_0}{v - v_s}$\n\n$$f' = f_0 \\cdot \\dfrac{v + v_o}{v - v_s}$$\n\n**Sign convention:**\n- $v_o > 0$ when observer moves **toward** source (increases $f'$)\n- $v_s > 0$ when source moves **toward** observer (decreases denominator, increases $f'$)\n- Reverse signs for motion away."
+    },
+    {
+      "id": "t30-p05",
+      "source": "2018-UG adapted",
+      "question": "A train horn sounds at $f_0 = 600\\ \\mathrm{Hz}$. The train moves at $v_s = 20\\ \\mathrm{m/s}$ toward a wall. What frequency does the wall reflect back to the train driver? ($v = 340\\ \\mathrm{m/s}$)",
+      "answer": "**Step 1 — Frequency received by the wall** (wall = stationary observer, source approaching):\n\n$f_\\text{wall} = f_0 \\cdot \\dfrac{v}{v - v_s} = 600 \\times \\dfrac{340}{320} = 637.5\\ \\mathrm{Hz}$\n\n**Step 2 — Frequency heard by train driver** (wall = stationary source at $f_\\text{wall}$, driver = moving observer, approaching wall):\n\n$f' = f_\\text{wall} \\cdot \\dfrac{v + v_o}{v} = 637.5 \\times \\dfrac{340 + 20}{340} = 637.5 \\times \\dfrac{360}{340} \\approx 675\\ \\mathrm{Hz}$"
+    },
+    {
+      "id": "t30-p06",
+      "source": "original",
+      "question": "A source emitting $f_0 = 1000\\ \\mathrm{Hz}$ and an observer are both moving. The source moves toward the observer at $v_s = 20\\ \\mathrm{m/s}$, and the observer also moves toward the source at $v_o = 10\\ \\mathrm{m/s}$. Find $f'$. ($v = 340\\ \\mathrm{m/s}$)",
+      "answer": "$f' = f_0 \\cdot \\dfrac{v + v_o}{v - v_s} = 1000 \\times \\dfrac{340 + 10}{340 - 20} = 1000 \\times \\dfrac{350}{320} \\approx 1094\\ \\mathrm{Hz}$"
+    },
+    {
+      "id": "t30-p07",
+      "source": "2019-CoT adapted",
+      "question": "A police siren of $f_0 = 900\\ \\mathrm{Hz}$ is observed as $f' = 950\\ \\mathrm{Hz}$. Is the police car approaching or receding? Find its speed. ($v = 340\\ \\mathrm{m/s}$)",
+      "answer": "$f' > f_0 \\Rightarrow$ source is **approaching** the observer.\n\n$f' = f_0 \\cdot \\dfrac{v}{v - v_s}$\n\n$v - v_s = \\dfrac{f_0 v}{f'} = \\dfrac{900 \\times 340}{950} = \\dfrac{306000}{950} \\approx 322.1\\ \\mathrm{m/s}$\n\n$v_s = 340 - 322.1 = 17.9 \\approx 18\\ \\mathrm{m/s} \\approx 64.8\\ \\mathrm{km/h}$"
+    },
+    {
+      "id": "t30-p08",
+      "source": "original",
+      "question": "A source moves at $v_s = 170\\ \\mathrm{m/s}$ (half the speed of sound, $v = 340\\ \\mathrm{m/s}$) and emits $f_0 = 400\\ \\mathrm{Hz}$. Find the frequency heard: (a) ahead of the source, (b) behind the source.",
+      "answer": "**(a) Ahead (source approaching observer):**\n\n$f'_{\\text{ahead}} = f_0 \\cdot \\dfrac{v}{v - v_s} = 400 \\times \\dfrac{340}{340 - 170} = 400 \\times \\dfrac{340}{170} = 400 \\times 2 = 800\\ \\mathrm{Hz}$\n\n**(b) Behind (source receding from observer):**\n\n$f'_{\\text{behind}} = f_0 \\cdot \\dfrac{v}{v + v_s} = 400 \\times \\dfrac{340}{340 + 170} = 400 \\times \\dfrac{340}{510} = 400 \\times \\dfrac{2}{3} \\approx 267\\ \\mathrm{Hz}$"
+    },
+    {
+      "id": "t30-p09",
+      "source": "2015-UG adapted",
+      "question": "Two trains approach each other. Train A emits $f_A = 500\\ \\mathrm{Hz}$ and moves at $v_A = 30\\ \\mathrm{m/s}$. Train B moves at $v_B = 10\\ \\mathrm{m/s}$. Find the frequency heard by the engineer of Train B. ($v = 340\\ \\mathrm{m/s}$)",
+      "answer": "Source = Train A approaching, Observer = Train B approaching the source:\n\n$f' = f_A \\cdot \\dfrac{v + v_B}{v - v_A} = 500 \\times \\dfrac{340 + 10}{340 - 30} = 500 \\times \\dfrac{350}{310}$\n\n$= 500 \\times 1.129 \\approx 564\\ \\mathrm{Hz}$"
+    },
+    {
+      "id": "t30-p10",
+      "source": "original",
+      "question": "A source of frequency $f_0$ is moving in a circle of radius $R$ with period $T_\\text{circle}$. An observer is far away along the plane of the circle. Describe qualitatively the range of frequencies the observer hears and explain the maximum and minimum.",
+      "answer": "The source velocity relative to the observer oscillates sinusoidally. When the source moves **directly toward** the observer (tangential velocity = maximum approach speed $v_s = 2\\pi R/T_\\text{circle}$):\n\n$f'_{\\max} = f_0 \\cdot \\dfrac{v}{v - v_s}$ (highest pitch)\n\nWhen moving **directly away**:\n\n$f'_{\\min} = f_0 \\cdot \\dfrac{v}{v + v_s}$ (lowest pitch)\n\nWhen moving **perpendicular** to the line of sight ($v_s$ component = 0):\n\n$f' = f_0$ (no Doppler shift at these moments)\n\nThe observer hears a smoothly varying pitch cycling between $f'_{\\min}$ and $f'_{\\max}$ at the frequency of the source's circular motion — this is how astronomers detect orbiting stars (spectroscopic binaries) via Doppler shifts in their spectral lines."
+    }
+  ]
+}

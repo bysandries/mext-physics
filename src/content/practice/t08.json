@@ -1,0 +1,65 @@
+{
+  "topicId": "t08",
+  "questions": [
+    {
+      "id": "t08-p01",
+      "source": "original",
+      "question": "A $3\\ \\mathrm{kg}$ block starts from rest at the bottom of a rough incline ($30°$, coefficient of kinetic friction $\\mu_k = 0.2$) and is pushed $4\\ \\mathrm{m}$ up the slope by a constant force $F = 30\\ \\mathrm{N}$ directed up the slope. Take $g = 10\\ \\mathrm{m/s^2}$. Find the speed of the block at the top using the work-energy theorem.",
+      "answer": "Work done by each force over $d = 4\\ \\mathrm{m}$:\n\n- Applied force: $W_F = Fd = 30 \\times 4 = 120\\ \\mathrm{J}$\n- Gravity component (opposing): $W_g = -mg\\sin 30° \\cdot d = -3 \\times 10 \\times 0.5 \\times 4 = -60\\ \\mathrm{J}$\n- Normal force: $N = mg\\cos 30° = 3 \\times 10 \\times \\frac{\\sqrt{3}}{2} \\approx 25.98\\ \\mathrm{N}$\n- Friction (opposing): $W_f = -\\mu_k N d = -0.2 \\times 25.98 \\times 4 \\approx -20.8\\ \\mathrm{J}$\n\nWork-energy theorem ($v_0 = 0$):\n\n$\\frac{1}{2}mv^2 = W_F + W_g + W_f = 120 - 60 - 20.8 = 39.2\\ \\mathrm{J}$\n\n$v = \\sqrt{\\dfrac{2 \\times 39.2}{3}} = \\sqrt{26.1} \\approx 5.11\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t08-p02",
+      "source": "2014-UG-Q1-(1) adapted",
+      "question": "Two objects of mass $M$ and $m$ rest on a frictionless table, connected by a horizontal spring (spring constant $k$). The system is released from rest with the spring stretched by $\\ell$. Find the maximum speed of the object of mass $m$.",
+      "answer": "At maximum speed of $m$, by momentum conservation the total momentum is zero (system started at rest), so:\n\n$Mv_M = mv_m \\Rightarrow v_M = \\dfrac{m}{M}v_m$\n\nEnergy conservation (all spring PE converts to KE when spring returns to natural length):\n\n$\\frac{1}{2}k\\ell^2 = \\frac{1}{2}Mv_M^2 + \\frac{1}{2}mv_m^2$\n\nSubstitute $v_M$:\n\n$k\\ell^2 = M\\!\\left(\\dfrac{m}{M}\\right)^2 v_m^2 + mv_m^2 = v_m^2\\!\\left(\\dfrac{m^2}{M} + m\\right) = v_m^2 \\cdot \\dfrac{m(M+m)}{M}$\n\n$$v_m = \\ell\\sqrt{\\frac{Mk}{m(M+m)}}$$"
+    },
+    {
+      "id": "t08-p03",
+      "source": "original",
+      "question": "A block of mass $0.5\\ \\mathrm{kg}$ is launched from a spring ($k = 200\\ \\mathrm{N/m}$, compressed by $x = 0.10\\ \\mathrm{m}$) along a frictionless horizontal surface, then up a frictionless ramp. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the speed of the block when it leaves the spring, (b) the maximum height it reaches on the ramp.",
+      "answer": "**(a)** Spring PE fully converts to KE (frictionless surface):\n\n$\\frac{1}{2}kx^2 = \\frac{1}{2}mv^2$\n\n$v = x\\sqrt{\\dfrac{k}{m}} = 0.10\\sqrt{\\dfrac{200}{0.5}} = 0.10\\sqrt{400} = 0.10 \\times 20 = 2\\ \\mathrm{m/s}$\n\n**(b)** KE at bottom converts to PE at max height (frictionless ramp):\n\n$\\frac{1}{2}mv^2 = mgh$\n\n$h = \\dfrac{v^2}{2g} = \\dfrac{4}{20} = 0.2\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t08-p04",
+      "source": "original",
+      "question": "A roller coaster car of mass $500\\ \\mathrm{kg}$ must complete a vertical circular loop of radius $R = 10\\ \\mathrm{m}$. Take $g = 10\\ \\mathrm{m/s^2}$. (a) Find the minimum speed at the top of the loop. (b) If the track is frictionless, find the minimum height above the bottom of the loop from which the car must be released.",
+      "answer": "**(a)** Minimum speed at top when normal force $= 0$:\n\n$mg = \\dfrac{mv_{\\text{top}}^2}{R} \\Rightarrow v_{\\text{top,min}} = \\sqrt{gR} = \\sqrt{100} = 10\\ \\mathrm{m/s}$\n\n**(b)** Energy conservation from release height $h$ to top of loop (height $2R$ above bottom):\n\n$mgh = \\frac{1}{2}mv_{\\text{top}}^2 + mg(2R)$\n\n$h = \\dfrac{v_{\\text{top}}^2}{2g} + 2R = \\dfrac{gR}{2g} + 2R = \\dfrac{R}{2} + 2R = \\dfrac{5R}{2} = \\dfrac{5 \\times 10}{2} = 25\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t08-p05",
+      "source": "original",
+      "question": "A car of mass $1000\\ \\mathrm{kg}$ traveling at $30\\ \\mathrm{m/s}$ brakes and stops after $75\\ \\mathrm{m}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the braking force using the work-energy theorem, (b) the coefficient of kinetic friction, (c) if instead the car was on a downhill grade of $5°$ and the same friction force acted, what would the stopping distance be?",
+      "answer": "**(a)** $W_{\\text{net}} = \\Delta KE$: $-F_b \\times 75 = 0 - \\frac{1}{2}(1000)(900)$\n\n$F_b = \\dfrac{450{,}000}{75} = 6000\\ \\mathrm{N}$\n\n**(b)** $\\mu_k = \\dfrac{F_b}{mg} = \\dfrac{6000}{10{,}000} = 0.6$\n\n**(c)** On the downhill, gravity has a component forward: $mg\\sin 5° \\approx 1000 \\times 10 \\times 0.0872 = 872\\ \\mathrm{N}$\n\nNet braking force $= 6000 - 872 = 5128\\ \\mathrm{N}$\n\n$d = \\dfrac{\\frac{1}{2}mv^2}{F_{\\text{net}}} = \\dfrac{450{,}000}{5128} \\approx 87.7\\ \\mathrm{m}$ (longer stopping distance on a downhill)"
+    },
+    {
+      "id": "t08-p06",
+      "source": "original",
+      "question": "A $0.3\\ \\mathrm{kg}$ ball is dropped from $5\\ \\mathrm{m}$ and bounces back to $3.2\\ \\mathrm{m}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the speed just before impact, (b) the speed just after impact, (c) the energy lost in the bounce.",
+      "answer": "**(a)** $v_1 = \\sqrt{2gh_1} = \\sqrt{2 \\times 10 \\times 5} = \\sqrt{100} = 10\\ \\mathrm{m/s}$\n\n**(b)** $v_2 = \\sqrt{2gh_2} = \\sqrt{2 \\times 10 \\times 3.2} = \\sqrt{64} = 8\\ \\mathrm{m/s}$\n\n**(c)** $\\Delta E = \\frac{1}{2}mv_1^2 - \\frac{1}{2}mv_2^2 = \\frac{1}{2}(0.3)(100 - 64) = 0.15 \\times 36 = 5.4\\ \\mathrm{J}$\n\nAlternatively: $\\Delta E = mg(h_1 - h_2) = 0.3 \\times 10 \\times 1.8 = 5.4\\ \\mathrm{J}$ ✓"
+    },
+    {
+      "id": "t08-p07",
+      "source": "original",
+      "question": "A block of mass $2\\ \\mathrm{kg}$ slides along a rough horizontal floor and compresses a spring ($k = 500\\ \\mathrm{N/m}$) by $x = 0.2\\ \\mathrm{m}$ before coming momentarily to rest. The coefficient of kinetic friction is $\\mu_k = 0.3$. The spring is $d = 2.0\\ \\mathrm{m}$ from the block's starting point. Take $g = 10\\ \\mathrm{m/s^2}$. Find the initial speed of the block.",
+      "answer": "Work-energy theorem from start to maximum compression:\n\n$0 - \\frac{1}{2}mv_0^2 = -\\frac{1}{2}kx^2 - \\mu_k mg(d + x)$\n\n(Friction acts over total distance $d + x = 2.2\\ \\mathrm{m}$; spring does negative work on block.)\n\n$\\frac{1}{2}mv_0^2 = \\frac{1}{2}kx^2 + \\mu_k mg(d+x)$\n\n$\\frac{1}{2}(2)v_0^2 = \\frac{1}{2}(500)(0.04) + 0.3 \\times 2 \\times 10 \\times 2.2$\n\n$v_0^2 = \\frac{1}{1}[10 + 13.2] = \\frac{1}{1}[10 + 13.2] = 23.2$\n\n$v_0 = \\sqrt{23.2} \\approx 4.82\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t08-p08",
+      "source": "original",
+      "question": "An engine drives a $800\\ \\mathrm{kg}$ car at a constant speed of $25\\ \\mathrm{m/s}$ along a level road where air resistance and friction provide a total resistive force of $400\\ \\mathrm{N}$. Find: (a) the engine's output power, (b) how long it takes to do $1.0 \\times 10^6\\ \\mathrm{J}$ of work.",
+      "answer": "**(a)** At constant speed the engine force equals the resistive force: $F = 400\\ \\mathrm{N}$\n\n$P = Fv = 400 \\times 25 = 10{,}000\\ \\mathrm{W} = 10\\ \\mathrm{kW}$\n\n**(b)** $t = \\dfrac{W}{P} = \\dfrac{1.0 \\times 10^6}{10{,}000} = 100\\ \\mathrm{s}$"
+    },
+    {
+      "id": "t08-p09",
+      "source": "original",
+      "question": "A $10\\ \\mathrm{kg}$ block on a frictionless surface is connected to a horizontal spring ($k = 200\\ \\mathrm{N/m}$). Starting from the natural length position, the block is pushed to compress the spring by $0.3\\ \\mathrm{m}$, then released. Find: (a) the maximum KE of the block, (b) the speed of the block when the spring is compressed by $0.2\\ \\mathrm{m}$.",
+      "answer": "**(a)** Maximum KE occurs when the spring returns to natural length (all PE → KE):\n\n$KE_{\\max} = \\frac{1}{2}kx_0^2 = \\frac{1}{2}(200)(0.09) = 9\\ \\mathrm{J}$\n\n**(b)** Energy conservation at compression $x = 0.2\\ \\mathrm{m}$:\n\n$\\frac{1}{2}kx_0^2 = \\frac{1}{2}mv^2 + \\frac{1}{2}kx^2$\n\n$9 = \\frac{1}{2}(10)v^2 + \\frac{1}{2}(200)(0.04)$\n\n$9 = 5v^2 + 4$\n\n$v^2 = 1 \\Rightarrow v = 1\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t08-p10",
+      "source": "original",
+      "question": "A block slides from rest down a curved frictionless ramp of height $H = 3\\ \\mathrm{m}$, then along a rough horizontal floor ($\\mu_k = 0.4$, length $L = 5\\ \\mathrm{m}$), then up a frictionless ramp. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the speed at the bottom of the first ramp, (b) the speed after crossing the rough section, (c) the height reached on the second ramp.",
+      "answer": "**(a)** Energy conservation on frictionless ramp:\n\n$v = \\sqrt{2gH} = \\sqrt{2 \\times 10 \\times 3} = \\sqrt{60} \\approx 7.75\\ \\mathrm{m/s}$\n\n**(b)** Work-energy theorem on rough floor (mass $m$):\n\n$\\frac{1}{2}mv_2^2 = \\frac{1}{2}mv_1^2 - \\mu_k mg L$\n\n$v_2^2 = v_1^2 - 2\\mu_k g L = 60 - 2(0.4)(10)(5) = 60 - 40 = 20$\n\n$v_2 = \\sqrt{20} = 2\\sqrt{5} \\approx 4.47\\ \\mathrm{m/s}$\n\n**(c)** Remaining KE converts to PE on frictionless ramp:\n\n$h = \\dfrac{v_2^2}{2g} = \\dfrac{20}{20} = 1\\ \\mathrm{m}$"
+    }
+  ]
+}

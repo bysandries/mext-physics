@@ -1,0 +1,65 @@
+{
+  "topicId": "t09",
+  "questions": [
+    {
+      "id": "t09-p01",
+      "source": "2019-UG-Q1-(2) adapted",
+      "question": "A small ball is dropped from rest at height $h$ above the ground. The coefficient of restitution between the ball and the ground is $e$. Find: (a) the speed just before the first impact, (b) the speed just after the first bounce, (c) the height reached after the first bounce.",
+      "answer": "**(a)** Free fall from height $h$:\n\n$v_1 = \\sqrt{2gh}$ (downward)\n\n**(b)** The coefficient of restitution is defined as:\n\n$e = \\dfrac{\\text{speed after}}{\\text{speed before}} \\Rightarrow v_1' = ev_1 = e\\sqrt{2gh}$ (upward)\n\n**(c)** The ball rises until all KE is converted to PE:\n\n$h_1 = \\dfrac{(v_1')^2}{2g} = \\dfrac{e^2 \\cdot 2gh}{2g} = e^2 h$"
+    },
+    {
+      "id": "t09-p02",
+      "source": "2019-UG-Q1-(2)",
+      "question": "A ball is dropped from rest at height $h$. The coefficient of restitution is $e$ ($0 < e < 1$). Find the maximum height of the ball between the $n$th and $(n+1)$th impact with the ground.",
+      "answer": "After the 1st bounce: height $= e^2 h$\n\nAfter the 2nd bounce: height $= e^2(e^2 h) = e^4 h$\n\nBy induction, after the $n$th bounce the ball rises to:\n\n$$h_n = e^{2n}h$$\n\nThis is the maximum height between the $n$th and $(n+1)$th impact.\n\nCheck: as $e \\to 0$ (perfectly inelastic), $h_n \\to 0$ — ball barely bounces ✓. As $e \\to 1$ (perfectly elastic), $h_n \\to h$ for all $n$ — ball bounces to original height ✓."
+    },
+    {
+      "id": "t09-p03",
+      "source": "original",
+      "question": "A ball is dropped from height $h = 5\\ \\mathrm{m}$ with coefficient of restitution $e = 0.8$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the heights after the 1st, 2nd, and 3rd bounces, (b) the total distance traveled before coming to rest.",
+      "answer": "**(a)** $h_n = e^{2n} h$:\n\n- After 1st: $h_1 = (0.8)^2 \\times 5 = 0.64 \\times 5 = 3.2\\ \\mathrm{m}$\n- After 2nd: $h_2 = (0.8)^4 \\times 5 = 0.4096 \\times 5 = 2.05\\ \\mathrm{m}$\n- After 3rd: $h_3 = (0.8)^6 \\times 5 = 0.2621 \\times 5 = 1.31\\ \\mathrm{m}$\n\n**(b)** Total distance = fall + 2(sum of all bounce heights):\n\n$D = h + 2\\sum_{n=1}^{\\infty} h_n = h + 2\\sum_{n=1}^{\\infty} e^{2n}h = h + 2h \\cdot \\dfrac{e^2}{1 - e^2}$\n\n$D = h\\!\\left(1 + \\dfrac{2e^2}{1-e^2}\\right) = h \\cdot \\dfrac{1+e^2}{1-e^2}$\n\n$D = 5 \\times \\dfrac{1 + 0.64}{1 - 0.64} = 5 \\times \\dfrac{1.64}{0.36} = 5 \\times 4.556 \\approx 22.8\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t09-p04",
+      "source": "original",
+      "question": "A ball is dropped from height $h$ and the coefficient of restitution with the floor is $e$. Find the total time from the first drop until the ball comes to rest.",
+      "answer": "Time to fall from height $h_n$: $t_n = \\sqrt{\\dfrac{2h_n}{g}}$\n\nFall: $t_0 = \\sqrt{\\dfrac{2h}{g}}$\n\nBounce $n$ (up + down): $2t_n = 2\\sqrt{\\dfrac{2h_n}{g}} = 2\\sqrt{\\dfrac{2e^{2n}h}{g}} = 2e^n t_0$\n\nTotal time:\n\n$T = t_0 + \\sum_{n=1}^{\\infty} 2e^n t_0 = t_0\\!\\left(1 + 2\\sum_{n=1}^{\\infty} e^n\\right) = t_0\\!\\left(1 + \\dfrac{2e}{1-e}\\right)$\n\n$$T = t_0 \\cdot \\frac{1+e}{1-e} = \\sqrt{\\frac{2h}{g}} \\cdot \\frac{1+e}{1-e}$$\n\nCheck: $e \\to 0$: $T \\to t_0$ (single fall) ✓. $e \\to 1$: $T \\to \\infty$ (bounces forever) ✓."
+    },
+    {
+      "id": "t09-p05",
+      "source": "original",
+      "question": "A ball is dropped from $4\\ \\mathrm{m}$ and bounces to $2.56\\ \\mathrm{m}$ after the first impact. Find: (a) the coefficient of restitution, (b) the height after the third bounce.",
+      "answer": "**(a)** After the first bounce: $h_1 = e^2 h$\n\n$e^2 = \\dfrac{h_1}{h} = \\dfrac{2.56}{4} = 0.64 \\Rightarrow e = \\sqrt{0.64} = 0.8$\n\n**(b)** After the third bounce: $h_3 = e^6 h = (0.8)^6 \\times 4 = 0.2621 \\times 4 \\approx 1.05\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t09-p06",
+      "source": "original",
+      "question": "Ball A ($1\\ \\mathrm{kg}$, speed $4\\ \\mathrm{m/s}$) collides head-on with stationary ball B ($1\\ \\mathrm{kg}$). The coefficient of restitution is $e = 0.6$. Find the velocities of A and B after the collision.",
+      "answer": "Let $v_A'$ and $v_B'$ be the velocities after collision (positive = direction of A's initial motion).\n\n**Momentum conservation** ($m_A = m_B = m$):\n\n$mv_A = mv_A' + mv_B' \\Rightarrow v_A' + v_B' = 4$ … (1)\n\n**Restitution equation** (relative speed after = $e$ × relative speed before):\n\n$v_B' - v_A' = e(v_A - v_B) = 0.6 \\times 4 = 2.4$ … (2)\n\nAdding (1) and (2): $2v_B' = 6.4 \\Rightarrow v_B' = 3.2\\ \\mathrm{m/s}$\n\nFrom (1): $v_A' = 4 - 3.2 = 0.8\\ \\mathrm{m/s}$\n\nBoth move in the same direction; A slows down. For $e = 1$ (elastic): $v_A' = 0$, $v_B' = 4$ ✓ (limit check)."
+    },
+    {
+      "id": "t09-p07",
+      "source": "original",
+      "question": "A $2\\ \\mathrm{kg}$ ball moving at $6\\ \\mathrm{m/s}$ collides with a $4\\ \\mathrm{kg}$ ball moving at $2\\ \\mathrm{m/s}$ in the **same** direction. The coefficient of restitution is $e = 0.5$. Find the velocities after the collision.",
+      "answer": "Let $v_1' $ and $v_2'$ be post-collision velocities. Positive direction = initial direction of motion.\n\n**Momentum:** $m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$\n\n$2(6) + 4(2) = 2v_1' + 4v_2'$\n\n$20 = 2v_1' + 4v_2'$ → $v_1' + 2v_2' = 10$ … (1)\n\n**Restitution:** $v_2' - v_1' = e(v_1 - v_2) = 0.5(6-2) = 2$ … (2)\n\nFrom (2): $v_2' = v_1' + 2$\n\nSubstitute into (1): $v_1' + 2(v_1' + 2) = 10 \\Rightarrow 3v_1' = 6 \\Rightarrow v_1' = 2\\ \\mathrm{m/s}$\n\n$v_2' = 4\\ \\mathrm{m/s}$\n\nBall 1 slows to $2\\ \\mathrm{m/s}$ and ball 2 speeds up to $4\\ \\mathrm{m/s}$."
+    },
+    {
+      "id": "t09-p08",
+      "source": "original",
+      "question": "Find the coefficient of restitution $e$ in terms of the energy lost in a head-on collision between two equal masses $m$, where the first ball has initial speed $u$ and the second is at rest.",
+      "answer": "For equal masses, from momentum + restitution:\n\n$v_1' = \\dfrac{(1-e)u}{2}$, $\\quad v_2' = \\dfrac{(1+e)u}{2}$\n\nInitial KE: $\\dfrac{1}{2}mu^2$\n\nFinal KE: $\\dfrac{1}{2}m(v_1'^2 + v_2'^2) = \\dfrac{m}{2}\\!\\left[\\dfrac{(1-e)^2 u^2}{4} + \\dfrac{(1+e)^2 u^2}{4}\\right] = \\dfrac{mu^2}{8}[(1-e)^2 + (1+e)^2]$\n\n$= \\dfrac{mu^2}{8}[2 + 2e^2] = \\dfrac{mu^2(1+e^2)}{4}$\n\nEnergy lost: $\\Delta E = \\dfrac{mu^2}{2} - \\dfrac{mu^2(1+e^2)}{4} = \\dfrac{mu^2(1-e^2)}{4}$\n\n$$e = \\sqrt{1 - \\frac{4\\Delta E}{mu^2}}$$"
+    },
+    {
+      "id": "t09-p09",
+      "source": "original",
+      "question": "A $0.5\\ \\mathrm{kg}$ ball falls from $h = 2\\ \\mathrm{m}$ and the coefficient of restitution is $e = 0.7$. Take $g = 10\\ \\mathrm{m/s^2}$. Find the energy lost in each of the first three bounces.",
+      "answer": "Speed just before bounce $n$: $v_n = e^{n-1}\\sqrt{2gh}$ (before hitting) → speed before nth impact is $\\sqrt{2g h_{n-1}}$ where $h_0 = h$.\n\nEnergy just before bounce $n$: $E_n^{-} = mgh_{n-1} = mg e^{2(n-1)} h$\n\nEnergy just after bounce $n$: $E_n^{+} = mgh_n = mge^{2n}h$\n\nEnergy lost in bounce $n$: $\\Delta E_n = E_n^{-} - E_n^{+} = mgh(1-e^2)e^{2(n-1)}$\n\nWith $m = 0.5$, $g = 10$, $h = 2$, $e = 0.7$: $mgh(1-e^2) = 0.5 \\times 10 \\times 2 \\times (1-0.49) = 10 \\times 0.51 = 5.1\\ \\mathrm{J}$\n\n- Bounce 1: $\\Delta E_1 = 5.1 \\times (0.7)^0 = 5.1\\ \\mathrm{J}$\n- Bounce 2: $\\Delta E_2 = 5.1 \\times (0.49) = 2.499\\ \\mathrm{J}$\n- Bounce 3: $\\Delta E_3 = 5.1 \\times (0.49)^2 = 5.1 \\times 0.2401 \\approx 1.22\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t09-p10",
+      "source": "original",
+      "question": "A superball ($e = 0.95$) is dropped from $2.0\\ \\mathrm{m}$. A tennis ball ($e = 0.75$) is dropped from the same height. Take $g = 10\\ \\mathrm{m/s^2}$. How many bounces until each ball's bounce height drops below $0.5\\ \\mathrm{m}$?",
+      "answer": "Condition: $h_n = e^{2n} h < 0.5\\ \\mathrm{m}$\n\n$e^{2n} < \\dfrac{0.5}{2.0} = 0.25$\n\n$2n \\ln e < \\ln 0.25$\n\n$n > \\dfrac{\\ln 0.25}{2\\ln e} = \\dfrac{-\\ln 4}{2\\ln e}$\n\n**Superball** ($e = 0.95$): $n > \\dfrac{\\ln 4}{-2\\ln 0.95} = \\dfrac{1.386}{2 \\times 0.0513} = \\dfrac{1.386}{0.1026} \\approx 13.5 \\Rightarrow n = 14$\n\n**Tennis ball** ($e = 0.75$): $n > \\dfrac{1.386}{2 \\times 0.2877} = \\dfrac{1.386}{0.5754} \\approx 2.4 \\Rightarrow n = 3$\n\nThe superball takes **14 bounces** and the tennis ball takes **3 bounces** to drop below $0.5\\ \\mathrm{m}$."
+    }
+  ]
+}

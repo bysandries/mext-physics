@@ -1,0 +1,65 @@
+{
+  "topicId": "t19",
+  "questions": [
+    {
+      "id": "t19-p01",
+      "source": "original",
+      "question": "In an adiabatic process, $Q = 0$. A gas is compressed adiabatically and $500\\ \\mathrm{J}$ of work is done **on** it. Find: (a) the change in internal energy, (b) whether temperature increases or decreases.",
+      "answer": "**(a)** First Law: $\\Delta U = Q - W_{\\text{by gas}}$\n\nWork done by gas $= -500\\ \\mathrm{J}$ (since $500\\ \\mathrm{J}$ is done **on** the gas).\n\n$\\Delta U = 0 - (-500) = +500\\ \\mathrm{J}$\n\n**(b)** Since $\\Delta U > 0$ and $U \\propto T$ for an ideal gas, the **temperature increases**.\n\nPhysical interpretation: in adiabatic compression, no heat can escape, so all the work done on the gas appears as increased molecular kinetic energy — the gas heats up."
+    },
+    {
+      "id": "t19-p02",
+      "source": "original",
+      "question": "A monatomic ideal gas ($\\gamma = 5/3$) at $P_1 = 1.0\\times10^5\\ \\mathrm{Pa}$, $V_1 = 8\\ \\mathrm{L}$ is compressed adiabatically to $V_2 = 1\\ \\mathrm{L}$. Find the final pressure $P_2$.",
+      "answer": "Adiabatic relation: $P_1 V_1^{\\gamma} = P_2 V_2^{\\gamma}$\n\n$P_2 = P_1 \\left(\\dfrac{V_1}{V_2}\\right)^{\\gamma} = 1.0\\times10^5 \\times \\left(\\dfrac{8}{1}\\right)^{5/3}$\n\n$8^{5/3} = (8^{1/3})^5 = 2^5 = 32$\n\n$P_2 = 1.0\\times10^5 \\times 32 = 3.2\\times10^6\\ \\mathrm{Pa}$"
+    },
+    {
+      "id": "t19-p03",
+      "source": "original",
+      "question": "A monatomic ideal gas ($\\gamma = 5/3$) at $T_1 = 300\\ \\mathrm{K}$, $V_1 = 4\\ \\mathrm{L}$ expands adiabatically to $V_2 = 32\\ \\mathrm{L}$. Find the final temperature $T_2$.",
+      "answer": "Adiabatic relation: $T_1 V_1^{\\gamma-1} = T_2 V_2^{\\gamma-1}$\n\n$\\gamma - 1 = \\dfrac{5}{3} - 1 = \\dfrac{2}{3}$\n\n$T_2 = T_1 \\left(\\dfrac{V_1}{V_2}\\right)^{\\gamma-1} = 300 \\times \\left(\\dfrac{4}{32}\\right)^{2/3} = 300 \\times \\left(\\dfrac{1}{8}\\right)^{2/3}$\n\n$(1/8)^{2/3} = (8^{-1})^{2/3} = 8^{-2/3} = (2^3)^{-2/3} = 2^{-2} = 1/4$\n\n$T_2 = 300/4 = 75\\ \\mathrm{K}$"
+    },
+    {
+      "id": "t19-p04",
+      "source": "2016-UG adapted",
+      "question": "Explain what happens to a gas in free expansion into a vacuum (adiabatic free expansion). Find $\\Delta U$, $W$, $Q$, and $\\Delta T$ for an ideal gas.",
+      "answer": "In free expansion, the gas expands into an evacuated chamber with no piston:\n\n- **No work:** $W = 0$ (nothing to push against — vacuum exerts no force)\n- **Adiabatic:** $Q = 0$ (process is very rapid, no heat exchange)\n- **First Law:** $\\Delta U = Q - W = 0$\n- **Temperature:** Since $\\Delta U = 0$ and $U \\propto T$ for an ideal gas: $\\Delta T = 0$\n\nThe pressure and density change, but the temperature and internal energy of an **ideal gas** remain unchanged after free expansion.\n\n(For a **real gas**, intermolecular attractions cause the temperature to drop as molecules move apart — this is used in the Joule–Thomson liquefaction process.)"
+    },
+    {
+      "id": "t19-p05",
+      "source": "original",
+      "question": "A monatomic ideal gas ($n = 2\\ \\mathrm{mol}$, $\\gamma = 5/3$) undergoes adiabatic expansion. The temperature drops from $T_1 = 600\\ \\mathrm{K}$ to $T_2 = 150\\ \\mathrm{K}$. Find: (a) $\\Delta U$, (b) the work done by the gas.",
+      "answer": "**(a)** $\\Delta U = \\dfrac{3}{2}nR\\Delta T = \\dfrac{3}{2} \\times 2 \\times 8.31 \\times (150 - 600)$\n\n$= 3 \\times 8.31 \\times (-450) = -11{,}218.5\\ \\mathrm{J}$\n\n**(b)** Adiabatic: $Q = 0$, so $\\Delta U = -W$:\n\n$W = -\\Delta U = 11{,}218.5\\ \\mathrm{J} \\approx 11.2\\ \\mathrm{kJ}$\n\nAll the work done by the expanding gas comes at the expense of the internal energy (temperature drops)."
+    },
+    {
+      "id": "t19-p06",
+      "source": "original",
+      "question": "Compare the adiabatic and isothermal compression of a gas from $V_0$ to $V_0/2$. Which process results in a higher final pressure? Use $P_1 = P_0$, $\\gamma = 5/3$.",
+      "answer": "**Isothermal:** $P_1 V_1 = P_2 V_2$\n\n$P_{2,\\text{iso}} = P_0 \\times \\dfrac{V_0}{V_0/2} = 2P_0$\n\n**Adiabatic:** $P_1 V_1^{\\gamma} = P_2 V_2^{\\gamma}$\n\n$P_{2,\\text{adi}} = P_0 \\times \\left(\\dfrac{V_0}{V_0/2}\\right)^{\\gamma} = P_0 \\times 2^{5/3} = P_0 \\times 3.17 \\approx 3.17P_0$\n\n**Adiabatic compression gives higher final pressure.** In isothermal compression, heat escapes to keep temperature constant, so pressure doesn't rise as steeply. In adiabatic compression, the temperature rises (no heat escape), so pressure increases more than proportional to volume decrease."
+    },
+    {
+      "id": "t19-p07",
+      "source": "original",
+      "question": "Show that the adiabatic process follows $PV^\\gamma = $ const starting from the First Law and the ideal gas law.",
+      "answer": "For an adiabatic process: $dQ = 0$\n\nFirst Law: $dU = -dW = -P\\,dV$\n\nFor an ideal gas: $dU = nC_V\\,dT$\n\nFrom ideal gas law: $PV = nRT \\Rightarrow P\\,dV + V\\,dP = nR\\,dT \\Rightarrow dT = \\dfrac{P\\,dV + V\\,dP}{nR}$\n\nSubstituting:\n\n$nC_V \\cdot \\dfrac{P\\,dV + V\\,dP}{nR} = -P\\,dV$\n\n$C_V(P\\,dV + V\\,dP) = -RP\\,dV$\n\n$C_V V\\,dP = -(R + C_V)P\\,dV = -C_P P\\,dV$\n\n$\\dfrac{dP}{P} = -\\gamma \\dfrac{dV}{V}$\n\nIntegrating: $\\ln P = -\\gamma \\ln V + $ const $\\Rightarrow PV^\\gamma = $ const ✓"
+    },
+    {
+      "id": "t19-p08",
+      "source": "2019-UG adapted",
+      "question": "A bicycle pump compresses air adiabatically. The initial state is $P_1 = 1.0\\times10^5\\ \\mathrm{Pa}$, $T_1 = 300\\ \\mathrm{K}$. The air is compressed to $P_2 = 8.0\\times10^5\\ \\mathrm{Pa}$. Use $\\gamma = 1.4$ for air. Find the final temperature $T_2$.",
+      "answer": "For an adiabatic process: $T P^{-\\gamma/(\\gamma-1)} = $ const, or equivalently $T_1 P_1^{-\\gamma/(\\gamma-1)} = T_2 P_2^{-\\gamma/(\\gamma-1)}$:\n\n$\\dfrac{T_2}{T_1} = \\left(\\dfrac{P_2}{P_1}\\right)^{(\\gamma-1)/\\gamma}$\n\n$\\dfrac{\\gamma-1}{\\gamma} = \\dfrac{0.4}{1.4} = \\dfrac{2}{7}$\n\n$\\dfrac{T_2}{T_1} = \\left(\\dfrac{8.0\\times10^5}{1.0\\times10^5}\\right)^{2/7} = 8^{2/7}$\n\n$8^{2/7} = (2^3)^{2/7} = 2^{6/7} \\approx 1.811$\n\n$T_2 = 300 \\times 1.811 \\approx 543\\ \\mathrm{K} \\approx 270^\\circ\\mathrm{C}$\n\nThis is why a pump barrel gets hot when you quickly inflate a tire!"
+    },
+    {
+      "id": "t19-p09",
+      "source": "original",
+      "question": "A monatomic ideal gas expands adiabatically from $(P_1, V_1) = (3.2\\times10^6\\ \\mathrm{Pa},\\ 1\\ \\mathrm{L})$ to $(P_2, V_2) = (1.0\\times10^5\\ \\mathrm{Pa},\\ 8\\ \\mathrm{L})$. Verify that $PV^\\gamma = $ const with $\\gamma = 5/3$.",
+      "answer": "Check $P_1 V_1^\\gamma$:\n\n$P_1 V_1^{5/3} = 3.2\\times10^6 \\times (1\\times10^{-3})^{5/3}$\n\n$(10^{-3})^{5/3} = 10^{-5} = 10^{-5}$\n\n$P_1 V_1^{5/3} = 3.2\\times10^6 \\times 10^{-5} = 32\\ (\\mathrm{Pa\\cdot m^5})^{1...}$\n\nCheck $P_2 V_2^\\gamma$:\n\n$P_2 V_2^{5/3} = 1.0\\times10^5 \\times (8\\times10^{-3})^{5/3}$\n\n$(8\\times10^{-3})^{5/3} = 8^{5/3} \\times (10^{-3})^{5/3} = 32 \\times 10^{-5}$\n\n$P_2 V_2^{5/3} = 1.0\\times10^5 \\times 32 \\times 10^{-5} = 32$ ✓\n\nBoth sides equal 32 (in consistent SI units), confirming the adiabatic relation."
+    },
+    {
+      "id": "t19-p10",
+      "source": "original",
+      "question": "On a $P$-$V$ diagram, draw and compare an isotherm and an adiabat starting from the same point $(P_0, V_0)$ for the same expansion. Which curve falls more steeply? Why?",
+      "answer": "Both curves start at $(P_0, V_0)$ and slope downward as volume increases.\n\n**Slopes:**\n\n- Isotherm: $PV = $ const $\\Rightarrow P = P_0V_0/V$. Slope $= dP/dV = -P_0V_0/V^2 = -P/V$\n- Adiabat: $PV^\\gamma = $ const $\\Rightarrow P = P_0V_0^\\gamma/V^\\gamma$. Slope $= -\\gamma P/V$\n\nSince $\\gamma > 1$, the **adiabat is steeper**.\n\n**Physical reason:** In an isothermal expansion, the gas can absorb heat from the environment to maintain temperature, keeping pressure relatively high. In an adiabatic expansion, the gas does work at the expense of its own internal energy, so temperature **and** pressure fall more rapidly."
+    }
+  ]
+}

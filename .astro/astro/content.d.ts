@@ -144,7 +144,101 @@ declare module 'astro:content' {
 	};
 
 	type DataEntryMap = {
-		"topics": {
+		"practice": {
+"t01": {
+	id: "t01";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t02": {
+	id: "t02";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t03": {
+	id: "t03";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t04": {
+	id: "t04";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t05": {
+	id: "t05";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t06": {
+	id: "t06";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t07": {
+	id: "t07";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t08": {
+	id: "t08";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t09": {
+	id: "t09";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t10": {
+	id: "t10";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+};
+"questions": {
+"t01": {
+	id: "t01";
+  collection: "questions";
+  data: InferEntrySchema<"questions">
+};
+"t02": {
+	id: "t02";
+  collection: "questions";
+  data: InferEntrySchema<"questions">
+};
+"t03": {
+	id: "t03";
+  collection: "questions";
+  data: InferEntrySchema<"questions">
+};
+"t04": {
+	id: "t04";
+  collection: "questions";
+  data: InferEntrySchema<"questions">
+};
+"t05": {
+	id: "t05";
+  collection: "questions";
+  data: InferEntrySchema<"questions">
+};
+"t06": {
+	id: "t06";
+  collection: "questions";
+  data: InferEntrySchema<"questions">
+};
+"t07": {
+	id: "t07";
+  collection: "questions";
+  data: InferEntrySchema<"questions">
+};
+"t08": {
+	id: "t08";
+  collection: "questions";
+  data: InferEntrySchema<"questions">
+};
+};
+"topics": {
 "t01": {
 	id: "t01";
   collection: "topics";

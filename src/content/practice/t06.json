@@ -1,0 +1,65 @@
+{
+  "topicId": "t06",
+  "questions": [
+    {
+      "id": "t06-p01",
+      "source": "original",
+      "question": "A simple pendulum has a period of $2.0\\ \\mathrm{s}$ on Earth where $g = 9.8\\ \\mathrm{m/s^2}$. Find: (a) the length of the pendulum, (b) the period of the same pendulum on the Moon where $g_{\\text{moon}} = 1.6\\ \\mathrm{m/s^2}$.",
+      "answer": "**(a)** $T = 2\\pi\\sqrt{\\dfrac{L}{g}} \\Rightarrow L = g\\!\\left(\\dfrac{T}{2\\pi}\\right)^2 = 9.8 \\times \\left(\\dfrac{2}{2\\pi}\\right)^2 = 9.8 \\times \\dfrac{1}{\\pi^2} \\approx \\dfrac{9.8}{9.87} \\approx 0.993\\ \\mathrm{m}$\n\n**(b)** $T_{\\text{moon}} = 2\\pi\\sqrt{\\dfrac{L}{g_{\\text{moon}}}} = 2\\pi\\sqrt{\\dfrac{0.993}{1.6}} \\approx 2\\pi \\times 0.788 \\approx 4.95\\ \\mathrm{s}$\n\nAlternatively: $T_{\\text{moon}} = T_{\\text{Earth}}\\sqrt{\\dfrac{g_{\\text{Earth}}}{g_{\\text{moon}}}} = 2.0\\sqrt{\\dfrac{9.8}{1.6}} \\approx 2.0 \\times 2.47 \\approx 4.95\\ \\mathrm{s}$"
+    },
+    {
+      "id": "t06-p02",
+      "source": "original",
+      "question": "A simple pendulum of length $L = 1.0\\ \\mathrm{m}$ is released from rest at an angle $\\theta_0 = 30°$ from the vertical. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the speed of the bob at the lowest point, (b) the tension in the string at the lowest point.",
+      "answer": "Height of release above lowest point: $h = L(1 - \\cos\\theta_0) = 1.0(1 - \\cos 30°) = 1.0(1 - \\frac{\\sqrt{3}}{2}) = 1 - 0.866 = 0.134\\ \\mathrm{m}$\n\n**(a)** Energy conservation:\n\n$\\frac{1}{2}mv^2 = mgh \\Rightarrow v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 0.134} = \\sqrt{2.68} \\approx 1.64\\ \\mathrm{m/s}$\n\n**(b)** At the bottom, centripetal direction is upward:\n\n$T - mg = \\dfrac{mv^2}{L} \\Rightarrow T = m\\!\\left(g + \\dfrac{v^2}{L}\\right) = m(10 + 2.68) = 12.68m\\ \\mathrm{N}$\n\nFor $m = 1\\ \\mathrm{kg}$: $T \\approx 12.7\\ \\mathrm{N}$"
+    },
+    {
+      "id": "t06-p03",
+      "source": "original",
+      "question": "A pendulum bob of mass $m$ on a string of length $L$ is given a horizontal speed $v_0$ at the lowest point. Find: (a) the maximum angle $\\theta_{\\max}$ it reaches, (b) the tension at the lowest point.",
+      "answer": "**(a)** Energy conservation (lowest to highest):\n\n$\\frac{1}{2}mv_0^2 = mgL(1 - \\cos\\theta_{\\max})$\n\n$1 - \\cos\\theta_{\\max} = \\dfrac{v_0^2}{2gL}$\n\n$$\\cos\\theta_{\\max} = 1 - \\frac{v_0^2}{2gL} \\quad \\Rightarrow \\quad \\theta_{\\max} = \\arccos\\!\\left(1 - \\frac{v_0^2}{2gL}\\right)$$\n\nValid for $v_0 \\leq \\sqrt{2gL}$ (otherwise completes full circles).\n\n**(b)** At the lowest point, centripetal force equation:\n\n$T - mg = \\dfrac{mv_0^2}{L} \\Rightarrow T = m\\!\\left(g + \\dfrac{v_0^2}{L}\\right)$"
+    },
+    {
+      "id": "t06-p04",
+      "source": "2014-UG-Q3 adapted",
+      "question": "A ball of mass $m$ on a string of length $a$ is released from rest at the same height as the pivot O (i.e., string horizontal). At the lowest point B directly below O there is a nail at C, with OC = $b$ where $a/2 < b < a$. After the ball passes B, the string catches the nail and the ball then swings around C. Find: (a) the speed at B, (b) the tension just before B, (c) the condition for the ball to complete a full circle around C.",
+      "answer": "**(a)** Release height above B equals $a$ (since string is horizontal and B is directly below O). Energy conservation:\n\n$\\frac{1}{2}mv_B^2 = mga \\Rightarrow v_B = \\sqrt{2ga}$\n\n**(b)** At B, centripetal direction upward (radius $a$):\n\n$T - mg = \\dfrac{mv_B^2}{a} = \\dfrac{m \\cdot 2ga}{a} = 2mg$\n\n$T = 3mg$\n\n**(c)** After catching the nail, the ball swings around C with radius $r = a - b$. To complete a full circle, the ball must have sufficient speed at the top (height $2r$ above B). At the top, minimum tension $= 0$:\n\n$\\dfrac{mv_{\\text{top}}^2}{r} = mg \\Rightarrow v_{\\text{top,min}} = \\sqrt{gr} = \\sqrt{g(a-b)}$\n\nEnergy conservation from B to top of small circle:\n\n$\\frac{1}{2}mv_B^2 = \\frac{1}{2}mv_{\\text{top}}^2 + mg \\cdot 2r$\n\n$ga \\geq \\frac{1}{2}g(a-b) + 2g(a-b) = \\frac{5}{2}g(a-b)$\n\n$$a \\geq \\frac{5}{2}(a - b) \\Rightarrow b \\geq a - \\frac{2a}{5} \\Rightarrow \\boxed{b \\geq \\frac{3a}{5}}$$"
+    },
+    {
+      "id": "t06-p05",
+      "source": "original",
+      "question": "A pendulum of length $L$ hangs inside a lift (elevator) that accelerates **upward** at $a$. Show that the period of small oscillations is $T = 2\\pi\\sqrt{\\dfrac{L}{g+a}}$. If $L = 1\\ \\mathrm{m}$, $g = 10\\ \\mathrm{m/s^2}$, $a = 5\\ \\mathrm{m/s^2}$, find $T$.",
+      "answer": "In the accelerating frame of the elevator, there is a pseudo-force $ma$ acting downward on the bob. The effective gravitational acceleration is:\n\n$g_{\\text{eff}} = g + a$ (upward acceleration increases effective gravity)\n\nSubstituting into the pendulum period formula:\n\n$$T = 2\\pi\\sqrt{\\frac{L}{g_{\\text{eff}}}} = 2\\pi\\sqrt{\\frac{L}{g + a}}$$ ✓\n\nFor $L = 1\\ \\mathrm{m}$, $g + a = 15\\ \\mathrm{m/s^2}$:\n\n$T = 2\\pi\\sqrt{\\dfrac{1}{15}} = \\dfrac{2\\pi}{\\sqrt{15}} \\approx \\dfrac{6.283}{3.873} \\approx 1.62\\ \\mathrm{s}$\n\nThe pendulum oscillates **faster** in an upward-accelerating elevator."
+    },
+    {
+      "id": "t06-p06",
+      "source": "original",
+      "question": "A student measures the period of a simple pendulum for different lengths and plots $T^2$ vs $L$. The graph is a straight line through the origin with slope $S = 4.1\\ \\mathrm{s^2/m}$. Determine the value of $g$ from this experiment.",
+      "answer": "The period formula gives: $T = 2\\pi\\sqrt{\\dfrac{L}{g}} \\Rightarrow T^2 = \\dfrac{4\\pi^2}{g} \\cdot L$\n\nSo the slope of $T^2$ vs $L$ is:\n\n$S = \\dfrac{4\\pi^2}{g}$\n\nSolving for $g$:\n\n$$g = \\frac{4\\pi^2}{S} = \\frac{4\\pi^2}{4.1} = \\frac{39.48}{4.1} \\approx 9.63\\ \\mathrm{m/s^2}$$\n\nThis is close to the accepted value of $9.8\\ \\mathrm{m/s^2}$; the small discrepancy reflects experimental uncertainty in measuring the slope."
+    },
+    {
+      "id": "t06-p07",
+      "source": "original",
+      "question": "A simple pendulum of length $L$ has a bob of mass $m$. Express the tension in the string as a function of angle $\\theta$ (measured from the vertical) for an arbitrary position during the swing, given the bob was released from angle $\\theta_0$.",
+      "answer": "Energy conservation from release angle $\\theta_0$ to angle $\\theta$:\n\n$\\frac{1}{2}mv^2 = mgL(\\cos\\theta - \\cos\\theta_0)$\n\n$v^2 = 2gL(\\cos\\theta - \\cos\\theta_0)$\n\nRadial (centripetal) equation at angle $\\theta$:\n\n$T - mg\\cos\\theta = \\dfrac{mv^2}{L}$\n\nSubstitute $v^2$:\n\n$T = mg\\cos\\theta + \\dfrac{m}{L} \\cdot 2gL(\\cos\\theta - \\cos\\theta_0)$\n\n$$\\boxed{T = mg(3\\cos\\theta - 2\\cos\\theta_0)}$$\n\nAt $\\theta = 0$ (bottom): $T = mg(3 - 2\\cos\\theta_0)$ (maximum).\nAt $\\theta = \\theta_0$ (release): $T = mg(3\\cos\\theta_0 - 2\\cos\\theta_0) = mg\\cos\\theta_0$ (equals normal component of gravity)."
+    },
+    {
+      "id": "t06-p08",
+      "source": "original",
+      "question": "A pendulum bob of mass $0.2\\ \\mathrm{kg}$ on a $0.5\\ \\mathrm{m}$ string is released from $\\theta_0 = 60°$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the speed at the bottom, (b) the tension at the bottom, (c) the speed at $\\theta = 30°$.",
+      "answer": "**(a)** $h = L(1 - \\cos 60°) = 0.5(1 - 0.5) = 0.25\\ \\mathrm{m}$\n\n$v_0 = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 0.25} = \\sqrt{5} \\approx 2.24\\ \\mathrm{m/s}$\n\n**(b)** $T_{\\text{bottom}} = m\\!\\left(g + \\dfrac{v_0^2}{L}\\right) = 0.2\\!\\left(10 + \\dfrac{5}{0.5}\\right) = 0.2 \\times 20 = 4\\ \\mathrm{N}$\n\n**(c)** Height at $\\theta = 30°$: $h_{30} = L(1 - \\cos 30°) = 0.5(1 - \\frac{\\sqrt{3}}{2}) \\approx 0.5 \\times 0.134 = 0.067\\ \\mathrm{m}$\n\nEnergy: $\\frac{1}{2}mv_{30}^2 = mgh - mgh_{30} = mg(h - h_{30})$\n\n$v_{30} = \\sqrt{2g(0.25 - 0.067)} = \\sqrt{2 \\times 10 \\times 0.183} = \\sqrt{3.66} \\approx 1.91\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t06-p09",
+      "source": "original",
+      "question": "Two simple pendulums have lengths $L$ and $4L$. They are both released from the same small angle at the same time. After how many complete oscillations of the shorter pendulum will they next be in phase (swinging together again)?",
+      "answer": "Period of shorter pendulum: $T_1 = 2\\pi\\sqrt{L/g}$\n\nPeriod of longer pendulum: $T_2 = 2\\pi\\sqrt{4L/g} = 2T_1$\n\nFor them to be in phase again, an integer number of cycles of each must have elapsed:\n\nAfter $n$ cycles of P1 and $m$ cycles of P2: $nT_1 = mT_2 = 2mT_1$\n\nSo $n = 2m$: the shortest time is $m = 1$, $n = 2$.\n\n**After 2 complete oscillations of the shorter pendulum** (= 1 oscillation of the longer), they are in phase again.\n\nTime elapsed: $2T_1 = T_2$."
+    },
+    {
+      "id": "t06-p10",
+      "source": "original",
+      "question": "For a simple pendulum, the small-angle approximation ($\\sin\\theta \\approx \\theta$) is used. (a) Estimate the percentage error in the period when $\\theta_0 = 15°$. (b) At what angle does the error in the period first exceed $1\\%$? (Use the first-order correction: $T \\approx T_0\\left(1 + \\dfrac{\\theta_0^2}{16}\\right)$ for $\\theta_0$ in radians.)",
+      "answer": "**(a)** $\\theta_0 = 15° = \\dfrac{\\pi}{12} \\approx 0.2618\\ \\mathrm{rad}$\n\n$\\dfrac{\\theta_0^2}{16} = \\dfrac{(0.2618)^2}{16} = \\dfrac{0.0685}{16} \\approx 0.00428 = 0.43\\%$\n\nThe period is about **0.43% longer** than the small-angle formula gives — well under $1\\%$.\n\n**(b)** For 1% error: $\\dfrac{\\theta_0^2}{16} = 0.01 \\Rightarrow \\theta_0^2 = 0.16 \\Rightarrow \\theta_0 = 0.4\\ \\mathrm{rad} \\approx 23°$\n\nSo the small-angle approximation is better than $1\\%$ for angles below about $23°$."
+    }
+  ]
+}

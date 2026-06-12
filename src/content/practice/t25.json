@@ -1,0 +1,65 @@
+{
+  "topicId": "t25",
+  "questions": [
+    {
+      "id": "t25-p01",
+      "source": "original",
+      "question": "A horizontal piston–cylinder contains gas at pressure $P_0$. The piston has area $A = 50\\ \\mathrm{cm^2}$ and mass $m = 0$. Atmospheric pressure is $P_{\\mathrm{atm}} = 1.0\\times10^5\\ \\mathrm{Pa}$. What is the equilibrium gas pressure?",
+      "answer": "For a horizontal frictionless piston with no mass and no applied force, the gas pressure equals atmospheric pressure:\n\n$P_{\\text{gas}} = P_{\\text{atm}} = 1.0\\times10^5\\ \\mathrm{Pa}$\n\nAt equilibrium, the net force on the piston is zero: $P_{\\text{gas}} \\cdot A = P_{\\text{atm}} \\cdot A$"
+    },
+    {
+      "id": "t25-p02",
+      "source": "2016-CoT adapted",
+      "question": "A vertical cylinder with a frictionless piston (mass $m = 2\\ \\mathrm{kg}$, area $A = 0.01\\ \\mathrm{m^2}$) sits with the piston on top. Atmospheric pressure is $P_0 = 1.0\\times10^5\\ \\mathrm{Pa}$, $g = 10\\ \\mathrm{m/s^2}$. Find the gas pressure inside the cylinder.",
+      "answer": "Force balance on the piston (upward = downward):\n\n$P_{\\text{gas}} \\cdot A = P_0 \\cdot A + mg$\n\n$P_{\\text{gas}} = P_0 + \\dfrac{mg}{A} = 1.0\\times10^5 + \\dfrac{2 \\times 10}{0.01}$\n\n$= 1.0\\times10^5 + 2000 = 1.02\\times10^5\\ \\mathrm{Pa}$"
+    },
+    {
+      "id": "t25-p03",
+      "source": "original",
+      "question": "A piston–cylinder has gas at $T_1 = 300\\ \\mathrm{K}$. The piston (area $A = 0.02\\ \\mathrm{m^2}$, mass $m = 4\\ \\mathrm{kg}$) is in equilibrium. $P_0 = 1.0\\times10^5\\ \\mathrm{Pa}$, $g = 10\\ \\mathrm{m/s^2}$, initial length $L_1 = 0.5\\ \\mathrm{m}$. The gas is heated to $T_2 = 450\\ \\mathrm{K}$. Find the new length $L_2$.",
+      "answer": "Pressure is constant (isobaric) since the piston weight and atmosphere don't change:\n\n$P = P_0 + mg/A = 1.0\\times10^5 + 4\\times10/0.02 = 1.0\\times10^5 + 2000 \\approx 1.02\\times10^5\\ \\mathrm{Pa}$\n\nIsobaric: $V \\propto T \\Rightarrow L \\propto T$ (same cross-section):\n\n$L_2 = L_1 \\times \\dfrac{T_2}{T_1} = 0.5 \\times \\dfrac{450}{300} = 0.75\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t25-p04",
+      "source": "2018-UG adapted",
+      "question": "A cylinder with a fixed piston (rigid, locked) contains gas at $P_1 = 1.5\\times10^5\\ \\mathrm{Pa}$ and $T_1 = 300\\ \\mathrm{K}$. The gas is heated to $T_2 = 450\\ \\mathrm{K}$. Find $P_2$. Then the piston is released and expands isobarically to $T_3 = 600\\ \\mathrm{K}$. Find $V_3/V_1$.",
+      "answer": "**Heating with locked piston (isochoric):**\n\n$P_2 = P_1 \\cdot \\dfrac{T_2}{T_1} = 1.5\\times10^5 \\times \\dfrac{450}{300} = 2.25\\times10^5\\ \\mathrm{Pa}$\n\n**Isobaric expansion from state 2 to 3** (at $P_2 = $ const):\n\n$\\dfrac{V_3}{V_2} = \\dfrac{T_3}{T_2} = \\dfrac{600}{450} = \\dfrac{4}{3}$\n\nSince $V_1 = V_2$ (locked piston during step 1):\n\n$\\dfrac{V_3}{V_1} = \\dfrac{4}{3}$"
+    },
+    {
+      "id": "t25-p05",
+      "source": "original",
+      "question": "A vertical cylinder has a piston of mass $m = 5\\ \\mathrm{kg}$ and cross-sectional area $A = 100\\ \\mathrm{cm^2} = 0.01\\ \\mathrm{m^2}$. A block of mass $M = 10\\ \\mathrm{kg}$ is placed on the piston. Find: (a) the initial gas pressure (without block), (b) the new pressure (with block), (c) the fractional change in volume if $T$ stays constant.",
+      "answer": "$P_0 = 1.0\\times10^5\\ \\mathrm{Pa}$, $g = 10\\ \\mathrm{m/s^2}$\n\n**(a)** Without block: $P_1 = P_0 + mg/A = 1.0\\times10^5 + 5\\times10/0.01 = 1.05\\times10^5\\ \\mathrm{Pa}$\n\n**(b)** With block: $P_2 = P_0 + (m+M)g/A = 1.0\\times10^5 + 15\\times10/0.01 = 1.15\\times10^5\\ \\mathrm{Pa}$\n\n**(c)** Isothermal: $P_1 V_1 = P_2 V_2$\n\n$\\dfrac{V_2}{V_1} = \\dfrac{P_1}{P_2} = \\dfrac{1.05}{1.15} \\approx 0.913$\n\nVolume decreases by about $8.7\\%$."
+    },
+    {
+      "id": "t25-p06",
+      "source": "2019-UG adapted",
+      "question": "A piston–cylinder with piston area $A$ is initially in equilibrium at $P = P_0 + mg/A$ (piston mass $m$, atmospheric pressure $P_0$). The gas occupies length $L$. A weight $F$ is slowly placed on the piston. Write the new equilibrium pressure and the new length (isothermal).",
+      "answer": "**New pressure** (force balance with additional load $F$):\n\n$P_\\text{new} = P_0 + \\dfrac{mg + F}{A}$\n\n**New length** (isothermal: $PV = $ const, with $V = AL$):\n\n$P_\\text{old} \\cdot AL = P_\\text{new} \\cdot AL_\\text{new}$\n\n$L_\\text{new} = L \\cdot \\dfrac{P_\\text{old}}{P_\\text{new}} = L \\cdot \\dfrac{P_0 A + mg}{P_0 A + mg + F}$\n\nThe new length is shorter since $P_\\text{new} > P_\\text{old}$."
+    },
+    {
+      "id": "t25-p07",
+      "source": "original",
+      "question": "A piston–cylinder contains $n = 0.1\\ \\mathrm{mol}$ of monatomic ideal gas at $T = 300\\ \\mathrm{K}$ and pressure $P = 2.0\\times10^5\\ \\mathrm{Pa}$ (set by the piston equilibrium). The gas is heated at constant pressure until $T' = 600\\ \\mathrm{K}$. Find: (a) the work done by the gas, (b) $\\Delta U$, (c) the heat input.",
+      "answer": "**(a)** Isobaric work: $W = nR\\Delta T = 0.1 \\times 8.31 \\times 300 = 249.3\\ \\mathrm{J}$\n\n**(b)** $\\Delta U = \\dfrac{3}{2}nR\\Delta T = \\dfrac{3}{2} \\times 249.3 = 373.95\\ \\mathrm{J}$\n\n**(c)** $Q = \\Delta U + W = 373.95 + 249.3 = 623.25\\ \\mathrm{J}$\n\n(Or: $Q = nC_P\\Delta T = 0.1 \\times \\frac{5}{2} \\times 8.31 \\times 300 = 623.25\\ \\mathrm{J}$ ✓)"
+    },
+    {
+      "id": "t25-p08",
+      "source": "original",
+      "question": "A cylinder is divided into two chambers by a piston. Left chamber: gas at $P_L$ and volume $V_L$. Right chamber: gas at $P_R$ and volume $V_R$. The piston is released. At equilibrium (same temperature $T$), it stops where $P_L' = P_R'$. If the total volume is $V_L + V_R$ and total moles are conserved, find $P_L' = P_R'$.",
+      "answer": "At temperature $T$, total moles: $n = n_L + n_R = \\dfrac{P_L V_L + P_R V_R}{RT}$\n\nAt equilibrium: $P_L' = P_R' = P_f$ (otherwise piston would still move), and total volume conserved:\n\n$n = \\dfrac{P_f(V_L + V_R)}{RT}$\n\nEquating: $P_f = \\dfrac{P_L V_L + P_R V_R}{V_L + V_R}$\n\nThis is the same as connecting two containers at the same temperature — the equilibrium pressure is the volume-weighted average."
+    },
+    {
+      "id": "t25-p09",
+      "source": "2014-UG adapted",
+      "question": "A vertical cylinder (cross-section $A = 50\\ \\mathrm{cm^2}$) is closed at the bottom and has a light frictionless piston. Gas of length $L_0 = 40\\ \\mathrm{cm}$ is trapped below at $T_0 = 27^\\circ\\mathrm{C}$. Atmospheric pressure $P_0 = 1.0\\times10^5\\ \\mathrm{Pa}$, $g = 10\\ \\mathrm{m/s^2}$, piston mass negligible. The gas is heated until the piston rises by $\\Delta L = 10\\ \\mathrm{cm}$. Find the new temperature.",
+      "answer": "Piston is massless and frictionless $\\Rightarrow$ isobaric process at $P = P_0$.\n\n$V_1 = A L_0 = 50\\times10^{-4} \\times 0.4 = 2\\times10^{-3}\\ \\mathrm{m^3}$\n\n$V_2 = A(L_0 + \\Delta L) = 50\\times10^{-4} \\times 0.5 = 2.5\\times10^{-3}\\ \\mathrm{m^3}$\n\nIsobaric: $T_2/T_1 = V_2/V_1$\n\n$T_2 = T_1 \\times \\dfrac{V_2}{V_1} = 300 \\times \\dfrac{2.5}{2.0} = 375\\ \\mathrm{K} = 102^\\circ\\mathrm{C}$"
+    },
+    {
+      "id": "t25-p10",
+      "source": "original",
+      "question": "A horizontal cylinder is divided by a piston (mass $m$, area $A$). The left side has gas at $P_1$ and the right side is at vacuum. The piston is released from rest. Describe the subsequent motion and the final equilibrium state (assuming the piston can be stopped by a wall at the right end).",
+      "answer": "The left gas pushes the piston to the right with net force $F = P_1 A$ (no resistance from vacuum).\n\nThe piston accelerates to the right, compressing nothing on the right side.\n\nThe gas does work on the piston: $W = P_1 A \\cdot \\Delta x$ (but $P$ decreases as gas expands).\n\n**If there's a wall at the right end** (say, the cylinder ends):\n\nThe piston hits the wall — energy is dissipated (inelastic collision). Eventually the piston comes to rest with gas filling the full cylinder volume $V_{\\text{total}}$ and pressure:\n\n$P_f = \\dfrac{P_1 V_1}{V_{\\text{total}}}$ (if isothermal)\n\nThe temperature may change depending on heat exchange. In the final equilibrium, $\\Delta U = W_{\\text{net}}$ plus heat from walls."
+    }
+  ]
+}

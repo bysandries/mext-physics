@@ -1,0 +1,155 @@
+{
+  "topicId": "t01",
+  "questions": [
+    {
+      "id": "t01-q01",
+      "source": "2016-UG-Q1-(1)",
+      "question": "A car accelerates uniformly from rest to a speed $v$ for time $t$. Find the distance the car travels during the time $t$.",
+      "choices": [
+        "$vt$",
+        "$\\frac{1}{2}vt$",
+        "$2vt$",
+        "$\\frac{1}{4}vt$",
+        "$\\frac{1}{3}vt$",
+        "$\\frac{3}{4}vt$"
+      ],
+      "correctIndex": 1,
+      "explanation": "The v–t graph is a right triangle of base $t$ and height $v$; distance = area = $\\frac{1}{2}vt$. Trap (a) $vt$ assumes constant speed — starting from rest, the distance must be less than $vt$."
+    },
+    {
+      "id": "t01-q02",
+      "source": "adapted: 2019-UG-Q1-(1)",
+      "question": "A train starts from rest and accelerates uniformly to $20\\ \\mathrm{m/s}$ in $10\\ \\mathrm{s}$, travels at a constant $20\\ \\mathrm{m/s}$ for $30\\ \\mathrm{s}$, then decelerates uniformly and stops in a further $20\\ \\mathrm{s}$. Find the total distance traveled.",
+      "choices": [
+        "$700\\ \\mathrm{m}$",
+        "$800\\ \\mathrm{m}$",
+        "$900\\ \\mathrm{m}$",
+        "$1000\\ \\mathrm{m}$",
+        "$1100\\ \\mathrm{m}$",
+        "$1200\\ \\mathrm{m}$"
+      ],
+      "correctIndex": 2,
+      "explanation": "Area under the v–t trapezoid: $\\frac{1}{2}(10)(20) + (30)(20) + \\frac{1}{2}(20)(20) = 100 + 600 + 200 = 900\\ \\mathrm{m}$. Trap (e) $1200\\ \\mathrm{m}$ is $20 \\times 60$, treating all 60 s as full speed."
+    },
+    {
+      "id": "t01-q03",
+      "source": "original",
+      "question": "An object moving with speed $v_0$ accelerates uniformly along a straight line. After traveling a distance $d$, its speed has doubled. Find the acceleration $a$.",
+      "choices": [
+        "$\\frac{v_0^2}{2d}$",
+        "$\\frac{v_0^2}{d}$",
+        "$\\frac{3v_0^2}{2d}$",
+        "$\\frac{2v_0^2}{d}$",
+        "$\\frac{3v_0^2}{d}$",
+        "$\\frac{v_0^2}{4d}$"
+      ],
+      "correctIndex": 2,
+      "explanation": "Time-free equation: $v^2 = v_0^2 + 2ad$ with $v = 2v_0$ gives $4v_0^2 - v_0^2 = 2ad$, so $a = \\frac{3v_0^2}{2d}$. Trap (a) forgets that the speed appears *squared*: doubling $v$ quadruples $v^2$."
+    },
+    {
+      "id": "t01-q04",
+      "source": "original",
+      "question": "A small ball is released from rest at a height $h$ above the ground. The acceleration of gravity is $g$ and air resistance is ignored. Find the time for the ball to reach the ground.",
+      "choices": [
+        "$\\sqrt{\\frac{h}{g}}$",
+        "$\\sqrt{\\frac{2h}{g}}$",
+        "$\\sqrt{\\frac{h}{2g}}$",
+        "$2\\sqrt{\\frac{h}{g}}$",
+        "$\\frac{h}{g}$",
+        "$\\sqrt{\\frac{2g}{h}}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "From $h = \\frac{1}{2}gt^2$, solve for $t = \\sqrt{2h/g}$. Choice (e) is dimensionally wrong — a quick units check eliminates it instantly."
+    },
+    {
+      "id": "t01-q05",
+      "source": "original",
+      "question": "An object starts from rest and moves with constant acceleration. Find the ratio of the distance traveled during the 3rd second to the distance traveled during the 1st second.",
+      "choices": [
+        "$2$",
+        "$3$",
+        "$4$",
+        "$5$",
+        "$6$",
+        "$9$"
+      ],
+      "correctIndex": 3,
+      "explanation": "Distances in successive seconds from rest follow the odd-number ratio $1:3:5:7\\ldots$, so the 3rd second covers $5\\times$ the 1st. Trap (f) $9$ is the ratio of *total* distances $x(3)/x(1) = 9/1$, not the distance within the 3rd second."
+    },
+    {
+      "id": "t01-q06",
+      "source": "original",
+      "question": "A car traveling at speed $v$ applies its brakes and decelerates at a constant rate $a$ until it stops. Find the distance traveled while braking.",
+      "choices": [
+        "$\\frac{v^2}{a}$",
+        "$\\frac{v^2}{2a}$",
+        "$\\frac{2v^2}{a}$",
+        "$\\frac{v}{2a}$",
+        "$\\frac{v^2}{4a}$",
+        "$\\frac{av^2}{2}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "$0 = v^2 - 2ax$ gives $x = \\frac{v^2}{2a}$. Equivalently, the v–t triangle has base $v/a$ and height $v$. Note the stopping distance grows with the *square* of the speed — double the speed, four times the distance."
+    },
+    {
+      "id": "t01-q07",
+      "source": "original",
+      "question": "An object moves along a straight line with constant acceleration. It passes point A with a speed of $4.0\\ \\mathrm{m/s}$ and point B with a speed of $10.0\\ \\mathrm{m/s}$. Find the average velocity of the object between A and B.",
+      "choices": [
+        "$5.0\\ \\mathrm{m/s}$",
+        "$6.0\\ \\mathrm{m/s}$",
+        "$6.5\\ \\mathrm{m/s}$",
+        "$7.0\\ \\mathrm{m/s}$",
+        "$7.5\\ \\mathrm{m/s}$",
+        "$8.0\\ \\mathrm{m/s}$"
+      ],
+      "correctIndex": 3,
+      "explanation": "For constant acceleration, the average velocity over any interval is $\\frac{v_i + v_f}{2} = \\frac{4 + 10}{2} = 7.0\\ \\mathrm{m/s}$. This is exact only for *constant* acceleration — that condition is what licenses the simple average."
+    },
+    {
+      "id": "t01-q08",
+      "source": "original",
+      "question": "The velocity of an object moving along the $x$-axis is given by $v(t) = 30 - 6t$ (in $\\mathrm{m/s}$, with $t$ in seconds). Find the distance traveled from $t = 0$ until the object is momentarily at rest.",
+      "choices": [
+        "$30\\ \\mathrm{m}$",
+        "$60\\ \\mathrm{m}$",
+        "$75\\ \\mathrm{m}$",
+        "$90\\ \\mathrm{m}$",
+        "$150\\ \\mathrm{m}$",
+        "$180\\ \\mathrm{m}$"
+      ],
+      "correctIndex": 2,
+      "explanation": "The object stops when $v = 0$, i.e. $t = 5\\ \\mathrm{s}$. Distance = area of the v–t triangle = $\\frac{1}{2}(5)(30) = 75\\ \\mathrm{m}$. Trap (e) $150\\ \\mathrm{m}$ forgets the factor $\\frac{1}{2}$ ($30 \\times 5$)."
+    },
+    {
+      "id": "t01-q09",
+      "source": "original",
+      "question": "An object starts from rest and accelerates at a constant rate $a$ for a time $t_1$. It then immediately decelerates at a constant rate $2a$ until it comes to rest. Find the total distance traveled.",
+      "choices": [
+        "$\\frac{1}{2}at_1^2$",
+        "$\\frac{3}{4}at_1^2$",
+        "$at_1^2$",
+        "$\\frac{3}{2}at_1^2$",
+        "$\\frac{1}{4}at_1^2$",
+        "$2at_1^2$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Peak speed $v = at_1$; deceleration phase takes $t_1/2$. Total distance = v–t triangle area = $\\frac{1}{2}v(t_1 + \\frac{t_1}{2}) = \\frac{1}{2}(at_1)\\frac{3t_1}{2} = \\frac{3}{4}at_1^2$. Drawing the triangle is much faster than two separate kinematics calculations."
+    },
+    {
+      "id": "t01-q10",
+      "source": "original",
+      "question": "A ball is thrown vertically upward with an initial speed $v_0$. The acceleration of gravity is $g$ and air resistance is ignored. Find the time for the ball to return to its launch point.",
+      "choices": [
+        "$\\frac{v_0}{g}$",
+        "$\\frac{2v_0}{g}$",
+        "$\\frac{v_0}{2g}$",
+        "$\\sqrt{\\frac{2v_0}{g}}$",
+        "$\\frac{4v_0}{g}$",
+        "$\\frac{v_0^2}{2g}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Time up = $v_0/g$ (when $v = 0$); by symmetry the descent takes the same time, so total $= 2v_0/g$. Trap (a) is only the time to the highest point; (f) is the maximum *height*, not a time."
+    }
+  ]
+}

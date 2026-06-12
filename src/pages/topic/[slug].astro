@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import FormulaList from '../../components/topic/FormulaList.astro';
 import ProblemBlock from '../../components/topic/ProblemBlock.astro';
+import PracticeReveal from '../../components/topic/PracticeReveal.tsx';
 import { getCollection } from 'astro:content';
 import { renderInlineMath, renderInline, linkTopicRefs } from '../../utils/render';
 
@@ -16,6 +17,10 @@ export async function getStaticPaths() {
 const { topic } = Astro.props;
 const data = topic.data;
 
+const allPractice = await getCollection('practice');
+const practiceEntry = allPractice.find(p => p.data.topicId === data.id);
+const practiceQuestions = practiceEntry?.data.questions ?? [];
+
 const allTopics = await getCollection('topics');
 const samePart = allTopics
   .filter(t => t.data.part === data.part && !t.data.theoryOnly)
@@ -24,8 +29,9 @@ const curIdx = samePart.findIndex(t => t.data.id === data.id);
 const prev = curIdx > 0 ? samePart[curIdx - 1] : null;
 const next = curIdx < samePart.length - 1 ? samePart[curIdx + 1] : null;
 
-const theoryHtml = data.theory ? linkTopicRefs(renderInlineMath(data.theory)) : '';
-const connectionsHtml = (data.connections ?? []).map((c) => linkTopicRefs(renderInline(c)));
+const base = import.meta.env.BASE_URL;
+const theoryHtml = data.theory ? linkTopicRefs(renderInlineMath(data.theory), base) : '';
+const connectionsHtml = (data.connections ?? []).map((c) => linkTopicRefs(renderInline(c), base));
 ---
 
 <BaseLayout title={`${data.number}. ${data.title} — MEXT Physics`} showSidebar={true}>
@@ -83,6 +89,13 @@ const connectionsHtml = (data.connections ?? []).map((c) => linkTopicRefs(render
         {data.problems.map((problem, i) => (
           <ProblemBlock problem={problem} index={i} />
         ))}
+      </section>
+    )}
+
+    {practiceQuestions.length > 0 && (
+      <section class="topic-section">
+        <h2>Practice Questions ({practiceQuestions.length})</h2>
+        <PracticeReveal questions={practiceQuestions} client:idle />
       </section>
     )}
 

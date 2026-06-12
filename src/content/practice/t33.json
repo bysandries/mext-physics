@@ -1,0 +1,65 @@
+{
+  "topicId": "t33",
+  "questions": [
+    {
+      "id": "t33-p01",
+      "source": "original",
+      "question": "Two parallel plates are $d = 5\\ \\mathrm{mm} = 5\\times10^{-3}\\ \\mathrm{m}$ apart and maintain a potential difference of $V = 100\\ \\mathrm{V}$. Find the electric field between the plates.",
+      "answer": "In a uniform field between parallel plates:\n\n$E = \\dfrac{V}{d} = \\dfrac{100}{5\\times10^{-3}} = 2\\times10^4\\ \\mathrm{V/m} = 20{,}000\\ \\mathrm{N/C}$\n\nThe field is directed from the positive plate to the negative plate."
+    },
+    {
+      "id": "t33-p02",
+      "source": "2016-CoT adapted",
+      "question": "A proton ($m = 1.67\\times10^{-27}\\ \\mathrm{kg}$, $q = 1.6\\times10^{-19}\\ \\mathrm{C}$) is released from rest between two charged plates ($E = 5\\times10^4\\ \\mathrm{N/C}$, plate separation $d = 0.02\\ \\mathrm{m}$). Find: (a) the acceleration, (b) the speed when it reaches the negative plate.",
+      "answer": "**(a)** $a = \\dfrac{qE}{m} = \\dfrac{1.6\\times10^{-19} \\times 5\\times10^4}{1.67\\times10^{-27}} = \\dfrac{8\\times10^{-15}}{1.67\\times10^{-27}} \\approx 4.79\\times10^{12}\\ \\mathrm{m/s^2}$\n\n**(b)** $v^2 = 2ad \\Rightarrow v = \\sqrt{2 \\times 4.79\\times10^{12} \\times 0.02} = \\sqrt{1.916\\times10^{11}} \\approx 4.38\\times10^5\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t33-p03",
+      "source": "original",
+      "question": "An electron is accelerated from rest through a potential difference of $V = 200\\ \\mathrm{V}$. Find: (a) the kinetic energy gained, (b) the final speed. ($m_e = 9.11\\times10^{-31}\\ \\mathrm{kg}$, $e = 1.6\\times10^{-19}\\ \\mathrm{C}$)",
+      "answer": "**(a)** $KE = e\\,V = 1.6\\times10^{-19} \\times 200 = 3.2\\times10^{-17}\\ \\mathrm{J}$\n\n**(b)** $v = \\sqrt{\\dfrac{2KE}{m}} = \\sqrt{\\dfrac{2 \\times 3.2\\times10^{-17}}{9.11\\times10^{-31}}} = \\sqrt{7.025\\times10^{13}} \\approx 8.38\\times10^6\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t33-p04",
+      "source": "original",
+      "question": "In a uniform electric field $E = 3000\\ \\mathrm{N/C}$, find the work done by the field to move a charge $q = 2\\ \\mu\\mathrm{C}$ a distance $d = 0.05\\ \\mathrm{m}$ parallel to the field.",
+      "answer": "$W = qEd = 2\\times10^{-6} \\times 3000 \\times 0.05 = 3\\times10^{-4}\\ \\mathrm{J} = 0.3\\ \\mathrm{mJ}$\n\nIf the charge moves perpendicular to the field: $W = qEd\\cos(90°) = 0$.\n\nWork by the electric field = $q\\Delta V$ where $\\Delta V = -Ed$ (potential drops in the direction of $E$)."
+    },
+    {
+      "id": "t33-p05",
+      "source": "2015-UG adapted",
+      "question": "The electric potential at a distance $r$ from a point charge $q$ is $V = kq/r$. Two points A and B are at distances $r_A = 0.1\\ \\mathrm{m}$ and $r_B = 0.3\\ \\mathrm{m}$ from a $q = 5\\ \\mu\\mathrm{C}$ charge. Find the potential difference $V_A - V_B$ and the work done to move a $2\\ \\mu\\mathrm{C}$ charge from B to A.",
+      "answer": "$V_A = k\\dfrac{q}{r_A} = 9\\times10^9 \\times \\dfrac{5\\times10^{-6}}{0.1} = 4.5\\times10^5\\ \\mathrm{V}$\n\n$V_B = k\\dfrac{q}{r_B} = 9\\times10^9 \\times \\dfrac{5\\times10^{-6}}{0.3} = 1.5\\times10^5\\ \\mathrm{V}$\n\n$V_A - V_B = 3.0\\times10^5\\ \\mathrm{V}$\n\nWork done by the field to move $q_0 = 2\\ \\mu\\mathrm{C}$ from B to A:\n\n$W = q_0(V_B - V_A) = 2\\times10^{-6} \\times (-3.0\\times10^5) = -0.6\\ \\mathrm{J}$\n\n(Negative: moving a positive charge to higher potential requires external work.)"
+    },
+    {
+      "id": "t33-p06",
+      "source": "original",
+      "question": "An electron enters parallel plates horizontally at speed $v_0 = 2\\times10^7\\ \\mathrm{m/s}$. The plates are $L = 0.1\\ \\mathrm{m}$ long and have $E = 4\\times10^4\\ \\mathrm{N/C}$ (vertical). Find the vertical deflection as the electron exits the plates.",
+      "answer": "Time in the field: $t = L/v_0 = 0.1/(2\\times10^7) = 5\\times10^{-9}\\ \\mathrm{s}$\n\nVertical acceleration: $a = eE/m_e = 1.6\\times10^{-19} \\times 4\\times10^4 / 9.11\\times10^{-31}$\n\n$= 6.4\\times10^{-15}/9.11\\times10^{-31} = 7.03\\times10^{15}\\ \\mathrm{m/s^2}$\n\nVertical deflection:\n\n$y = \\frac{1}{2}at^2 = \\frac{1}{2} \\times 7.03\\times10^{15} \\times (5\\times10^{-9})^2$\n\n$= \\frac{1}{2} \\times 7.03\\times10^{15} \\times 2.5\\times10^{-17} = 0.0879\\ \\mathrm{m} \\approx 8.8\\ \\mathrm{cm}$"
+    },
+    {
+      "id": "t33-p07",
+      "source": "2019-UG adapted",
+      "question": "A uniform electric field of $E = 500\\ \\mathrm{V/m}$ points in the $+x$ direction. Find the potential difference $V_A - V_B$ between points A$(x=0)$ and B$(x=0.4\\ \\mathrm{m})$.",
+      "answer": "In a uniform field, the potential decreases in the direction of the field:\n\n$V_A - V_B = E \\times d_{AB} = 500 \\times 0.4 = 200\\ \\mathrm{V}$\n\nPoint A is at higher potential than B (electric field points from high to low potential).\n\nGeneral formula: $V_A - V_B = E \\cdot (x_B - x_A)$ for field in $+x$ direction."
+    },
+    {
+      "id": "t33-p08",
+      "source": "original",
+      "question": "Show that the relationship between electric field $E$ and potential $V$ in a uniform field is $E = -dV/dx$. Verify with a field of $E = 200\\ \\mathrm{V/m}$ and $V(0) = 1000\\ \\mathrm{V}$.",
+      "answer": "The work done by the field on charge $q$ moving $dx$ in the $+x$ direction:\n\n$dW = qE\\,dx$\n\nBy the relation between work and potential: $dW = -q\\,dV$ (potential energy decreases)\n\n$qE\\,dx = -q\\,dV$\n\n$$E = -\\dfrac{dV}{dx}$$\n\nFor uniform $E = 200\\ \\mathrm{V/m}$: $V(x) = V(0) - E \\cdot x = 1000 - 200x$\n\nCheck: $-dV/dx = -(-200) = 200\\ \\mathrm{V/m}$ ✓\n\nAt $x = 2\\ \\mathrm{m}$: $V = 1000 - 400 = 600\\ \\mathrm{V}$"
+    },
+    {
+      "id": "t33-p09",
+      "source": "2014-UG adapted",
+      "question": "A charge $q = -3\\ \\mu\\mathrm{C}$ is held in a uniform electric field. The potential at its location is $V = 400\\ \\mathrm{V}$. Find: (a) the electric potential energy of the charge, (b) the work done by an external force to move it to a point where $V' = 100\\ \\mathrm{V}$.",
+      "answer": "**(a)** $U = qV = (-3\\times10^{-6}) \\times 400 = -1.2\\times10^{-3}\\ \\mathrm{J} = -1.2\\ \\mathrm{mJ}$\n\n**(b)** Work done by external force (against field):\n\n$W_{\\text{ext}} = \\Delta U = q(V' - V) = (-3\\times10^{-6})(100 - 400) = (-3\\times10^{-6})(-300) = 9\\times10^{-4}\\ \\mathrm{J} = 0.9\\ \\mathrm{mJ}$\n\n(Positive work must be done by the external force to move the negative charge to lower potential.)"
+    },
+    {
+      "id": "t33-p10",
+      "source": "original",
+      "question": "Two parallel plates are separated by $d = 0.01\\ \\mathrm{m}$ and connected to a battery of $\\mathcal{E} = 12\\ \\mathrm{V}$. An oil droplet of mass $m = 5\\times10^{-15}\\ \\mathrm{kg}$ and charge $q$ is suspended motionless between the plates. Find $q$ and the number of excess electrons. ($g = 10\\ \\mathrm{m/s^2}$)",
+      "answer": "Equilibrium: electric force = gravity\n\n$qE = mg$\n\n$E = V/d = 12/0.01 = 1200\\ \\mathrm{V/m}$\n\n$q = \\dfrac{mg}{E} = \\dfrac{5\\times10^{-15} \\times 10}{1200} = \\dfrac{5\\times10^{-14}}{1200} = 4.17\\times10^{-17}\\ \\mathrm{C}$\n\nNumber of excess electrons: $n = q/e = 4.17\\times10^{-17}/1.6\\times10^{-19} \\approx 260$\n\n(Millikan oil-drop experiment setup)"
+    }
+  ]
+}

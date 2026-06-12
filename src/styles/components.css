@@ -110,6 +110,16 @@
 [data-theme="dark"] .qz-correct { background: #052e16 !important; }
 [data-theme="dark"] .qz-wrong { background: #450a0a !important; }
 .qz-text { flex: 1; }
+.qz-explanation {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  border-left: 3px solid var(--accent);
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 0 6px 6px 0;
+}
 .qz-result { text-align: center; padding: 2rem; }
 .qz-score { font-size: 2rem; font-weight: 800; color: var(--accent); margin: 1rem 0; }
 .qz-breakdown { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.5rem; }
@@ -217,6 +227,36 @@
 .sr-title { font-weight: 600; font-size: 1rem; margin-bottom: 0.2rem; }
 .sr-preview { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; }
 .search-empty { text-align: center; padding: 2rem; color: var(--text-muted); }
+
+/* ── Practice Questions ───────────────────────────────────────────── */
+.pq-root { display: flex; flex-direction: column; gap: 1rem; }
+.pq-toolbar { display: flex; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+.pq-item {
+  border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem; background: var(--bg-card);
+}
+.pq-header {
+  display: flex; align-items: center; gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.pq-num {
+  font-weight: 700; font-size: 0.8rem; padding: 0.2rem 0.6rem;
+  background: var(--accent); color: white; border-radius: 999px;
+}
+.pq-source { font-size: 0.78rem; color: var(--text-muted); }
+.pq-question {
+  font-size: 0.95rem; line-height: 1.7; color: var(--text);
+  margin-bottom: 0.75rem;
+}
+.pq-toggle { margin-bottom: 0; }
+.pq-answer {
+  margin-top: 0.75rem; padding: 0.9rem 1rem;
+  background: var(--bg-secondary); border-radius: var(--radius);
+  border-left: 3px solid var(--accent);
+  font-size: 0.9rem; line-height: 1.8; color: var(--text-secondary);
+}
+.pq-answer :global(p) { margin-bottom: 0.5rem; }
+.pq-answer :global(p:last-child) { margin-bottom: 0; }
 
 /* ── Responsive tweaks ────────────────────────────────────────────── */
 @media (max-width: 640px) {

@@ -1,0 +1,65 @@
+{
+  "topicId": "t45",
+  "questions": [
+    {
+      "id": "t45-p01",
+      "source": "original",
+      "question": "In Young's double-slit experiment, the slit separation is $d = 0.2\\ \\mathrm{mm}$, the screen distance is $L = 1.5\\ \\mathrm{m}$, and the wavelength is $\\lambda = 600\\ \\mathrm{nm}$. Find the fringe spacing $\\Delta y$.",
+      "answer": "$\\Delta y = \\dfrac{\\lambda L}{d} = \\dfrac{600\\times10^{-9} \\times 1.5}{0.2\\times10^{-3}}$\n\n$= \\dfrac{9\\times10^{-7}}{2\\times10^{-4}} = 4.5\\times10^{-3}\\ \\mathrm{m} = 4.5\\ \\mathrm{mm}$"
+    },
+    {
+      "id": "t45-p02",
+      "source": "original",
+      "question": "In Young's experiment, find the positions of the first three bright fringes (central, 1st, 2nd order) above the center. ($d = 0.5\\ \\mathrm{mm}$, $L = 1.0\\ \\mathrm{m}$, $\\lambda = 500\\ \\mathrm{nm}$)",
+      "answer": "Bright fringe positions: $y_m = \\dfrac{m\\lambda L}{d}$, $m = 0, \\pm1, \\pm2, \\ldots$\n\n$\\dfrac{\\lambda L}{d} = \\dfrac{500\\times10^{-9} \\times 1.0}{0.5\\times10^{-3}} = 1\\times10^{-3}\\ \\mathrm{m} = 1.0\\ \\mathrm{mm}$\n\n$m = 0$: $y_0 = 0$ (central maximum)\n\n$m = 1$: $y_1 = 1.0\\ \\mathrm{mm}$\n\n$m = 2$: $y_2 = 2.0\\ \\mathrm{mm}$"
+    },
+    {
+      "id": "t45-p03",
+      "source": "2016-UG adapted",
+      "question": "In Young's experiment, 10 bright fringes span a distance of $y = 12\\ \\mathrm{mm}$ on a screen $L = 1.0\\ \\mathrm{m}$ from the slits. The slit separation is $d = 0.4\\ \\mathrm{mm}$. Find the wavelength of light.",
+      "answer": "Fringe spacing: $\\Delta y = 12/10 = 1.2\\ \\mathrm{mm} = 1.2\\times10^{-3}\\ \\mathrm{m}$\n\n$\\lambda = \\dfrac{\\Delta y \\cdot d}{L} = \\dfrac{1.2\\times10^{-3} \\times 0.4\\times10^{-3}}{1.0}$\n\n$= 4.8\\times10^{-7}\\ \\mathrm{m} = 480\\ \\mathrm{nm}$ (blue light)"
+    },
+    {
+      "id": "t45-p04",
+      "source": "original",
+      "question": "Derive the path difference condition for bright and dark fringes in Young's double-slit experiment.",
+      "answer": "Two slits S₁ and S₂ separated by $d$. For a point P at height $y$ on a screen at distance $L$ ($y \\ll L$):\n\nPath difference: $\\delta = d\\sin\\theta \\approx d\\cdot\\dfrac{y}{L}$ (small angle)\n\n**Bright fringe** (constructive interference, waves in phase):\n\n$\\delta = m\\lambda$, $m = 0, \\pm1, \\pm2, \\ldots$\n\n$y_m = \\dfrac{m\\lambda L}{d}$\n\n**Dark fringe** (destructive interference, waves $180°$ out of phase):\n\n$\\delta = \\left(m+\\tfrac{1}{2}\\right)\\lambda$\n\n$y_m = \\dfrac{(2m+1)\\lambda L}{2d}$\n\nFringe spacing: $\\Delta y = y_{m+1} - y_m = \\dfrac{\\lambda L}{d}$"
+    },
+    {
+      "id": "t45-p05",
+      "source": "2018-UG adapted",
+      "question": "In Young's experiment with $\\lambda = 700\\ \\mathrm{nm}$ (red) and $\\lambda' = 400\\ \\mathrm{nm}$ (violet), find the smallest fringe order $m$ for which the two sets of fringes overlap (bright on bright).",
+      "answer": "Bright fringes coincide when $m\\lambda = m'\\lambda'$:\n\n$\\dfrac{m}{m'} = \\dfrac{\\lambda'}{\\lambda} = \\dfrac{400}{700} = \\dfrac{4}{7}$\n\nSmallest integers: $m = 4$ (red) and $m' = 7$ (violet)\n\nBoth fringes coincide at the same position: $y = 4\\lambda L/d = 7\\lambda' L/d$ ✓\n\n$4 \\times 700 = 2800\\ \\mathrm{nm}$ and $7 \\times 400 = 2800\\ \\mathrm{nm}$ ✓"
+    },
+    {
+      "id": "t45-p06",
+      "source": "original",
+      "question": "A thin film of oil ($n = 1.4$) on water ($n = 1.33$) is illuminated with white light at normal incidence. For constructive interference in the reflected light, what is the minimum thickness for $\\lambda = 560\\ \\mathrm{nm}$ (green)?",
+      "answer": "Phase shifts at interfaces:\n- Air→oil (low→high $n$): $\\lambda/2$ phase shift (half-wavelength)\n- Oil→water: $n_{\\text{oil}} = 1.4 > n_{\\text{water}} = 1.33$, so high→low: **no phase shift**\n\nNet external phase shift: $\\lambda/2$ (one shift only)\n\nCondition for constructive interference (reflected waves in phase):\n\n$2nt = \\left(m + \\tfrac{1}{2}\\right)\\lambda$... wait, with one shift, constructive gives:\n\n$2nt = m\\lambda$ (the half-shift means the extra path $2nt$ must compensate for the $\\lambda/2$ shift: $2nt = (m+\\tfrac{1}{2})\\lambda$... \n\nActually: total phase from path $= 2nt$ path; phase from reflection $= \\lambda/2$. Constructive when total $= m\\lambda$:\n\n$2nt + \\lambda/2 = m\\lambda$ (if we count the reflection phase as equivalent path) — or more simply:\n\n$2nt = (m - \\tfrac{1}{2})\\lambda$: minimum at $m = 1$: $2nt = \\lambda/2$, $t = \\lambda/(4n) = 560/(4 \\times 1.4) = 100\\ \\mathrm{nm}$"
+    },
+    {
+      "id": "t45-p07",
+      "source": "original",
+      "question": "A thin soap film ($n = 1.33$) in air is seen to have its minimum non-zero constructive thickness at $\\lambda = 480\\ \\mathrm{nm}$. Find that thickness.",
+      "answer": "Both surfaces of the soap film have reflections:\n- Air→soap: phase shift of $\\lambda/2$ (low→high $n$)\n- Soap→air: **no** phase shift (high→low $n$)\n\nNet phase shift: $\\lambda/2$ (one external phase shift)\n\nConstructive interference (the $\\lambda/2$ phase shift means the path difference must be half-integer to compensate):\n\n$2nt = (m + \\tfrac{1}{2})\\lambda$... \n\nActually with one $\\lambda/2$ shift from reflection and no second shift, the condition for constructive interference is:\n\n$2nt = (m + \\tfrac{1}{2})\\lambda$... NO. Let me be careful:\n\nReflected rays: ray 1 gets $\\pi$ phase shift (air→soap reflection), ray 2 gets $0$ shift (soap→air) but travels extra $2nt$.\n\nConstructive: phase difference $= 2\\pi m$: $\\dfrac{2\\pi \\times 2nt}{\\lambda} - \\pi = 2\\pi m$\n\n$2nt = (m + \\tfrac{1}{2})\\lambda$; minimum non-zero: $m = 0$: $t = \\lambda/(4n) = 480/(4 \\times 1.33) = 480/5.32 \\approx 90.2\\ \\mathrm{nm}$"
+    },
+    {
+      "id": "t45-p08",
+      "source": "2019-CoT adapted",
+      "question": "Why does a very thin soap film appear dark in reflected light (not bright)?",
+      "answer": "For a very thin film ($t \\to 0$), the path length in the film is essentially zero. But there is still one phase shift of $\\lambda/2$ from the air→soap reflection (going from lower to higher $n$).\n\nThe two reflected rays are therefore shifted by $\\lambda/2$ relative to each other — exactly out of phase — causing **destructive interference**.\n\nResultant: the film appears **dark** (zero reflected intensity) in all colors, giving it a black or gray appearance near where a soap bubble is about to break.\n\nThis dark fringe at $t \\approx 0$ is a common physics exam result: thin film with one internal reflection $\\Rightarrow$ dark at zero thickness."
+    },
+    {
+      "id": "t45-p09",
+      "source": "2014-UG adapted",
+      "question": "In Young's double-slit experiment, the screen is moved from $L_1 = 1.0\\ \\mathrm{m}$ to $L_2 = 2.0\\ \\mathrm{m}$. By what factor does the fringe spacing change?",
+      "answer": "$\\Delta y = \\lambda L/d \\propto L$\n\n$\\dfrac{\\Delta y_2}{\\Delta y_1} = \\dfrac{L_2}{L_1} = \\dfrac{2.0}{1.0} = 2$\n\nThe fringe spacing doubles when the screen distance is doubled. This is why moving the screen farther makes fringes easier to see (but also reduces fringe brightness)."
+    },
+    {
+      "id": "t45-p10",
+      "source": "original",
+      "question": "A coating on a camera lens ($n_{\\text{coat}} = 1.38$) is designed to minimize reflection of green light ($\\lambda = 550\\ \\mathrm{nm}$) in air. The glass has $n = 1.5$. Find the minimum coating thickness.",
+      "answer": "Both surfaces cause phase shifts:\n- Air→coating: $n_{\\text{air}} < n_{\\text{coat}}$ → phase shift of $\\lambda/2$ ✓\n- Coating→glass: $n_{\\text{coat}} = 1.38 < n_{\\text{glass}} = 1.5$ → phase shift of $\\lambda/2$ ✓\n\nBoth reflections shift by $\\lambda/2$: **net phase shift = 0** from reflections.\n\nDestructive interference (minimum reflection) requires the path difference to give $\\lambda/2$ phase:\n\n$2n_{\\text{coat}}t = (m + \\tfrac{1}{2})\\lambda$\n\nMinimum at $m = 0$: $t = \\dfrac{\\lambda}{4n_{\\text{coat}}} = \\dfrac{550}{4 \\times 1.38} = \\dfrac{550}{5.52} \\approx 99.6\\ \\mathrm{nm} \\approx 100\\ \\mathrm{nm}$"
+    }
+  ]
+}

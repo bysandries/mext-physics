@@ -1,0 +1,65 @@
+{
+  "topicId": "t21",
+  "questions": [
+    {
+      "id": "t21-p01",
+      "source": "original",
+      "question": "State the values of $C_V$, $C_P$, and $\\gamma$ for: (a) a monatomic ideal gas, (b) a diatomic ideal gas (at moderate temperatures). Use $R = 8.31\\ \\mathrm{J/(mol\\cdot K)}$.",
+      "answer": "**(a) Monatomic** (3 translational degrees of freedom):\n\n$C_V = \\dfrac{3}{2}R \\approx 12.47\\ \\mathrm{J/(mol\\cdot K)}$\n\n$C_P = C_V + R = \\dfrac{5}{2}R \\approx 20.79\\ \\mathrm{J/(mol\\cdot K)}$\n\n$\\gamma = C_P/C_V = 5/3 \\approx 1.667$\n\n**(b) Diatomic** (5 degrees of freedom: 3 translational + 2 rotational):\n\n$C_V = \\dfrac{5}{2}R \\approx 20.79\\ \\mathrm{J/(mol\\cdot K)}$\n\n$C_P = \\dfrac{7}{2}R \\approx 29.09\\ \\mathrm{J/(mol\\cdot K)}$\n\n$\\gamma = 7/5 = 1.4$"
+    },
+    {
+      "id": "t21-p02",
+      "source": "original",
+      "question": "Derive the relation $C_P = C_V + R$ from the First Law and the ideal gas law.",
+      "answer": "For $n = 1\\ \\mathrm{mol}$, consider heating by $dT$:\n\n**At constant volume:** $dU = C_V\\,dT$ (all heat goes into internal energy, $dW = 0$)\n\n**At constant pressure:** $dQ = C_P\\,dT$, and by the First Law:\n\n$C_P\\,dT = dU + P\\,dV$\n\nFrom the ideal gas law for constant pressure: $P\\,dV = R\\,dT$\n\nAlso, since $dU = C_V\\,dT$ regardless of process (internal energy is a state function):\n\n$C_P\\,dT = C_V\\,dT + R\\,dT$\n\n$$\\boxed{C_P = C_V + R}$$\n\nThe extra $R$ is the work done per mole per kelvin against the constant external pressure as the gas expands."
+    },
+    {
+      "id": "t21-p03",
+      "source": "2016-UG adapted",
+      "question": "$n = 2\\ \\mathrm{mol}$ of a diatomic ideal gas ($C_V = \\frac{5}{2}R$) is heated from $300\\ \\mathrm{K}$ to $500\\ \\mathrm{K}$ at: (a) constant volume, (b) constant pressure. Find the heat required in each case.",
+      "answer": "$\\Delta T = 200\\ \\mathrm{K}$\n\n**(a)** Isochoric: $Q_V = nC_V\\Delta T = 2 \\times \\dfrac{5}{2} \\times 8.31 \\times 200 = 2 \\times 2.5 \\times 8.31 \\times 200 = 8310\\ \\mathrm{J}$\n\n**(b)** Isobaric: $Q_P = nC_P\\Delta T = n\\cdot\\dfrac{7}{2}R\\cdot\\Delta T = 2 \\times 3.5 \\times 8.31 \\times 200 = 11{,}634\\ \\mathrm{J}$\n\nDifference: $Q_P - Q_V = nR\\Delta T = 2 \\times 8.31 \\times 200 = 3324\\ \\mathrm{J}$ = work done in isobaric expansion ✓"
+    },
+    {
+      "id": "t21-p04",
+      "source": "original",
+      "question": "A monatomic ideal gas ($n = 3\\ \\mathrm{mol}$) is heated at constant volume by $\\Delta T = 100\\ \\mathrm{K}$, then at constant pressure by another $\\Delta T = 100\\ \\mathrm{K}$. Find: (a) total $Q$, (b) total $W$, (c) total $\\Delta U$.",
+      "answer": "**Isochoric step:**\n\n$Q_1 = nC_V\\Delta T = 3 \\times \\frac{3}{2} \\times 8.31 \\times 100 = 3739\\ \\mathrm{J}$\n\n$W_1 = 0$, $\\Delta U_1 = 3739\\ \\mathrm{J}$\n\n**Isobaric step:**\n\n$Q_2 = nC_P\\Delta T = 3 \\times \\frac{5}{2} \\times 8.31 \\times 100 = 6232\\ \\mathrm{J}$\n\n$W_2 = nR\\Delta T = 3 \\times 8.31 \\times 100 = 2493\\ \\mathrm{J}$\n\n$\\Delta U_2 = Q_2 - W_2 = 3739\\ \\mathrm{J}$\n\n**Totals:**\n\n(a) $Q = 3739 + 6232 = 9971\\ \\mathrm{J}$\n\n(b) $W = 0 + 2493 = 2493\\ \\mathrm{J}$\n\n(c) $\\Delta U = 3739 + 3739 = 7479\\ \\mathrm{J}$ (= $\\frac{3}{2}nR \\times 200 = 7479\\ \\mathrm{J}$ ✓)"
+    },
+    {
+      "id": "t21-p05",
+      "source": "original",
+      "question": "The ratio $\\gamma = C_P/C_V$ appears in the adiabatic relations. Explain physically why $\\gamma$ is larger for monatomic gases ($\\gamma = 5/3$) than diatomic gases ($\\gamma = 7/5$).",
+      "answer": "The key is that $\\gamma = 1 + R/C_V$.\n\n$C_V$ represents the total energy absorbed per mole per kelvin at constant volume. For a monatomic gas, all energy goes into 3 translational modes: $C_V = \\frac{3}{2}R$. For a diatomic gas, energy also goes into 2 rotational modes: $C_V = \\frac{5}{2}R$.\n\nThe expansion work per mole per kelvin ($R$) is the **same** for both.\n\nFor a diatomic gas, the extra rotational modes act as an \"energy buffer\" — more energy is needed to raise $T$ by $1\\ \\mathrm{K}$, making $C_V$ larger. The ratio $R/C_V = 2/5$ (diatomic) < $2/3$ (monatomic), so $\\gamma$ is smaller for diatomic gases.\n\nSmaller $\\gamma$ means adiabatic processes are \"gentler\" (less steep pressure change for a given volume change)."
+    },
+    {
+      "id": "t21-p06",
+      "source": "2018-CoT adapted",
+      "question": "Determine the number of moles in a gas sample if $C_V = 3R/2$ (monatomic) and the gas requires $Q = 4155\\ \\mathrm{J}$ to raise its temperature by $\\Delta T = 100\\ \\mathrm{K}$ at constant pressure.",
+      "answer": "$Q = nC_P\\Delta T = n\\cdot\\dfrac{5}{2}R\\cdot\\Delta T$\n\n$n = \\dfrac{2Q}{5R\\Delta T} = \\dfrac{2 \\times 4155}{5 \\times 8.31 \\times 100} = \\dfrac{8310}{4155} = 2\\ \\mathrm{mol}$"
+    },
+    {
+      "id": "t21-p07",
+      "source": "original",
+      "question": "A mixture of $n_1 = 1\\ \\mathrm{mol}$ of monatomic gas and $n_2 = 1\\ \\mathrm{mol}$ of diatomic gas is heated by $\\Delta T = 200\\ \\mathrm{K}$ at constant volume. Find the total heat absorbed.",
+      "answer": "Total heat at constant volume:\n\n$Q = (n_1 C_{V,1} + n_2 C_{V,2})\\Delta T$\n\n$= \\left(1 \\times \\dfrac{3}{2}R + 1 \\times \\dfrac{5}{2}R\\right) \\times 200$\n\n$= 4R \\times 200 = 4 \\times 8.31 \\times 200 = 6648\\ \\mathrm{J}$\n\nEquivalently, the effective $C_V$ of the mixture is $\\frac{3R/2 + 5R/2}{2} = 2R$ per mole of mixed gas."
+    },
+    {
+      "id": "t21-p08",
+      "source": "original",
+      "question": "Using equipartition, predict $C_V$ for: (a) a monatomic gas, (b) a diatomic gas (rigid rotor, 5 degrees of freedom), (c) a diatomic gas with vibrational modes active (7 degrees of freedom).",
+      "answer": "Equipartition theorem: each degree of freedom contributes $\\frac{1}{2}R$ to $C_V$.\n\n**(a) Monatomic** (3 translational): $C_V = \\frac{3}{2}R \\approx 12.47\\ \\mathrm{J/(mol\\cdot K)}$\n\n**(b) Diatomic rigid rotor** (3 trans + 2 rot = 5 dof): $C_V = \\frac{5}{2}R \\approx 20.79\\ \\mathrm{J/(mol\\cdot K)}$\n\n**(c) Diatomic with vibration** (5 + 2 vib = 7 dof, each vibrational mode counts as 2: PE + KE): $C_V = \\frac{7}{2}R \\approx 29.09\\ \\mathrm{J/(mol\\cdot K)}$\n\nIn practice, vibrational modes require higher temperatures to activate, so $C_V$ increases with temperature for diatomic gases."
+    },
+    {
+      "id": "t21-p09",
+      "source": "original",
+      "question": "Show that for any ideal gas, $C_P - C_V = R$, and compute the numerical value. Explain what the $R$ represents physically.",
+      "answer": "From the derivation (see related question):\n\n$C_P - C_V = R = 8.31\\ \\mathrm{J/(mol\\cdot K)}$\n\n**Physical meaning:** When $1\\ \\mathrm{mol}$ of ideal gas is heated by $1\\ \\mathrm{K}$ at constant pressure, the gas expands. The work done during this expansion is:\n\n$W = P\\Delta V = \\Delta(nRT) = nR\\Delta T = 1 \\times R \\times 1 = R$\n\nThis $R = 8.31\\ \\mathrm{J}$ must be supplied **in addition** to the $C_V$ needed to raise the temperature. Hence $C_P = C_V + R$.\n\nEquivalently, $R$ is the universal gas constant that appears because $PV = nRT$; it quantifies the \"cost\" of expansion per mole per kelvin."
+    },
+    {
+      "id": "t21-p10",
+      "source": "2014-CoT adapted",
+      "question": "A gas has $\\gamma = 1.4$ and $n = 0.5\\ \\mathrm{mol}$. It absorbs $Q = 1500\\ \\mathrm{J}$ at constant pressure. Find: (a) $\\Delta T$, (b) $\\Delta U$, (c) $W$.",
+      "answer": "$\\gamma = 1.4 \\Rightarrow$ diatomic gas: $C_P = \\dfrac{7}{2}R$\n\n**(a)** $Q = nC_P\\Delta T \\Rightarrow \\Delta T = \\dfrac{Q}{nC_P} = \\dfrac{1500}{0.5 \\times 3.5 \\times 8.31} = \\dfrac{1500}{14.54} \\approx 103.2\\ \\mathrm{K}$\n\n**(b)** $\\Delta U = nC_V\\Delta T = n\\cdot\\dfrac{5}{2}R\\cdot\\Delta T = 0.5 \\times 2.5 \\times 8.31 \\times 103.2$\n\n$= 1071\\ \\mathrm{J}$ (alternatively: $\\Delta U = Q \\times C_V/C_P = 1500 \\times 5/7 \\approx 1071\\ \\mathrm{J}$)\n\n**(c)** $W = Q - \\Delta U = 1500 - 1071 = 429\\ \\mathrm{J}$ (or $W = nR\\Delta T = 0.5 \\times 8.31 \\times 103.2 \\approx 429\\ \\mathrm{J}$)"
+    }
+  ]
+}

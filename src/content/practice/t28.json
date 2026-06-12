@@ -1,0 +1,65 @@
+{
+  "topicId": "t28",
+  "questions": [
+    {
+      "id": "t28-p01",
+      "source": "original",
+      "question": "An open pipe has length $L = 0.85\\ \\mathrm{m}$. Speed of sound $v = 340\\ \\mathrm{m/s}$. Find: (a) the fundamental frequency, (b) the frequency of the 3rd harmonic.",
+      "answer": "Open pipe: resonances at $f_n = nv/(2L)$, $n = 1, 2, 3, \\ldots$ (all harmonics)\n\n**(a)** $f_1 = \\dfrac{v}{2L} = \\dfrac{340}{2 \\times 0.85} = \\dfrac{340}{1.7} = 200\\ \\mathrm{Hz}$\n\n**(b)** $f_3 = 3f_1 = 600\\ \\mathrm{Hz}$"
+    },
+    {
+      "id": "t28-p02",
+      "source": "original",
+      "question": "A closed pipe (open at one end, closed at the other) has length $L = 0.85\\ \\mathrm{m}$. Speed of sound $v = 340\\ \\mathrm{m/s}$. Find: (a) the fundamental frequency, (b) the first three resonant frequencies.",
+      "answer": "Closed pipe: only odd harmonics: $f_n = \\dfrac{nv}{4L}$, $n = 1, 3, 5, \\ldots$\n\n**(a)** $f_1 = \\dfrac{v}{4L} = \\dfrac{340}{4 \\times 0.85} = \\dfrac{340}{3.4} = 100\\ \\mathrm{Hz}$\n\n**(b)** $f_1 = 100\\ \\mathrm{Hz}$, $f_3 = 300\\ \\mathrm{Hz}$, $f_5 = 500\\ \\mathrm{Hz}$\n\nNote: the fundamental of the closed pipe ($100\\ \\mathrm{Hz}$) is exactly half that of an open pipe of the same length ($200\\ \\mathrm{Hz}$)."
+    },
+    {
+      "id": "t28-p03",
+      "source": "2016-UG adapted",
+      "question": "A pipe resonates at consecutive frequencies of $480\\ \\mathrm{Hz}$ and $640\\ \\mathrm{Hz}$. Determine whether the pipe is open or closed, and find its fundamental frequency and length. ($v = 320\\ \\mathrm{m/s}$)",
+      "answer": "**Consecutive resonances:**\n\nFor an open pipe: $f_n = nf_1$, so consecutive resonances differ by $f_1$: $\\Delta f = 640 - 480 = 160\\ \\mathrm{Hz} = f_1$\n\nFor a closed pipe: $\\Delta f = 2f_1$ (only odd harmonics, so gap = $2f_1$): $f_1 = 80\\ \\mathrm{Hz}$, but $480/80 = 6$ (even) — impossible for a closed pipe.\n\n**Open pipe** with $f_1 = 160\\ \\mathrm{Hz}$:\n\nCheck: $480 = 3 \\times 160$ ✓, $640 = 4 \\times 160$ ✓\n\n**Length:** $L = v/(2f_1) = 320/(2 \\times 160) = 1.0\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t28-p04",
+      "source": "original",
+      "question": "Explain why a closed pipe (open–closed) produces only odd harmonics, while an open pipe produces all harmonics.",
+      "answer": "**Boundary conditions:**\n\n- **Closed end:** Displacement node (air can't move), pressure antinode\n- **Open end:** Displacement antinode (air is free), pressure node\n\n**Closed pipe (one end open, one closed):** The pattern must go from node (closed) to antinode (open), requiring an **odd number of quarter-wavelengths** to fit in length $L$:\n\n$L = \\dfrac{\\lambda}{4}, \\dfrac{3\\lambda}{4}, \\dfrac{5\\lambda}{4}, \\ldots = \\dfrac{(2n-1)\\lambda}{4}$\n\n$\\Rightarrow f_n = \\dfrac{(2n-1)v}{4L}$ — only odd multiples of $f_1$.\n\n**Open pipe (both ends open):** Both ends are antinodes, requiring a **whole number of half-wavelengths**:\n\n$L = \\dfrac{n\\lambda}{2} \\Rightarrow f_n = \\dfrac{nv}{2L}$ — all harmonics."
+    },
+    {
+      "id": "t28-p05",
+      "source": "2015-CoT adapted",
+      "question": "A resonance tube (closed bottom, open top) is used to find the speed of sound. The first resonance (fundamental) occurs at $L_1 = 18\\ \\mathrm{cm}$ and the second resonance at $L_2 = 54\\ \\mathrm{cm}$ when a tuning fork of $f = 480\\ \\mathrm{Hz}$ is held at the open end. Find $v$.",
+      "answer": "For a closed pipe, resonances at $L = \\lambda/4, 3\\lambda/4, 5\\lambda/4, \\ldots$\n\nConsecutive resonances: $L_2 - L_1 = \\lambda/2$\n\n$\\lambda = 2(L_2 - L_1) = 2(0.54 - 0.18) = 2 \\times 0.36 = 0.72\\ \\mathrm{m}$\n\n$v = f\\lambda = 480 \\times 0.72 = 345.6 \\approx 346\\ \\mathrm{m/s}$\n\n(The end correction cancels when using $L_2 - L_1$.)"
+    },
+    {
+      "id": "t28-p06",
+      "source": "original",
+      "question": "An open pipe and a closed pipe have the same fundamental frequency $f_0$. What is the ratio of their lengths $L_{\\text{open}}/L_{\\text{closed}}$?",
+      "answer": "Open pipe fundamental: $f_0 = \\dfrac{v}{2L_{\\text{open}}}$\n\nClosed pipe fundamental: $f_0 = \\dfrac{v}{4L_{\\text{closed}}}$\n\nSetting equal:\n\n$\\dfrac{v}{2L_{\\text{open}}} = \\dfrac{v}{4L_{\\text{closed}}}$\n\n$L_{\\text{open}} = 2L_{\\text{closed}}$\n\n$\\dfrac{L_{\\text{open}}}{L_{\\text{closed}}} = 2$\n\nAn open pipe must be **twice as long** as a closed pipe to produce the same fundamental frequency."
+    },
+    {
+      "id": "t28-p07",
+      "source": "2019-UG adapted",
+      "question": "A closed pipe of length $L = 0.4\\ \\mathrm{m}$ resonates with sound of speed $v = 320\\ \\mathrm{m/s}$. List the first four resonant frequencies.",
+      "answer": "Closed pipe (only odd harmonics):\n\n$f_n = \\dfrac{(2n-1)v}{4L}$, $n = 1, 2, 3, 4, \\ldots$\n\n$f_1 = \\dfrac{1 \\times 320}{4 \\times 0.4} = \\dfrac{320}{1.6} = 200\\ \\mathrm{Hz}$\n\n$f_2 = \\dfrac{3 \\times 320}{1.6} = 600\\ \\mathrm{Hz}$\n\n$f_3 = \\dfrac{5 \\times 320}{1.6} = 1000\\ \\mathrm{Hz}$\n\n$f_4 = \\dfrac{7 \\times 320}{1.6} = 1400\\ \\mathrm{Hz}$"
+    },
+    {
+      "id": "t28-p08",
+      "source": "original",
+      "question": "A flute is modeled as an open pipe of length $L = 0.66\\ \\mathrm{m}$. Speed of sound $v = 330\\ \\mathrm{m/s}$. (a) Find the fundamental frequency. (b) A flute player covers all holes, shortening the effective length to $L' = 0.44\\ \\mathrm{m}$. Find the new frequency.",
+      "answer": "**(a)** $f_1 = \\dfrac{v}{2L} = \\dfrac{330}{2 \\times 0.66} = \\dfrac{330}{1.32} = 250\\ \\mathrm{Hz}$\n\n**(b)** $f_1' = \\dfrac{v}{2L'} = \\dfrac{330}{2 \\times 0.44} = \\dfrac{330}{0.88} = 375\\ \\mathrm{Hz}$\n\nShorter tube $\\Rightarrow$ higher frequency."
+    },
+    {
+      "id": "t28-p09",
+      "source": "2018-UG adapted",
+      "question": "A resonance tube experiment: a $500\\ \\mathrm{Hz}$ tuning fork causes the air column to resonate when $L = 16\\ \\mathrm{cm}$ (first resonance) and $L = 50\\ \\mathrm{cm}$ (second resonance). Find: (a) the speed of sound, (b) the end correction $e$ (if first resonance is at $L + e = \\lambda/4$).",
+      "answer": "**(a)** Difference between consecutive resonances = $\\lambda/2$:\n\n$\\lambda/2 = 50 - 16 = 34\\ \\mathrm{cm} = 0.34\\ \\mathrm{m}$\n\n$\\lambda = 0.68\\ \\mathrm{m}$\n\n$v = f\\lambda = 500 \\times 0.68 = 340\\ \\mathrm{m/s}$\n\n**(b)** First resonance: $L_1 + e = \\lambda/4 = 0.17\\ \\mathrm{m}$\n\n$e = 0.17 - 0.16 = 0.01\\ \\mathrm{m} = 1\\ \\mathrm{cm}$"
+    },
+    {
+      "id": "t28-p10",
+      "source": "original",
+      "question": "A tube closed at one end is gradually filled with water (decreasing the effective air column length). Starting at $L = 80\\ \\mathrm{cm}$ with $f = 400\\ \\mathrm{Hz}$ sound ($v = 320\\ \\mathrm{m/s}$), find all lengths at which resonance occurs.",
+      "answer": "Resonance lengths for closed pipe: $L_n = \\dfrac{(2n-1)\\lambda}{4}$\n\n$\\lambda = v/f = 320/400 = 0.8\\ \\mathrm{m}$\n\n$L_n = \\dfrac{(2n-1) \\times 0.8}{4} = (2n-1) \\times 0.2\\ \\mathrm{m}$\n\n$n = 1$: $L = 0.2\\ \\mathrm{m} = 20\\ \\mathrm{cm}$ ✓ (within $80\\ \\mathrm{cm}$)\n$n = 2$: $L = 0.6\\ \\mathrm{m} = 60\\ \\mathrm{cm}$ ✓\n$n = 3$: $L = 1.0\\ \\mathrm{m}$ ✗ (exceeds $80\\ \\mathrm{cm}$)\n\nResonance occurs at $L = 20\\ \\mathrm{cm}$ and $L = 60\\ \\mathrm{cm}$."
+    }
+  ]
+}

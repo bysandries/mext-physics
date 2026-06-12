@@ -1,0 +1,65 @@
+{
+  "topicId": "t41",
+  "questions": [
+    {
+      "id": "t41-p01",
+      "source": "original",
+      "question": "An RL circuit has $R = 200\\ \\Omega$ and $L = 0.4\\ \\mathrm{H}$. Find: (a) the time constant $\\tau$, (b) the current at $t = \\tau$ when connected to a $V = 20\\ \\mathrm{V}$ battery.",
+      "answer": "**(a)** $\\tau = L/R = 0.4/200 = 2\\times10^{-3}\\ \\mathrm{s} = 2\\ \\mathrm{ms}$\n\n**(b)** $I(t) = \\dfrac{V}{R}(1 - e^{-t/\\tau})$\n\nAt $t = \\tau$: $I(\\tau) = \\dfrac{20}{200}(1 - e^{-1}) = 0.1 \\times 0.632 = 0.0632\\ \\mathrm{A} = 63.2\\ \\mathrm{mA}$\n\nFinal current: $I_\\infty = V/R = 0.1\\ \\mathrm{A} = 100\\ \\mathrm{mA}$"
+    },
+    {
+      "id": "t41-p02",
+      "source": "original",
+      "question": "For an LC circuit with $L = 0.5\\ \\mathrm{H}$ and $C = 2\\times10^{-4}\\ \\mathrm{F}$, find: (a) the angular frequency $\\omega_0$ of oscillation, (b) the frequency $f$, (c) the period $T$.",
+      "answer": "**(a)** $\\omega_0 = \\dfrac{1}{\\sqrt{LC}} = \\dfrac{1}{\\sqrt{0.5 \\times 2\\times10^{-4}}} = \\dfrac{1}{\\sqrt{10^{-4}}} = \\dfrac{1}{10^{-2}} = 100\\ \\mathrm{rad/s}$\n\n**(b)** $f = \\dfrac{\\omega_0}{2\\pi} = \\dfrac{100}{2\\pi} \\approx 15.92\\ \\mathrm{Hz}$\n\n**(c)** $T = 1/f = 2\\pi/\\omega_0 = 2\\pi/100 \\approx 0.0628\\ \\mathrm{s}$"
+    },
+    {
+      "id": "t41-p03",
+      "source": "original",
+      "question": "Explain qualitatively why an LC circuit oscillates, describing the energy exchange between the inductor and capacitor.",
+      "answer": "**LC oscillation:**\n\n**$t = 0$:** Capacitor fully charged ($Q = Q_0$, $V_C = Q_0/C$). All energy is electric: $U_E = Q_0^2/(2C)$. No current.\n\n**$t = T/4$:** Capacitor fully discharged ($Q = 0$). Current is maximum ($I_{\\max}$). All energy is magnetic: $U_B = \\frac{1}{2}LI_{\\max}^2$.\n\n**$t = T/2$:** Capacitor fully charged with reversed polarity. No current. All energy electric again.\n\n**$t = 3T/4$:** Capacitor discharging again (current reversed), max current opposite direction.\n\n**Cycle:** The energy shuttles back and forth between the electric field of the capacitor and the magnetic field of the inductor. Like a mass-spring system: capacitor $\\leftrightarrow$ spring (PE), inductor $\\leftrightarrow$ mass (KE)."
+    },
+    {
+      "id": "t41-p04",
+      "source": "2016-UG adapted",
+      "question": "An LC circuit has $L = 0.1\\ \\mathrm{H}$ and $C = 100\\ \\mu\\mathrm{F}$. The capacitor is initially charged to $V_0 = 10\\ \\mathrm{V}$. Find: (a) the oscillation frequency, (b) the maximum current.",
+      "answer": "**(a)** $\\omega_0 = \\dfrac{1}{\\sqrt{LC}} = \\dfrac{1}{\\sqrt{0.1 \\times 10^{-4}}} = \\dfrac{1}{\\sqrt{10^{-5}}} = \\dfrac{1}{3.162\\times10^{-3}} \\approx 316.2\\ \\mathrm{rad/s}$\n\n$f = \\omega_0/(2\\pi) \\approx 50.3\\ \\mathrm{Hz}$\n\n**(b)** Energy conservation: $\\frac{1}{2}CV_0^2 = \\frac{1}{2}LI_{\\max}^2$\n\n$I_{\\max} = V_0\\sqrt{C/L} = 10\\sqrt{10^{-4}/0.1} = 10\\sqrt{10^{-3}} = 10 \\times 0.03162 = 0.316\\ \\mathrm{A}$\n\n(Or: $I_{\\max} = \\omega_0 C V_0 = 316.2 \\times 10^{-4} \\times 10 = 0.316\\ \\mathrm{A}$ ✓)"
+    },
+    {
+      "id": "t41-p05",
+      "source": "original",
+      "question": "Show that $\\omega_0 = 1/\\sqrt{LC}$ for LC oscillations by deriving the differential equation for charge $q(t)$.",
+      "answer": "Applying Kirchhoff's voltage law around the LC loop:\n\n$V_L + V_C = 0$\n\n$L\\dfrac{dI}{dt} + \\dfrac{q}{C} = 0$\n\nSince $I = dq/dt$:\n\n$L\\dfrac{d^2q}{dt^2} + \\dfrac{q}{C} = 0$\n\n$\\dfrac{d^2q}{dt^2} = -\\dfrac{1}{LC}q$\n\nThis is SHM: $\\ddot{q} = -\\omega_0^2 q$ with:\n\n$$\\omega_0 = \\dfrac{1}{\\sqrt{LC}}$$ ✓\n\nSolution: $q(t) = Q_0\\cos(\\omega_0 t)$ (if $q(0) = Q_0$, $I(0) = 0$)"
+    },
+    {
+      "id": "t41-p06",
+      "source": "2018-CoT adapted",
+      "question": "An inductor $L = 2\\ \\mathrm{H}$ carries current $I = 3\\ \\mathrm{A}$ when the circuit is suddenly opened (current falls to zero in $\\Delta t = 0.001\\ \\mathrm{s}$). Find: (a) the induced back-EMF, (b) the energy stored in the inductor.",
+      "answer": "**(a)** $\\mathcal{E} = -L\\dfrac{\\Delta I}{\\Delta t} = -2 \\times \\dfrac{0 - 3}{0.001} = \\dfrac{6}{0.001} = 6000\\ \\mathrm{V}$\n\nThis is why switches can produce sparks when breaking inductive circuits — enormous voltage spikes.\n\n**(b)** $U_L = \\frac{1}{2}LI^2 = \\frac{1}{2} \\times 2 \\times 9 = 9\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t41-p07",
+      "source": "original",
+      "question": "Compare RL and RC circuits: fill in the analogies between them (time constant, charging equation, decay equation).",
+      "answer": "| | RC circuit | RL circuit |\n|---|---|---|\n| Time constant | $\\tau = RC$ | $\\tau = L/R$ |\n| Charge/Current buildup | $V_C = V_0(1-e^{-t/RC})$ | $I = (V_0/R)(1-e^{-t/RC_L})$ |\n| Decay | $V_C = V_0 e^{-t/RC}$ | $I = I_0 e^{-Rt/L}$ |\n| Energy stored | $U_C = \\frac{1}{2}CV^2$ | $U_L = \\frac{1}{2}LI^2$ |\n| Opposes change in | voltage (charge) | current |\n\n**Key difference:** Capacitor opposes sudden voltage changes; inductor opposes sudden current changes."
+    },
+    {
+      "id": "t41-p08",
+      "source": "2019-UG adapted",
+      "question": "An LC oscillator has $L = 400\\ \\mu\\mathrm{H}$ and is to oscillate at $f = 1\\ \\mathrm{MHz}$. What capacitance $C$ is needed?",
+      "answer": "$\\omega_0 = 2\\pi f = 2\\pi \\times 10^6\\ \\mathrm{rad/s}$\n\n$\\omega_0 = 1/\\sqrt{LC} \\Rightarrow C = 1/(\\omega_0^2 L)$\n\n$C = \\dfrac{1}{(2\\pi \\times 10^6)^2 \\times 400\\times10^{-6}}$\n\n$= \\dfrac{1}{4\\pi^2 \\times 10^{12} \\times 4\\times10^{-4}}$\n\n$= \\dfrac{1}{4\\pi^2 \\times 4\\times10^8} = \\dfrac{1}{16\\pi^2 \\times 10^8}$\n\n$\\approx \\dfrac{1}{1.579\\times10^{10}} \\approx 6.33\\times10^{-11}\\ \\mathrm{F} = 63.3\\ \\mathrm{pF}$"
+    },
+    {
+      "id": "t41-p09",
+      "source": "original",
+      "question": "In a damped LC circuit with resistance $R$, the oscillations die out. Explain why, and state the condition for underdamped oscillation.",
+      "answer": "**Why oscillations damp:** Real circuits have resistance $R$ that dissipates energy as heat ($P = I^2R$). Each oscillation cycle, some of the energy stored in $L$ and $C$ is converted to heat.\n\nThe differential equation becomes:\n\n$L\\ddot{q} + R\\dot{q} + q/C = 0$\n\n**Underdamped** (oscillations occur): $R < 2\\sqrt{L/C}$\n\nOr equivalently: $R < 2\\omega_0 L$ where $\\omega_0 = 1/\\sqrt{LC}$\n\nDamping factor: $\\alpha = R/(2L)$; oscillation frequency: $\\omega_d = \\sqrt{\\omega_0^2 - \\alpha^2}$\n\nSolution: $q(t) = Q_0 e^{-\\alpha t}\\cos(\\omega_d t)$ — decaying oscillation."
+    },
+    {
+      "id": "t41-p10",
+      "source": "original",
+      "question": "An LC circuit has $L = 10\\ \\mathrm{mH}$ and $C = 40\\ \\mu\\mathrm{F}$. At $t = 0$, the capacitor has charge $Q_0 = 1\\ \\mathrm{mC}$ and no current flows. Find: (a) the maximum current, (b) the charge when $I = I_{\\max}/2$.",
+      "answer": "**(a)** Energy conservation: $\\frac{Q_0^2}{2C} = \\frac{1}{2}LI_{\\max}^2$\n\n$I_{\\max} = Q_0/\\sqrt{LC} = Q_0\\omega_0$\n\n$\\omega_0 = 1/\\sqrt{10\\times10^{-3} \\times 40\\times10^{-6}} = 1/\\sqrt{4\\times10^{-7}} = 1/(6.32\\times10^{-4}) \\approx 1581\\ \\mathrm{rad/s}$\n\n$I_{\\max} = 1\\times10^{-3} \\times 1581 = 1.581\\ \\mathrm{A}$\n\n**(b)** When $I = I_{\\max}/2$, energy split:\n\n$\\frac{1}{2}LI^2 + \\frac{q^2}{2C} = \\frac{Q_0^2}{2C}$\n\n$\\frac{1}{2}L(I_{\\max}/2)^2 = \\frac{1}{4} \\times \\frac{1}{2}LI_{\\max}^2 = \\frac{1}{4} \\times \\frac{Q_0^2}{2C}$\n\n$\\frac{q^2}{2C} = \\frac{Q_0^2}{2C} - \\frac{Q_0^2}{8C} = \\frac{3Q_0^2}{8C}$\n\n$q = Q_0\\sqrt{3/4} = \\dfrac{\\sqrt{3}}{2}Q_0 \\approx 0.866\\times10^{-3}\\ \\mathrm{C} = 0.866\\ \\mathrm{mC}$"
+    }
+  ]
+}

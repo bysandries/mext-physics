@@ -1,0 +1,153 @@
+{
+  "topicId": "t02",
+  "questions": [
+    {
+      "id": "t02-q01",
+      "source": "2018-UG-Q1-(1)",
+      "question": "An object of mass $m$ is launched horizontally with a speed $v$ at a height of $h$ above the ground. Let $\\theta$ be the impact angle to the ground and $g$ be the acceleration of gravity. Find the formula of $\\tan\\theta$.",
+      "choices": [
+        "$\\frac{\\sqrt{2gh}}{v}$",
+        "$\\frac{v}{\\sqrt{2gh}}$",
+        "$\\frac{\\sqrt{gh}}{v}$",
+        "$\\frac{v}{\\sqrt{gh}}$",
+        "$\\frac{2v}{\\sqrt{gh}}$",
+        "$\\frac{\\sqrt{gh}}{2v}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "At impact, $v_x = v$ (unchanged) and $v_y = \\sqrt{2gh}$ (free fall through height $h$). So $\\tan\\theta = v_y/v_x = \\sqrt{2gh}/v$. Trap (b) inverts the ratio — $\\theta$ is measured from the *ground*, so the vertical component goes on top."
+    },
+    {
+      "id": "t02-q02",
+      "source": "2015-UG-Q1-(1)",
+      "question": "A point particle with mass $m$ is thrown with speed $v$ at an angle $\\theta$ above the horizontal axis. The acceleration due to gravity is denoted as $g$. Find the distance $L$ to the point where the particle hits the ground (launched from ground level).",
+      "choices": [
+        "$\\frac{v^2\\sin\\theta\\cos\\theta}{g}$",
+        "$\\frac{2v^2\\sin\\theta\\cos\\theta}{g}$",
+        "$\\frac{v^2\\sin^2\\theta}{g}$",
+        "$\\frac{2v^2\\sin^2\\theta}{g}$",
+        "$\\frac{v^2\\cos^2\\theta}{g}$",
+        "$\\frac{v^2}{g}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Flight time $t = \\frac{2v\\sin\\theta}{g}$; range $L = (v\\cos\\theta)\\,t = \\frac{2v^2\\sin\\theta\\cos\\theta}{g}$ (i.e. $\\frac{v^2\\sin 2\\theta}{g}$). Trap (a) misses the factor 2 from the *round trip* of the vertical motion."
+    },
+    {
+      "id": "t02-q03",
+      "source": "adapted: 2019-UG-Q3",
+      "question": "An object moving with speed $v$ on a frictionless horizontal surface leaves the edge of the surface at a height $h$ above the ground. The acceleration of gravity is $g$. Find the horizontal distance from the edge to the landing point.",
+      "choices": [
+        "$v\\sqrt{\\frac{h}{g}}$",
+        "$v\\sqrt{\\frac{2h}{g}}$",
+        "$v\\sqrt{\\frac{h}{2g}}$",
+        "$2v\\sqrt{\\frac{h}{g}}$",
+        "$\\frac{vh}{g}$",
+        "$\\frac{2vh}{g}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "The two motions are independent: fall time $t = \\sqrt{2h/g}$ depends only on $h$; horizontal distance $= vt = v\\sqrt{2h/g}$. Choices (e) and (f) are dimensionally wrong — check units first."
+    },
+    {
+      "id": "t02-q04",
+      "source": "original",
+      "question": "An object is launched horizontally with speed $v$ from the top of a cliff of height $h$. The acceleration of gravity is $g$ and air resistance is ignored. Find the speed of the object just before it hits the ground.",
+      "choices": [
+        "$v + \\sqrt{2gh}$",
+        "$\\sqrt{v^2 + gh}$",
+        "$\\sqrt{v^2 + 2gh}$",
+        "$\\sqrt{2gh}$",
+        "$\\sqrt{v^2 + 4gh}$",
+        "$v$"
+      ],
+      "correctIndex": 2,
+      "explanation": "Components add in quadrature: $v_x = v$, $v_y = \\sqrt{2gh}$, so $|\\vec{v}| = \\sqrt{v^2 + 2gh}$. Energy conservation gives the same result in one line: $\\frac{1}{2}mv_f^2 = \\frac{1}{2}mv^2 + mgh$. Trap (a) adds speeds linearly — velocities are vectors."
+    },
+    {
+      "id": "t02-q05",
+      "source": "original",
+      "question": "A projectile is launched from the ground with speed $v$ at an angle $\\theta$ above the horizontal. The acceleration of gravity is $g$. Find the maximum height reached.",
+      "choices": [
+        "$\\frac{v^2\\sin^2\\theta}{g}$",
+        "$\\frac{v^2\\sin 2\\theta}{2g}$",
+        "$\\frac{v^2\\sin\\theta}{2g}$",
+        "$\\frac{v^2\\sin^2\\theta}{2g}$",
+        "$\\frac{v^2\\cos^2\\theta}{2g}$",
+        "$\\frac{v^2}{2g}$"
+      ],
+      "correctIndex": 3,
+      "explanation": "At the top, $v_y = 0$: $0 = (v\\sin\\theta)^2 - 2gH$, so $H = \\frac{v^2\\sin^2\\theta}{2g}$. Trap (f) is the max height for a *vertical* launch ($\\theta = 90°$); (c) forgets to square the sine."
+    },
+    {
+      "id": "t02-q06",
+      "source": "original",
+      "question": "A projectile is launched from flat ground with speed $v$ at an angle $\\theta$ above the horizontal and lands at the same height. The acceleration of gravity is $g$. Find the total time of flight.",
+      "choices": [
+        "$\\frac{v\\sin\\theta}{g}$",
+        "$\\frac{2v\\sin\\theta}{g}$",
+        "$\\frac{2v\\cos\\theta}{g}$",
+        "$\\frac{v}{g}$",
+        "$\\frac{2v}{g\\sin\\theta}$",
+        "$\\frac{2v\\tan\\theta}{g}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Vertical motion: $v_y = v\\sin\\theta - gt$ reaches zero at $t = \\frac{v\\sin\\theta}{g}$; double it for the symmetric descent. Trap (a) is only the rise time; (c) uses the wrong component — time of flight is governed by the *vertical* velocity."
+    },
+    {
+      "id": "t02-q07",
+      "source": "original",
+      "question": "A projectile is launched with speed $v$ at an angle $\\theta$ above the horizontal. At the highest point of its trajectory, what are the magnitudes of its velocity and acceleration?",
+      "choices": [
+        "velocity $0$, acceleration $0$",
+        "velocity $0$, acceleration $g$",
+        "velocity $v\\sin\\theta$, acceleration $g$",
+        "velocity $v\\cos\\theta$, acceleration $0$",
+        "velocity $v\\cos\\theta$, acceleration $g$",
+        "velocity $v$, acceleration $g$"
+      ],
+      "correctIndex": 4,
+      "explanation": "Only $v_y$ vanishes at the top; the horizontal component $v\\cos\\theta$ never changes, and gravity acts the whole time. Trap (b) — \"momentarily at rest at the top\" — is true only for purely vertical motion."
+    },
+    {
+      "id": "t02-q08",
+      "source": "original",
+      "question": "A projectile launched from flat ground at an angle of $30°$ with speed $v$ lands at a distance $L$. At what other launch angle (with the same speed $v$) does the projectile land at the same distance $L$?",
+      "choices": [
+        "$15°$",
+        "$45°$",
+        "$50°$",
+        "$60°$",
+        "$75°$",
+        "$80°$"
+      ],
+      "correctIndex": 3,
+      "explanation": "Range $\\propto \\sin 2\\theta$, and $\\sin 60° = \\sin 120°$, so $\\theta$ and $90° - \\theta$ give equal ranges: $30°$ pairs with $60°$. The two trajectories differ in flight time and height, but not range."
+    },
+    {
+      "id": "t02-q09",
+      "source": "original",
+      "question": "A projectile is launched from flat ground at $\\theta = 45°$. Find the ratio of its maximum height $H$ to its horizontal range $L$.",
+      "choices": [
+        "$\\frac{1}{8}$",
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{2}$",
+        "$1$",
+        "$\\frac{1}{3}$",
+        "$\\frac{1}{\\sqrt{2}}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "$\\frac{H}{L} = \\frac{v^2\\sin^2\\theta/2g}{v^2\\sin 2\\theta/g} = \\frac{\\tan\\theta}{4}$. At $45°$, $\\tan\\theta = 1$, so $H/L = \\frac{1}{4}$. The general result $\\tan\\theta/4$ is worth memorizing."
+    },
+    {
+      "id": "t02-q10",
+      "source": "original",
+      "question": "From the same height and at the same instant, ball A is dropped from rest and ball B is launched horizontally with speed $v$. Air resistance is ignored. Which ball reaches the ground first?",
+      "choices": [
+        "Ball A lands first",
+        "Ball B lands first",
+        "Both land at the same time",
+        "It depends on the value of $v$"
+      ],
+      "correctIndex": 2,
+      "explanation": "Horizontal and vertical motions are independent. Both balls have the same initial vertical velocity (zero) and the same vertical acceleration $g$, so they hit the ground simultaneously — regardless of $v$."
+    }
+  ]
+}

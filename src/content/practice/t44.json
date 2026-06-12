@@ -1,0 +1,65 @@
+{
+  "topicId": "t44",
+  "questions": [
+    {
+      "id": "t44-p01",
+      "source": "original",
+      "question": "Find the critical angle for total internal reflection at a glass–air interface, where glass has $n = 1.5$.",
+      "answer": "At the critical angle $\\theta_c$, the refracted angle is $90°$:\n\n$n\\sin\\theta_c = 1 \\times \\sin 90° = 1$\n\n$\\sin\\theta_c = \\dfrac{1}{n} = \\dfrac{1}{1.5} = \\dfrac{2}{3}$\n\n$\\theta_c = \\arcsin(2/3) \\approx 41.8°$\n\nFor angles greater than $41.8°$, light undergoes total internal reflection."
+    },
+    {
+      "id": "t44-p02",
+      "source": "original",
+      "question": "State the two conditions required for total internal reflection (TIR) to occur.",
+      "answer": "**Condition 1:** Light must be traveling from a **denser medium to a less dense medium** (from higher $n$ to lower $n$). This is required because $\\sin\\theta_c = n_2/n_1 < 1$ only when $n_1 > n_2$.\n\n**Condition 2:** The angle of incidence must be **greater than or equal to the critical angle** $\\theta_c$.\n\n$$\\theta \\geq \\theta_c = \\arcsin\\left(\\dfrac{n_2}{n_1}\\right)$$\n\nWhen both conditions are met, 100% of the light is reflected — no refracted ray escapes."
+    },
+    {
+      "id": "t44-p03",
+      "source": "2016-UG adapted",
+      "question": "A diamond has $n = 2.42$. Find: (a) the critical angle for the diamond–air interface, (b) explain why diamonds sparkle.",
+      "answer": "**(a)** $\\sin\\theta_c = 1/n = 1/2.42 = 0.413$\n\n$\\theta_c = \\arcsin(0.413) \\approx 24.4°$\n\n**(b)** The critical angle is very small ($\\approx 24°$). Most light entering a diamond hits internal surfaces at angles $> 24°$, causing total internal reflection. The facets are cut so that light undergoes multiple TIR before exiting through the top, and the dispersion ($n$ varies with wavelength) spreads the emerging light into brilliant colors (\"fire\"). Very little light escapes from the bottom or sides."
+    },
+    {
+      "id": "t44-p04",
+      "source": "original",
+      "question": "An optical fiber has a core of $n_1 = 1.48$ and cladding of $n_2 = 1.45$. Find: (a) the critical angle, (b) the maximum angle at which light can enter the fiber end (the acceptance angle, in air $n_0 = 1.0$).",
+      "answer": "**(a)** $\\sin\\theta_c = n_2/n_1 = 1.45/1.48 = 0.9797$\n\n$\\theta_c = \\arcsin(0.9797) \\approx 78.3°$\n\n**(b)** The acceptance angle $\\alpha$ (outside the fiber) is found from the condition that light refracts at the end and then hits the core-cladding interface at exactly $\\theta_c$:\n\nAt the fiber end: $n_0\\sin\\alpha = n_1\\sin(90°-\\theta_c) = n_1\\cos\\theta_c$\n\n$\\cos\\theta_c = \\sqrt{1 - \\sin^2\\theta_c} = \\sqrt{1-0.9797^2} = \\sqrt{0.04} \\approx 0.2$\n\nWait: $1 - (1.45/1.48)^2 = 1 - 0.9596 = 0.0404$; $\\cos\\theta_c = \\sqrt{0.0404} = 0.201$\n\n$\\sin\\alpha = n_1\\cos\\theta_c = 1.48 \\times 0.201 = 0.297$\n\n$\\alpha = \\arcsin(0.297) \\approx 17.3°$ (numerical aperture $= 0.297$)"
+    },
+    {
+      "id": "t44-p05",
+      "source": "original",
+      "question": "A light ray in water ($n = 1.33$) hits the water–air interface at $\\theta = 70°$. Does TIR occur? Find the critical angle first.",
+      "answer": "$\\theta_c = \\arcsin(1/1.33) = \\arcsin(0.752) \\approx 48.8°$\n\nSince $\\theta = 70° > \\theta_c \\approx 48.8°$, **yes, TIR occurs**.\n\nThe ray is totally reflected back into the water."
+    },
+    {
+      "id": "t44-p06",
+      "source": "2018-UG adapted",
+      "question": "A glass block ($n = 1.6$) has a horizontal top surface in air. A light ray travels inside at angle $\\theta = 35°$ to the normal of the top face. (a) Does TIR occur? (b) What happens at the side face if the side is vertical and the ray hits it at grazing incidence after reflecting from the top?",
+      "answer": "**(a)** Critical angle: $\\sin\\theta_c = 1/1.6 = 0.625 \\Rightarrow \\theta_c \\approx 38.7°$\n\n$35° < 38.7° = \\theta_c$ → **No TIR**. The ray partially refracts out of the top surface.\n\n**(b)** After TIR would be blocked (it doesn't happen here), but if the ray hits the vertical side at $90° - 35° = 55°$ (complementary angle) from the normal: $55° > 38.7° \\Rightarrow$ TIR would occur at the side.\n\nPhysically: if the top face doesn't cause TIR, the side face (at complementary angle) might — depending on geometry."
+    },
+    {
+      "id": "t44-p07",
+      "source": "original",
+      "question": "Explain how an optical fiber transmits light signals over long distances using TIR, including what would happen without the cladding.",
+      "answer": "**With cladding:** The core (high $n_1$) is surrounded by cladding (lower $n_2$). Light entering the fiber at angles within the acceptance cone hits the core-cladding interface at angles $> \\theta_c$, causing TIR. The light bounces along the fiber indefinitely, confined to the core.\n\n**Why cladding:** If the fiber were bare glass in air, any surface contamination or touching would allow light to escape (the interface properties change). The cladding provides a controlled, stable interface.\n\n**Attenuation:** Even with TIR, some signal is lost due to absorption and scattering in the glass. Modern fibers have very low attenuation ($\\sim 0.2\\ \\mathrm{dB/km}$), allowing signals to travel thousands of km."
+    },
+    {
+      "id": "t44-p08",
+      "source": "2015-CoT adapted",
+      "question": "A semicircular glass block ($n = 1.5$) has its flat face horizontal. A ray hits the curved surface at the center and enters without refraction. It then travels to the flat surface. At what angle $\\theta$ from the vertical will TIR first occur at the flat surface?",
+      "answer": "Since the ray enters the curved surface at the center (normal incidence), it travels straight through without refraction.\n\nAt the flat (bottom) surface, the angle from the normal is $\\theta$.\n\nTIR occurs when $\\theta \\geq \\theta_c$:\n\n$\\theta_c = \\arcsin(1/n) = \\arcsin(1/1.5) = \\arcsin(2/3) \\approx 41.8°$\n\nTIR first occurs at $\\theta = \\theta_c \\approx 41.8°$ from the vertical (normal to the flat surface)."
+    },
+    {
+      "id": "t44-p09",
+      "source": "original",
+      "question": "What is the critical angle for TIR at an interface between two glass types: crown glass ($n_1 = 1.52$) and flint glass ($n_2 = 1.62$)? In which direction must the light travel?",
+      "answer": "TIR requires going from denser to less dense: from flint ($n = 1.62$) to crown ($n = 1.52$).\n\n$\\sin\\theta_c = \\dfrac{n_2}{n_1} = \\dfrac{1.52}{1.62} = 0.9383$\n\n$\\theta_c = \\arcsin(0.9383) \\approx 69.7°$\n\nLight traveling from flint glass to crown glass is totally internally reflected for angles $\\geq 69.7°$.\n\n**Note:** TIR does NOT occur for light going from crown to flint glass ($n_1 < n_2$), as it would then refract further into the denser medium."
+    },
+    {
+      "id": "t44-p10",
+      "source": "2014-UG adapted",
+      "question": "A $45°$–$45°$–$90°$ glass prism ($n = 1.5$) is used as a reflector (periscope). A horizontal ray enters the vertical face perpendicular to it, then hits the hypotenuse face. Show that TIR occurs at the hypotenuse.",
+      "answer": "The ray enters the vertical face at normal incidence ($0°$) — no refraction, travels horizontally.\n\nIt hits the hypotenuse face (at $45°$ to both vertical and horizontal) at an angle of $45°$ from the normal of the hypotenuse.\n\nCritical angle: $\\theta_c = \\arcsin(1/1.5) = \\arcsin(0.667) \\approx 41.8°$\n\nAngle of incidence at hypotenuse: $45° > \\theta_c = 41.8°$ → **TIR occurs** ✓\n\nThe ray is reflected downward (or upward, depending on orientation) at $45°$ to the hypotenuse, making a total $90°$ turn. Used in binoculars, periscopes, and retro-reflectors."
+    }
+  ]
+}

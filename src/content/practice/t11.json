@@ -1,0 +1,65 @@
+{
+  "topicId": "t11",
+  "questions": [
+    {
+      "id": "t11-p01",
+      "source": "original",
+      "question": "A block of mass $m = 0.5\\ \\mathrm{kg}$ is attached to a spring with spring constant $k = 200\\ \\mathrm{N/m}$ on a frictionless surface. Find: (a) the angular frequency $\\omega$, (b) the period $T$, (c) the frequency $f$.",
+      "answer": "**(a)** $\\omega = \\sqrt{\\dfrac{k}{m}} = \\sqrt{\\dfrac{200}{0.5}} = \\sqrt{400} = 20\\ \\mathrm{rad/s}$\n\n**(b)** $T = \\dfrac{2\\pi}{\\omega} = \\dfrac{2\\pi}{20} = \\dfrac{\\pi}{10} \\approx 0.314\\ \\mathrm{s}$\n\n**(c)** $f = \\dfrac{1}{T} = \\dfrac{10}{\\pi} \\approx 3.18\\ \\mathrm{Hz}$"
+    },
+    {
+      "id": "t11-p02",
+      "source": "original",
+      "question": "A spring–mass system has $k = 50\\ \\mathrm{N/m}$ and $m = 2\\ \\mathrm{kg}$. The block is released from rest at amplitude $A = 0.1\\ \\mathrm{m}$ from the equilibrium. Find: (a) the maximum speed, (b) the maximum acceleration.",
+      "answer": "Angular frequency: $\\omega = \\sqrt{k/m} = \\sqrt{25} = 5\\ \\mathrm{rad/s}$\n\n**(a)** Max speed occurs at equilibrium ($x = 0$):\n\n$v_{\\max} = A\\omega = 0.1 \\times 5 = 0.5\\ \\mathrm{m/s}$\n\n**(b)** Max acceleration occurs at the amplitude ($x = \\pm A$):\n\n$a_{\\max} = A\\omega^2 = 0.1 \\times 25 = 2.5\\ \\mathrm{m/s^2}$"
+    },
+    {
+      "id": "t11-p03",
+      "source": "original",
+      "question": "A $1\\ \\mathrm{kg}$ block on a spring ($k = 100\\ \\mathrm{N/m}$) oscillates with amplitude $A = 0.2\\ \\mathrm{m}$. Find: (a) the total mechanical energy, (b) the speed when displacement is $x = 0.1\\ \\mathrm{m}$.",
+      "answer": "**(a)** Total energy = elastic PE at amplitude:\n\n$E = \\tfrac{1}{2}kA^2 = \\tfrac{1}{2}(100)(0.04) = 2\\ \\mathrm{J}$\n\n**(b)** Using energy conservation at $x = 0.1\\ \\mathrm{m}$:\n\n$\\tfrac{1}{2}mv^2 + \\tfrac{1}{2}kx^2 = E$\n\n$\\tfrac{1}{2}(1)v^2 = 2 - \\tfrac{1}{2}(100)(0.01) = 2 - 0.5 = 1.5\\ \\mathrm{J}$\n\n$v = \\sqrt{3} \\approx 1.73\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t11-p04",
+      "source": "2018-UG adapted",
+      "question": "A spring–mass system oscillates as $x(t) = 0.05\\cos(10t)\\ \\mathrm{m}$. Identify: (a) the amplitude, (b) the angular frequency, (c) the period, (d) the maximum speed.",
+      "answer": "Comparing to $x = A\\cos(\\omega t)$:\n\n**(a)** $A = 0.05\\ \\mathrm{m}$\n\n**(b)** $\\omega = 10\\ \\mathrm{rad/s}$\n\n**(c)** $T = \\dfrac{2\\pi}{\\omega} = \\dfrac{2\\pi}{10} = \\dfrac{\\pi}{5} \\approx 0.628\\ \\mathrm{s}$\n\n**(d)** $v_{\\max} = A\\omega = 0.05 \\times 10 = 0.5\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t11-p05",
+      "source": "original",
+      "question": "A block of mass $m$ on a spring of constant $k$ is displaced $A$ from equilibrium and released. Derive an expression for the speed $v$ at displacement $x$ in terms of $k$, $m$, $A$, and $x$.",
+      "answer": "Total energy at amplitude: $E = \\tfrac{1}{2}kA^2$\n\nAt displacement $x$: $E = \\tfrac{1}{2}mv^2 + \\tfrac{1}{2}kx^2$\n\nEquating:\n\n$\\tfrac{1}{2}mv^2 = \\tfrac{1}{2}k(A^2 - x^2)$\n\n$$v = \\sqrt{\\frac{k}{m}(A^2 - x^2)} = \\omega\\sqrt{A^2 - x^2}$$\n\nThis confirms $v = 0$ at $x = \\pm A$ and $v = v_{\\max} = A\\omega$ at $x = 0$."
+    },
+    {
+      "id": "t11-p06",
+      "source": "original",
+      "question": "A $0.4\\ \\mathrm{kg}$ block on a spring oscillates with period $T = 0.4\\pi\\ \\mathrm{s}$ and amplitude $A = 6\\ \\mathrm{cm}$. Find: (a) the spring constant $k$, (b) the speed at $x = 4\\ \\mathrm{cm}$ from equilibrium.",
+      "answer": "**(a)** $T = 2\\pi\\sqrt{m/k}$, so $k = m\\left(\\dfrac{2\\pi}{T}\\right)^2$\n\n$k = 0.4 \\times \\left(\\dfrac{2\\pi}{0.4\\pi}\\right)^2 = 0.4 \\times 25 = 10\\ \\mathrm{N/m}$\n\n**(b)** $\\omega = 2\\pi/T = 2\\pi/(0.4\\pi) = 5\\ \\mathrm{rad/s}$\n\n$v = \\omega\\sqrt{A^2 - x^2} = 5\\sqrt{(0.06)^2 - (0.04)^2} = 5\\sqrt{0.0036 - 0.0016}$\n\n$= 5\\sqrt{0.002} = 5 \\times 0.04472 \\approx 0.224\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t11-p07",
+      "source": "original",
+      "question": "Two springs with constants $k_1 = 40\\ \\mathrm{N/m}$ and $k_2 = 60\\ \\mathrm{N/m}$ are attached **in parallel** to a $0.5\\ \\mathrm{kg}$ block. Find the period of oscillation.",
+      "answer": "For springs in parallel, the effective spring constant is:\n\n$k_{\\text{eff}} = k_1 + k_2 = 40 + 60 = 100\\ \\mathrm{N/m}$\n\n(Both springs exert restoring forces simultaneously.)\n\n$T = 2\\pi\\sqrt{\\dfrac{m}{k_{\\text{eff}}}} = 2\\pi\\sqrt{\\dfrac{0.5}{100}} = 2\\pi\\sqrt{0.005} = 2\\pi \\times 0.0707 \\approx 0.444\\ \\mathrm{s}$"
+    },
+    {
+      "id": "t11-p08",
+      "source": "original",
+      "question": "A $0.2\\ \\mathrm{kg}$ block on a spring ($k = 80\\ \\mathrm{N/m}$) oscillates on a frictionless surface. At $t = 0$, the block is at $x = 0$ moving in the $+x$ direction at $v_0 = 2\\ \\mathrm{m/s}$. Find: (a) the amplitude, (b) write the equation of motion $x(t)$.",
+      "answer": "**(a)** At $x = 0$, all energy is kinetic:\n\n$E = \\tfrac{1}{2}mv_0^2 = \\tfrac{1}{2}(0.2)(4) = 0.4\\ \\mathrm{J}$\n\n$A = \\sqrt{2E/k} = \\sqrt{2(0.4)/80} = \\sqrt{0.01} = 0.1\\ \\mathrm{m}$\n\n**(b)** $\\omega = \\sqrt{k/m} = \\sqrt{80/0.2} = 20\\ \\mathrm{rad/s}$\n\nSince $x(0) = 0$ and $\\dot{x}(0) > 0$, use sine:\n\n$$x(t) = 0.1\\sin(20t)\\ \\mathrm{m}$$"
+    },
+    {
+      "id": "t11-p09",
+      "source": "2019-UG adapted",
+      "question": "A block is attached to a vertical spring (spring constant $k$) and hangs at rest at the equilibrium position. It is then pulled down an additional distance $A$ and released. Explain why the equilibrium position (not the natural length position) is the center of oscillation, and write the period formula.",
+      "answer": "At the equilibrium position, gravity and the spring force balance:\n\n$k x_{0} = mg \\Rightarrow x_{0} = mg/k$\n\nIf we measure displacement $y$ from equilibrium (not from natural length), the net restoring force on the block displaced by $y$ is:\n\n$F_{\\text{net}} = -k(x_0 + y) + mg = -kx_0 + mg - ky = -ky$\n\nThe gravity and initial stretch cancel, leaving $F = -ky$ — identical to the horizontal case.\n\nTherefore oscillation is symmetric about equilibrium, and the period is:\n\n$$T = 2\\pi\\sqrt{\\frac{m}{k}}$$\n\n(unchanged by gravity — hanging SHM has the same period as horizontal SHM)"
+    },
+    {
+      "id": "t11-p10",
+      "source": "original",
+      "question": "A block of mass $m$ oscillates on a spring. At the instant the block passes through equilibrium, a second identical block is gently placed on top of it (no slipping). By what factor does: (a) the amplitude change, (b) the period change?",
+      "answer": "At equilibrium, all energy is kinetic: $E = \\frac{1}{2}mv_0^2$.\n\nWhen the second mass $m$ is added at $x=0$, momentum conservation gives $v'$:\n\n$mv_0 = 2m\\,v' \\Rightarrow v' = v_0/2$\n\n**(a)** New energy: $E' = \\frac{1}{2}(2m)(v_0/2)^2 = \\frac{1}{4}mv_0^2 = E/2$\n\nNew amplitude: $A' = \\sqrt{2E'/k} = \\sqrt{E/k} = A/\\sqrt{2}$\n\nAmplitude decreases by factor $\\dfrac{1}{\\sqrt{2}}$.\n\n**(b)** New period: $T' = 2\\pi\\sqrt{2m/k} = \\sqrt{2}\\cdot T$\n\nPeriod increases by factor $\\sqrt{2}$."
+    }
+  ]
+}

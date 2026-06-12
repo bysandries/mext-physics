@@ -1,0 +1,65 @@
+{
+  "topicId": "t01",
+  "questions": [
+    {
+      "id": "t01-p01",
+      "source": "2019-UG-Q1-(1) adapted",
+      "question": "A train starts from rest at a station and accelerates uniformly to $20\\ \\mathrm{m/s}$ over $20\\ \\mathrm{s}$. It then travels at constant speed for $60\\ \\mathrm{s}$. Finally it brakes uniformly and stops in $10\\ \\mathrm{s}$. Find the total distance traveled.",
+      "answer": "Break the journey into three phases and find the area under the v–t graph.\n\n**Phase 1 (acceleration triangle):** $d_1 = \\frac{1}{2}(20)(20) = 200\\ \\mathrm{m}$\n\n**Phase 2 (constant-speed rectangle):** $d_2 = (60)(20) = 1200\\ \\mathrm{m}$\n\n**Phase 3 (braking triangle):** $d_3 = \\frac{1}{2}(10)(20) = 100\\ \\mathrm{m}$\n\n**Total:** $200 + 1200 + 100 = 1500\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t01-p02",
+      "source": "original",
+      "question": "An object starts from rest and accelerates uniformly at $3\\ \\mathrm{m/s^2}$. Find: (a) its speed after $8\\ \\mathrm{s}$, (b) the total distance covered in $8\\ \\mathrm{s}$, (c) the distance covered in the $8^\\mathrm{th}$ second alone (from $t = 7\\ \\mathrm{s}$ to $t = 8\\ \\mathrm{s}$).",
+      "answer": "**(a)** $v = at = 3 \\times 8 = 24\\ \\mathrm{m/s}$\n\n**(b)** $x = \\frac{1}{2}at^2 = \\frac{1}{2}(3)(64) = 96\\ \\mathrm{m}$\n\n**(c)** $d_8 = x(8) - x(7) = 96 - \\frac{1}{2}(3)(49) = 96 - 73.5 = 22.5\\ \\mathrm{m}$\n\nAlternatively, using the $n$th-second formula: $s_n = v_0 + a\\!\\left(n - \\tfrac{1}{2}\\right) = 0 + 3(7.5) = 22.5\\ \\mathrm{m}$ ✓"
+    },
+    {
+      "id": "t01-p03",
+      "source": "original",
+      "question": "A car traveling at $30\\ \\mathrm{m/s}$ applies its brakes and decelerates uniformly, coming to rest in $12\\ \\mathrm{s}$. Find: (a) the deceleration, (b) the stopping distance.",
+      "answer": "**(a)** $a = \\frac{\\Delta v}{\\Delta t} = \\frac{30}{12} = 2.5\\ \\mathrm{m/s^2}$\n\n**(b)** Area of the v–t triangle: $d = \\frac{1}{2}(12)(30) = 180\\ \\mathrm{m}$\n\nVerification with $v^2 = v_0^2 - 2ax$: $0 = 900 - 2(2.5)x \\Rightarrow x = 180\\ \\mathrm{m}$ ✓"
+    },
+    {
+      "id": "t01-p04",
+      "source": "original",
+      "question": "A motorcycle accelerates uniformly from $10\\ \\mathrm{m/s}$ to $30\\ \\mathrm{m/s}$ over a distance of $200\\ \\mathrm{m}$. Find: (a) the acceleration, (b) the time taken.",
+      "answer": "**(a)** Using $v^2 = v_0^2 + 2ax$:\n\n$(30)^2 = (10)^2 + 2a(200) \\Rightarrow 900 = 100 + 400a \\Rightarrow a = 2\\ \\mathrm{m/s^2}$\n\n**(b)** Using $v = v_0 + at$:\n\n$30 = 10 + 2t \\Rightarrow t = 10\\ \\mathrm{s}$"
+    },
+    {
+      "id": "t01-p05",
+      "source": "original",
+      "question": "An object is dropped from rest from a height of $80\\ \\mathrm{m}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the time to reach the ground, (b) the speed on impact, (c) the distance fallen in the last $1\\ \\mathrm{s}$ before impact.",
+      "answer": "**(a)** $h = \\frac{1}{2}gt^2 \\Rightarrow t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{160}{10}} = 4\\ \\mathrm{s}$\n\n**(b)** $v = gt = 10 \\times 4 = 40\\ \\mathrm{m/s}$\n\n**(c)** $d_{\\text{last}} = x(4) - x(3) = 80 - \\frac{1}{2}(10)(9) = 80 - 45 = 35\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t01-p06",
+      "source": "original",
+      "question": "A ball is thrown **vertically downward** from a height of $60\\ \\mathrm{m}$ with initial speed $20\\ \\mathrm{m/s}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the time for the ball to reach the ground, (b) the speed on impact.",
+      "answer": "**(a)** Taking downward as positive: $60 = 20t + \\frac{1}{2}(10)t^2$\n\n$5t^2 + 20t - 60 = 0 \\Rightarrow t^2 + 4t - 12 = 0 \\Rightarrow (t + 6)(t - 2) = 0$\n\n$t = 2\\ \\mathrm{s}$ (rejecting the negative root).\n\n**(b)** $v = v_0 + gt = 20 + 10(2) = 40\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t01-p07",
+      "source": "original",
+      "question": "A stone is thrown **vertically upward** from the ground with initial speed $25\\ \\mathrm{m/s}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the time to reach maximum height, (b) the maximum height, (c) the total time in the air, (d) the speed when it returns to launch height.",
+      "answer": "**(a)** $t_{\\text{up}} = v_0/g = 25/10 = 2.5\\ \\mathrm{s}$\n\n**(b)** $H = v_0^2/(2g) = 625/20 = 31.25\\ \\mathrm{m}$\n\n**(c)** By symmetry, total time $= 2 \\times 2.5 = 5\\ \\mathrm{s}$\n\n**(d)** By symmetry the stone returns at $25\\ \\mathrm{m/s}$ directed downward — same magnitude as the launch speed."
+    },
+    {
+      "id": "t01-p08",
+      "source": "original",
+      "question": "An object starts from rest with constant acceleration $a$. Show that the distances traveled in the 1st, 2nd, 3rd, … seconds are in the ratio $1:3:5:\\ldots$, and write the formula for the distance traveled in the $n$th second.",
+      "answer": "Distance in the $n$th second: $s_n = x(n) - x(n-1) = \\tfrac{1}{2}an^2 - \\tfrac{1}{2}a(n-1)^2 = a\\!\\left(n - \\tfrac{1}{2}\\right)$\n\nSo $s_1 = \\tfrac{a}{2}$, $s_2 = \\tfrac{3a}{2}$, $s_3 = \\tfrac{5a}{2}$, …\n\nRatio: $1:3:5:\\ldots$ ✓ (consecutive odd numbers)\n\nGeneral formula: $s_n = a\\!\\left(n - \\tfrac{1}{2}\\right)$"
+    },
+    {
+      "id": "t01-p09",
+      "source": "original",
+      "question": "A vehicle starts from rest, accelerates uniformly at $2\\ \\mathrm{m/s^2}$ for $5\\ \\mathrm{s}$, then cruises at constant speed for $10\\ \\mathrm{s}$, then decelerates uniformly and stops in $4\\ \\mathrm{s}$. Find: (a) the maximum speed, (b) the total distance traveled, (c) the deceleration in the final phase.",
+      "answer": "**(a)** $v_{\\max} = 0 + 2 \\times 5 = 10\\ \\mathrm{m/s}$\n\n**(b)** $d_1 = \\frac{1}{2}(2)(25) = 25\\ \\mathrm{m}$; $d_2 = 10 \\times 10 = 100\\ \\mathrm{m}$; $d_3 = \\frac{1}{2}(4)(10) = 20\\ \\mathrm{m}$\n\nTotal $= 25 + 100 + 20 = 145\\ \\mathrm{m}$\n\n**(c)** $a = v_{\\max}/t = 10/4 = 2.5\\ \\mathrm{m/s^2}$"
+    },
+    {
+      "id": "t01-p10",
+      "source": "original",
+      "question": "Object A moves at constant velocity $4\\ \\mathrm{m/s}$. Object B starts from the same point $5\\ \\mathrm{s}$ later, from rest, and accelerates uniformly at $2\\ \\mathrm{m/s^2}$. How long after B starts does B catch A?",
+      "answer": "When B starts, A is already $4 \\times 5 = 20\\ \\mathrm{m}$ ahead.\n\nLet $t$ = time after B starts:\n\n$x_A = 20 + 4t, \\quad x_B = \\tfrac{1}{2}(2)t^2 = t^2$\n\nSetting $x_B = x_A$: $t^2 = 20 + 4t \\Rightarrow t^2 - 4t - 20 = 0$\n\n$t = \\dfrac{4 + \\sqrt{16 + 80}}{2} = \\dfrac{4 + 4\\sqrt{6}}{2} = 2 + 2\\sqrt{6} \\approx 6.9\\ \\mathrm{s}$"
+    }
+  ]
+}

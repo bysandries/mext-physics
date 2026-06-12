@@ -1,0 +1,65 @@
+{
+  "topicId": "t15",
+  "questions": [
+    {
+      "id": "t15-p01",
+      "source": "original",
+      "question": "Find the internal energy of $n = 3\\ \\mathrm{mol}$ of a monatomic ideal gas at $T = 400\\ \\mathrm{K}$. Use $R = 8.31\\ \\mathrm{J/(mol\\cdot K)}$.",
+      "answer": "For a monatomic ideal gas, each molecule has 3 translational degrees of freedom:\n\n$U = \\dfrac{3}{2}nRT = \\dfrac{3}{2} \\times 3 \\times 8.31 \\times 400$\n\n$= \\dfrac{3}{2} \\times 9972 = 14{,}958\\ \\mathrm{J} \\approx 14.96\\ \\mathrm{kJ}$"
+    },
+    {
+      "id": "t15-p02",
+      "source": "original",
+      "question": "A monatomic ideal gas is heated from $T_1 = 300\\ \\mathrm{K}$ to $T_2 = 500\\ \\mathrm{K}$. The sample contains $n = 2\\ \\mathrm{mol}$. Find the change in internal energy $\\Delta U$.",
+      "answer": "$\\Delta U = \\dfrac{3}{2}nR\\Delta T = \\dfrac{3}{2} \\times 2 \\times 8.31 \\times (500 - 300)$\n\n$= 3 \\times 8.31 \\times 200 = 4986\\ \\mathrm{J} \\approx 4.99\\ \\mathrm{kJ}$\n\nNote: $\\Delta U$ depends only on $\\Delta T$ — not on the process path."
+    },
+    {
+      "id": "t15-p03",
+      "source": "original",
+      "question": "Explain why the internal energy of an ideal gas depends only on temperature, and write the formula for a monatomic ideal gas.",
+      "answer": "In an ideal gas, molecules do not interact with each other (no intermolecular PE). The internal energy consists entirely of the kinetic energy of the molecules.\n\nBy the equipartition theorem, each degree of freedom contributes $\\frac{1}{2}k_BT$ per molecule (or $\\frac{1}{2}RT$ per mole).\n\nA monatomic gas has **3 translational** degrees of freedom, so:\n\n$$U = \\frac{3}{2}Nk_BT = \\frac{3}{2}nRT$$\n\nSince $k_B T$ depends only on temperature, $U$ depends only on $T$ — not on $P$ or $V$.\n\nConsequently, $\\Delta U$ is the same for any process connecting the same two temperatures."
+    },
+    {
+      "id": "t15-p04",
+      "source": "2016-UG adapted",
+      "question": "$N = 6.02\\times10^{23}$ molecules of a monatomic ideal gas are at $T = 300\\ \\mathrm{K}$. Find: (a) the average kinetic energy per molecule, (b) the total internal energy. Use $k_B = 1.38\\times10^{-23}\\ \\mathrm{J/K}$.",
+      "answer": "**(a)** Average KE per molecule:\n\n$\\bar{\\varepsilon} = \\dfrac{3}{2}k_B T = \\dfrac{3}{2} \\times 1.38\\times10^{-23} \\times 300 = 6.21\\times10^{-21}\\ \\mathrm{J}$\n\n**(b)** Total internal energy ($N = N_A = 1\\ \\mathrm{mol}$):\n\n$U = N\\bar{\\varepsilon} = 6.02\\times10^{23} \\times 6.21\\times10^{-21} = 3738\\ \\mathrm{J}$\n\nAlternatively: $U = \\frac{3}{2}nRT = \\frac{3}{2}(1)(8.31)(300) = 3739\\ \\mathrm{J}$ ✓"
+    },
+    {
+      "id": "t15-p05",
+      "source": "original",
+      "question": "A sample of $n = 1\\ \\mathrm{mol}$ of monatomic ideal gas has internal energy $U = 3741\\ \\mathrm{J}$. Find the temperature of the gas.",
+      "answer": "From $U = \\dfrac{3}{2}nRT$:\n\n$T = \\dfrac{2U}{3nR} = \\dfrac{2 \\times 3741}{3 \\times 1 \\times 8.31} = \\dfrac{7482}{24.93} \\approx 300\\ \\mathrm{K}$\n\n$T = 300\\ \\mathrm{K} = 27^\\circ\\mathrm{C}$"
+    },
+    {
+      "id": "t15-p06",
+      "source": "original",
+      "question": "A monatomic ideal gas undergoes an isochoric (constant volume) process in which $Q = 1500\\ \\mathrm{J}$ of heat is added to $n = 0.5\\ \\mathrm{mol}$. Find: (a) the change in internal energy $\\Delta U$, (b) the temperature change $\\Delta T$.",
+      "answer": "**(a)** At constant volume, no work is done ($W = P\\Delta V = 0$).\n\nBy the First Law: $\\Delta U = Q - W = 1500 - 0 = 1500\\ \\mathrm{J}$\n\n**(b)** $\\Delta U = \\dfrac{3}{2}nR\\Delta T$\n\n$\\Delta T = \\dfrac{2\\Delta U}{3nR} = \\dfrac{2 \\times 1500}{3 \\times 0.5 \\times 8.31} = \\dfrac{3000}{12.465} \\approx 240.7\\ \\mathrm{K}$"
+    },
+    {
+      "id": "t15-p07",
+      "source": "original",
+      "question": "Compare the internal energies of: (a) $1\\ \\mathrm{mol}$ of monatomic ideal gas at $T = 600\\ \\mathrm{K}$, and (b) $2\\ \\mathrm{mol}$ of monatomic ideal gas at $T = 300\\ \\mathrm{K}$.",
+      "answer": "**(a)** $U_a = \\dfrac{3}{2}(1)(8.31)(600) = \\dfrac{3}{2} \\times 4986 = 7479\\ \\mathrm{J}$\n\n**(b)** $U_b = \\dfrac{3}{2}(2)(8.31)(300) = \\dfrac{3}{2} \\times 4986 = 7479\\ \\mathrm{J}$\n\nThey are equal! $U = \\frac{3}{2}nRT$, and both have $nT = 1 \\times 600 = 2 \\times 300 = 600\\ \\mathrm{mol\\cdot K}$."
+    },
+    {
+      "id": "t15-p08",
+      "source": "original",
+      "question": "A monatomic ideal gas in a rigid container is cooled from $T_1 = 500\\ \\mathrm{K}$ to $T_2 = 200\\ \\mathrm{K}$. The sample has $n = 4\\ \\mathrm{mol}$. Find: (a) $\\Delta U$, (b) the heat $Q$ transferred.",
+      "answer": "**(a)** $\\Delta U = \\dfrac{3}{2}nR\\Delta T = \\dfrac{3}{2} \\times 4 \\times 8.31 \\times (200 - 500)$\n\n$= 6 \\times 8.31 \\times (-300) = -14{,}958\\ \\mathrm{J} \\approx -15.0\\ \\mathrm{kJ}$\n\n**(b)** Rigid container $\\Rightarrow$ constant volume, $W = 0$:\n\n$Q = \\Delta U = -14{,}958\\ \\mathrm{J}$\n\n(Negative: $14.96\\ \\mathrm{kJ}$ is removed from the gas.)"
+    },
+    {
+      "id": "t15-p09",
+      "source": "2019-CoT adapted",
+      "question": "Show that the rms speed of molecules in a monatomic ideal gas is $v_{\\mathrm{rms}} = \\sqrt{3RT/M}$, where $M$ is the molar mass.",
+      "answer": "Each molecule's average translational KE equals the thermal energy:\n\n$\\dfrac{1}{2}m_0 v_{\\mathrm{rms}}^2 = \\dfrac{3}{2}k_B T$\n\nwhere $m_0$ is the mass per molecule.\n\n$v_{\\mathrm{rms}} = \\sqrt{\\dfrac{3k_B T}{m_0}}$\n\nSince $m_0 = M/N_A$ and $R = N_A k_B$:\n\n$v_{\\mathrm{rms}} = \\sqrt{\\dfrac{3k_B T N_A}{M}} = \\sqrt{\\dfrac{3RT}{M}}$ ✓\n\nFor helium at $T = 300\\ \\mathrm{K}$ ($M = 0.004\\ \\mathrm{kg/mol}$):\n\n$v_{\\mathrm{rms}} = \\sqrt{3 \\times 8.31 \\times 300 / 0.004} = \\sqrt{1.87\\times10^6} \\approx 1368\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t15-p10",
+      "source": "original",
+      "question": "A monatomic ideal gas undergoes a process in which both heat $Q = 2000\\ \\mathrm{J}$ is absorbed and work $W = 500\\ \\mathrm{J}$ is done **by** the gas. Find: (a) $\\Delta U$, (b) the temperature change if $n = 1\\ \\mathrm{mol}$.",
+      "answer": "**(a)** First Law (sign: $W$ = work done **by** the gas):\n\n$\\Delta U = Q - W = 2000 - 500 = 1500\\ \\mathrm{J}$\n\n**(b)** For monatomic ideal gas:\n\n$\\Delta T = \\dfrac{2\\Delta U}{3nR} = \\dfrac{2 \\times 1500}{3 \\times 1 \\times 8.31} = \\dfrac{3000}{24.93} \\approx 120.3\\ \\mathrm{K}$"
+    }
+  ]
+}

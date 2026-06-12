@@ -1,0 +1,65 @@
+{
+  "topicId": "t36",
+  "questions": [
+    {
+      "id": "t36-p01",
+      "source": "original",
+      "question": "A proton ($q = 1.6\\times10^{-19}\\ \\mathrm{C}$) moves at $v = 3\\times10^6\\ \\mathrm{m/s}$ perpendicular to a magnetic field $B = 0.5\\ \\mathrm{T}$. Find the Lorentz force on the proton.",
+      "answer": "$F = qvB\\sin\\theta = qvB$ (since $\\theta = 90°$, perpendicular)\n\n$F = 1.6\\times10^{-19} \\times 3\\times10^6 \\times 0.5 = 2.4\\times10^{-13}\\ \\mathrm{N}$"
+    },
+    {
+      "id": "t36-p02",
+      "source": "original",
+      "question": "An electron moves at $v = 2\\times10^7\\ \\mathrm{m/s}$ at an angle $\\theta = 30°$ to a magnetic field $B = 0.1\\ \\mathrm{T}$. Find the magnitude of the magnetic force.",
+      "answer": "$F = qvB\\sin\\theta = 1.6\\times10^{-19} \\times 2\\times10^7 \\times 0.1 \\times \\sin 30°$\n\n$= 1.6\\times10^{-19} \\times 2\\times10^6 \\times 0.5 = 1.6\\times10^{-13}\\ \\mathrm{N}$"
+    },
+    {
+      "id": "t36-p03",
+      "source": "2016-UG adapted",
+      "question": "A particle with charge $q = 2\\ \\mu\\mathrm{C}$ moves with velocity $\\vec{v} = 4\\hat{x} + 3\\hat{y}\\ \\mathrm{m/s}$ in a magnetic field $\\vec{B} = 2\\hat{z}\\ \\mathrm{T}$. Find the force $\\vec{F} = q(\\vec{v}\\times\\vec{B})$.",
+      "answer": "$\\vec{v} \\times \\vec{B} = (4\\hat{x} + 3\\hat{y}) \\times 2\\hat{z}$\n\n$= 4 \\times 2(\\hat{x}\\times\\hat{z}) + 3 \\times 2(\\hat{y}\\times\\hat{z})$\n\n$= 8(-\\hat{y}) + 6(\\hat{x})$\n\n$= 6\\hat{x} - 8\\hat{y}$\n\n$\\vec{F} = q(\\vec{v}\\times\\vec{B}) = 2\\times10^{-6}(6\\hat{x} - 8\\hat{y})$\n\n$= (1.2\\times10^{-5}\\hat{x} - 1.6\\times10^{-5}\\hat{y})\\ \\mathrm{N}$"
+    },
+    {
+      "id": "t36-p04",
+      "source": "original",
+      "question": "A current-carrying wire of length $L = 0.3\\ \\mathrm{m}$ carries $I = 5\\ \\mathrm{A}$ perpendicular to a magnetic field $B = 0.4\\ \\mathrm{T}$. Find the force on the wire.",
+      "answer": "Force on a current-carrying wire:\n\n$F = BIL\\sin\\theta = 0.4 \\times 5 \\times 0.3 \\times \\sin 90° = 0.6\\ \\mathrm{N}$"
+    },
+    {
+      "id": "t36-p05",
+      "source": "2018-UG adapted",
+      "question": "A particle with charge $q$ and mass $m$ moves with velocity $v$ parallel to a magnetic field $B$. What is the force on the particle? If the particle then moves perpendicular to $B$, describe its subsequent motion.",
+      "answer": "**Parallel to $B$:** $\\vec{F} = q\\vec{v}\\times\\vec{B} = 0$ (since $\\sin 0° = 0$)\n\nNo magnetic force — the particle continues in a straight line.\n\n**Perpendicular to $B$:** $|F| = qvB$ (maximum), always perpendicular to $\\vec{v}$.\n\nSince $F \\perp v$, no work is done: speed is constant. The force continuously deflects the velocity without changing the speed $\\Rightarrow$ **uniform circular motion**.\n\nRadius: $r = \\dfrac{mv}{qB}$ (centripetal force = Lorentz force)\n\nPeriod: $T = \\dfrac{2\\pi r}{v} = \\dfrac{2\\pi m}{qB}$ (independent of speed!)"
+    },
+    {
+      "id": "t36-p06",
+      "source": "original",
+      "question": "An electron moves at $v = 5\\times10^6\\ \\mathrm{m/s}$ at $45°$ to a magnetic field $B = 0.2\\ \\mathrm{T}$. Describe its path.",
+      "answer": "Decompose $\\vec{v}$ into components parallel ($v_\\|$) and perpendicular ($v_\\perp$) to $\\vec{B}$:\n\n$v_\\| = v\\cos 45° = \\dfrac{5\\times10^6}{\\sqrt{2}} \\approx 3.54\\times10^6\\ \\mathrm{m/s}$\n\n$v_\\perp = v\\sin 45° = 3.54\\times10^6\\ \\mathrm{m/s}$\n\n- Parallel component: unaffected by $\\vec{B}$ (no force)\n- Perpendicular component: undergoes circular motion with $r = m_e v_\\perp/(eB)$\n\n$r = \\dfrac{9.11\\times10^{-31} \\times 3.54\\times10^6}{1.6\\times10^{-19} \\times 0.2} = \\dfrac{3.225\\times10^{-24}}{3.2\\times10^{-20}} \\approx 1.008\\times10^{-4}\\ \\mathrm{m} \\approx 0.1\\ \\mathrm{mm}$\n\nCombined motion = **helical path** along $\\vec{B}$ with radius $\\approx 0.1\\ \\mathrm{mm}$."
+    },
+    {
+      "id": "t36-p07",
+      "source": "original",
+      "question": "A wire carries current $I = 10\\ \\mathrm{A}$ in the $+x$ direction in a field $\\vec{B} = 0.3\\hat{z}\\ \\mathrm{T}$. The wire has length $L = 0.5\\ \\mathrm{m}$. Find the force on the wire.",
+      "answer": "$\\vec{F} = I\\vec{L}\\times\\vec{B} = I(L\\hat{x})\\times(B\\hat{z})$\n\n$= ILB(\\hat{x}\\times\\hat{z}) = ILB(-\\hat{y})$\n\n$|F| = ILB = 10 \\times 0.5 \\times 0.3 = 1.5\\ \\mathrm{N}$, in the $-y$ direction.\n\nUsing the right-hand rule: fingers point in $+x$ (current), curl toward $+z$ (field), thumb (or palm push) points in $-y$ direction ✓"
+    },
+    {
+      "id": "t36-p08",
+      "source": "2019-UG adapted",
+      "question": "A particle of charge $q = 3\\ \\mu\\mathrm{C}$ moves at $\\vec{v} = 2\\times10^4\\hat{x}\\ \\mathrm{m/s}$ in combined fields $\\vec{E} = 1000\\hat{y}\\ \\mathrm{V/m}$ and $\\vec{B} = B\\hat{z}$. What value of $B$ makes the net force zero?",
+      "answer": "For the particle to travel undeflected (velocity selector):\n\nElectric force (in $+y$): $F_E = qE = 3\\times10^{-6} \\times 1000 = 3\\times10^{-3}\\ \\mathrm{N}$\n\nMagnetic force must be in $-y$ to cancel: $F_B = qvB$ in $-y$ direction.\n\n$F_B = qvB = 3\\times10^{-6} \\times 2\\times10^4 \\times B = 0.06B$\n\nSetting $F_E = F_B$:\n\n$3\\times10^{-3} = 0.06B$\n\n$B = 0.05\\ \\mathrm{T}$\n\nThis is a **velocity selector**: only particles with $v = E/B = 1000/0.05 = 2\\times10^4\\ \\mathrm{m/s}$ pass through undeflected."
+    },
+    {
+      "id": "t36-p09",
+      "source": "original",
+      "question": "Two parallel wires, each carrying current $I = 10\\ \\mathrm{A}$ in the same direction, are $r = 0.1\\ \\mathrm{m}$ apart. Find the force per unit length between them and state whether it is attractive or repulsive. ($\\mu_0 = 4\\pi\\times10^{-7}\\ \\mathrm{T\\cdot m/A}$)",
+      "answer": "Magnetic field from wire 1 at the location of wire 2:\n\n$B_1 = \\dfrac{\\mu_0 I}{2\\pi r} = \\dfrac{4\\pi\\times10^{-7} \\times 10}{2\\pi \\times 0.1} = \\dfrac{4\\times10^{-6}}{0.2} = 2\\times10^{-5}\\ \\mathrm{T}$\n\nForce per unit length on wire 2:\n\n$\\dfrac{F}{L} = I \\cdot B_1 = 10 \\times 2\\times10^{-5} = 2\\times10^{-4}\\ \\mathrm{N/m}$\n\nParallel currents in the same direction $\\Rightarrow$ **attractive** force."
+    },
+    {
+      "id": "t36-p10",
+      "source": "2015-CoT adapted",
+      "question": "A rectangular loop of width $a = 0.1\\ \\mathrm{m}$ and height $b = 0.2\\ \\mathrm{m}$ carries current $I = 5\\ \\mathrm{A}$ in a uniform field $B = 0.3\\ \\mathrm{T}$. The field is parallel to the plane of the loop. Find: (a) the forces on each side, (b) the net torque.",
+      "answer": "Label sides: top and bottom (width $a$, parallel to $B$): no force ($\\vec{L}\\parallel\\vec{B}$)\n\nLeft and right sides (height $b$, perpendicular to $B$):\n\n**(a)** $F_{\\text{sides}} = BIb = 0.3 \\times 5 \\times 0.2 = 0.3\\ \\mathrm{N}$ (each, opposite directions)\n\n**(b)** Torque: the two forces form a couple separated by $a$:\n\n$\\tau = F \\times a = 0.3 \\times 0.1 = 0.03\\ \\mathrm{N\\cdot m}$\n\nOr using $\\tau = NIAB\\sin\\theta$ with $\\theta = 90°$ (field in plane of loop):\n\n$\\tau = 1 \\times 5 \\times (0.1 \\times 0.2) \\times 0.3 \\times 1 = 0.03\\ \\mathrm{N\\cdot m}$ ✓"
+    }
+  ]
+}

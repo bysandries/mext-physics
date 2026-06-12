@@ -1,0 +1,65 @@
+{
+  "topicId": "t20",
+  "questions": [
+    {
+      "id": "t20-p01",
+      "source": "original",
+      "question": "A gas absorbs $Q = 500\\ \\mathrm{J}$ of heat and has $200\\ \\mathrm{J}$ of work done **on** it. Using the First Law $\\Delta U = Q + W_{\\text{on}}$, find $\\Delta U$.",
+      "answer": "Using the convention where $W_{\\text{on}}$ is work done **on** the gas:\n\n$\\Delta U = Q + W_{\\text{on}} = 500 + 200 = 700\\ \\mathrm{J}$\n\n**Alternative convention check:** Work done **by** gas $= -200\\ \\mathrm{J}$ (negative since work is done on it).\n\n$\\Delta U = Q - W_{\\text{by}} = 500 - (-200) = 700\\ \\mathrm{J}$ ✓\n\nBoth conventions give the same answer when applied consistently."
+    },
+    {
+      "id": "t20-p02",
+      "source": "original",
+      "question": "Clearly state both common sign conventions for the First Law of Thermodynamics. Apply each to a gas that releases $Q = 300\\ \\mathrm{J}$ of heat while doing $W = 100\\ \\mathrm{J}$ of work on its surroundings.",
+      "answer": "**Convention 1 (physics/chemistry):** $\\Delta U = Q - W$ where $Q > 0$ = heat absorbed by gas, $W > 0$ = work done by gas.\n\nHere: $Q = -300\\ \\mathrm{J}$ (released), $W = +100\\ \\mathrm{J}$ (done by gas)\n\n$\\Delta U = -300 - 100 = -400\\ \\mathrm{J}$\n\n**Convention 2 (engineering):** $\\Delta U = Q + W$ where $Q > 0$ = heat absorbed, $W > 0$ = work done **on** gas.\n\nHere: $Q = -300\\ \\mathrm{J}$, $W = -100\\ \\mathrm{J}$ (work done on gas is negative since gas does work on surroundings)\n\n$\\Delta U = -300 + (-100) = -400\\ \\mathrm{J}$ ✓\n\nBoth give $\\Delta U = -400\\ \\mathrm{J}$. The internal energy decreases."
+    },
+    {
+      "id": "t20-p03",
+      "source": "2018-UG adapted",
+      "question": "In a cyclic process, a gas returns to its initial state. What is $\\Delta U$ for the complete cycle? If the gas absorbs a net heat of $Q_{\\text{net}} = 800\\ \\mathrm{J}$, what is the net work done by the gas?",
+      "answer": "For a complete cycle, the gas returns to the same state, so all state variables ($P$, $V$, $T$, $U$) return to their initial values:\n\n$$\\Delta U_{\\text{cycle}} = 0$$\n\nFirst Law for the cycle:\n\n$0 = Q_{\\text{net}} - W_{\\text{net}}$\n\n$W_{\\text{net}} = Q_{\\text{net}} = 800\\ \\mathrm{J}$\n\nFor a cyclic process on a $P$-$V$ diagram, $W_{\\text{net}}$ equals the **area enclosed** by the cycle (positive if traversed clockwise)."
+    },
+    {
+      "id": "t20-p04",
+      "source": "original",
+      "question": "A gas undergoes three processes: (1) absorbs $Q_1 = 1000\\ \\mathrm{J}$ and does $W_1 = 400\\ \\mathrm{J}$ of work; (2) absorbs $Q_2 = -600\\ \\mathrm{J}$ (releases heat) while $200\\ \\mathrm{J}$ of work is done **on** it; (3) is heated at constant volume absorbing $Q_3 = 200\\ \\mathrm{J}$. Find the total $\\Delta U$ over all three processes.",
+      "answer": "Use $\\Delta U = Q - W_{\\text{by}}$ for each step:\n\n**Step 1:** $\\Delta U_1 = 1000 - 400 = 600\\ \\mathrm{J}$\n\n**Step 2:** Work done by gas $= -200\\ \\mathrm{J}$ (work done on gas is $+200$)\n\n$\\Delta U_2 = -600 - (-200) = -400\\ \\mathrm{J}$\n\n**Step 3:** Isochoric, $W_3 = 0$:\n\n$\\Delta U_3 = 200 - 0 = 200\\ \\mathrm{J}$\n\n**Total:** $\\Delta U = 600 - 400 + 200 = 400\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t20-p05",
+      "source": "original",
+      "question": "Show that the internal energy $U$ is a state function (its value depends only on the current state, not on the path taken to reach it) using the First Law.",
+      "answer": "Suppose a gas goes from state A to state B via two different paths:\n\n**Path 1:** absorbs $Q_1$, does work $W_1$ $\\Rightarrow \\Delta U_1 = Q_1 - W_1$\n\n**Path 2:** absorbs $Q_2$, does work $W_2$ $\\Rightarrow \\Delta U_2 = Q_2 - W_2$\n\nThe First Law postulates that $\\Delta U$ depends only on the endpoints A and B (it is path-independent). This is verified experimentally: no matter how you get from A to B, the change in $U$ is always the same value $U_B - U_A$.\n\nAlthough $Q$ and $W$ individually depend on path, their combination $Q - W = \\Delta U$ does not. This makes $U$ a state function, unlike $Q$ or $W$ which are process quantities."
+    },
+    {
+      "id": "t20-p06",
+      "source": "2016-UG adapted",
+      "question": "A gas is heated at constant pressure ($Q = 2000\\ \\mathrm{J}$, $W = 500\\ \\mathrm{J}$). Then it is cooled at constant volume ($Q' = -800\\ \\mathrm{J}$). Find: (a) $\\Delta U$ for each step, (b) the total $\\Delta U$.",
+      "answer": "**(a) Isobaric step:**\n\n$\\Delta U_1 = Q - W = 2000 - 500 = 1500\\ \\mathrm{J}$\n\n**Isochoric step:**\n\n$W' = 0$, so $\\Delta U_2 = Q' - W' = -800 - 0 = -800\\ \\mathrm{J}$\n\n**(b)** Total:\n\n$\\Delta U_{\\text{total}} = 1500 + (-800) = 700\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t20-p07",
+      "source": "original",
+      "question": "A $P$-$V$ diagram shows a clockwise rectangular cycle with corners at: A$(P_L, V_L)$, B$(P_H, V_L)$, C$(P_H, V_H)$, D$(P_L, V_H)$. Find the net work done by the gas and relate it to the area of the rectangle.",
+      "answer": "Going around the cycle A→B→C→D→A:\n\n- **A→B** (isochoric, $V = V_L$): $W_{AB} = 0$\n- **B→C** (isobaric at $P_H$): $W_{BC} = P_H(V_H - V_L) > 0$\n- **C→D** (isochoric, $V = V_H$): $W_{CD} = 0$\n- **D→A** (isobaric at $P_L$): $W_{DA} = P_L(V_L - V_H) < 0$\n\n**Net work:**\n\n$W_{\\text{net}} = P_H(V_H - V_L) + P_L(V_L - V_H) = (P_H - P_L)(V_H - V_L)$\n\nThis equals the **area of the rectangle** in the $P$-$V$ diagram.\n\nSince the cycle is traversed **clockwise**, $W_{\\text{net}} > 0$ (net work done by gas, heat engine behavior)."
+    },
+    {
+      "id": "t20-p08",
+      "source": "2019-CoT adapted",
+      "question": "The First Law for a gas is sometimes written as $dU = \\delta Q - \\delta W$. Explain the difference between exact differentials ($dU$) and inexact differentials ($\\delta Q$, $\\delta W$).",
+      "answer": "$dU$ is an **exact differential** because $U$ is a state function — integrating $dU$ around a closed path gives exactly zero, and $\\int_A^B dU = U_B - U_A$ regardless of path.\n\n$\\delta Q$ and $\\delta W$ are **inexact differentials** (sometimes written $\\bar{d}Q$, $\\bar{d}W$). They are not differentials of state functions — heat $Q$ and work $W$ are not properties of a state, but of a **process**. Their integrals depend on which path is taken:\n\n- $\\oint \\delta Q \\neq 0$ in general\n- $\\oint \\delta W \\neq 0$ in general\n- But $\\oint (\\delta Q - \\delta W) = \\oint dU = 0$ ✓\n\nPhysically: a gas doesn't \"contain\" a certain amount of heat or work, only a certain internal energy."
+    },
+    {
+      "id": "t20-p09",
+      "source": "original",
+      "question": "A monatomic ideal gas ($n = 1\\ \\mathrm{mol}$) is taken along path A→B ($Q = 500\\ \\mathrm{J}$, $W = 200\\ \\mathrm{J}$). It is then taken back from B→A along a different path with $W' = -100\\ \\mathrm{J}$ (work done on gas). Find $Q'$ for the return path.",
+      "answer": "**Path A→B:**\n\n$\\Delta U_{A \\to B} = Q - W = 500 - 200 = 300\\ \\mathrm{J}$\n\n**Path B→A:**\n\n$\\Delta U_{B \\to A} = -\\Delta U_{A \\to B} = -300\\ \\mathrm{J}$ (returning to A)\n\nWork done **by** gas on B→A: $W' = -100\\ \\mathrm{J}$ (negative since work is done **on** gas)\n\n$Q' = \\Delta U_{B \\to A} + W' = -300 + (-100) = -400\\ \\mathrm{J}$\n\nThe gas releases $400\\ \\mathrm{J}$ on the return path."
+    },
+    {
+      "id": "t20-p10",
+      "source": "2015-UG adapted",
+      "question": "In one cycle of a heat engine: the gas absorbs $Q_H = 1200\\ \\mathrm{J}$ from the hot reservoir and rejects $Q_C = 800\\ \\mathrm{J}$ to the cold reservoir. Find: (a) the net work done, (b) the thermal efficiency.",
+      "answer": "**(a)** Net heat absorbed: $Q_{\\text{net}} = Q_H - Q_C = 1200 - 800 = 400\\ \\mathrm{J}$\n\nFor a complete cycle, $\\Delta U = 0$, so:\n\n$W_{\\text{net}} = Q_{\\text{net}} = 400\\ \\mathrm{J}$\n\n**(b)** Efficiency:\n\n$\\eta = \\dfrac{W_{\\text{net}}}{Q_H} = \\dfrac{400}{1200} = \\dfrac{1}{3} \\approx 33.3\\%$\n\n**Check:** $\\eta = 1 - Q_C/Q_H = 1 - 800/1200 = 1/3$ ✓"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "topicId": "t35",
+  "questions": [
+    {
+      "id": "t35-p01",
+      "source": "original",
+      "question": "Explain the Hall effect. A current-carrying conductor is placed in a magnetic field perpendicular to the current. Describe qualitatively what happens and what the Hall voltage measures.",
+      "answer": "When a current $I$ flows through a conductor in a transverse magnetic field $B$:\n\n1. The magnetic (Lorentz) force deflects the charge carriers sideways: $F = qv_d B$ (where $v_d$ is drift velocity)\n2. Charges accumulate on one side of the conductor, creating a transverse electric field $E_H$\n3. Equilibrium: $qE_H = qv_d B \\Rightarrow E_H = v_d B$\n4. The **Hall voltage** $V_H = E_H \\cdot w = v_d B w$ (where $w$ is the conductor width)\n\nThe Hall voltage measures:\n- The **sign** of charge carriers (electrons vs. holes flip the sign of $V_H$)\n- The **carrier density** $n$ via $V_H = \\dfrac{IB}{nqt}$ (where $t$ is conductor thickness)"
+    },
+    {
+      "id": "t35-p02",
+      "source": "original",
+      "question": "A Hall probe (conductor width $w = 2\\ \\mathrm{mm}$, thickness $t = 0.5\\ \\mathrm{mm}$) carries current $I = 100\\ \\mathrm{mA}$ in a magnetic field $B = 0.5\\ \\mathrm{T}$ perpendicular to the current. The charge carriers are electrons ($n = 8\\times10^{28}\\ \\mathrm{m^{-3}}$, $e = 1.6\\times10^{-19}\\ \\mathrm{C}$). Find: (a) the drift velocity, (b) the Hall voltage.",
+      "answer": "**(a)** $I = nqv_d A$ where $A = wt$:\n\n$v_d = \\dfrac{I}{nqwt} = \\dfrac{0.1}{8\\times10^{28} \\times 1.6\\times10^{-19} \\times 2\\times10^{-3} \\times 0.5\\times10^{-3}}$\n\n$= \\dfrac{0.1}{8\\times10^{28} \\times 1.6\\times10^{-25}} = \\dfrac{0.1}{1.28\\times10^4} \\approx 7.81\\times10^{-6}\\ \\mathrm{m/s}$\n\n**(b)** $V_H = v_d B w = 7.81\\times10^{-6} \\times 0.5 \\times 2\\times10^{-3} = 7.81\\times10^{-9}\\ \\mathrm{V}$\n\nOr using $V_H = IB/(nqt)$:\n\n$V_H = \\dfrac{0.1 \\times 0.5}{8\\times10^{28} \\times 1.6\\times10^{-19} \\times 0.5\\times10^{-3}} = \\dfrac{0.05}{6.4\\times10^6} \\approx 7.81\\times10^{-9}\\ \\mathrm{V}$"
+    },
+    {
+      "id": "t35-p03",
+      "source": "2016-UG adapted",
+      "question": "Derive the Hall voltage formula $V_H = \\dfrac{IB}{nqt}$, where $I$ is the current, $B$ is the magnetic field, $n$ is the carrier density, $q$ is the carrier charge, and $t$ is the conductor thickness.",
+      "answer": "At equilibrium, electric force balances magnetic force on each carrier:\n\n$qE_H = qv_d B \\Rightarrow E_H = v_d B$\n\nHall voltage: $V_H = E_H \\cdot w = v_d B w$ (across width $w$)\n\nCurrent: $I = nqv_d A = nqv_d(wt)$, so $v_d = \\dfrac{I}{nqwt}$\n\nSubstitute:\n\n$V_H = \\dfrac{I}{nqwt} \\cdot B \\cdot w$\n\n$$V_H = \\dfrac{IB}{nqt}$$ ✓\n\nNote: width $w$ cancels — the Hall voltage is independent of the conductor width."
+    },
+    {
+      "id": "t35-p04",
+      "source": "original",
+      "question": "A Hall probe measures $V_H = 2\\ \\mathrm{mV}$ when carrying $I = 50\\ \\mathrm{mA}$ through a magnetic field $B = 0.8\\ \\mathrm{T}$. The probe thickness is $t = 1\\ \\mathrm{mm}$. Find the carrier density $n$.",
+      "answer": "$V_H = \\dfrac{IB}{nqt} \\Rightarrow n = \\dfrac{IB}{qV_H t}$\n\n$n = \\dfrac{0.05 \\times 0.8}{1.6\\times10^{-19} \\times 2\\times10^{-3} \\times 1\\times10^{-3}}$\n\n$= \\dfrac{0.04}{3.2\\times10^{-25}} = 1.25\\times10^{23}\\ \\mathrm{m^{-3}}$"
+    },
+    {
+      "id": "t35-p05",
+      "source": "original",
+      "question": "In the Hall effect, a conductor of width $w = 5\\ \\mathrm{mm}$ carries current in the $+x$ direction. The magnetic field is in the $+z$ direction. In which direction does the Hall electric field point for: (a) positive charge carriers, (b) negative charge carriers (electrons)?",
+      "answer": "Drift velocity in $+x$ direction.\n\n**(a) Positive carriers:** $\\vec{F} = q\\vec{v}_d \\times \\vec{B} = q(\\hat{x}) \\times (\\hat{z}) = q(-\\hat{y})$\n\nPositive carriers are pushed in $-y$ direction. They accumulate on the $-y$ side, creating $E_H$ in $+y$ direction (from $+$ to $-$... wait: high potential is on $-y$ side where positive charges accumulate).\n\n$E_H$ points from $-y$ accumulation to $+y$ side? No: positive charges on $-y$ side $\\Rightarrow$ higher potential on $-y$ side $\\Rightarrow$ $E_H$ points in $+y$ direction (from high to low potential? — $E$ points from $+$ to $-$... $E$ points from $-y$ to $+y$, i.e., $+\\hat{y}$). Hall voltage: bottom ($-y$) is positive.\n\n**(b) Electrons:** Drift is still in $+x$ (conventional current $+x$), but $q < 0$:\n\n$\\vec{F} = (-e)(\\hat{x}) \\times (\\hat{z}) = (-e)(-\\hat{y}) = e\\hat{y}$\n\nElectrons pushed in $+y$ direction. Negative charges accumulate on $+y$ side $\\Rightarrow$ $E_H$ points in $+y$ direction (away from $-y$ toward $+y$... actually $E$ points from where positive is to where negative is, i.e., from $-y$ side (now deficient in electrons, so positive) toward $+y$ side (excess electrons, negative)): $E_H$ in $-y$ direction.\n\nConclusion: **Hall voltage sign reverses** between positive and negative carriers — this is how the Hall effect identifies carrier type."
+    },
+    {
+      "id": "t35-p06",
+      "source": "original",
+      "question": "A semiconductor Hall bar carries $I = 10\\ \\mathrm{mA}$ in a field $B = 0.3\\ \\mathrm{T}$. The measured Hall voltage is $V_H = 15\\ \\mathrm{mV}$, with the positive terminal on the right side (when current is in $+x$ and $B$ is in $+z$). The thickness is $t = 0.5\\ \\mathrm{mm}$. Find $n$ and identify the carrier type.",
+      "answer": "$n = \\dfrac{IB}{qV_H t} = \\dfrac{10\\times10^{-3} \\times 0.3}{1.6\\times10^{-19} \\times 15\\times10^{-3} \\times 0.5\\times10^{-3}}$\n\n$= \\dfrac{3\\times10^{-3}}{1.2\\times10^{-24}} = 2.5\\times10^{21}\\ \\mathrm{m^{-3}}$\n\nFor $+x$ current and $+z$ field, positive carriers would accumulate on the right (in $-y$ direction). The positive Hall terminal on the right suggests **positive holes** are the majority carriers — this is a **p-type semiconductor**."
+    },
+    {
+      "id": "t35-p07",
+      "source": "2018-CoT adapted",
+      "question": "A metal strip (electron conductor) of thickness $t = 0.1\\ \\mathrm{mm}$ and width $w = 10\\ \\mathrm{mm}$ carries $I = 5\\ \\mathrm{A}$ in a magnetic field $B = 2\\ \\mathrm{T}$. Carrier density $n = 5\\times10^{28}\\ \\mathrm{m^{-3}}$. Find $V_H$.",
+      "answer": "$V_H = \\dfrac{IB}{nqt} = \\dfrac{5 \\times 2}{5\\times10^{28} \\times 1.6\\times10^{-19} \\times 0.1\\times10^{-3}}$\n\n$= \\dfrac{10}{5\\times10^{28} \\times 1.6\\times10^{-23}} = \\dfrac{10}{8\\times10^5} = 1.25\\times10^{-5}\\ \\mathrm{V} = 12.5\\ \\mu\\mathrm{V}$\n\nHall voltages in metals are very small due to the high carrier density."
+    },
+    {
+      "id": "t35-p08",
+      "source": "original",
+      "question": "Explain why Hall voltages are much larger in semiconductors than in metals, even for the same current and field.",
+      "answer": "$V_H = \\dfrac{IB}{nqt}$\n\nThe Hall voltage is **inversely proportional to carrier density $n$**.\n\n- Metals: $n \\sim 10^{28}$–$10^{29}\\ \\mathrm{m^{-3}}$ (very high — one free electron per atom)\n- Semiconductors: $n \\sim 10^{16}$–$10^{22}\\ \\mathrm{m^{-3}}$ (much lower — only thermally excited or doped carriers)\n\nFor the same $I$, $B$, $t$: a semiconductor with $n = 10^{20}\\ \\mathrm{m^{-3}}$ gives a Hall voltage roughly $10^8$–$10^9$ times larger than a metal with $n = 10^{28}\\ \\mathrm{m^{-3}}$.\n\nThis is why Hall sensors are made of semiconducting materials (Si, GaAs, InSb) — the signals are large enough to measure practically."
+    },
+    {
+      "id": "t35-p09",
+      "source": "2019-UG adapted",
+      "question": "A Hall sensor is used to measure an unknown magnetic field $B$. The sensor has $n = 2\\times10^{22}\\ \\mathrm{m^{-3}}$, $t = 0.2\\ \\mathrm{mm}$, carries $I = 20\\ \\mathrm{mA}$, and reads $V_H = 1.0\\ \\mathrm{V}$. Find $B$.",
+      "answer": "$V_H = \\dfrac{IB}{nqt} \\Rightarrow B = \\dfrac{V_H nqt}{I}$\n\n$B = \\dfrac{1.0 \\times 2\\times10^{22} \\times 1.6\\times10^{-19} \\times 0.2\\times10^{-3}}{0.02}$\n\n$= \\dfrac{1.0 \\times 2\\times10^{22} \\times 3.2\\times10^{-23}}{0.02}$\n\n$= \\dfrac{1.0 \\times 0.64}{0.02} = \\dfrac{0.64}{0.02} = 32\\ \\mathrm{T}$\n\n(Very strong field — this would be in a research magnet.)"
+    },
+    {
+      "id": "t35-p10",
+      "source": "original",
+      "question": "Show that the Hall coefficient $R_H = 1/(nq)$ is a material constant, and find its value for copper ($n = 8.5\\times10^{28}\\ \\mathrm{m^{-3}}$, $q = -e = -1.6\\times10^{-19}\\ \\mathrm{C}$).",
+      "answer": "From $V_H = \\dfrac{IB}{nqt}$, define the Hall coefficient $R_H$ such that:\n\n$V_H = R_H \\dfrac{IB}{t}$\n\nComparing: $R_H = \\dfrac{1}{nq}$\n\nThis depends only on the carrier density and charge — a material constant.\n\nFor copper (electrons, $q = -e$):\n\n$R_H = \\dfrac{1}{nq} = \\dfrac{1}{8.5\\times10^{28} \\times (-1.6\\times10^{-19})} = \\dfrac{1}{-1.36\\times10^{10}}$\n\n$R_H = -7.35\\times10^{-11}\\ \\mathrm{m^3/C}$\n\nNegative sign confirms electrons are the carriers. Measuring $R_H$ experimentally gives $n$ and the sign of carriers."
+    }
+  ]
+}

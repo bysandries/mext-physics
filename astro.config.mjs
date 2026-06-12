@@ -5,7 +5,7 @@ import rehypeKatex from 'rehype-katex';
 
 export default defineConfig({
   site: 'https://bysandries.github.io',
-  base: '/mext-physics',
+  base: '/mext-physics/',
   integrations: [preact()],
   markdown: {
     remarkPlugins: [remarkMath],

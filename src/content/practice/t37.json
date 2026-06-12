@@ -1,0 +1,65 @@
+{
+  "topicId": "t37",
+  "questions": [
+    {
+      "id": "t37-p01",
+      "source": "original",
+      "question": "A proton ($m = 1.67\\times10^{-27}\\ \\mathrm{kg}$, $q = 1.6\\times10^{-19}\\ \\mathrm{C}$) moves at $v = 2\\times10^6\\ \\mathrm{m/s}$ perpendicular to a magnetic field $B = 0.4\\ \\mathrm{T}$. Find: (a) the radius of the circular orbit, (b) the period of revolution.",
+      "answer": "**(a)** Centripetal force = Lorentz force:\n\n$r = \\dfrac{mv}{qB} = \\dfrac{1.67\\times10^{-27} \\times 2\\times10^6}{1.6\\times10^{-19} \\times 0.4}$\n\n$= \\dfrac{3.34\\times10^{-21}}{6.4\\times10^{-20}} = 0.052\\ \\mathrm{m} \\approx 5.2\\ \\mathrm{cm}$\n\n**(b)** $T = \\dfrac{2\\pi m}{qB} = \\dfrac{2\\pi \\times 1.67\\times10^{-27}}{1.6\\times10^{-19} \\times 0.4}$\n\n$= \\dfrac{1.049\\times10^{-26}}{6.4\\times10^{-20}} = 1.64\\times10^{-7}\\ \\mathrm{s}$"
+    },
+    {
+      "id": "t37-p02",
+      "source": "original",
+      "question": "Derive the radius $r = mv/(qB)$ for a charged particle moving in a circle in a uniform magnetic field. Then show the period $T = 2\\pi m/(qB)$ is independent of speed.",
+      "answer": "The magnetic force provides the centripetal acceleration:\n\n$qvB = \\dfrac{mv^2}{r}$\n\n$r = \\dfrac{mv}{qB}$ ✓\n\n**Period:** circumference = $2\\pi r$, speed = $v$:\n\n$T = \\dfrac{2\\pi r}{v} = \\dfrac{2\\pi}{v} \\cdot \\dfrac{mv}{qB} = \\dfrac{2\\pi m}{qB}$ ✓\n\nThe period depends only on $m$, $q$, $B$ — **not on velocity** $v$. This is the **isochronous** property of cyclotron motion, exploited in cyclotron accelerators."
+    },
+    {
+      "id": "t37-p03",
+      "source": "2018-UG adapted",
+      "question": "An alpha particle ($m = 6.64\\times10^{-27}\\ \\mathrm{kg}$, $q = 3.2\\times10^{-19}\\ \\mathrm{C}$) moves in a circle of radius $r = 10\\ \\mathrm{cm}$ in a field $B = 0.5\\ \\mathrm{T}$. Find: (a) the speed, (b) the kinetic energy in eV.",
+      "answer": "**(a)** $v = \\dfrac{qBr}{m} = \\dfrac{3.2\\times10^{-19} \\times 0.5 \\times 0.1}{6.64\\times10^{-27}}$\n\n$= \\dfrac{1.6\\times10^{-20}}{6.64\\times10^{-27}} = 2.41\\times10^6\\ \\mathrm{m/s}$\n\n**(b)** $KE = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2} \\times 6.64\\times10^{-27} \\times (2.41\\times10^6)^2$\n\n$= \\tfrac{1}{2} \\times 6.64\\times10^{-27} \\times 5.81\\times10^{12} = 1.929\\times10^{-14}\\ \\mathrm{J}$\n\nIn eV: $KE = \\dfrac{1.929\\times10^{-14}}{1.6\\times10^{-19}} \\approx 1.21\\times10^5\\ \\mathrm{eV} = 121\\ \\mathrm{keV}$"
+    },
+    {
+      "id": "t37-p04",
+      "source": "original",
+      "question": "Compare the radii of a proton and an electron moving at the same speed $v$ in the same magnetic field $B$. ($m_p = 1.67\\times10^{-27}\\ \\mathrm{kg}$, $m_e = 9.11\\times10^{-31}\\ \\mathrm{kg}$)",
+      "answer": "Both have the same $|q| = e$, so $r = mv/(eB) \\propto m$:\n\n$\\dfrac{r_p}{r_e} = \\dfrac{m_p}{m_e} = \\dfrac{1.67\\times10^{-27}}{9.11\\times10^{-31}} \\approx 1836$\n\nA proton orbits in a circle about **1836 times larger** than an electron at the same speed.\n\nThe electron's orbit is much tighter — this is why in a cloud chamber, heavy particles leave straighter tracks than electrons."
+    },
+    {
+      "id": "t37-p05",
+      "source": "original",
+      "question": "A mass spectrometer uses a magnetic field $B = 0.3\\ \\mathrm{T}$ to deflect ions. A singly ionized atom ($q = e$) is accelerated from rest through $V = 1500\\ \\mathrm{V}$ before entering the field. Find the radius of the circular path.",
+      "answer": "Ion kinetic energy from acceleration:\n\n$KE = qV = eV$\n\n$\\tfrac{1}{2}mv^2 = eV \\Rightarrow v = \\sqrt{\\dfrac{2eV}{m}}$\n\nRadius: $r = \\dfrac{mv}{eB} = \\dfrac{m}{eB}\\sqrt{\\dfrac{2eV}{m}} = \\dfrac{1}{B}\\sqrt{\\dfrac{2mV}{e}}$\n\nFor carbon-12 ($m = 12 \\times 1.67\\times10^{-27} = 2.004\\times10^{-26}\\ \\mathrm{kg}$):\n\n$r = \\dfrac{1}{0.3}\\sqrt{\\dfrac{2 \\times 2.004\\times10^{-26} \\times 1500}{1.6\\times10^{-19}}}$\n\n$= \\dfrac{1}{0.3}\\sqrt{\\dfrac{6.012\\times10^{-23}}{1.6\\times10^{-19}}} = \\dfrac{1}{0.3}\\sqrt{3.757\\times10^{-4}} = \\dfrac{0.01938}{0.3} \\approx 0.065\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t37-p06",
+      "source": "2016-CoT adapted",
+      "question": "A cyclotron accelerates protons with $B = 1.5\\ \\mathrm{T}$. Find: (a) the cyclotron frequency (frequency at which the accelerating voltage must alternate), (b) the speed and radius when the proton exits with kinetic energy $KE = 10\\ \\mathrm{MeV}$.",
+      "answer": "**(a)** Cyclotron frequency:\n\n$f = \\dfrac{1}{T} = \\dfrac{qB}{2\\pi m} = \\dfrac{1.6\\times10^{-19} \\times 1.5}{2\\pi \\times 1.67\\times10^{-27}} = \\dfrac{2.4\\times10^{-19}}{1.049\\times10^{-26}} = 2.288\\times10^7\\ \\mathrm{Hz} \\approx 22.9\\ \\mathrm{MHz}$\n\n**(b)** $KE = 10\\ \\mathrm{MeV} = 10 \\times 1.6\\times10^{-13} = 1.6\\times10^{-12}\\ \\mathrm{J}$\n\n$v = \\sqrt{\\dfrac{2KE}{m}} = \\sqrt{\\dfrac{2 \\times 1.6\\times10^{-12}}{1.67\\times10^{-27}}} = \\sqrt{1.916\\times10^{15}} \\approx 4.38\\times10^7\\ \\mathrm{m/s}$\n\n$r = \\dfrac{mv}{qB} = \\dfrac{1.67\\times10^{-27} \\times 4.38\\times10^7}{1.6\\times10^{-19} \\times 1.5} = \\dfrac{7.315\\times10^{-20}}{2.4\\times10^{-19}} \\approx 0.305\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t37-p07",
+      "source": "original",
+      "question": "An electron ($m = 9.11\\times10^{-31}\\ \\mathrm{kg}$, $e = 1.6\\times10^{-19}\\ \\mathrm{C}$) travels in a circle of radius $r = 5\\ \\mathrm{cm}$ in a field $B = 2\\times10^{-3}\\ \\mathrm{T}$. Find: (a) the speed, (b) the frequency of revolution.",
+      "answer": "**(a)** $v = \\dfrac{qBr}{m} = \\dfrac{1.6\\times10^{-19} \\times 2\\times10^{-3} \\times 0.05}{9.11\\times10^{-31}}$\n\n$= \\dfrac{1.6\\times10^{-23}}{9.11\\times10^{-31}} = 1.756\\times10^7\\ \\mathrm{m/s}$\n\n**(b)** $f = \\dfrac{qB}{2\\pi m} = \\dfrac{1.6\\times10^{-19} \\times 2\\times10^{-3}}{2\\pi \\times 9.11\\times10^{-31}}$\n\n$= \\dfrac{3.2\\times10^{-22}}{5.727\\times10^{-30}} = 5.59\\times10^7\\ \\mathrm{Hz} \\approx 55.9\\ \\mathrm{MHz}$"
+    },
+    {
+      "id": "t37-p08",
+      "source": "2015-UG adapted",
+      "question": "Two particles with the same charge $q$ but different masses $m_1 = m$ and $m_2 = 2m$ are accelerated from rest through the same potential $V$ and then enter the same magnetic field $B$ perpendicularly. Find the ratio of their circular radii $r_2/r_1$.",
+      "answer": "After acceleration: $\\frac{1}{2}m_i v_i^2 = qV \\Rightarrow v_i = \\sqrt{2qV/m_i}$\n\nRadius: $r_i = \\dfrac{m_i v_i}{qB} = \\dfrac{m_i}{qB}\\sqrt{\\dfrac{2qV}{m_i}} = \\dfrac{1}{qB}\\sqrt{2qVm_i} = \\dfrac{\\sqrt{2qVm_i}}{qB}$\n\n$\\dfrac{r_2}{r_1} = \\sqrt{\\dfrac{m_2}{m_1}} = \\sqrt{\\dfrac{2m}{m}} = \\sqrt{2}$\n\nThe heavier particle has a radius $\\sqrt{2}$ times larger — this is the basis of mass spectrometry."
+    },
+    {
+      "id": "t37-p09",
+      "source": "original",
+      "question": "A charged particle enters a magnetic field at an angle $\\alpha$ to the field direction. Describe its trajectory and find the pitch (distance traveled along the field per revolution).",
+      "answer": "Decompose velocity: $v_\\| = v\\cos\\alpha$ (parallel to $B$, no force), $v_\\perp = v\\sin\\alpha$ (perpendicular to $B$).\n\n**Trajectory:** The perpendicular component gives circular motion with radius $r = mv_\\perp/(qB) = mv\\sin\\alpha/(qB)$. The parallel component gives uniform translation along $B$. Combined: **helical motion**.\n\n**Pitch** (distance along $B$ per revolution):\n\n$p = v_\\| \\times T = v\\cos\\alpha \\times \\dfrac{2\\pi m}{qB} = \\dfrac{2\\pi mv\\cos\\alpha}{qB}$\n\nSpecial cases: $\\alpha = 0$: no circular motion, straight line. $\\alpha = 90°$: circle, zero pitch."
+    },
+    {
+      "id": "t37-p10",
+      "source": "2014-UG adapted",
+      "question": "A particle of charge $q$ and mass $m$ moves in a circle of radius $r$ in field $B$. Show that its kinetic energy can be written as $KE = \\dfrac{q^2B^2r^2}{2m}$.",
+      "answer": "From the radius formula: $r = mv/(qB) \\Rightarrow v = qBr/m$\n\nKinetic energy:\n\n$KE = \\dfrac{1}{2}mv^2 = \\dfrac{1}{2}m\\left(\\dfrac{qBr}{m}\\right)^2 = \\dfrac{1}{2}m \\cdot \\dfrac{q^2B^2r^2}{m^2}$\n\n$$KE = \\dfrac{q^2B^2r^2}{2m}$$ ✓\n\nThis is useful in mass spectrometry: by measuring $r$, you can determine $m$ (knowing $q$ and $B$), or determine $KE$ directly from $r$."
+    }
+  ]
+}

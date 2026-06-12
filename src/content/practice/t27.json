@@ -1,0 +1,65 @@
+{
+  "topicId": "t27",
+  "questions": [
+    {
+      "id": "t27-p01",
+      "source": "original",
+      "question": "Two waves travel in opposite directions on a string: $y_1 = A\\sin(kx - \\omega t)$ and $y_2 = A\\sin(kx + \\omega t)$. Show that their superposition gives a standing wave and identify the nodal positions.",
+      "answer": "Adding using the sum-to-product identity:\n\n$y = y_1 + y_2 = A[\\sin(kx-\\omega t) + \\sin(kx+\\omega t)]$\n\n$= A \\cdot 2\\sin(kx)\\cos(\\omega t)$\n\n$$y = 2A\\sin(kx)\\cos(\\omega t)$$\n\nThis is a **standing wave**: spatial ($\\sin kx$) and temporal ($\\cos \\omega t$) factors are separated.\n\n**Nodes** (zero displacement at all times): $\\sin(kx) = 0 \\Rightarrow kx = n\\pi$\n\n$x = \\dfrac{n\\pi}{k} = \\dfrac{n\\lambda}{2}$, for $n = 0, 1, 2, \\ldots$\n\n**Antinodes** (maximum amplitude $2A$): $|\\sin(kx)| = 1 \\Rightarrow kx = (2n+1)\\pi/2$, $x = (2n+1)\\lambda/4$"
+    },
+    {
+      "id": "t27-p02",
+      "source": "original",
+      "question": "A string of length $L = 1.2\\ \\mathrm{m}$ is fixed at both ends and vibrates in its third harmonic ($n = 3$). Find: (a) the wavelength, (b) the number of nodes, (c) the number of antinodes.",
+      "answer": "For a string fixed at both ends, the standing wave condition is $L = n\\lambda/2$:\n\n**(a)** $\\lambda = 2L/n = 2 \\times 1.2/3 = 0.8\\ \\mathrm{m}$\n\n**(b)** Nodes: $n + 1 = 3 + 1 = 4$ nodes (including the two fixed ends)\n\n**(c)** Antinodes: $n = 3$ antinodes"
+    },
+    {
+      "id": "t27-p03",
+      "source": "2016-UG adapted",
+      "question": "A string of length $L = 0.6\\ \\mathrm{m}$ and linear density $\\mu = 0.01\\ \\mathrm{kg/m}$ is under tension $F_T = 100\\ \\mathrm{N}$. Find: (a) the wave speed on the string, (b) the fundamental frequency.",
+      "answer": "**(a)** $v = \\sqrt{F_T/\\mu} = \\sqrt{100/0.01} = \\sqrt{10000} = 100\\ \\mathrm{m/s}$\n\n**(b)** Fundamental ($n=1$): $\\lambda_1 = 2L = 1.2\\ \\mathrm{m}$\n\n$f_1 = v/\\lambda_1 = 100/1.2 \\approx 83.3\\ \\mathrm{Hz}$"
+    },
+    {
+      "id": "t27-p04",
+      "source": "original",
+      "question": "A string fixed at both ends has a fundamental frequency of $f_1 = 200\\ \\mathrm{Hz}$. Find the frequencies of the 2nd, 3rd, and 4th harmonics.",
+      "answer": "For a string fixed at both ends, all harmonics exist:\n\n$f_n = n f_1$\n\n$f_2 = 2 \\times 200 = 400\\ \\mathrm{Hz}$\n\n$f_3 = 3 \\times 200 = 600\\ \\mathrm{Hz}$\n\n$f_4 = 4 \\times 200 = 800\\ \\mathrm{Hz}$\n\nThese are also called the 1st, 2nd, and 3rd **overtones**."
+    },
+    {
+      "id": "t27-p05",
+      "source": "2018-UG adapted",
+      "question": "Two waves are $y_1 = 3\\sin(2x - 4t)$ and $y_2 = 3\\sin(2x + 4t + \\pi/2)$. Find the resultant $y = y_1 + y_2$.",
+      "answer": "Rewrite $y_2$:\n\n$y_2 = 3\\sin(2x + 4t + \\pi/2) = 3\\cos(2x + 4t)$\n\n$y = 3\\sin(2x-4t) + 3\\cos(2x+4t)$\n\nExpand:\n\n$\\sin(2x-4t) = \\sin 2x \\cos 4t - \\cos 2x \\sin 4t$\n\n$\\cos(2x+4t) = \\cos 2x \\cos 4t - \\sin 2x \\sin 4t$\n\n$y = 3(\\sin 2x \\cos 4t - \\cos 2x \\sin 4t) + 3(\\cos 2x \\cos 4t - \\sin 2x \\sin 4t)$\n\n$= 3\\cos 4t(\\sin 2x + \\cos 2x) - 3\\sin 4t(\\cos 2x + \\sin 2x)$\n\n$= 3(\\sin 2x + \\cos 2x)(\\cos 4t - \\sin 4t)$\n\n$= 3\\sqrt{2}\\sin(2x + \\pi/4) \\cdot \\sqrt{2}\\cos(4t + \\pi/4)$\n\n$y = 3\\sqrt{2}\\sin(2x + \\pi/4)\\cdot\\sqrt{2}\\cos(4t + \\pi/4)$ (standing wave with amplitude $3\\sqrt{2}$)"
+    },
+    {
+      "id": "t27-p06",
+      "source": "original",
+      "question": "A standing wave on a string is $y = 0.06\\sin(5x)\\cos(20t)$ (SI). Find: (a) the wavelength, (b) the frequency, (c) the maximum displacement at $x = 0.1\\ \\mathrm{m}$.",
+      "answer": "**(a)** $k = 5\\ \\mathrm{rad/m}$; $\\lambda = 2\\pi/k = 2\\pi/5 \\approx 1.257\\ \\mathrm{m}$\n\n**(b)** $\\omega = 20\\ \\mathrm{rad/s}$; $f = \\omega/(2\\pi) = 20/(2\\pi) \\approx 3.18\\ \\mathrm{Hz}$\n\n**(c)** Max displacement at $x = 0.1$: amplitude factor $= |0.06\\sin(5 \\times 0.1)| = |0.06\\sin(0.5)| = 0.06 \\times 0.479 \\approx 0.0288\\ \\mathrm{m}$"
+    },
+    {
+      "id": "t27-p07",
+      "source": "2019-UG adapted",
+      "question": "A string of length $L = 0.5\\ \\mathrm{m}$ vibrates in the mode with two antinodes. The wave speed on the string is $v = 80\\ \\mathrm{m/s}$. Find: (a) the harmonic number, (b) the frequency.",
+      "answer": "**(a)** Two antinodes = second harmonic ($n = 2$)\n\n**(b)** $\\lambda_2 = 2L/n = 2 \\times 0.5/2 = 0.5\\ \\mathrm{m}$\n\n$f_2 = v/\\lambda_2 = 80/0.5 = 160\\ \\mathrm{Hz}$"
+    },
+    {
+      "id": "t27-p08",
+      "source": "original",
+      "question": "Explain the difference between a node and an antinode in a standing wave. At what fraction of the period does a point at an antinode reach maximum positive displacement?",
+      "answer": "**Node:** A point that never moves — its displacement is always zero. At a node, the two traveling waves always cancel.\n\n$x_{\\text{node}} = n\\lambda/2$ (for waves like $2A\\sin(kx)\\cos(\\omega t)$)\n\n**Antinode:** A point that oscillates with the maximum amplitude $2A$. At an antinode, the two traveling waves always add constructively.\n\n$x_{\\text{antinode}} = (2n+1)\\lambda/4$\n\n**Timing:** The displacement at an antinode is $y = 2A\\cos(\\omega t)$ (for the standard standing wave form). Maximum positive displacement occurs at $\\cos(\\omega t) = 1$, i.e., $t = 0, T, 2T, \\ldots$ (at the beginning of each period). Maximum negative at $t = T/2$. The antinode passes through zero at $t = T/4$ and $t = 3T/4$."
+    },
+    {
+      "id": "t27-p09",
+      "source": "original",
+      "question": "A piano string has fundamental frequency $f_1 = 440\\ \\mathrm{Hz}$ (note A4). The string is $L = 0.38\\ \\mathrm{m}$ long. Find: (a) the wave speed, (b) the frequency of the 5th harmonic.",
+      "answer": "**(a)** Fundamental: $\\lambda_1 = 2L = 0.76\\ \\mathrm{m}$\n\n$v = f_1 \\lambda_1 = 440 \\times 0.76 = 334.4\\ \\mathrm{m/s}$\n\n**(b)** 5th harmonic:\n\n$f_5 = 5 f_1 = 5 \\times 440 = 2200\\ \\mathrm{Hz}$"
+    },
+    {
+      "id": "t27-p10",
+      "source": "2015-UG adapted",
+      "question": "A standing wave forms on a string of length $L = 2\\ \\mathrm{m}$ fixed at both ends. The wave speed is $v = 50\\ \\mathrm{m/s}$. (a) List the first four possible resonant frequencies. (b) Which harmonic has wavelength $\\lambda = 0.5\\ \\mathrm{m}$?",
+      "answer": "**(a)** Resonant frequencies for string fixed at both ends:\n\n$f_n = \\dfrac{nv}{2L} = \\dfrac{n \\times 50}{2 \\times 2} = 12.5n\\ \\mathrm{Hz}$\n\n$f_1 = 12.5\\ \\mathrm{Hz}$\n$f_2 = 25\\ \\mathrm{Hz}$\n$f_3 = 37.5\\ \\mathrm{Hz}$\n$f_4 = 50\\ \\mathrm{Hz}$\n\n**(b)** $\\lambda = 2L/n = 4/n$; if $\\lambda = 0.5$: $n = 4/0.5 = 8$\n\nThe 8th harmonic has wavelength $0.5\\ \\mathrm{m}$, frequency $f_8 = 8 \\times 12.5 = 100\\ \\mathrm{Hz}$."
+    }
+  ]
+}

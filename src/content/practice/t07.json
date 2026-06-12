@@ -1,0 +1,65 @@
+{
+  "topicId": "t07",
+  "questions": [
+    {
+      "id": "t07-p01",
+      "source": "original",
+      "question": "An Atwood machine has mass $m_1 = 3\\ \\mathrm{kg}$ on one side and $m_2 = 5\\ \\mathrm{kg}$ on the other, connected by a light string over a frictionless, massless pulley. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the acceleration of the system, (b) the tension in the string.",
+      "answer": "**(a)** Treat the heavier side as driving the motion. Net driving force = $(m_2 - m_1)g$; total inertia = $m_1 + m_2$.\n\n$$a = \\frac{(m_2 - m_1)g}{m_1 + m_2} = \\frac{(5-3) \\times 10}{3 + 5} = \\frac{20}{8} = 2.5\\ \\mathrm{m/s^2}$$\n\n**(b)** Apply Newton's second law to $m_1$ (accelerating upward):\n\n$T - m_1 g = m_1 a \\Rightarrow T = m_1(g + a) = 3(10 + 2.5) = 37.5\\ \\mathrm{N}$\n\nVerification on $m_2$: $m_2 g - T = m_2 a \\Rightarrow 50 - 37.5 = 12.5 = 5 \\times 2.5$ ✓"
+    },
+    {
+      "id": "t07-p02",
+      "source": "original",
+      "question": "In an Atwood machine with $m_1 = 2\\ \\mathrm{kg}$ and $m_2 = 6\\ \\mathrm{kg}$, the system starts from rest. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the acceleration, (b) the speed of the masses after $m_2$ has descended $1.6\\ \\mathrm{m}$, (c) the time to reach that speed.",
+      "answer": "**(a)** $a = \\dfrac{(m_2 - m_1)g}{m_1 + m_2} = \\dfrac{4 \\times 10}{8} = 5\\ \\mathrm{m/s^2}$\n\n**(b)** Using $v^2 = u^2 + 2as$ (from rest, $u = 0$):\n\n$v = \\sqrt{2 \\times 5 \\times 1.6} = \\sqrt{16} = 4\\ \\mathrm{m/s}$\n\n**(c)** $v = at \\Rightarrow t = \\dfrac{v}{a} = \\dfrac{4}{5} = 0.8\\ \\mathrm{s}$"
+    },
+    {
+      "id": "t07-p03",
+      "source": "original",
+      "question": "One mass $m_1 = 4\\ \\mathrm{kg}$ is on a **frictionless** incline at $30°$, connected by a string over a frictionless pulley to mass $m_2 = 3\\ \\mathrm{kg}$ hanging vertically. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) which way the system moves, (b) the acceleration, (c) the tension.",
+      "answer": "Component of $m_1$'s weight along incline (down-slope): $m_1 g\\sin 30° = 4 \\times 10 \\times 0.5 = 20\\ \\mathrm{N}$\n\nWeight of $m_2$: $m_2 g = 30\\ \\mathrm{N}$\n\nSince $30 > 20$, **$m_2$ descends and $m_1$ moves up the incline**.\n\n**(b)** Net force = $m_2 g - m_1 g\\sin 30°= 30 - 20 = 10\\ \\mathrm{N}$\n\n$a = \\dfrac{10}{m_1 + m_2} = \\dfrac{10}{7} \\approx 1.43\\ \\mathrm{m/s^2}$\n\n**(c)** From $m_2$: $T = m_2(g - a) = 3\\!\\left(10 - \\dfrac{10}{7}\\right) = 3 \\times \\dfrac{60}{7} = \\dfrac{180}{7} \\approx 25.7\\ \\mathrm{N}$"
+    },
+    {
+      "id": "t07-p04",
+      "source": "original",
+      "question": "In an Atwood machine with $m_1$ and $m_2 > m_1$, the acceleration is $a = g/5$. Find the ratio $m_2/m_1$.",
+      "answer": "$a = \\dfrac{(m_2 - m_1)g}{m_1 + m_2} = \\dfrac{g}{5}$\n\n$5(m_2 - m_1) = m_1 + m_2$\n\n$5m_2 - 5m_1 = m_1 + m_2$\n\n$4m_2 = 6m_1$\n\n$$\\frac{m_2}{m_1} = \\frac{6}{4} = \\frac{3}{2} = 1.5$$\n\nCheck: $a = \\dfrac{(3-2)g}{3+2} = g/5$ ✓"
+    },
+    {
+      "id": "t07-p05",
+      "source": "original",
+      "question": "An Atwood machine has $m_1 = 1\\ \\mathrm{kg}$ and $m_2 = 2\\ \\mathrm{kg}$. The system is released from rest. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the acceleration, (b) the distance each mass moves in the first $3\\ \\mathrm{s}$, (c) the kinetic energy of the system at $t = 3\\ \\mathrm{s}$.",
+      "answer": "**(a)** $a = \\dfrac{(2-1) \\times 10}{1 + 2} = \\dfrac{10}{3}\\ \\mathrm{m/s^2} \\approx 3.33\\ \\mathrm{m/s^2}$\n\n**(b)** $s = \\frac{1}{2}at^2 = \\frac{1}{2} \\times \\frac{10}{3} \\times 9 = 15\\ \\mathrm{m}$\n\n**(c)** Speed at $t = 3\\ \\mathrm{s}$: $v = at = \\dfrac{10}{3} \\times 3 = 10\\ \\mathrm{m/s}$\n\n$KE = \\frac{1}{2}(m_1 + m_2)v^2 = \\frac{1}{2} \\times 3 \\times 100 = 150\\ \\mathrm{J}$\n\nVerification via work-energy: Work by gravity on $m_2$: $m_2 g s = 2 \\times 10 \\times 15 = 300\\ \\mathrm{J}$. Work against gravity on $m_1$: $-m_1 g s = -150\\ \\mathrm{J}$. Net work $= 150\\ \\mathrm{J}$ ✓"
+    },
+    {
+      "id": "t07-p06",
+      "source": "original",
+      "question": "An Atwood machine has $m_1$ and $m_2$. Both masses are at the same height when the system is released. Derive the speed of the masses when $m_2$ has descended a distance $d$, using (a) kinematics and (b) energy conservation. Show both give the same result.",
+      "answer": "**(a) Kinematics:**\n\n$a = \\dfrac{(m_2 - m_1)g}{m_1 + m_2}$\n\n$v^2 = 2ad = \\dfrac{2(m_2 - m_1)gd}{m_1 + m_2}$\n\n$v = \\sqrt{\\dfrac{2(m_2 - m_1)gd}{m_1 + m_2}}$\n\n**(b) Energy conservation:**\n\n$m_2$ descends $d$ (loses PE), $m_1$ ascends $d$ (gains PE); string inextensible so both have speed $v$.\n\n$m_2 gd - m_1 gd = \\frac{1}{2}(m_1 + m_2)v^2$\n\n$(m_2 - m_1)gd = \\frac{1}{2}(m_1 + m_2)v^2$\n\n$v = \\sqrt{\\dfrac{2(m_2 - m_1)gd}{m_1 + m_2}}$ ✓ Same result."
+    },
+    {
+      "id": "t07-p07",
+      "source": "original",
+      "question": "An Atwood machine has $m_1 = 500\\ \\mathrm{g}$ and $m_2 = 700\\ \\mathrm{g}$. The support holding the pulley is a spring scale. Take $g = 10\\ \\mathrm{m/s^2}$. What does the spring scale read while the masses are in motion?",
+      "answer": "The scale supports **two tension forces** (one on each side of the string).\n\n$a = \\dfrac{(0.7 - 0.5) \\times 10}{0.7 + 0.5} = \\dfrac{2}{1.2} = \\dfrac{5}{3}\\ \\mathrm{m/s^2}$\n\nTension: $T = m_1(g + a) = 0.5\\!\\left(10 + \\dfrac{5}{3}\\right) = 0.5 \\times \\dfrac{35}{3} = \\dfrac{35}{6}\\ \\mathrm{N}$\n\nThe scale reads the total upward force supporting the pulley:\n\n$F_{\\text{scale}} = 2T = \\dfrac{35}{3} \\approx 11.7\\ \\mathrm{N}$\n\nNote: if the system were static, $F_{\\text{scale}} = (m_1 + m_2)g = 12\\ \\mathrm{N}$ — the reading **decreases** when the masses accelerate."
+    },
+    {
+      "id": "t07-p08",
+      "source": "original",
+      "question": "A block of mass $m_1 = 5\\ \\mathrm{kg}$ is on a rough horizontal table (coefficient of kinetic friction $\\mu_k = 0.3$). It is connected by a string over a pulley at the table edge to a hanging mass $m_2 = 4\\ \\mathrm{kg}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the acceleration, (b) the tension.",
+      "answer": "Friction on $m_1$ (opposing motion, directed away from pulley): $f = \\mu_k m_1 g = 0.3 \\times 5 \\times 10 = 15\\ \\mathrm{N}$\n\n**(a)** Net driving force $= m_2 g - f = 40 - 15 = 25\\ \\mathrm{N}$\n\n$a = \\dfrac{25}{m_1 + m_2} = \\dfrac{25}{9} \\approx 2.78\\ \\mathrm{m/s^2}$\n\n**(b)** From hanging mass: $T = m_2(g - a) = 4\\!\\left(10 - \\dfrac{25}{9}\\right) = 4 \\times \\dfrac{65}{9} = \\dfrac{260}{9} \\approx 28.9\\ \\mathrm{N}$"
+    },
+    {
+      "id": "t07-p09",
+      "source": "original",
+      "question": "In an Atwood machine, $m_2 = 3m_1$. The system is released from rest and $m_2$ falls a distance $H$ before hitting the floor. After that, $m_1$ continues upward. How much higher does $m_1$ rise after $m_2$ hits the floor? (Neglect string length complications; assume string goes slack immediately.)",
+      "answer": "$a = \\dfrac{(3m_1 - m_1)g}{3m_1 + m_1} = \\dfrac{2m_1 g}{4m_1} = \\dfrac{g}{2}$\n\nSpeed of masses just before $m_2$ hits floor:\n\n$v^2 = 2aH = 2 \\times \\dfrac{g}{2} \\times H = gH \\Rightarrow v = \\sqrt{gH}$\n\nAfter impact, $m_1$ continues upward with initial speed $v$ and decelerates under gravity:\n\n$\\Delta h = \\dfrac{v^2}{2g} = \\dfrac{gH}{2g} = \\dfrac{H}{2}$\n\n$m_1$ rises an additional $\\dfrac{H}{2}$ above the point where $m_2$ hit the floor.\n\nTotal rise of $m_1$ from start: $H + \\dfrac{H}{2} = \\dfrac{3H}{2}$"
+    },
+    {
+      "id": "t07-p10",
+      "source": "original",
+      "question": "An Atwood machine is used in a lab to measure $g$. With $m_1 = 100\\ \\mathrm{g}$ and $m_2 = 110\\ \\mathrm{g}$, the heavier mass falls $h = 1.0\\ \\mathrm{m}$ in $t = 3.2\\ \\mathrm{s}$ (starting from rest). Find the experimental value of $g$ and the percentage error compared to $g = 9.8\\ \\mathrm{m/s^2}$.",
+      "answer": "From kinematics: $h = \\frac{1}{2}at^2 \\Rightarrow a = \\dfrac{2h}{t^2} = \\dfrac{2 \\times 1.0}{(3.2)^2} = \\dfrac{2}{10.24} \\approx 0.195\\ \\mathrm{m/s^2}$\n\nFrom Atwood formula: $a = \\dfrac{(m_2 - m_1)g}{m_1 + m_2}$\n\nSolving: $g = \\dfrac{a(m_1 + m_2)}{m_2 - m_1} = \\dfrac{0.195 \\times 0.210}{0.010} = \\dfrac{0.04095}{0.010} \\approx 9.75\\ \\mathrm{m/s^2}$\n\nPercentage error: $\\dfrac{|9.75 - 9.8|}{9.8} \\times 100\\% \\approx 0.51\\%$\n\nThis is a small error, showing the Atwood machine is an accurate method for measuring $g$."
+    }
+  ]
+}

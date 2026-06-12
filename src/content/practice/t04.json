@@ -1,0 +1,65 @@
+{
+  "topicId": "t04",
+  "questions": [
+    {
+      "id": "t04-p01",
+      "source": "2016-UG-Q1-(4) adapted",
+      "question": "A box of mass $m$ rests on an inclined plane at angle $\\theta$ to the horizontal. The coefficient of static friction between the box and the incline is $\\mu_s$. State the condition on $\\mu_s$ and $\\theta$ for the box to begin sliding.",
+      "answer": "Forces on the box along the incline:\n- Gravity component down the slope: $mg\\sin\\theta$\n- Maximum static friction (up the slope): $f_{s,\\max} = \\mu_s N = \\mu_s mg\\cos\\theta$\n\nThe box slides when the gravitational component exceeds maximum static friction:\n\n$mg\\sin\\theta > \\mu_s mg\\cos\\theta$\n\n$$\\boxed{\\mu_s < \\tan\\theta}$$\n\nEquivalently, the incline angle exceeds the **angle of friction** $\\phi_s = \\arctan(\\mu_s)$."
+    },
+    {
+      "id": "t04-p02",
+      "source": "original",
+      "question": "A $4\\ \\mathrm{kg}$ block slides down a $30°$ incline with constant velocity. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the coefficient of kinetic friction, (b) the friction force, (c) the normal force.",
+      "answer": "Constant velocity means zero net force.\n\n**(c)** Normal force: $N = mg\\cos 30° = 4 \\times 10 \\times \\dfrac{\\sqrt{3}}{2} = 20\\sqrt{3} \\approx 34.6\\ \\mathrm{N}$\n\n**(b)** Along the incline (equilibrium): $f = mg\\sin 30° = 4 \\times 10 \\times 0.5 = 20\\ \\mathrm{N}$\n\n**(a)** $\\mu_k = \\dfrac{f}{N} = \\dfrac{20}{20\\sqrt{3}} = \\dfrac{1}{\\sqrt{3}} = \\tan 30° \\approx 0.577$\n\nThis confirms the rule: constant-velocity sliding means $\\mu_k = \\tan\\theta$."
+    },
+    {
+      "id": "t04-p03",
+      "source": "original",
+      "question": "A $3\\ \\mathrm{kg}$ block is pushed along a horizontal floor by a horizontal force of $21\\ \\mathrm{N}$. The block accelerates at $3\\ \\mathrm{m/s^2}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the friction force, (b) the coefficient of kinetic friction.",
+      "answer": "**(a)** Newton's second law horizontally:\n\n$F - f = ma \\Rightarrow f = F - ma = 21 - 3 \\times 3 = 21 - 9 = 12\\ \\mathrm{N}$\n\n**(b)** Normal force $N = mg = 30\\ \\mathrm{N}$\n\n$\\mu_k = \\dfrac{f}{N} = \\dfrac{12}{30} = 0.4$"
+    },
+    {
+      "id": "t04-p04",
+      "source": "2016-UG-Q3 adapted",
+      "question": "Block Q (mass $m$) sits on top of block P (mass $M$) which is on a **frictionless** horizontal surface. A horizontal force $F$ is applied to P. The coefficient of kinetic friction between P and Q is $\\mu$. Find: (a) the acceleration of Q, (b) the acceleration of P, (c) the time $T$ after which both blocks move at the same speed (starting from rest).",
+      "answer": "Friction from P on Q acts **forward** (kinetic); friction from Q on P acts **backward** (Newton's 3rd law).\n\nFriction force magnitude: $f = \\mu mg$\n\n**(a)** Q (only friction acts on it):\n\n$a_Q = \\dfrac{\\mu mg}{m} = \\mu g$\n\n**(b)** P (net force $F - f$):\n\n$a_P = \\dfrac{F - \\mu mg}{M}$\n\n**(c)** Velocities: $v_Q = \\mu g t$, $v_P = v_0 - \\dfrac{\\mu mg}{M}t$ (P given initial speed $v_0$, Q starts from rest). Setting equal:\n\n$$T = \\frac{Mv_0}{(M+m)\\mu g}$$\n\n(This is the standard result from the 2016 MEXT exam stacked-block problem.)"
+    },
+    {
+      "id": "t04-p05",
+      "source": "original",
+      "question": "A car of mass $1000\\ \\mathrm{kg}$ traveling at $20\\ \\mathrm{m/s}$ brakes to a stop in $4\\ \\mathrm{s}$ on a level road. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the deceleration, (b) the braking friction force, (c) the coefficient of kinetic friction between tires and road.",
+      "answer": "**(a)** $a = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{20}{4} = 5\\ \\mathrm{m/s^2}$ (deceleration)\n\n**(b)** $f = ma = 1000 \\times 5 = 5000\\ \\mathrm{N}$\n\n**(c)** $N = mg = 10{,}000\\ \\mathrm{N}$\n\n$\\mu_k = \\dfrac{f}{N} = \\dfrac{5000}{10000} = 0.5$"
+    },
+    {
+      "id": "t04-p06",
+      "source": "original",
+      "question": "A $5\\ \\mathrm{kg}$ block is on a $45°$ rough incline. The coefficient of static friction is $\\mu_s = 0.6$ and of kinetic friction is $\\mu_k = 0.4$. Take $g = 10\\ \\mathrm{m/s^2}$. (a) Does the block slide? If it is given a small push and slides, find (b) the net force and (c) the acceleration.",
+      "answer": "**(a)** $\\tan 45° = 1 > \\mu_s = 0.6$, so **yes, the block slides** (the gravity component exceeds maximum static friction).\n\n**(b)** Once sliding, use kinetic friction:\n\n$N = mg\\cos 45° = 5 \\times 10 \\times \\dfrac{\\sqrt{2}}{2} = 25\\sqrt{2}\\ \\mathrm{N}$\n\nGravity along slope: $mg\\sin 45° = 25\\sqrt{2}\\ \\mathrm{N}$\n\nKinetic friction (up slope): $f_k = \\mu_k N = 0.4 \\times 25\\sqrt{2} = 10\\sqrt{2}\\ \\mathrm{N}$\n\nNet force (down slope): $F_{\\text{net}} = 25\\sqrt{2} - 10\\sqrt{2} = 15\\sqrt{2} \\approx 21.2\\ \\mathrm{N}$\n\n**(c)** $a = F_{\\text{net}}/m = 15\\sqrt{2}/5 = 3\\sqrt{2} \\approx 4.24\\ \\mathrm{m/s^2}$ (down the incline)"
+    },
+    {
+      "id": "t04-p07",
+      "source": "original",
+      "question": "A $2\\ \\mathrm{kg}$ block slides down a rough $37°$ incline from rest and travels $5\\ \\mathrm{m}$ in $2\\ \\mathrm{s}$. Take $g = 10\\ \\mathrm{m/s^2}$ and $\\sin 37° = 0.6$, $\\cos 37° = 0.8$. Find: (a) the acceleration, (b) the friction force, (c) the coefficient of kinetic friction.",
+      "answer": "**(a)** Using $s = \\frac{1}{2}at^2$ (starts from rest):\n\n$5 = \\frac{1}{2}a(4) \\Rightarrow a = 2.5\\ \\mathrm{m/s^2}$ (down the slope)\n\n**(b)** Along the slope (down positive):\n\n$mg\\sin\\theta - f = ma$\n\n$f = mg\\sin\\theta - ma = 2(10)(0.6) - 2(2.5) = 12 - 5 = 7\\ \\mathrm{N}$\n\n**(c)** $N = mg\\cos\\theta = 2(10)(0.8) = 16\\ \\mathrm{N}$\n\n$\\mu_k = \\dfrac{f}{N} = \\dfrac{7}{16} = 0.4375 \\approx 0.44$"
+    },
+    {
+      "id": "t04-p08",
+      "source": "original",
+      "question": "Two stacked blocks rest on a frictionless floor: top block A ($2\\ \\mathrm{kg}$), bottom block B ($6\\ \\mathrm{kg}$). The coefficient of static friction between A and B is $\\mu_s = 0.5$. A horizontal force $F$ is applied to B. Take $g = 10\\ \\mathrm{m/s^2}$. Find the maximum $F$ such that A does not slip on B.",
+      "answer": "If A and B move together with acceleration $a$:\n\n$F = (m_A + m_B)a = 8a$\n\nFor A not to slip, friction from B on A provides its entire acceleration:\n\n$f = m_A a \\leq \\mu_s m_A g = 0.5 \\times 2 \\times 10 = 10\\ \\mathrm{N}$\n\nMaximum acceleration: $a_{\\max} = \\dfrac{\\mu_s m_A g}{m_A} = \\mu_s g = 5\\ \\mathrm{m/s^2}$\n\nMaximum force:\n\n$$F_{\\max} = (m_A + m_B)a_{\\max} = 8 \\times 5 = 40\\ \\mathrm{N}$$"
+    },
+    {
+      "id": "t04-p09",
+      "source": "original",
+      "question": "A block of mass $m$ on a horizontal surface is attached to a horizontal spring (spring constant $k$). The system is at rest with the spring at its natural length. The coefficient of static friction is $\\mu_s$. How far can the spring be stretched before the block starts to move?",
+      "answer": "The spring exerts a horizontal force $F_{\\text{spring}} = kx$ on the block.\n\nThe block starts to move when this force exceeds the maximum static friction:\n\n$kx > \\mu_s mg$\n\nMaximum stretch before sliding begins:\n\n$$x_{\\max} = \\frac{\\mu_s mg}{k}$$\n\nFor $x < x_{\\max}$: block at rest, spring force balanced by static friction.\nAt $x = x_{\\max}$: block is on the verge of sliding."
+    },
+    {
+      "id": "t04-p10",
+      "source": "original",
+      "question": "A sled of mass $10\\ \\mathrm{kg}$ is dragged at constant speed along a horizontal snowy surface by a rope that makes an angle $20°$ above the horizontal. The coefficient of kinetic friction is $0.15$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the normal force, (b) the tension in the rope.",
+      "answer": "Let $T$ = tension. Vertical equilibrium: $N + T\\sin 20° = mg$\n\n$N = mg - T\\sin 20°$\n\nHorizontal equilibrium (constant speed): $T\\cos 20° = \\mu_k N = \\mu_k(mg - T\\sin 20°)$\n\n$T\\cos 20° = 0.15(100 - T\\sin 20°)$\n\n$T\\cos 20° + 0.15T\\sin 20° = 15$\n\n$T(\\cos 20° + 0.15\\sin 20°) = 15$\n\nUsing $\\cos 20° \\approx 0.940$, $\\sin 20° \\approx 0.342$:\n\n$T(0.940 + 0.051) = 15 \\Rightarrow T \\approx \\dfrac{15}{0.991} \\approx 15.1\\ \\mathrm{N}$\n\n**(a)** $N = 100 - 15.1 \\times 0.342 \\approx 100 - 5.2 = 94.8\\ \\mathrm{N}$\n\n**(b)** $T \\approx 15.1\\ \\mathrm{N}$"
+    }
+  ]
+}

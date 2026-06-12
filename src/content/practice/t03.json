@@ -1,0 +1,65 @@
+{
+  "topicId": "t03",
+  "questions": [
+    {
+      "id": "t03-p01",
+      "source": "original",
+      "question": "Three blocks A ($3\\ \\mathrm{kg}$), B ($2\\ \\mathrm{kg}$), and C ($1\\ \\mathrm{kg}$) are in contact on a frictionless horizontal surface. A horizontal force $F = 12\\ \\mathrm{N}$ is applied to block A, pushing all three blocks together. Find: (a) the acceleration of the system, (b) the contact force between B and C.",
+      "answer": "**(a)** Total mass $= 3 + 2 + 1 = 6\\ \\mathrm{kg}$\n\n$a = \\dfrac{F}{m_{\\text{total}}} = \\dfrac{12}{6} = 2\\ \\mathrm{m/s^2}$\n\n**(b)** The contact force $N_{BC}$ must accelerate only C:\n\n$N_{BC} = m_C \\cdot a = 1 \\times 2 = 2\\ \\mathrm{N}$"
+    },
+    {
+      "id": "t03-p02",
+      "source": "original",
+      "question": "A person of mass $60\\ \\mathrm{kg}$ stands on a scale inside an elevator. The scale reads $540\\ \\mathrm{N}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the actual weight, (b) the acceleration of the elevator (magnitude and direction).",
+      "answer": "**(a)** Weight $W = mg = 60 \\times 10 = 600\\ \\mathrm{N}$\n\n**(b)** Apply Newton's second law (upward positive):\n\n$N - W = ma \\Rightarrow 540 - 600 = 60a \\Rightarrow a = -1\\ \\mathrm{m/s^2}$\n\nThe elevator accelerates **downward** at $1\\ \\mathrm{m/s^2}$ (or decelerates while moving upward)."
+    },
+    {
+      "id": "t03-p03",
+      "source": "original",
+      "question": "Block A ($5\\ \\mathrm{kg}$) and block B ($3\\ \\mathrm{kg}$) are connected by a light string on a frictionless horizontal surface. A horizontal force $F = 16\\ \\mathrm{N}$ is applied to A, pulling the system. Find: (a) the acceleration of the system, (b) the tension in the string between A and B.",
+      "answer": "**(a)** $a = \\dfrac{F}{m_A + m_B} = \\dfrac{16}{8} = 2\\ \\mathrm{m/s^2}$\n\n**(b)** Apply Newton's second law to B alone:\n\n$T = m_B \\cdot a = 3 \\times 2 = 6\\ \\mathrm{N}$\n\nVerification on A: $F - T = m_A a \\Rightarrow 16 - 6 = 10 = 5 \\times 2$ ✓"
+    },
+    {
+      "id": "t03-p04",
+      "source": "original",
+      "question": "A block of mass $m$ is pressed against a smooth vertical wall by a horizontal force $F$. Gravity is $g$. (a) What is the normal force from the wall on the block? (b) What minimum $F$ is required to prevent the block from sliding if the coefficient of static friction is $\\mu_s$?",
+      "answer": "**(a)** The wall is smooth so there is no horizontal friction from the wall; the normal force from the wall equals $F$ (horizontal equilibrium).\n\n$N_{\\text{wall}} = F$\n\n**(b)** For the block not to slide down, the upward friction force from the wall must support the weight:\n\n$f = \\mu_s N_{\\text{wall}} \\geq mg \\Rightarrow \\mu_s F \\geq mg$\n\n$$F_{\\min} = \\frac{mg}{\\mu_s}$$"
+    },
+    {
+      "id": "t03-p05",
+      "source": "original",
+      "question": "Identify all Newton's third law (action–reaction) pairs in the following situation: a book rests on a table, which rests on the floor. List each pair and clearly state which objects exert force on which.",
+      "answer": "Newton's third law pairs (each force is equal in magnitude, opposite in direction, acting on **different** objects):\n\n1. **Earth pulls book down** (gravity on book) ↔ **Book pulls Earth up** (gravity reaction)\n2. **Table pushes book up** (normal on book) ↔ **Book pushes table down** (normal on table)\n3. **Earth pulls table down** (gravity on table) ↔ **Table pulls Earth up** (gravity reaction)\n4. **Floor pushes table up** (normal on table) ↔ **Table pushes floor down** (normal on floor)\n\nNote: the weight of the book and the normal force from the table on the book are **not** an action–reaction pair — they act on the same object (the book) and are equal only because the book is in equilibrium."
+    },
+    {
+      "id": "t03-p06",
+      "source": "original",
+      "question": "A $2\\ \\mathrm{kg}$ block hangs from a spring scale attached to the ceiling of an elevator. The scale reads $24\\ \\mathrm{N}$. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the net force on the block, (b) the acceleration of the elevator.",
+      "answer": "**(a)** Weight $= mg = 20\\ \\mathrm{N}$ (downward). Scale force $= 24\\ \\mathrm{N}$ (upward).\n\n$F_{\\text{net}} = 24 - 20 = 4\\ \\mathrm{N}$ upward\n\n**(b)** $a = \\dfrac{F_{\\text{net}}}{m} = \\dfrac{4}{2} = 2\\ \\mathrm{m/s^2}$ upward\n\n(The elevator is either accelerating upward or decelerating while moving downward.)"
+    },
+    {
+      "id": "t03-p07",
+      "source": "original",
+      "question": "A $10\\ \\mathrm{kg}$ block is suspended by two ropes. Rope 1 is vertical and rope 2 makes an angle of $30°$ with the vertical. Both ropes are attached to the ceiling. Find the tension in each rope. Take $g = 10\\ \\mathrm{m/s^2}$.",
+      "answer": "Let $T_1$ = tension in the vertical rope and $T_2$ = tension in the angled rope.\n\nHorizontal equilibrium: $T_2 \\sin 30° = 0$ — but this is impossible unless one rope is vertical and one horizontal. **Re-interpret:** rope 2 is at $30°$ from the **horizontal** (common exam phrasing).\n\nWith rope 2 at $30°$ from horizontal and rope 1 vertical:\n\nHorizontal: $T_2 \\cos 30° = 0$ — still impossible. Let rope 1 be horizontal and rope 2 at $30°$ from vertical:\n\nHorizontal: $T_1 = T_2 \\sin 30°$\n\nVertical: $T_2 \\cos 30° = mg = 100\\ \\mathrm{N}$\n\n$T_2 = \\dfrac{100}{\\cos 30°} = \\dfrac{100}{\\sqrt{3}/2} = \\dfrac{200}{\\sqrt{3}} \\approx 115\\ \\mathrm{N}$\n\n$T_1 = T_2 \\sin 30° = \\dfrac{200}{\\sqrt{3}} \\times \\dfrac{1}{2} = \\dfrac{100}{\\sqrt{3}} \\approx 57.7\\ \\mathrm{N}$"
+    },
+    {
+      "id": "t03-p08",
+      "source": "original",
+      "question": "A light string runs over a frictionless peg and connects two blocks: block A ($4\\ \\mathrm{kg}$) on a **smooth** incline at $30°$, and block B ($3\\ \\mathrm{kg}$) hanging vertically. Find: (a) which way the system accelerates, (b) the acceleration, (c) the tension in the string. Take $g = 10\\ \\mathrm{m/s^2}$.",
+      "answer": "Weight component of A along incline (down the slope): $m_A g \\sin 30° = 4 \\times 10 \\times 0.5 = 20\\ \\mathrm{N}$\n\nWeight of B: $m_B g = 30\\ \\mathrm{N}$\n\nSince $30 > 20$, **B descends and A moves up the incline**.\n\n**(b)** Newton's second law for the system (treating B descending and A ascending as positive):\n\n$m_B g - m_A g\\sin 30° = (m_A + m_B)a$\n\n$30 - 20 = 7a \\Rightarrow a = \\dfrac{10}{7} \\approx 1.43\\ \\mathrm{m/s^2}$\n\n**(c)** From B: $T = m_B(g - a) = 3\\!\\left(10 - \\dfrac{10}{7}\\right) = 3 \\times \\dfrac{60}{7} = \\dfrac{180}{7} \\approx 25.7\\ \\mathrm{N}$"
+    },
+    {
+      "id": "t03-p09",
+      "source": "original",
+      "question": "A $5\\ \\mathrm{kg}$ block sits on a $10\\ \\mathrm{kg}$ cart that is on a frictionless floor. A horizontal rope attached to the wall runs over a pulley and is tied to the cart. The coefficient of kinetic friction between the block and cart is $\\mu_k = 0.3$. If the cart is released from rest, in which direction does friction act on (a) the block, (b) the cart? What is the acceleration of the block? Take $g = 10\\ \\mathrm{m/s^2}$.",
+      "answer": "The rope prevents the **cart** from moving (it is held by the wall via the rope). The block, however, is free to slide.\n\n**(a)** The cart is stationary. When the block tends to slide forward (no external force on block), the block actually remains stationary too — there is no external force to make it slide. **Both are at rest; friction on block = 0 N.**\n\n**(Alternative reading — cart pulled by external force $F$):** If a force $F$ is applied to the cart, friction on the block acts **forward** (friction from cart drags block along), and friction on the cart from the block acts **backward** (reaction pair).\n\nFor the block alone: $f = \\mu_k m_{\\text{block}} g = 0.3 \\times 5 \\times 10 = 15\\ \\mathrm{N}$\n\n$a_{\\text{block}} = \\dfrac{f}{m_{\\text{block}}} = \\dfrac{15}{5} = 3\\ \\mathrm{m/s^2}$ in the direction of F."
+    },
+    {
+      "id": "t03-p10",
+      "source": "original",
+      "question": "A $60\\ \\mathrm{kg}$ astronaut stands on a scale aboard a rocket that accelerates upward at $5\\ \\mathrm{m/s^2}$. Take $g = 10\\ \\mathrm{m/s^2}$. (a) What does the scale read? (b) If the rocket instead enters free fall (engines off), what does the scale read? (c) Explain why (b) represents apparent weightlessness.",
+      "answer": "**(a)** Scale reads the normal force $N$:\n\n$N - mg = ma \\Rightarrow N = m(g + a) = 60(10 + 5) = 900\\ \\mathrm{N}$\n\nThis is $1.5 \\times$ normal weight — the astronaut feels $1.5g$.\n\n**(b)** In free fall the entire rocket-astronaut system accelerates at $g$ downward. The astronaut and scale fall together:\n\n$N - mg = m(-g) \\Rightarrow N = 0\\ \\mathrm{N}$\n\n**(c)** The scale reads zero because there is no contact force between the astronaut and the scale. Although gravity still acts, both the astronaut and scale fall with the same acceleration, so no normal force is needed — this is **apparent weightlessness**."
+    }
+  ]
+}

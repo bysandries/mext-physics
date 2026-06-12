@@ -1,0 +1,65 @@
+{
+  "topicId": "t23",
+  "questions": [
+    {
+      "id": "t23-p01",
+      "source": "original",
+      "question": "The density of air at $T = 0^\\circ\\mathrm{C}$ ($273\\ \\mathrm{K}$) and $P = 1.0\\times10^5\\ \\mathrm{Pa}$ is $\\rho_0 = 1.29\\ \\mathrm{kg/m^3}$. Find the density at $T = 100^\\circ\\mathrm{C}$ ($373\\ \\mathrm{K}$) at the same pressure.",
+      "answer": "At constant pressure, from $PV = nRT$ and $\\rho = m/V = nM/V$:\n\n$\\rho = \\dfrac{PM}{RT}$, so $\\rho \\propto 1/T$ at constant $P$.\n\n$\\rho_{100} = \\rho_0 \\times \\dfrac{T_0}{T_{100}} = 1.29 \\times \\dfrac{273}{373} = 1.29 \\times 0.732 \\approx 0.944\\ \\mathrm{kg/m^3}$\n\nHot air is less dense — which is why hot air rises (buoyancy)."
+    },
+    {
+      "id": "t23-p02",
+      "source": "original",
+      "question": "Derive the formula $\\rho = PM/(RT)$ for the density of an ideal gas, where $M$ is the molar mass.",
+      "answer": "Start with the ideal gas law: $PV = nRT$\n\nThe mass of gas: $m = nM$ (where $M$ is molar mass in kg/mol)\n\nDensity: $\\rho = m/V = nM/V$\n\nFrom ideal gas law: $n/V = P/(RT)$\n\nTherefore:\n\n$$\\rho = \\frac{nM}{V} = \\frac{PM}{RT}$$\n\nAt fixed $P$ and $M$: $\\rho \\propto 1/T$ (density decreases with temperature)\n\nAt fixed $T$ and $M$: $\\rho \\propto P$ (density increases with pressure)"
+    },
+    {
+      "id": "t23-p03",
+      "source": "2016-UG adapted",
+      "question": "A sealed container holds air (molar mass $M = 0.029\\ \\mathrm{kg/mol}$) at $T = 300\\ \\mathrm{K}$ and $P = 1.0\\times10^5\\ \\mathrm{Pa}$. Find: (a) the density, (b) the temperature at which density would be halved (at same pressure).",
+      "answer": "**(a)** $\\rho = \\dfrac{PM}{RT} = \\dfrac{1.0\\times10^5 \\times 0.029}{8.31 \\times 300} = \\dfrac{2900}{2493} \\approx 1.163\\ \\mathrm{kg/m^3}$\n\n**(b)** $\\rho' = \\rho/2$ at same $P$: since $\\rho \\propto 1/T$:\n\n$T' = 2T = 2 \\times 300 = 600\\ \\mathrm{K} = 327^\\circ\\mathrm{C}$"
+    },
+    {
+      "id": "t23-p04",
+      "source": "original",
+      "question": "A gas has density $\\rho_1 = 2.0\\ \\mathrm{kg/m^3}$ at $T_1 = 20^\\circ\\mathrm{C}$ and $P_1 = 2.0\\times10^5\\ \\mathrm{Pa}$. It is heated to $T_2 = 80^\\circ\\mathrm{C}$ while pressure drops to $P_2 = 1.5\\times10^5\\ \\mathrm{Pa}$. Find the new density $\\rho_2$.",
+      "answer": "$T_1 = 293\\ \\mathrm{K}$, $T_2 = 353\\ \\mathrm{K}$\n\nUsing $\\rho = PM/(RT)$:\n\n$\\dfrac{\\rho_2}{\\rho_1} = \\dfrac{P_2/T_2}{P_1/T_1} = \\dfrac{P_2}{P_1} \\cdot \\dfrac{T_1}{T_2}$\n\n$= \\dfrac{1.5\\times10^5}{2.0\\times10^5} \\times \\dfrac{293}{353} = 0.75 \\times 0.830 = 0.623$\n\n$\\rho_2 = 2.0 \\times 0.623 = 1.245\\ \\mathrm{kg/m^3}$"
+    },
+    {
+      "id": "t23-p05",
+      "source": "original",
+      "question": "Two identical balloons are filled with the same mass of gas. Balloon A is at $T_A = 300\\ \\mathrm{K}$ and Balloon B is at $T_B = 400\\ \\mathrm{K}$, both at atmospheric pressure $P = 1.0\\times10^5\\ \\mathrm{Pa}$. Find the ratio of their volumes $V_B/V_A$.",
+      "answer": "Same mass of gas $\\Rightarrow$ same number of moles $n$, same $P$.\n\nFrom $PV = nRT$: at constant $n$ and $P$, $V \\propto T$\n\n$\\dfrac{V_B}{V_A} = \\dfrac{T_B}{T_A} = \\dfrac{400}{300} = \\dfrac{4}{3}$\n\nBalloon B has 4/3 the volume of Balloon A.\n\n**Density check:** $\\rho = m/V = m/(nRT/P) \\propto 1/T$\n\n$\\rho_B/\\rho_A = T_A/T_B = 3/4$ — the hot balloon has lower density."
+    },
+    {
+      "id": "t23-p06",
+      "source": "2018-CoT adapted",
+      "question": "The density of nitrogen ($M = 0.028\\ \\mathrm{kg/mol}$) at $T = 0^\\circ\\mathrm{C}$ and $P_0 = 1.0\\times10^5\\ \\mathrm{Pa}$ is $\\rho_0$. Find $\\rho_0$, and then find the density at $27^\\circ\\mathrm{C}$ and $2.0\\times10^5\\ \\mathrm{Pa}$.",
+      "answer": "$\\rho_0 = \\dfrac{P_0 M}{RT_0} = \\dfrac{1.0\\times10^5 \\times 0.028}{8.31 \\times 273} = \\dfrac{2800}{2268.6} \\approx 1.234\\ \\mathrm{kg/m^3}$\n\nAt $T_2 = 300\\ \\mathrm{K}$, $P_2 = 2.0\\times10^5\\ \\mathrm{Pa}$:\n\n$\\rho_2 = \\dfrac{P_2 M}{RT_2} = \\dfrac{2.0\\times10^5 \\times 0.028}{8.31 \\times 300} = \\dfrac{5600}{2493} \\approx 2.246\\ \\mathrm{kg/m^3}$\n\n**Quick ratio:** $\\rho_2/\\rho_0 = (P_2/P_0) \\times (T_0/T_2) = 2 \\times (273/300) = 1.82$, so $\\rho_2 = 1.234 \\times 1.82 \\approx 2.25\\ \\mathrm{kg/m^3}$ ✓"
+    },
+    {
+      "id": "t23-p07",
+      "source": "original",
+      "question": "A weather balloon at ground level contains helium ($M = 0.004\\ \\mathrm{kg/mol}$) at $T = 20^\\circ\\mathrm{C}$ and $P = 1.01\\times10^5\\ \\mathrm{Pa}$. Find: (a) the density of helium, (b) the density of surrounding air ($M_\\mathrm{air} = 0.029\\ \\mathrm{kg/mol}$) at the same conditions, (c) the buoyancy force on a $10\\ \\mathrm{m^3}$ balloon.",
+      "answer": "$T = 293\\ \\mathrm{K}$, $P = 1.01\\times10^5\\ \\mathrm{Pa}$\n\n**(a)** $\\rho_{He} = \\dfrac{PM_{He}}{RT} = \\dfrac{1.01\\times10^5 \\times 0.004}{8.31 \\times 293} = \\dfrac{404}{2434.8} \\approx 0.166\\ \\mathrm{kg/m^3}$\n\n**(b)** $\\rho_{\\text{air}} = \\dfrac{PM_{\\text{air}}}{RT} = \\dfrac{1.01\\times10^5 \\times 0.029}{8.31 \\times 293} = \\dfrac{2929}{2434.8} \\approx 1.203\\ \\mathrm{kg/m^3}$\n\n**(c)** Net buoyancy $= (\\rho_{\\text{air}} - \\rho_{He}) \\times V \\times g = (1.203 - 0.166) \\times 10 \\times 9.8 \\approx 101.6\\ \\mathrm{N}$"
+    },
+    {
+      "id": "t23-p08",
+      "source": "original",
+      "question": "At what temperature must oxygen ($M = 0.032\\ \\mathrm{kg/mol}$) be heated, at constant pressure, so that its density equals $\\rho_0/4$ (one-quarter of its initial density at $T_0 = 300\\ \\mathrm{K}$)?",
+      "answer": "At constant pressure: $\\rho \\propto 1/T$\n\n$\\dfrac{\\rho}{\\rho_0} = \\dfrac{T_0}{T}$\n\n$\\dfrac{1}{4} = \\dfrac{300}{T}$\n\n$T = 4 \\times 300 = 1200\\ \\mathrm{K} = 927^\\circ\\mathrm{C}$\n\nOxygen must be heated to $1200\\ \\mathrm{K}$ for its density to be one-quarter of its $300\\ \\mathrm{K}$ value."
+    },
+    {
+      "id": "t23-p09",
+      "source": "2019-CoT adapted",
+      "question": "A container of volume $V = 0.5\\ \\mathrm{m^3}$ holds oxygen ($M = 0.032\\ \\mathrm{kg/mol}$) at $T = 300\\ \\mathrm{K}$ and $P = 1.0\\times10^5\\ \\mathrm{Pa}$. Find: (a) the number of moles, (b) the mass, (c) the density.",
+      "answer": "**(a)** $n = \\dfrac{PV}{RT} = \\dfrac{1.0\\times10^5 \\times 0.5}{8.31 \\times 300} = \\dfrac{5\\times10^4}{2493} \\approx 20.06\\ \\mathrm{mol}$\n\n**(b)** $m = nM = 20.06 \\times 0.032 \\approx 0.642\\ \\mathrm{kg}$\n\n**(c)** $\\rho = m/V = 0.642/0.5 = 1.284\\ \\mathrm{kg/m^3}$\n\nCheck: $\\rho = PM/(RT) = 1.0\\times10^5 \\times 0.032/(8.31 \\times 300) = 3200/2493 \\approx 1.284\\ \\mathrm{kg/m^3}$ ✓"
+    },
+    {
+      "id": "t23-p10",
+      "source": "original",
+      "question": "The relative density of a gas compared to air is $d = M_{\\text{gas}}/M_{\\text{air}}$. Gas A has $d = 2$ (twice as heavy as air, same conditions). How does its density compare to air, and at what temperature (in $^\\circ\\mathrm{C}$) must air be heated (at the same pressure) to have the same density as gas A at $0^\\circ\\mathrm{C}$?",
+      "answer": "At the same $T$ and $P$: $\\rho = PM/(RT)$, so $\\rho \\propto M$.\n\n$\\rho_{\\text{gas A}} = 2\\rho_{\\text{air}}$ at the same conditions.\n\nAt $T_0 = 273\\ \\mathrm{K}$ (0°C), $\\rho_{\\text{gas A}} = 2 \\times 1.29 = 2.58\\ \\mathrm{kg/m^3}$\n\nFor air to reach this density at the same pressure: $\\rho_{\\text{air}}(T) = 2\\rho_{\\text{air}}(273)$\n\n$\\dfrac{1}{T} = \\dfrac{2}{273}$... Wait, $\\rho \\propto 1/T$, so to have **twice** the density, $T$ must be **halved**:\n\nActually: $\\rho \\propto 1/T$. For $\\rho$ to double, $T$ must halve. But we want air density = gas A density at $0^\\circ$C, i.e., $\\rho_{\\text{air}}(T) = 2\\rho_{\\text{air}}(273)$\n\n$T = 273/2 = 136.5\\ \\mathrm{K} = -136.5^\\circ\\mathrm{C}$\n\nAir must be cooled (not heated) to $-136.5^\\circ\\mathrm{C}$ — confirming that heavy gas A is denser than air at any temperature above absolute zero."
+    }
+  ]
+}

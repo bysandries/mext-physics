@@ -1,0 +1,65 @@
+{
+  "topicId": "t39",
+  "questions": [
+    {
+      "id": "t39-p01",
+      "source": "original",
+      "question": "A long straight wire carries $I = 10\\ \\mathrm{A}$. Find the magnetic field at a distance $r = 0.05\\ \\mathrm{m}$ from the wire. ($\\mu_0 = 4\\pi\\times10^{-7}\\ \\mathrm{T\\cdot m/A}$)",
+      "answer": "$B = \\dfrac{\\mu_0 I}{2\\pi r} = \\dfrac{4\\pi\\times10^{-7} \\times 10}{2\\pi \\times 0.05}$\n\n$= \\dfrac{4\\times10^{-6}}{0.1} = 4\\times10^{-5}\\ \\mathrm{T} = 40\\ \\mu\\mathrm{T}$"
+    },
+    {
+      "id": "t39-p02",
+      "source": "original",
+      "question": "Two long parallel wires are $d = 0.2\\ \\mathrm{m}$ apart. Wire 1 carries $I_1 = 5\\ \\mathrm{A}$ and Wire 2 carries $I_2 = 8\\ \\mathrm{A}$ in the same direction. Find: (a) the force per unit length between the wires, (b) attractive or repulsive?",
+      "answer": "**(a)** $\\dfrac{F}{L} = \\dfrac{\\mu_0 I_1 I_2}{2\\pi d} = \\dfrac{4\\pi\\times10^{-7} \\times 5 \\times 8}{2\\pi \\times 0.2}$\n\n$= \\dfrac{4\\pi\\times10^{-7} \\times 40}{2\\pi \\times 0.2} = \\dfrac{4\\times10^{-6} \\times 40}{0.4} = \\dfrac{1.6\\times10^{-4}}{0.4} = 4\\times10^{-4}\\ \\mathrm{N/m}$\n\n**(b)** Parallel currents in the same direction $\\Rightarrow$ **attractive**."
+    },
+    {
+      "id": "t39-p03",
+      "source": "2016-UG adapted",
+      "question": "At a point P located $r = 0.1\\ \\mathrm{m}$ from Wire 1 ($I_1 = 6\\ \\mathrm{A}$, into page) and $r = 0.1\\ \\mathrm{m}$ from Wire 2 ($I_2 = 6\\ \\mathrm{A}$, out of page), and P is equidistant between the wires. Find the net magnetic field at P.",
+      "answer": "Both wires are $r = 0.1\\ \\mathrm{m}$ from P.\n\nEach wire creates field: $B = \\dfrac{\\mu_0 I}{2\\pi r} = \\dfrac{4\\pi\\times10^{-7} \\times 6}{2\\pi \\times 0.1} = 1.2\\times10^{-5}\\ \\mathrm{T}$\n\nWire 1 (into page): field at P circles clockwise around wire 1 — at P (if P is to the right of wire 1), field points **downward**.\n\nWire 2 (out of page): field at P circles counterclockwise around wire 2 — at P (if P is to the left of wire 2), field also points **downward**.\n\nBoth fields point in the same direction: $B_{\\text{net}} = 2 \\times 1.2\\times10^{-5} = 2.4\\times10^{-5}\\ \\mathrm{T}$\n\n(Direction depends on exact geometry — assuming P is directly between the wires, both fields add up.)"
+    },
+    {
+      "id": "t39-p04",
+      "source": "original",
+      "question": "A solenoid has $n = 1000\\ \\mathrm{turns/m}$ and carries $I = 2\\ \\mathrm{A}$. Find the magnetic field inside the solenoid.",
+      "answer": "Inside an ideal solenoid:\n\n$B = \\mu_0 n I = 4\\pi\\times10^{-7} \\times 1000 \\times 2$\n\n$= 4\\pi\\times10^{-7} \\times 2000 = 8\\pi\\times10^{-4} \\approx 2.51\\times10^{-3}\\ \\mathrm{T} \\approx 2.51\\ \\mathrm{mT}$"
+    },
+    {
+      "id": "t39-p05",
+      "source": "2018-CoT adapted",
+      "question": "Two long straight parallel wires, each carrying $I = 4\\ \\mathrm{A}$ in opposite directions, are $d = 0.1\\ \\mathrm{m}$ apart. Find the magnetic field at the midpoint between them.",
+      "answer": "Both wires are $r = d/2 = 0.05\\ \\mathrm{m}$ from the midpoint.\n\n$B_1 = B_2 = \\dfrac{\\mu_0 I}{2\\pi r} = \\dfrac{4\\pi\\times10^{-7} \\times 4}{2\\pi \\times 0.05} = \\dfrac{1.6\\times10^{-6}}{0.1} = 1.6\\times10^{-5}\\ \\mathrm{T}$\n\nFor anti-parallel currents: at the midpoint, both magnetic fields point in the **same direction** (use right-hand rule for each — they add):\n\n$B_{\\text{net}} = 2B_1 = 3.2\\times10^{-5}\\ \\mathrm{T} = 32\\ \\mu\\mathrm{T}$"
+    },
+    {
+      "id": "t39-p06",
+      "source": "original",
+      "question": "Derive the formula $B = \\mu_0 I/(2\\pi r)$ for the magnetic field around a long straight wire using Ampère's Law.",
+      "answer": "**Ampère's Law:** $\\oint \\vec{B}\\cdot d\\vec{\\ell} = \\mu_0 I_{\\text{enc}}$\n\nChoose a circular Amperian loop of radius $r$ centered on the wire (by symmetry, $B$ is constant in magnitude and tangent to this circle):\n\n$B \\oint d\\ell = B(2\\pi r) = \\mu_0 I$\n\n$$B = \\dfrac{\\mu_0 I}{2\\pi r}$$ ✓\n\nThe right-hand rule (thumb in direction of $I$, fingers curl in direction of $\\vec{B}$) gives the direction."
+    },
+    {
+      "id": "t39-p07",
+      "source": "2019-UG adapted",
+      "question": "A current $I = 15\\ \\mathrm{A}$ flows in a circular loop of radius $R = 0.05\\ \\mathrm{m}$. Find the magnetic field at the center of the loop.",
+      "answer": "For a circular current loop, the field at the center is:\n\n$B = \\dfrac{\\mu_0 I}{2R} = \\dfrac{4\\pi\\times10^{-7} \\times 15}{2 \\times 0.05}$\n\n$= \\dfrac{6\\pi\\times10^{-6}}{0.1} = 6\\pi\\times10^{-5} \\approx 1.885\\times10^{-4}\\ \\mathrm{T} \\approx 188\\ \\mu\\mathrm{T}$"
+    },
+    {
+      "id": "t39-p08",
+      "source": "original",
+      "question": "A long wire carries $I_1 = 20\\ \\mathrm{A}$. A second wire is placed parallel, $r = 0.04\\ \\mathrm{m}$ away, carrying $I_2 = 5\\ \\mathrm{A}$ in the opposite direction. Find: (a) the force per unit length on wire 2, (b) the direction of the force.",
+      "answer": "**(a)** $\\dfrac{F}{L} = \\dfrac{\\mu_0 I_1 I_2}{2\\pi r} = \\dfrac{4\\pi\\times10^{-7} \\times 20 \\times 5}{2\\pi \\times 0.04}$\n\n$= \\dfrac{4\\times10^{-7} \\times 100}{0.04 \\times 2} = \\dfrac{4\\times10^{-5}}{0.08} = 5\\times10^{-4}\\ \\mathrm{N/m}$\n\n**(b)** Antiparallel currents $\\Rightarrow$ **repulsive** force (wire 2 is pushed away from wire 1)."
+    },
+    {
+      "id": "t39-p09",
+      "source": "original",
+      "question": "A toroid has $N = 400$ turns, mean radius $R = 0.1\\ \\mathrm{m}$, and carries $I = 3\\ \\mathrm{A}$. Find the magnetic field inside the toroid.",
+      "answer": "Apply Ampère's Law with a circular loop of radius $R$ inside the toroid:\n\n$B(2\\pi R) = \\mu_0 N I$\n\n$B = \\dfrac{\\mu_0 N I}{2\\pi R} = \\dfrac{4\\pi\\times10^{-7} \\times 400 \\times 3}{2\\pi \\times 0.1}$\n\n$= \\dfrac{4\\pi\\times10^{-7} \\times 1200}{0.2\\pi} = \\dfrac{4\\times10^{-7} \\times 1200}{0.2} = 2.4\\times10^{-3}\\ \\mathrm{T} = 2.4\\ \\mathrm{mT}$"
+    },
+    {
+      "id": "t39-p10",
+      "source": "2014-CoT adapted",
+      "question": "Two wires are perpendicular to each other and cross in the same plane. Wire 1 (horizontal) carries $I_1 = 10\\ \\mathrm{A}$ to the right. Wire 2 (vertical) carries $I_2 = 8\\ \\mathrm{A}$ upward. Find the magnitude and direction of the magnetic field at a point P located $0.1\\ \\mathrm{m}$ to the right of wire 2 and $0.1\\ \\mathrm{m}$ above wire 1 (i.e., at the corner of a square).",
+      "answer": "P is $r_1 = 0.1\\ \\mathrm{m}$ from wire 1 (above it) and $r_2 = 0.1\\ \\mathrm{m}$ from wire 2 (to the right).\n\n**From wire 1** ($I_1$ to the right): right-hand rule gives $B_1$ **out of page** at P (P is above wire 1)\n\n$B_1 = \\dfrac{\\mu_0 I_1}{2\\pi r_1} = \\dfrac{4\\pi\\times10^{-7} \\times 10}{2\\pi \\times 0.1} = 2\\times10^{-5}\\ \\mathrm{T}$ (out of page)\n\n**From wire 2** ($I_2$ upward): right-hand rule gives $B_2$ **out of page** at P (P is to the right of wire 2)\n\n$B_2 = \\dfrac{\\mu_0 I_2}{2\\pi r_2} = \\dfrac{4\\pi\\times10^{-7} \\times 8}{2\\pi \\times 0.1} = 1.6\\times10^{-5}\\ \\mathrm{T}$ (out of page)\n\nBoth fields are in the same direction: $B_{\\text{net}} = (2.0 + 1.6)\\times10^{-5} = 3.6\\times10^{-5}\\ \\mathrm{T}$ (out of page)"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "topicId": "t12",
+  "questions": [
+    {
+      "id": "t12-p01",
+      "source": "original",
+      "question": "Earth has mass $M = 6.0 \\times 10^{24}\\ \\mathrm{kg}$ and radius $R = 6.4 \\times 10^6\\ \\mathrm{m}$. Take $G = 6.67 \\times 10^{-11}\\ \\mathrm{N\\cdot m^2/kg^2}$. Calculate the surface gravitational acceleration $g$.",
+      "answer": "$$g = \\frac{GM}{R^2} = \\frac{6.67\\times10^{-11} \\times 6.0\\times10^{24}}{(6.4\\times10^6)^2}$$\n\n$$= \\frac{4.002\\times10^{14}}{4.096\\times10^{13}} \\approx 9.77\\ \\mathrm{m/s^2}$$\n\nThis is consistent with the standard value $g \\approx 9.8\\ \\mathrm{m/s^2}$."
+    },
+    {
+      "id": "t12-p02",
+      "source": "original",
+      "question": "Calculate the escape velocity from Earth's surface. Use $g = 9.8\\ \\mathrm{m/s^2}$ and $R = 6.4 \\times 10^6\\ \\mathrm{m}$.",
+      "answer": "Escape condition: kinetic energy = gravitational potential energy:\n\n$\\dfrac{1}{2}mv_e^2 = \\dfrac{GMm}{R} = mgR$\n\n$v_e = \\sqrt{2gR} = \\sqrt{2 \\times 9.8 \\times 6.4\\times10^6}$\n\n$= \\sqrt{1.2544\\times10^8} \\approx 1.12\\times10^4\\ \\mathrm{m/s}$\n\n$$v_e \\approx 11.2\\ \\mathrm{km/s}$$"
+    },
+    {
+      "id": "t12-p03",
+      "source": "original",
+      "question": "A planet has radius $R_p = 2R_E$ and mass $M_p = 8M_E$, where $R_E$ and $M_E$ are Earth's radius and mass. Find: (a) the surface gravity $g_p$ in terms of $g_E$, (b) the escape velocity $v_{e,p}$ in terms of $v_{e,E}$.",
+      "answer": "**(a)** $g = GM/R^2$, so:\n\n$\\dfrac{g_p}{g_E} = \\dfrac{M_p/R_p^2}{M_E/R_E^2} = \\dfrac{8M_E/(2R_E)^2}{M_E/R_E^2} = \\dfrac{8}{4} = 2$\n\n$g_p = 2g_E$\n\n**(b)** $v_e = \\sqrt{2gR}$, so:\n\n$\\dfrac{v_{e,p}}{v_{e,E}} = \\sqrt{\\dfrac{g_p R_p}{g_E R_E}} = \\sqrt{2 \\times 2} = 2$\n\n$v_{e,p} = 2v_{e,E} \\approx 22.4\\ \\mathrm{km/s}$"
+    },
+    {
+      "id": "t12-p04",
+      "source": "original",
+      "question": "Show that the escape velocity from a planet of surface gravity $g$ and radius $R$ is $v_e = \\sqrt{2gR}$, and explain why it is independent of the mass of the escaping object.",
+      "answer": "At the surface, the gravitational PE is $U = -GMm/R$. For escape, the object must reach $r \\to \\infty$ where $U = 0$, with at minimum zero KE.\n\nEnergy conservation (minimum case, $v_{\\infty} = 0$):\n\n$\\dfrac{1}{2}mv_e^2 - \\dfrac{GMm}{R} = 0$\n\n$v_e = \\sqrt{\\dfrac{2GM}{R}}$\n\nSince $g = GM/R^2 \\Rightarrow GM = gR^2$:\n\n$$v_e = \\sqrt{\\frac{2gR^2}{R}} = \\sqrt{2gR}$$\n\nThe mass $m$ of the escaping object cancels in the energy equation — both KE and PE are proportional to $m$, so the escape velocity is the same for any mass."
+    },
+    {
+      "id": "t12-p05",
+      "source": "original",
+      "question": "A planet has escape velocity $v_e = 5.0\\ \\mathrm{km/s}$ and radius $R = 3.0 \\times 10^6\\ \\mathrm{m}$. Find: (a) the surface gravity $g$, (b) the planet's mass $M$. Use $G = 6.67 \\times 10^{-11}\\ \\mathrm{N\\cdot m^2/kg^2}$.",
+      "answer": "**(a)** From $v_e = \\sqrt{2gR}$:\n\n$g = \\dfrac{v_e^2}{2R} = \\dfrac{(5000)^2}{2 \\times 3.0\\times10^6} = \\dfrac{2.5\\times10^7}{6.0\\times10^6} \\approx 4.17\\ \\mathrm{m/s^2}$\n\n**(b)** From $g = GM/R^2$:\n\n$M = \\dfrac{gR^2}{G} = \\dfrac{4.17 \\times (3.0\\times10^6)^2}{6.67\\times10^{-11}} = \\dfrac{3.75\\times10^{13}}{6.67\\times10^{-11}} \\approx 5.6\\times10^{23}\\ \\mathrm{kg}$"
+    },
+    {
+      "id": "t12-p06",
+      "source": "original",
+      "question": "An object is launched from Earth's surface at speed $v = 0.8 v_e$ (where $v_e$ is escape velocity). Find the maximum height $h$ it reaches above the surface in terms of Earth's radius $R$.",
+      "answer": "Energy conservation between surface and maximum height ($v = 0$):\n\n$\\dfrac{1}{2}mv^2 - \\dfrac{GMm}{R} = -\\dfrac{GMm}{R+h}$\n\nWith $v = 0.8v_e$ and $v_e^2 = 2GM/R$, so $v^2 = 0.64 \\times 2GM/R = 1.28GM/R$:\n\n$\\dfrac{1.28GM}{2R} - \\dfrac{GM}{R} = -\\dfrac{GM}{R+h}$\n\n$\\dfrac{0.64}{R} - \\dfrac{1}{R} = -\\dfrac{1}{R+h}$\n\n$\\dfrac{-0.36}{R} = -\\dfrac{1}{R+h}$\n\n$R + h = \\dfrac{R}{0.36} \\Rightarrow h = \\dfrac{R}{0.36} - R = \\dfrac{0.64 R}{0.36} = \\dfrac{16R}{9} \\approx 1.78 R$"
+    },
+    {
+      "id": "t12-p07",
+      "source": "original",
+      "question": "The Moon has surface gravity $g_M = 1.6\\ \\mathrm{m/s^2}$ and radius $R_M = 1.74 \\times 10^6\\ \\mathrm{m}$. Find: (a) the escape velocity from the Moon, (b) the ratio $v_{e,\\text{Moon}}/v_{e,\\text{Earth}}$ (use $g_E = 9.8\\ \\mathrm{m/s^2}$, $R_E = 6.4 \\times 10^6\\ \\mathrm{m}$).",
+      "answer": "**(a)** $v_{e,M} = \\sqrt{2g_M R_M} = \\sqrt{2 \\times 1.6 \\times 1.74\\times10^6} = \\sqrt{5.568\\times10^6} \\approx 2360\\ \\mathrm{m/s} \\approx 2.36\\ \\mathrm{km/s}$\n\n**(b)** $v_{e,E} = \\sqrt{2 \\times 9.8 \\times 6.4\\times10^6} = \\sqrt{1.254\\times10^8} \\approx 11200\\ \\mathrm{m/s}$\n\n$\\dfrac{v_{e,M}}{v_{e,E}} = \\dfrac{2360}{11200} \\approx 0.21$\n\nThe Moon's escape velocity is about 1/5 that of Earth — consistent with the Moon being unable to retain an atmosphere."
+    },
+    {
+      "id": "t12-p08",
+      "source": "original",
+      "question": "A black hole has a \"Schwarzschild radius\" $R_s$ at which escape velocity equals the speed of light $c$. Derive the formula for $R_s$ in terms of $M$, $G$, and $c$.",
+      "answer": "Set escape velocity equal to $c$:\n\n$v_e = c = \\sqrt{\\dfrac{2GM}{R_s}}$\n\nSquaring: $c^2 = \\dfrac{2GM}{R_s}$\n\n$$R_s = \\dfrac{2GM}{c^2}$$\n\nFor the Sun ($M_\\odot = 2\\times10^{30}\\ \\mathrm{kg}$):\n\n$R_s = \\dfrac{2 \\times 6.67\\times10^{-11} \\times 2\\times10^{30}}{(3\\times10^8)^2} \\approx 3\\ \\mathrm{km}$\n\nThe Sun would have to be compressed to a 3 km radius sphere to become a black hole."
+    },
+    {
+      "id": "t12-p09",
+      "source": "original",
+      "question": "A satellite orbits Earth at height $h$ above the surface. Express the orbital speed $v_o$ in terms of $g$, $R$, and $h$ (where $R$ is Earth's radius). Then find the ratio $v_e / v_o$ at the surface ($h = 0$).",
+      "answer": "Gravity provides centripetal force at orbital radius $r = R + h$:\n\n$\\dfrac{GMm}{(R+h)^2} = \\dfrac{mv_o^2}{R+h}$\n\n$v_o = \\sqrt{\\dfrac{GM}{R+h}} = \\sqrt{\\dfrac{gR^2}{R+h}}$\n\n**At surface ($h = 0$):**\n\n$v_o = \\sqrt{gR}$\n\n$v_e = \\sqrt{2gR}$\n\n$$\\dfrac{v_e}{v_o} = \\dfrac{\\sqrt{2gR}}{\\sqrt{gR}} = \\sqrt{2}$$\n\nEscape velocity is always $\\sqrt{2}$ times the circular orbital speed at the same radius."
+    },
+    {
+      "id": "t12-p10",
+      "source": "2016-UG adapted",
+      "question": "Planet A has mass $M$ and radius $R$. Planet B has the same density but radius $2R$. Compare: (a) the surface gravities, (b) the escape velocities.",
+      "answer": "Same density $\\rho$, so $M \\propto R^3$.\n\nFor planet B: $M_B = \\rho \\cdot \\tfrac{4}{3}\\pi(2R)^3 = 8 \\cdot \\rho \\cdot \\tfrac{4}{3}\\pi R^3 = 8M$\n\n**(a)** Surface gravity:\n\n$g = GM/R^2$\n\n$\\dfrac{g_B}{g_A} = \\dfrac{8M/(2R)^2}{M/R^2} = \\dfrac{8}{4} = 2$\n\nPlanet B's surface gravity is twice Planet A's.\n\n**(b)** Escape velocity:\n\n$v_e = \\sqrt{2gR}$\n\n$\\dfrac{v_{e,B}}{v_{e,A}} = \\sqrt{\\dfrac{g_B \\cdot 2R}{g_A \\cdot R}} = \\sqrt{2 \\times 2} = 2$\n\nPlanet B's escape velocity is twice Planet A's.\n\n**General rule:** for same-density planets, $g \\propto R$ and $v_e \\propto R$."
+    }
+  ]
+}

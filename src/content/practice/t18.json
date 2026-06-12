@@ -1,0 +1,65 @@
+{
+  "topicId": "t18",
+  "questions": [
+    {
+      "id": "t18-p01",
+      "source": "original",
+      "question": "An ideal gas expands isothermally at $T = 300\\ \\mathrm{K}$ from $V_1 = 2\\ \\mathrm{L}$ to $V_2 = 6\\ \\mathrm{L}$. The initial pressure is $P_1 = 3.0\\times10^5\\ \\mathrm{Pa}$. Find: (a) $P_2$, (b) $\\Delta U$, (c) $Q$.",
+      "answer": "**(a)** Isothermal: $P_1 V_1 = P_2 V_2$\n\n$P_2 = P_1 \\cdot \\dfrac{V_1}{V_2} = 3.0\\times10^5 \\times \\dfrac{2}{6} = 1.0\\times10^5\\ \\mathrm{Pa}$\n\n**(b)** Isothermal $\\Rightarrow T$ unchanged $\\Rightarrow \\Delta U = 0$ (ideal gas)\n\n**(c)** First Law: $Q = \\Delta U + W = W$\n\n$W = nRT\\ln\\dfrac{V_2}{V_1}$. Find $n$: $n = P_1V_1/(RT) = 3.0\\times10^5 \\times 2\\times10^{-3}/(8.31\\times300) = 0.2405\\ \\mathrm{mol}$\n\n$W = Q = 0.2405 \\times 8.31 \\times 300 \\times \\ln 3 = 599.2 \\times 1.099 \\approx 659\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t18-p02",
+      "source": "original",
+      "question": "Explain why $\\Delta U = 0$ in an isothermal process for an ideal gas, and what must therefore be true about $Q$ and $W$.",
+      "answer": "The internal energy of an ideal gas depends **only on temperature** (kinetic energy of molecules with no intermolecular PE):\n\n$U = \\dfrac{3}{2}nRT$ (monatomic)\n\nIf $T$ is constant, then $\\Delta U = 0$.\n\nBy the First Law:\n\n$\\Delta U = Q - W \\Rightarrow 0 = Q - W \\Rightarrow Q = W$\n\nAll heat absorbed by the gas is converted entirely to work (or vice versa). In an isothermal expansion, the gas does positive work $W > 0$, so it must absorb heat $Q > 0$ from the surroundings. In an isothermal compression, $W < 0$ (work done on gas) and $Q < 0$ (heat released to surroundings)."
+    },
+    {
+      "id": "t18-p03",
+      "source": "2015-UG adapted",
+      "question": "An ideal gas is compressed isothermally at $T = 400\\ \\mathrm{K}$. The pressure increases from $P_1 = 1.0\\times10^5\\ \\mathrm{Pa}$ to $P_2 = 4.0\\times10^5\\ \\mathrm{Pa}$. The initial volume is $V_1 = 8\\ \\mathrm{L}$. Find: (a) $V_2$, (b) the work done **on** the gas ($n = 0.24\\ \\mathrm{mol}$).",
+      "answer": "**(a)** $P_1 V_1 = P_2 V_2$:\n\n$V_2 = \\dfrac{P_1}{P_2} V_1 = \\dfrac{1}{4} \\times 8 = 2\\ \\mathrm{L}$\n\n**(b)** Work done **by** the gas:\n\n$W = nRT\\ln\\dfrac{V_2}{V_1} = 0.24 \\times 8.31 \\times 400 \\times \\ln\\dfrac{1}{4}$\n\n$= 0.24 \\times 8.31 \\times 400 \\times (-1.386) = -1108\\ \\mathrm{J}$\n\nWork done **on** the gas $= +1108\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t18-p04",
+      "source": "original",
+      "question": "A sample of gas is compressed isothermally. On a $P$-$V$ diagram, the process follows a hyperbola ($PV = $ const). The initial state is $(P_0, V_0)$ and the final state is $(2P_0, V_0/2)$. Determine: (a) whether work is done on or by the gas, (b) the sign of $Q$.",
+      "answer": "**(a)** The volume decreases ($V_f < V_i$), so the gas is compressed. Work done **by** the gas:\n\n$W = \\int P\\,dV < 0$ (volume decreasing means negative work done by gas)\n\nWork is done **on** the gas by the surroundings.\n\n**(b)** Isothermal $\\Rightarrow \\Delta U = 0$:\n\n$Q = W < 0$\n\n$Q$ is negative: the gas **releases** heat to the surroundings. To compress the gas without raising its temperature, the excess energy must flow out as heat."
+    },
+    {
+      "id": "t18-p05",
+      "source": "original",
+      "question": "Two isothermal processes at different temperatures are drawn on the same $P$-$V$ diagram. Which curve is higher (corresponds to higher temperature)? Justify using $PV = nRT$.",
+      "answer": "For an ideal gas: $P = \\dfrac{nRT}{V}$\n\nAt a given volume $V$, the pressure is proportional to temperature: $P \\propto T$.\n\nTherefore, the isotherm at higher temperature $T_2 > T_1$ has **higher pressure** at every volume:\n\n$P_2(V) = \\dfrac{nRT_2}{V} > P_1(V) = \\dfrac{nRT_1}{V}$\n\nThe **higher curve** on the $P$-$V$ diagram corresponds to the higher temperature. Isotherms are hyperbolas that shift upward and to the right as temperature increases."
+    },
+    {
+      "id": "t18-p06",
+      "source": "original",
+      "question": "A cylinder holds $n = 0.5\\ \\mathrm{mol}$ of ideal gas at $T = 500\\ \\mathrm{K}$. The gas expands isothermally until its volume triples. Find: (a) the work done by the gas, (b) the heat absorbed from the environment.",
+      "answer": "**(a)** $W = nRT\\ln\\dfrac{V_f}{V_i} = 0.5 \\times 8.31 \\times 500 \\times \\ln 3$\n\n$= 0.5 \\times 8.31 \\times 500 \\times 1.099 = 2284\\ \\mathrm{J}$\n\n**(b)** Isothermal $\\Rightarrow \\Delta U = 0$:\n\n$Q = W = 2284\\ \\mathrm{J}$\n\nThe gas absorbs $2284\\ \\mathrm{J}$ from its surroundings and converts it entirely to work."
+    },
+    {
+      "id": "t18-p07",
+      "source": "2019-UG adapted",
+      "question": "During an isothermal expansion, an ideal gas does $W = 400\\ \\mathrm{J}$ of work. What is: (a) $\\Delta U$, (b) $Q$? Then the gas undergoes an isochoric cooling, releasing $Q' = 600\\ \\mathrm{J}$. Find $\\Delta U'$ and $W'$ for this second step.",
+      "answer": "**Isothermal expansion:**\n\n(a) $\\Delta U = 0$ (temperature unchanged)\n\n(b) $Q = W = 400\\ \\mathrm{J}$\n\n**Isochoric cooling:**\n\n$W' = 0$ (constant volume)\n\n$\\Delta U' = Q' = -600\\ \\mathrm{J}$ (heat leaves the gas)\n\nSummary: The isothermal step absorbed 400 J from the environment and converted it all to work. The isochoric step released 600 J as heat, reducing internal energy (and temperature) by an amount corresponding to $\\Delta T = 2\\Delta U'/(3nR)$."
+    },
+    {
+      "id": "t18-p08",
+      "source": "original",
+      "question": "An ideal gas undergoes isothermal compression from $(P_0, 4V_0)$ to $(4P_0, V_0)$. Then it undergoes isochoric heating back to pressure $P_0$. Sketch the path on a $P$-$V$ diagram and describe the direction of heat flow in each step.",
+      "answer": "**Step 1 — Isothermal compression ($T = T_0 = $ const):** The path is the hyperbola $PV = 4P_0V_0 = $ const, moving left and up from $(P_0, 4V_0)$ to $(4P_0, V_0)$.\n\nVolume decreases $\\Rightarrow W < 0$ (work done on gas), and $\\Delta U = 0 \\Rightarrow Q < 0$ (gas releases heat).\n\n**Step 2 — Isochoric cooling ($V = V_0 = $ const):** The path is a vertical line moving downward from $(4P_0, V_0)$ to $(P_0, V_0)$.\n\nPressure decreases at constant volume $\\Rightarrow T$ decreases $\\Rightarrow \\Delta U < 0$. $W = 0 \\Rightarrow Q < 0$ (gas releases heat).\n\nBoth steps release heat to the environment."
+    },
+    {
+      "id": "t18-p09",
+      "source": "original",
+      "question": "For an ideal gas, compare the work done in an isothermal expansion from $V_0$ to $2V_0$ with the work done in an isobaric expansion at pressure $P_0$ over the same volume change. Which process does more work?",
+      "answer": "**Isobaric work** (rectangular area under horizontal $P$-$V$ line):\n\n$W_{\\text{isobar}} = P_0(2V_0 - V_0) = P_0 V_0$\n\n**Isothermal work** (area under hyperbola $P = P_0V_0/V$ from $V_0$ to $2V_0$):\n\n$W_{\\text{iso}} = \\int_{V_0}^{2V_0}\\dfrac{P_0 V_0}{V}\\,dV = P_0 V_0 \\ln 2 \\approx 0.693\\,P_0 V_0$\n\n**Comparison:** $W_{\\text{isobar}} = P_0 V_0 > W_{\\text{iso}} \\approx 0.693\\,P_0 V_0$\n\nThe isobaric process does more work because pressure stays at $P_0$ throughout, while in the isothermal case pressure falls below $P_0$ as volume increases (the hyperbola lies below the horizontal line $P = P_0$ for $V > V_0$)."
+    },
+    {
+      "id": "t18-p10",
+      "source": "2014-UG adapted",
+      "question": "An ideal gas at $P_1 = 3\\times10^5\\ \\mathrm{Pa}$, $V_1 = 2\\ \\mathrm{L}$, $T = 360\\ \\mathrm{K}$ expands isothermally to $V_2 = 6\\ \\mathrm{L}$. Then it is cooled isochorically to $T_3 = 120\\ \\mathrm{K}$. Find the pressure $P_3$ in the final state.",
+      "answer": "**After isothermal expansion:**\n\n$P_2 = P_1 \\cdot \\dfrac{V_1}{V_2} = 3\\times10^5 \\times \\dfrac{2}{6} = 1\\times10^5\\ \\mathrm{Pa}$\n\n$T_2 = T_1 = 360\\ \\mathrm{K}$ (isothermal)\n\n**After isochoric cooling ($V = V_2 = 6\\ \\mathrm{L}$ = const):**\n\n$\\dfrac{P_3}{P_2} = \\dfrac{T_3}{T_2} = \\dfrac{120}{360} = \\dfrac{1}{3}$\n\n$P_3 = \\dfrac{1\\times10^5}{3} \\approx 3.33\\times10^4\\ \\mathrm{Pa}$"
+    }
+  ]
+}

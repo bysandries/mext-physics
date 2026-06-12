@@ -1,0 +1,65 @@
+{
+  "topicId": "t46",
+  "questions": [
+    {
+      "id": "t46-p01",
+      "source": "original",
+      "question": "Light passes from air ($n_1 = 1.0$) into glass ($n_2 = 1.5$) and then into water ($n_3 = 1.33$). The initial angle of incidence is $45°$. Find the final angle of refraction in water.",
+      "answer": "Using the \"chain rule\" of Snell's law: $n_1\\sin\\theta_1 = n_3\\sin\\theta_3$\n\n(The intermediate medium cancels out.)\n\n$1.0 \\times \\sin 45° = 1.33 \\times \\sin\\theta_3$\n\n$\\sin\\theta_3 = \\dfrac{\\sin 45°}{1.33} = \\dfrac{0.7071}{1.33} = 0.5316$\n\n$\\theta_3 = \\arcsin(0.5316) \\approx 32.1°$"
+    },
+    {
+      "id": "t46-p02",
+      "source": "original",
+      "question": "Prove the \"chain rule\": that for light passing through multiple parallel layers with indices $n_1, n_2, n_3, \\ldots, n_f$, the angle in the final medium satisfies $n_1\\sin\\theta_1 = n_f\\sin\\theta_f$.",
+      "answer": "Apply Snell's law at each interface:\n\nInterface 1→2: $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$\n\nInterface 2→3: $n_2\\sin\\theta_2 = n_3\\sin\\theta_3$\n\nFrom the first: $n_2\\sin\\theta_2 = n_1\\sin\\theta_1$. Substituting into the second:\n\n$n_1\\sin\\theta_1 = n_3\\sin\\theta_3$\n\nContinuing: at each interface, the LHS of one equation equals the RHS of the next. By induction:\n\n$$n_1\\sin\\theta_1 = n_f\\sin\\theta_f$$\n\nThe intermediate indices all cancel. The path of light through the intermediate layers matters for finding the actual trajectory (each $\\theta_i$), but only the initial and final media determine the final angle."
+    },
+    {
+      "id": "t46-p03",
+      "source": "2016-UG adapted",
+      "question": "A light ray travels through air ($n = 1$), then a slab of glass ($n = 1.6$, thickness $t = 3\\ \\mathrm{cm}$), then air again. The initial angle is $40°$. Find: (a) the angle in glass, (b) the angle after exiting, (c) the lateral displacement.",
+      "answer": "**(a)** Air→glass: $\\sin\\theta_g = \\sin 40°/1.6 = 0.6428/1.6 = 0.402$; $\\theta_g = 23.7°$\n\n**(b)** Glass→air: $1.6\\sin 23.7° = 1.0\\sin\\theta_{\\text{out}}$; $\\sin\\theta_{\\text{out}} = 1.6 \\times 0.402 = 0.643$; $\\theta_{\\text{out}} = 40°$ ✓\n\n(Chain rule: $n_{\\text{air,1}}\\sin 40° = n_{\\text{air,2}}\\sin\\theta$, so $\\theta = 40°$)\n\n**(c)** Path in glass: $d = t/\\cos\\theta_g = 0.03/\\cos 23.7° = 0.03/0.916 = 0.0327\\ \\mathrm{m}$\n\nLateral displacement: $\\delta = d\\sin(40°-23.7°) = 0.0327 \\times \\sin 16.3° = 0.0327 \\times 0.281 = 9.19\\times10^{-3}\\ \\mathrm{m} \\approx 9.2\\ \\mathrm{mm}$"
+    },
+    {
+      "id": "t46-p04",
+      "source": "original",
+      "question": "A ray enters a glass block ($n = 1.5$) at $30°$ to the normal, travels through the glass, then exits through the opposite parallel face. Confirm it exits at the same angle ($30°$) as it entered.",
+      "answer": "Entry (air→glass): $\\sin\\theta_g = \\sin 30°/1.5 = 0.5/1.5 = 1/3$; $\\theta_g = \\arcsin(1/3) \\approx 19.47°$\n\nExit (glass→air, same parallel face): $1.5\\sin 19.47° = 1.0\\sin\\theta_{\\text{exit}}$\n\n$\\sin\\theta_{\\text{exit}} = 1.5 \\times (1/3) = 0.5$\n\n$\\theta_{\\text{exit}} = \\arcsin(0.5) = 30°$ ✓\n\nThe exit ray is parallel to the incident ray (same angle, displaced laterally). This is the principle of a glass slab — it doesn't change the ray direction, only displaces it."
+    },
+    {
+      "id": "t46-p05",
+      "source": "2018-UG adapted",
+      "question": "A fish is $40\\ \\mathrm{cm}$ below the surface of a pond ($n = 1.33$). A person looks straight down. At what apparent depth does the fish appear?",
+      "answer": "For near-normal incidence, the apparent depth formula is:\n\n$d_{\\text{apparent}} = \\dfrac{d_{\\text{real}}}{n} = \\dfrac{40}{1.33} \\approx 30.1\\ \\mathrm{cm}$\n\nThe fish appears $30\\ \\mathrm{cm}$ below the surface, not $40\\ \\mathrm{cm}$.\n\nThis formula comes from Snell's law applied at small angles: $n\\theta_w \\approx \\theta_{\\text{air}}$, making the apparent angle larger, so the object appears shallower."
+    },
+    {
+      "id": "t46-p06",
+      "source": "original",
+      "question": "A ray of light travels from air ($n = 1.0$) through medium A ($n_A = 1.5$), then medium B ($n_B = 2.0$), then back to air. Initial angle in air is $60°$. Find the angles in each medium.",
+      "answer": "Using Snell's law at each interface:\n\n**Air→A:** $1.0\\sin 60° = 1.5\\sin\\theta_A$\n\n$\\sin\\theta_A = \\sin 60°/1.5 = 0.866/1.5 = 0.577$; $\\theta_A = 35.3°$\n\n**A→B:** $1.5\\sin 35.3° = 2.0\\sin\\theta_B$\n\n$\\sin\\theta_B = 1.5 \\times 0.577/2.0 = 0.433$; $\\theta_B = 25.7°$\n\n**B→air (chain rule):** $n_1\\sin\\theta_1 = n_f\\sin\\theta_f$: $1.0\\sin 60° = 1.0\\sin\\theta_f$\n\n$\\theta_f = 60°$ ✓ (exits at same angle as entry)"
+    },
+    {
+      "id": "t46-p07",
+      "source": "2019-UG adapted",
+      "question": "Light is incident at $60°$ on a glass slab ($n = \\sqrt{3}$) immersed in water ($n = 4/3$). Find the angle of refraction inside the glass.",
+      "answer": "At the water–glass interface:\n\n$n_{\\text{water}}\\sin 60° = n_{\\text{glass}}\\sin\\theta_g$\n\n$\\dfrac{4}{3} \\times \\dfrac{\\sqrt{3}}{2} = \\sqrt{3}\\sin\\theta_g$\n\n$\\dfrac{4}{3} \\times \\dfrac{\\sqrt{3}}{2} = \\dfrac{2\\sqrt{3}}{3}$\n\n$\\sin\\theta_g = \\dfrac{2\\sqrt{3}/3}{\\sqrt{3}} = \\dfrac{2}{3}$\n\n$\\theta_g = \\arcsin(2/3) \\approx 41.8°$"
+    },
+    {
+      "id": "t46-p08",
+      "source": "original",
+      "question": "A prism ($n = 1.5$, apex angle $A = 30°$) is surrounded by air. A ray enters one face at angle $i$ and exits the other face. At minimum deviation, the ray inside is parallel to the base. Find $i$ (angle of incidence at entry face) for minimum deviation.",
+      "answer": "At minimum deviation, by symmetry: the ray inside is parallel to the base, meaning each face has equal angles.\n\nInside the prism at each face, the angle with the normal = $A/2 = 15°$.\n\nApply Snell's law at the entry face:\n\n$n_{\\text{air}}\\sin i = n_{\\text{prism}}\\sin(A/2)$\n\n$1.0 \\times \\sin i = 1.5 \\times \\sin 15°$\n\n$\\sin i = 1.5 \\times 0.2588 = 0.3882$\n\n$i = \\arcsin(0.3882) \\approx 22.8°$"
+    },
+    {
+      "id": "t46-p09",
+      "source": "original",
+      "question": "A light ray undergoes the following path: air → glass slab 1 ($n_1 = 1.4$, $t_1 = 2\\ \\mathrm{cm}$) → glass slab 2 ($n_2 = 1.6$, $t_2 = 3\\ \\mathrm{cm}$) → air. Initial angle in air: $\\theta = 50°$. Find: (a) the angle in each slab, (b) the total lateral displacement.",
+      "answer": "**Angles (Snell's law):**\n\nAir→slab 1: $\\sin\\theta_1 = \\sin 50°/1.4 = 0.766/1.4 = 0.547$; $\\theta_1 = 33.1°$\n\nSlab 1→slab 2: $1.4\\sin 33.1° = 1.6\\sin\\theta_2$; $\\sin\\theta_2 = 1.4 \\times 0.547/1.6 = 0.479$; $\\theta_2 = 28.6°$\n\n**Lateral displacements (from vertical):**\n\nFor each slab, horizontal shift $= t_i \\times \\tan(90°-\\theta_i)$... actually lateral displacement from the original ray path:\n\n$\\delta_i = \\dfrac{t_i}{\\cos\\theta_i}\\sin(\\theta_{\\text{ext}} - \\theta_i)$ where $\\theta_{\\text{ext}} = 50°$\n\n$\\delta_1 = \\dfrac{0.02}{\\cos 33.1°}\\sin(50°-33.1°) = \\dfrac{0.02}{0.838}\\sin 16.9° = 0.02386 \\times 0.291 = 6.94\\times10^{-3}\\ \\mathrm{m}$\n\n$\\delta_2 = \\dfrac{0.03}{\\cos 28.6°}\\sin(50°-28.6°) = \\dfrac{0.03}{0.878}\\sin 21.4° = 0.03417 \\times 0.365 = 1.247\\times10^{-2}\\ \\mathrm{m}$\n\nTotal $\\approx 0.694 + 1.247 = 1.94\\ \\mathrm{cm}$"
+    },
+    {
+      "id": "t46-p10",
+      "source": "2015-UG adapted",
+      "question": "An aquarium glass wall has three layers: glass ($n = 1.5$, thickness $5\\ \\mathrm{mm}$) between water ($n = 1.33$) inside and air outside. A fish at $60°$ to the wall normal — does the light from the fish exit into air? What is the exit angle?",
+      "answer": "**Check for TIR at glass→air interface:**\n\nCritical angle at glass–air: $\\theta_c = \\arcsin(1/1.5) \\approx 41.8°$\n\nFind angle in glass: At water–glass interface:\n\n$1.33\\sin 60° = 1.5\\sin\\theta_g$\n\n$\\sin\\theta_g = 1.33 \\times 0.866/1.5 = 0.768$; $\\theta_g = 50.2°$\n\nAt glass–air interface: $\\theta_g = 50.2° > \\theta_c = 41.8°$ → **TIR occurs!**\n\nLight from the fish at $60°$ does NOT exit into air — it undergoes TIR at the glass–air surface.\n\n(This means the aquarium acts like a mirror for light at steep angles — you'd see a reflection, not the fish.)\n\n**Critical incident angle from water:** At TIR condition, $\\theta_g = 41.8°$:\n\n$1.33\\sin\\theta_{\\text{fish}} = 1.5\\sin 41.8°$; $\\sin\\theta_f = 1.5 \\times 0.667/1.33 = 0.752$; $\\theta_f \\approx 48.8°$\n\nFish must be at angles $< 48.8°$ from normal for light to exit."
+    }
+  ]
+}

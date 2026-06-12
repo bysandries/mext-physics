@@ -1,0 +1,65 @@
+{
+  "topicId": "t13",
+  "questions": [
+    {
+      "id": "t13-p01",
+      "source": "original",
+      "question": "Earth orbits the Sun with period $T_E = 1\\ \\mathrm{yr}$ at radius $r_E = 1\\ \\mathrm{AU}$. Mars has orbital radius $r_M = 1.52\\ \\mathrm{AU}$. Using Kepler's Third Law, find the orbital period of Mars in years.",
+      "answer": "Kepler's Third Law: $T^2 \\propto r^3$, so $\\dfrac{T_M^2}{T_E^2} = \\dfrac{r_M^3}{r_E^3}$\n\n$T_M = T_E \\left(\\dfrac{r_M}{r_E}\\right)^{3/2} = 1 \\times (1.52)^{3/2}$\n\n$(1.52)^{3/2} = 1.52 \\times \\sqrt{1.52} = 1.52 \\times 1.233 = 1.874$\n\n$$T_M \\approx 1.87\\ \\mathrm{yr}$$"
+    },
+    {
+      "id": "t13-p02",
+      "source": "original",
+      "question": "A satellite has orbital period $T = 24\\ \\mathrm{h}$ (geostationary). Earth's surface gravity is $g = 9.8\\ \\mathrm{m/s^2}$ and radius $R = 6400\\ \\mathrm{km}$. Find the orbital radius of this geostationary satellite.",
+      "answer": "From $T = 2\\pi\\sqrt{r^3/(GM)}$ and $GM = gR^2$:\n\n$T^2 = \\dfrac{4\\pi^2 r^3}{gR^2}$\n\n$r^3 = \\dfrac{gR^2 T^2}{4\\pi^2}$\n\n$T = 24 \\times 3600 = 86400\\ \\mathrm{s}$, $R = 6.4\\times10^6\\ \\mathrm{m}$\n\n$r^3 = \\dfrac{9.8 \\times (6.4\\times10^6)^2 \\times (86400)^2}{4\\pi^2}$\n\n$= \\dfrac{9.8 \\times 4.096\\times10^{13} \\times 7.465\\times10^9}{39.48} \\approx 7.54\\times10^{22}$\n\n$r = (7.54\\times10^{22})^{1/3} \\approx 4.22\\times10^7\\ \\mathrm{m} \\approx 42200\\ \\mathrm{km}$"
+    },
+    {
+      "id": "t13-p03",
+      "source": "original",
+      "question": "Derive the orbital period formula $T = 2\\pi\\sqrt{r^3/(GM)}$ for a circular orbit of radius $r$ around a body of mass $M$.",
+      "answer": "For circular orbit, gravitational force provides centripetal acceleration:\n\n$\\dfrac{GMm}{r^2} = \\dfrac{mv^2}{r} \\Rightarrow v = \\sqrt{\\dfrac{GM}{r}}$\n\nThe circumference is $2\\pi r$, so the period is:\n\n$T = \\dfrac{2\\pi r}{v} = \\dfrac{2\\pi r}{\\sqrt{GM/r}} = 2\\pi r \\cdot \\sqrt{\\dfrac{r}{GM}}$\n\n$$T = 2\\pi\\sqrt{\\dfrac{r^3}{GM}}$$\n\nSquaring: $T^2 = \\dfrac{4\\pi^2}{GM}r^3$, confirming $T^2 \\propto r^3$ (Kepler's Third Law)."
+    },
+    {
+      "id": "t13-p04",
+      "source": "2019-UG adapted",
+      "question": "A moon orbits a planet of mass $M$ at radius $r_1$ with period $T_1$. A second moon orbits the same planet at radius $r_2 = 4r_1$. Find the period $T_2$ of the second moon.",
+      "answer": "By Kepler's Third Law:\n\n$\\dfrac{T_2^2}{T_1^2} = \\dfrac{r_2^3}{r_1^3} = \\left(\\dfrac{r_2}{r_1}\\right)^3 = 4^3 = 64$\n\n$T_2 = T_1 \\sqrt{64} = 8T_1$\n\nThe second moon (4 times farther out) has a period 8 times longer."
+    },
+    {
+      "id": "t13-p05",
+      "source": "original",
+      "question": "A satellite orbits Earth at height $h = 400\\ \\mathrm{km}$ above the surface. Find its orbital speed. Use $g = 9.8\\ \\mathrm{m/s^2}$, $R_E = 6400\\ \\mathrm{km}$.",
+      "answer": "Orbital radius: $r = R_E + h = 6400 + 400 = 6800\\ \\mathrm{km} = 6.8\\times10^6\\ \\mathrm{m}$\n\nUsing $GM = gR_E^2$:\n\n$v = \\sqrt{\\dfrac{GM}{r}} = \\sqrt{\\dfrac{gR_E^2}{r}} = R_E\\sqrt{\\dfrac{g}{r}}$\n\n$= 6.4\\times10^6 \\times \\sqrt{\\dfrac{9.8}{6.8\\times10^6}}$\n\n$= 6.4\\times10^6 \\times \\sqrt{1.441\\times10^{-6}}$\n\n$= 6.4\\times10^6 \\times 1.2\\times10^{-3} \\approx 7680\\ \\mathrm{m/s} \\approx 7.68\\ \\mathrm{km/s}$"
+    },
+    {
+      "id": "t13-p06",
+      "source": "original",
+      "question": "Three planets A, B, C orbit the same star. Their orbital radii are in the ratio $r_A : r_B : r_C = 1 : 4 : 9$. Find the ratio of their orbital periods.",
+      "answer": "Kepler's Third Law: $T \\propto r^{3/2}$\n\n$T_A : T_B : T_C = r_A^{3/2} : r_B^{3/2} : r_C^{3/2}$\n\n$= 1^{3/2} : 4^{3/2} : 9^{3/2}$\n\n$= 1 : 8 : 27$\n\n**Check:** $4^{3/2} = (2^2)^{3/2} = 2^3 = 8$ ✓; $9^{3/2} = (3^2)^{3/2} = 3^3 = 27$ ✓"
+    },
+    {
+      "id": "t13-p07",
+      "source": "original",
+      "question": "Use Kepler's Third Law and the Earth–Moon system to estimate the Moon's orbital radius. The Moon's orbital period is $T = 27.3\\ \\mathrm{days}$. Use $g = 9.8\\ \\mathrm{m/s^2}$, $R_E = 6.4\\times10^6\\ \\mathrm{m}$.",
+      "answer": "From $T^2 = \\dfrac{4\\pi^2 r^3}{gR_E^2}$:\n\n$r^3 = \\dfrac{gR_E^2 T^2}{4\\pi^2}$\n\n$T = 27.3 \\times 86400 = 2.36\\times10^6\\ \\mathrm{s}$\n\n$r^3 = \\dfrac{9.8 \\times (6.4\\times10^6)^2 \\times (2.36\\times10^6)^2}{4\\pi^2}$\n\n$= \\dfrac{9.8 \\times 4.096\\times10^{13} \\times 5.57\\times10^{12}}{39.48}$\n\n$= \\dfrac{2.235\\times10^{27}}{39.48} \\approx 5.66\\times10^{25}$\n\n$r = (5.66\\times10^{25})^{1/3} \\approx 3.84\\times10^8\\ \\mathrm{m} = 384{,}000\\ \\mathrm{km}$ ✓"
+    },
+    {
+      "id": "t13-p08",
+      "source": "original",
+      "question": "A planet orbits a star of mass $M_s = 2\\times10^{30}\\ \\mathrm{kg}$ with period $T = 1\\ \\mathrm{yr} = 3.15\\times10^7\\ \\mathrm{s}$. Find the orbital radius. Use $G = 6.67\\times10^{-11}\\ \\mathrm{N\\cdot m^2/kg^2}$.",
+      "answer": "$r^3 = \\dfrac{GM_s T^2}{4\\pi^2}$\n\n$= \\dfrac{6.67\\times10^{-11} \\times 2\\times10^{30} \\times (3.15\\times10^7)^2}{4\\pi^2}$\n\n$= \\dfrac{6.67\\times10^{-11} \\times 2\\times10^{30} \\times 9.92\\times10^{14}}{39.48}$\n\n$= \\dfrac{1.323\\times10^{35}}{39.48} \\approx 3.35\\times10^{33}\\ \\mathrm{m^3}$\n\n$r = (3.35\\times10^{33})^{1/3} \\approx 1.50\\times10^{11}\\ \\mathrm{m} = 1.50\\times10^8\\ \\mathrm{km}$\n\nThis is 1 AU — Earth's actual orbital radius ✓"
+    },
+    {
+      "id": "t13-p09",
+      "source": "2018-UG adapted",
+      "question": "A satellite in a circular orbit at radius $r$ from Earth's center has speed $v_1$. Another satellite orbits at radius $3r$. Find its speed $v_2$ in terms of $v_1$.",
+      "answer": "For circular orbit: $v = \\sqrt{GM/r}$, so $v \\propto r^{-1/2}$\n\n$\\dfrac{v_2}{v_1} = \\sqrt{\\dfrac{r}{3r}} = \\dfrac{1}{\\sqrt{3}}$\n\n$$v_2 = \\dfrac{v_1}{\\sqrt{3}} = \\dfrac{\\sqrt{3}}{3}v_1 \\approx 0.577\\,v_1$$\n\n**Period comparison:** $T \\propto r^{3/2}$, so $T_2 = T_1(3)^{3/2} = 3\\sqrt{3}\\,T_1$"
+    },
+    {
+      "id": "t13-p10",
+      "source": "original",
+      "question": "Earth's orbital period around the Sun is $T_E = 1\\ \\mathrm{yr}$ and orbital radius is $r_E = 1\\ \\mathrm{AU}$. An asteroid has orbital radius $r_A = 4\\ \\mathrm{AU}$. (a) Find its period. (b) If the asteroid starts at the same position as Earth at $t = 0$, how long before they are at the same angular position again (first synodic period)?",
+      "answer": "**(a)** $T_A = T_E (r_A/r_E)^{3/2} = 1 \\times 4^{3/2} = 8\\ \\mathrm{yr}$\n\n**(b)** The synodic period $S$ satisfies:\n\n$\\dfrac{1}{S} = \\dfrac{1}{T_E} - \\dfrac{1}{T_A} = 1 - \\dfrac{1}{8} = \\dfrac{7}{8}$\n\n$S = \\dfrac{8}{7} \\approx 1.14\\ \\mathrm{yr}$\n\n(Earth laps the slower asteroid every 8/7 years.)"
+    }
+  ]
+}

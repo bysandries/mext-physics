@@ -1,0 +1,155 @@
+{
+  "topicId": "t06",
+  "questions": [
+    {
+      "id": "t06-q01",
+      "source": "2014-UG-Q3-(1)",
+      "question": "A ball of mass $m$ hangs from a pivot O on a string of length $a$. It is released from rest at point A, level with O (string horizontal and taut). The acceleration of gravity is $g$ and air resistance is ignored. Find the speed of the ball at the lowest point B.",
+      "choices": [
+        "$\\sqrt{ga}$",
+        "$\\sqrt{2ga}$",
+        "$2\\sqrt{ga}$",
+        "$\\sqrt{\\dfrac{ga}{2}}$",
+        "$\\sqrt{3ga}$",
+        "$ga$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tension does no work, so energy conservation with a drop of $\\Delta h = a$ gives $v = \\sqrt{2ga}$. Energy only sees the *depth*, not the path — any nail or obstacle the string meets on the way is irrelevant to the speed."
+    },
+    {
+      "id": "t06-q02",
+      "source": "2014-UG-Q3-(2)",
+      "question": "In the same setup (ball of mass $m$, string of length $a$, released from rest level with the pivot), find the tension in the string when the ball passes the lowest point B.",
+      "choices": [
+        "$mg$",
+        "$2mg$",
+        "$3mg$",
+        "$4mg$",
+        "$\\dfrac{mg}{2}$",
+        "$5mg$"
+      ],
+      "correctIndex": 2,
+      "explanation": "Radial N2 at the bottom: $T - mg = \\frac{mv^2}{a}$ with $v^2 = 2ga$ gives $T = 3mg$. The universal \"released from the pivot's level\" result — memorize $T = 3mg$ at the bottom. Trap (a) $mg$ forgets the centripetal term entirely."
+    },
+    {
+      "id": "t06-q03",
+      "source": "adapted: 2014-UG-Q3-(4)",
+      "question": "A ball on a string of length $a$ is released from rest level with the pivot O. A nail is fixed at a distance $b$ directly below O, so after passing the lowest point the ball circles the nail with radius $a - b$. The string remains taut all the way to the top of the small circle. Find the required condition on $b$.",
+      "choices": [
+        "$b > \\dfrac{a}{2}$",
+        "$b > \\dfrac{3a}{5}$",
+        "$b > \\dfrac{2a}{3}$",
+        "$b > \\dfrac{3a}{4}$",
+        "$b > \\dfrac{a}{3}$",
+        "$b > \\dfrac{a}{5}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tension at the top of the small circle: $T = \\frac{(-3a+5b)\\,mg}{a-b}$; requiring $T \\ge 0$ gives $5b \\ge 3a$, i.e. $b > \\frac{3}{5}a$. Same physics as the loop-the-loop criterion $v_{top}^2 \\ge gr$, dressed for the exam."
+    },
+    {
+      "id": "t06-q04",
+      "source": "original",
+      "question": "A simple pendulum swings with small amplitude and period $T$. If the mass of the bob is doubled while the length is unchanged, what is the new period?",
+      "choices": [
+        "$T$ (unchanged)",
+        "$\\sqrt{2}\\,T$",
+        "$2T$",
+        "$\\dfrac{T}{\\sqrt{2}}$",
+        "$\\dfrac{T}{2}$",
+        "$4T$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$T = 2\\pi\\sqrt{L/g}$ contains no mass: gravity accelerates every mass equally, so the bob's mass cancels. The same independence holds (for small angles) for the amplitude."
+    },
+    {
+      "id": "t06-q05",
+      "source": "original",
+      "question": "A simple pendulum has period $T$. If its length is made four times longer, what is the new period?",
+      "choices": [
+        "$4T$",
+        "$2T$",
+        "$\\sqrt{2}\\,T$",
+        "$T$ (unchanged)",
+        "$8T$",
+        "$\\dfrac{T}{2}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "$T = 2\\pi\\sqrt{L/g} \\propto \\sqrt{L}$, so quadrupling $L$ doubles $T$. Trap (a) $4T$ forgets the square root."
+    },
+    {
+      "id": "t06-q06",
+      "source": "original",
+      "question": "A pendulum bob of mass $m$ on a string of length $L$ is released from rest with the string making an angle $\\theta$ with the vertical. The acceleration of gravity is $g$. Find the speed of the bob at the lowest point.",
+      "choices": [
+        "$\\sqrt{2gL(1 - \\cos\\theta)}$",
+        "$\\sqrt{2gL\\cos\\theta}$",
+        "$\\sqrt{2gL(1 - \\sin\\theta)}$",
+        "$\\sqrt{2gL}$",
+        "$\\sqrt{gL(1 - \\cos\\theta)}$",
+        "$\\sqrt{2gL\\sin\\theta}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "The drop in height is $\\Delta h = L - L\\cos\\theta = L(1-\\cos\\theta)$, so $v = \\sqrt{2g\\Delta h} = \\sqrt{2gL(1-\\cos\\theta)}$. The geometry step — drop $= L(1-\\cos\\theta)$, not $L\\sin\\theta$ or $L\\cos\\theta$ — is where the distractors live."
+    },
+    {
+      "id": "t06-q07",
+      "source": "original",
+      "question": "A pendulum bob of mass $m$ on a string of length $L$ is released from rest at angle $\\theta$ from the vertical. The acceleration of gravity is $g$. Find the tension in the string as the bob passes the lowest point.",
+      "choices": [
+        "$mg$",
+        "$mg(3 - 2\\cos\\theta)$",
+        "$mg(2 - \\cos\\theta)$",
+        "$3mg$",
+        "$mg(1 + 2\\cos\\theta)$",
+        "$mg(3 - \\cos\\theta)$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Energy: $v^2 = 2gL(1-\\cos\\theta)$. Radial N2 at the bottom: $T = mg + \\frac{mv^2}{L} = mg + 2mg(1-\\cos\\theta) = mg(3 - 2\\cos\\theta)$. Check: $\\theta = 90°$ recovers the classic $3mg$; $\\theta \\to 0$ gives $mg$ ✓. Trap (d) $3mg$ is only the horizontal-release special case."
+    },
+    {
+      "id": "t06-q08",
+      "source": "original",
+      "question": "A pendulum clock keeps correct time on Earth. It is taken to the Moon, where the gravitational acceleration is $g/6$. By what factor does the period of its pendulum change?",
+      "choices": [
+        "$\\times 6$",
+        "$\\times \\dfrac{1}{\\sqrt{6}}$",
+        "$\\times \\sqrt{6}$",
+        "unchanged",
+        "$\\times \\dfrac{1}{6}$",
+        "$\\times 36$"
+      ],
+      "correctIndex": 2,
+      "explanation": "$T = 2\\pi\\sqrt{L/g} \\propto \\frac{1}{\\sqrt{g}}$: with $g \\to g/6$ the period grows by $\\sqrt{6}$ — weaker gravity means a slower swing, so the clock runs slow. Trap (a) $\\times 6$ forgets the square root; trap (b) inverts the dependence."
+    },
+    {
+      "id": "t06-q09",
+      "source": "original",
+      "question": "A ball of mass $m$ on a string of length $r$ hangs from a fixed pivot. The acceleration of gravity is $g$. Find the minimum speed the ball must be given at the lowest point so that it completes a full vertical circle with the string taut throughout.",
+      "choices": [
+        "$\\sqrt{2gr}$",
+        "$\\sqrt{gr}$",
+        "$2\\sqrt{gr}$",
+        "$\\sqrt{5gr}$",
+        "$\\sqrt{3gr}$",
+        "$\\sqrt{6gr}$"
+      ],
+      "correctIndex": 3,
+      "explanation": "Top condition: $v_{top}^2 \\ge gr$. Energy from bottom to top (height $2r$): $v_{bottom}^2 = v_{top}^2 + 4gr \\ge 5gr$, so $v_{min} = \\sqrt{5gr}$. Trap (a) $\\sqrt{2gr}$ only gets the ball *up* to the top with zero speed — the string would go slack long before that."
+    },
+    {
+      "id": "t06-q10",
+      "source": "original",
+      "question": "A ball of mass $m$ moves in a vertical circle of radius $r$ on a string. At the top of the circle its speed is $v$, with $v^2 > gr$. The acceleration of gravity is $g$. Find the tension in the string at the top.",
+      "choices": [
+        "$\\dfrac{mv^2}{r}$",
+        "$\\dfrac{mv^2}{r} - mg$",
+        "$\\dfrac{mv^2}{r} + mg$",
+        "$mg - \\dfrac{mv^2}{r}$",
+        "$mg$",
+        "$\\dfrac{mv^2}{2r} - mg$"
+      ],
+      "correctIndex": 1,
+      "explanation": "At the top both $T$ and $mg$ point toward the center (down): $T + mg = \\frac{mv^2}{r}$, so $T = \\frac{mv^2}{r} - mg$. Trap (c) with $+mg$ is the *bottom*-of-circle equation, where gravity points away from the center."
+    }
+  ]
+}

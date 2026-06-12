@@ -1,0 +1,65 @@
+{
+  "topicId": "t05",
+  "questions": [
+    {
+      "id": "t05-p01",
+      "source": "original",
+      "question": "A car of mass $1200\\ \\mathrm{kg}$ travels at $20\\ \\mathrm{m/s}$ around a flat circular track of radius $80\\ \\mathrm{m}$. Find: (a) the centripetal acceleration, (b) the friction force required, (c) the minimum coefficient of static friction needed. Take $g = 10\\ \\mathrm{m/s^2}$.",
+      "answer": "**(a)** $a_c = \\dfrac{v^2}{r} = \\dfrac{400}{80} = 5\\ \\mathrm{m/s^2}$\n\n**(b)** Friction provides centripetal force: $f = ma_c = 1200 \\times 5 = 6000\\ \\mathrm{N}$\n\n**(c)** $N = mg = 12{,}000\\ \\mathrm{N}$\n\n$\\mu_{s,\\min} = \\dfrac{f}{N} = \\dfrac{6000}{12000} = 0.5$"
+    },
+    {
+      "id": "t05-p02",
+      "source": "original",
+      "question": "A conical pendulum has a string of length $L = 0.8\\ \\mathrm{m}$ and the string makes angle $\\theta = 30°$ with the vertical. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the tension in the string, (b) the radius of the circular path, (c) the speed of the bob, (d) the period of revolution.",
+      "answer": "Let $m$ be the mass of the bob.\n\n**Vertical:** $T\\cos\\theta = mg \\Rightarrow T = \\dfrac{mg}{\\cos 30°} = \\dfrac{mg}{\\sqrt{3}/2} = \\dfrac{2mg}{\\sqrt{3}}$\n\n**Horizontal (centripetal):** $T\\sin\\theta = \\dfrac{mv^2}{r}$\n\n**(b)** $r = L\\sin 30° = 0.8 \\times 0.5 = 0.4\\ \\mathrm{m}$\n\n**(c)** From horizontal equation:\n$v^2 = \\dfrac{T\\sin\\theta \\cdot r}{m} = g\\tan\\theta \\cdot r = 10 \\times \\dfrac{1}{\\sqrt{3}} \\times 0.4 = \\dfrac{4}{\\sqrt{3}}$\n\n$v = \\sqrt{\\dfrac{4}{\\sqrt{3}}} \\approx 1.52\\ \\mathrm{m/s}$\n\n**(a)** $T = \\dfrac{2mg}{\\sqrt{3}}$ (in terms of $m$)\n\n**(d)** $T_{\\text{period}} = \\dfrac{2\\pi r}{v} = 2\\pi\\sqrt{\\dfrac{L\\cos\\theta}{g}} = 2\\pi\\sqrt{\\dfrac{0.8 \\times \\sqrt{3}/2}{10}} \\approx 1.65\\ \\mathrm{s}$"
+    },
+    {
+      "id": "t05-p03",
+      "source": "2018-UG-Q1-(2) adapted",
+      "question": "A small object of mass $m$ is attached to a light spring of force constant $k$ and natural length $l_0$. The object moves in uniform circular motion on a frictionless horizontal table; the other end of the spring is fixed at the center. The spring is stretched by $\\alpha l_0$ ($\\alpha > 0$) beyond its natural length. Find the speed $v$ of the object.",
+      "answer": "The spring provides the centripetal force. Radius of circular path: $r = l_0 + \\alpha l_0 = (1 + \\alpha)l_0$\n\nSpring force: $F = k\\alpha l_0$\n\nCentripetal equation:\n$$k\\alpha l_0 = \\frac{mv^2}{(1+\\alpha)l_0}$$\n\nSolve for $v$:\n$$v^2 = \\frac{k\\alpha l_0^2(1+\\alpha)}{m}$$\n\n$$\\boxed{v = l_0\\sqrt{\\frac{(1+\\alpha)\\alpha k}{m}}}$$\n\nNote: the answer depends on $\\alpha$ (the fractional extension), not just the total radius."
+    },
+    {
+      "id": "t05-p04",
+      "source": "original",
+      "question": "A ball on a string of length $R = 1.0\\ \\mathrm{m}$ is swung in a **vertical** circle. Take $g = 10\\ \\mathrm{m/s^2}$. Find: (a) the minimum speed at the top of the circle to maintain the circular path, (b) the tension at the bottom when the ball is moving at this minimum speed.",
+      "answer": "**(a)** At the top, the minimum speed occurs when tension $= 0$. Gravity alone provides centripetal force:\n\n$mg = \\dfrac{mv_{\\min}^2}{R} \\Rightarrow v_{\\min} = \\sqrt{gR} = \\sqrt{10 \\times 1} = \\sqrt{10} \\approx 3.16\\ \\mathrm{m/s}$\n\n**(b)** Energy conservation from top to bottom (height change $= 2R$):\n\n$\\frac{1}{2}mv_b^2 = \\frac{1}{2}mv_{\\min}^2 + mg(2R)$\n\n$v_b^2 = gR + 4gR = 5gR = 50\\ \\mathrm{m^2/s^2}$\n\nAt the bottom, net upward force = centripetal:\n\n$T - mg = \\dfrac{mv_b^2}{R} \\Rightarrow T = m\\!\\left(g + \\dfrac{v_b^2}{R}\\right) = m(10 + 50) = 60m\\ \\mathrm{N}$\n\nWith $m = 1\\ \\mathrm{kg}$: $T = 60\\ \\mathrm{N} = 6mg$ (six times the weight)."
+    },
+    {
+      "id": "t05-p05",
+      "source": "original",
+      "question": "A road is banked at angle $\\theta$ for a vehicle traveling at speed $v$. If there is no friction, find the radius $r$ of the curve in terms of $v$, $g$, and $\\theta$.",
+      "answer": "On a banked curve with no friction:\n\n- Vertical: $N\\cos\\theta = mg$\n- Horizontal (centripetal): $N\\sin\\theta = \\dfrac{mv^2}{r}$\n\nDivide the horizontal equation by the vertical:\n\n$\\tan\\theta = \\dfrac{v^2}{rg}$\n\n$$r = \\frac{v^2}{g\\tan\\theta}$$\n\nFor a given speed, a sharper bank (larger $\\theta$) corresponds to a tighter curve (smaller $r$)."
+    },
+    {
+      "id": "t05-p06",
+      "source": "original",
+      "question": "An object of mass $0.5\\ \\mathrm{kg}$ is placed on a horizontal turntable at a distance $r = 0.4\\ \\mathrm{m}$ from the center. The turntable spins at $n$ revolutions per second. The coefficient of static friction is $\\mu_s = 0.5$. Take $g = 10\\ \\mathrm{m/s^2}$. Find the maximum $n$ before the object slides.",
+      "answer": "The centripetal force is provided by static friction.\n\nMaximum friction: $f_{\\max} = \\mu_s mg = 0.5 \\times 0.5 \\times 10 = 2.5\\ \\mathrm{N}$\n\nCentripetal force required: $f = mr(2\\pi n)^2 = 0.5 \\times 0.4 \\times 4\\pi^2 n^2 = 0.8\\pi^2 n^2$\n\nSet equal to maximum:\n\n$0.8\\pi^2 n^2 = 2.5 \\Rightarrow n^2 = \\dfrac{2.5}{0.8\\pi^2} = \\dfrac{25}{8\\pi^2}$\n\n$$n_{\\max} = \\frac{5}{2\\sqrt{2}\\pi} = \\frac{5}{2\\pi\\sqrt{2}} \\approx 0.56\\ \\mathrm{rev/s} \\approx 33.7\\ \\mathrm{rpm}$$"
+    },
+    {
+      "id": "t05-p07",
+      "source": "original",
+      "question": "A satellite orbits Earth at radius $r$ from Earth's center. Earth's mass is $M$ and the gravitational constant is $G$. Derive expressions for: (a) the orbital speed, (b) the period of orbit.",
+      "answer": "Gravity provides centripetal force:\n\n$\\dfrac{GMm}{r^2} = \\dfrac{mv^2}{r}$\n\n**(a)** $v^2 = \\dfrac{GM}{r} \\Rightarrow \\boxed{v = \\sqrt{\\dfrac{GM}{r}}}$\n\nNote: speed **decreases** with orbital radius — higher orbits are slower.\n\n**(b)** $T = \\dfrac{2\\pi r}{v} = \\dfrac{2\\pi r}{\\sqrt{GM/r}} = 2\\pi r \\cdot \\sqrt{\\dfrac{r}{GM}}$\n\n$$\\boxed{T = 2\\pi\\sqrt{\\frac{r^3}{GM}}}$$\n\nThis is Kepler's third law: $T^2 \\propto r^3$."
+    },
+    {
+      "id": "t05-p08",
+      "source": "original",
+      "question": "A car goes over the top of a hill of radius of curvature $R = 50\\ \\mathrm{m}$ at speed $v$. Take $g = 10\\ \\mathrm{m/s^2}$. (a) Find the normal force on the driver (mass $m$) at the top. (b) Find the speed $v_0$ at which the driver becomes weightless (leaves the road).",
+      "answer": "**(a)** At the top of the hill the centripetal acceleration points **downward** (toward center of curvature). Net downward force:\n\n$mg - N = \\dfrac{mv^2}{R} \\Rightarrow N = m\\!\\left(g - \\dfrac{v^2}{R}\\right)$\n\nThe driver feels lighter than normal.\n\n**(b)** Weightless when $N = 0$:\n\n$mg = \\dfrac{mv_0^2}{R} \\Rightarrow v_0 = \\sqrt{gR} = \\sqrt{10 \\times 50} = \\sqrt{500} = 10\\sqrt{5} \\approx 22.4\\ \\mathrm{m/s}$"
+    },
+    {
+      "id": "t05-p09",
+      "source": "original",
+      "question": "A ball attached to a $0.5\\ \\mathrm{m}$ string swings in a horizontal circle with the string making $60°$ with the vertical (a conical pendulum). Take $g = 10\\ \\mathrm{m/s^2}$, $\\sin 60° = \\frac{\\sqrt{3}}{2}$, $\\cos 60° = \\frac{1}{2}$. Find: (a) the tension, (b) the period of revolution.",
+      "answer": "**(a)** Vertical equilibrium: $T\\cos 60° = mg$\n\n$T = \\dfrac{mg}{\\cos 60°} = \\dfrac{mg}{1/2} = 2mg$\n\n(The tension is twice the weight.)\n\n**(b)** Period of a conical pendulum:\n\n$T_{\\text{period}} = 2\\pi\\sqrt{\\dfrac{L\\cos\\theta}{g}} = 2\\pi\\sqrt{\\dfrac{0.5 \\times 0.5}{10}} = 2\\pi\\sqrt{0.025} = 2\\pi \\times 0.158 \\approx 0.99\\ \\mathrm{s}$"
+    },
+    {
+      "id": "t05-p10",
+      "source": "original",
+      "question": "A ball of mass $m$ moves in a vertical circle of radius $R$ on a string. At the bottom of the circle the tension is $T_b$ and at the top the tension is $T_t$. Show that $T_b - T_t = 6mg$ regardless of the speed, using energy conservation between the two points.",
+      "answer": "Let $v_b$ and $v_t$ be speeds at bottom and top.\n\n**Newton's second law at bottom** (upward = centripetal direction):\n\n$T_b - mg = \\dfrac{mv_b^2}{R}$ … (1)\n\n**Newton's second law at top** (downward = centripetal direction):\n\n$T_t + mg = \\dfrac{mv_t^2}{R}$ … (2)\n\nSubtract (2) from (1):\n\n$T_b - T_t - 2mg = \\dfrac{m(v_b^2 - v_t^2)}{R}$ … (3)\n\n**Energy conservation** (height difference = $2R$):\n\n$\\dfrac{1}{2}mv_b^2 = \\dfrac{1}{2}mv_t^2 + mg(2R)$\n\n$v_b^2 - v_t^2 = 4gR$ … (4)\n\nSubstitute (4) into (3):\n\n$T_b - T_t - 2mg = \\dfrac{m \\cdot 4gR}{R} = 4mg$\n\n$$\\boxed{T_b - T_t = 6mg}$$ ✓"
+    }
+  ]
+}

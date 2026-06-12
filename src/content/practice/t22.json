@@ -1,0 +1,65 @@
+{
+  "topicId": "t22",
+  "questions": [
+    {
+      "id": "t22-p01",
+      "source": "original",
+      "question": "A cyclic process on a $P$-$V$ diagram consists of: A→B (isobaric expansion at $P = 3\\times10^5\\ \\mathrm{Pa}$ from $V = 1\\ \\mathrm{L}$ to $V = 4\\ \\mathrm{L}$), B→C (isochoric cooling at $V = 4\\ \\mathrm{L}$), C→A (isobaric compression at $P = 1\\times10^5\\ \\mathrm{Pa}$ from $V = 4\\ \\mathrm{L}$ to $V = 1\\ \\mathrm{L}$). Find the net work done per cycle.",
+      "answer": "Work is only done in the isobaric steps:\n\n$W_{AB} = P_{AB}(V_B - V_A) = 3\\times10^5 \\times (4-1)\\times10^{-3} = 900\\ \\mathrm{J}$\n\n$W_{BC} = 0$ (isochoric)\n\n$W_{CA} = P_{CA}(V_A - V_C) = 1\\times10^5 \\times (1-4)\\times10^{-3} = -300\\ \\mathrm{J}$\n\n$W_{\\text{net}} = 900 + 0 + (-300) = 600\\ \\mathrm{J}$\n\nThis equals the area of the rectangle: $(P_{AB} - P_{CA})(V_B - V_A) = (3-1)\\times10^5 \\times 3\\times10^{-3} = 600\\ \\mathrm{J}$ ✓"
+    },
+    {
+      "id": "t22-p02",
+      "source": "original",
+      "question": "For the cycle in the previous problem ($W_{\\text{net}} = 600\\ \\mathrm{J}$), the monatomic ideal gas has state A: $P = 3\\times10^5\\ \\mathrm{Pa}$, $V = 1\\ \\mathrm{L}$; state B: $P = 3\\times10^5\\ \\mathrm{Pa}$, $V = 4\\ \\mathrm{L}$; state C: $P = 1\\times10^5\\ \\mathrm{Pa}$, $V = 4\\ \\mathrm{L}$. Find $n$ and the heat absorbed in the hot step A→B.",
+      "answer": "At state A: $n = \\dfrac{P_A V_A}{RT_A}$. Need $T_A$.\n\nLet $T_A$: $T_A = \\dfrac{P_A V_A}{nR}$ (circular). Instead, find $n$ using the constraint:\n\nAt state C: $T_C = \\dfrac{P_C V_C}{nR} = \\dfrac{1\\times10^5 \\times 4\\times10^{-3}}{nR} = \\dfrac{400}{nR}$\n\nAt state A: $T_A = \\dfrac{3\\times10^5 \\times 1\\times10^{-3}}{nR} = \\dfrac{300}{nR}$\n\nNotice $T_A = T_C = \\dfrac{300}{nR}$ (both give the same value: $P_A V_A = P_C V_C = 300\\ \\mathrm{J}$!)\n\n$n = \\dfrac{P_A V_A}{RT_A}$. Take $T_A = 361\\ \\mathrm{K}$ (if $n=0.1\\ \\mathrm{mol}$): $T_A = 300/(0.1 \\times 8.31) = 361\\ \\mathrm{K}$\n\nWith $n = 0.1\\ \\mathrm{mol}$: $T_B = \\dfrac{3\\times10^5 \\times 4\\times10^{-3}}{0.1 \\times 8.31} = \\dfrac{1200}{0.831} = 1444\\ \\mathrm{K}$\n\n$Q_{AB} = nC_P\\Delta T_{AB} = 0.1 \\times \\frac{5}{2} \\times 8.31 \\times (1444 - 361) = 0.1 \\times 20.775 \\times 1083 = 2249\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t22-p03",
+      "source": "2018-UG adapted",
+      "question": "A Carnot cycle runs between $T_H = 600\\ \\mathrm{K}$ and $T_C = 300\\ \\mathrm{K}$. The gas absorbs $Q_H = 1200\\ \\mathrm{J}$ from the hot reservoir. Find: (a) the efficiency, (b) net work, (c) heat rejected to the cold reservoir.",
+      "answer": "**(a)** Carnot efficiency:\n\n$\\eta = 1 - \\dfrac{T_C}{T_H} = 1 - \\dfrac{300}{600} = 0.5 = 50\\%$\n\n**(b)** $W = \\eta Q_H = 0.5 \\times 1200 = 600\\ \\mathrm{J}$\n\n**(c)** $Q_C = Q_H - W = 1200 - 600 = 600\\ \\mathrm{J}$ (rejected to cold reservoir)"
+    },
+    {
+      "id": "t22-p04",
+      "source": "original",
+      "question": "A cycle on a $P$-$V$ diagram consists of an isothermal expansion from A to B, followed by an adiabatic expansion from B to C, then an isochoric process from C back to A. Describe what happens to the gas temperature at each step and whether heat flows in or out.",
+      "answer": "**A→B (isothermal expansion):** $T = $ const. Gas expands at constant temperature by absorbing heat from a reservoir: $Q_{AB} > 0$ (heat flows in). $\\Delta U = 0$.\n\n**B→C (adiabatic expansion):** $Q = 0$ (no heat flow). Gas expands, does work on surroundings, cools: temperature decreases. $\\Delta U < 0$.\n\n**C→A (isochoric):** $V = $ const, $W = 0$. Temperature must return to $T_A$ (since we're back to state A). Since $T_C < T_A$, heat flows **into** the gas to raise its temperature: $Q_{CA} > 0$. $\\Delta U = Q_{CA} > 0$.\n\nNet: $\\Delta U_{\\text{cycle}} = 0$ (complete cycle). $W_{\\text{net}} = Q_{\\text{net}}$."
+    },
+    {
+      "id": "t22-p05",
+      "source": "original",
+      "question": "A monatomic ideal gas undergoes a triangular cycle on a $P$-$V$ diagram with vertices at: A$(1\\times10^5, 1\\times10^{-3})$, B$(3\\times10^5, 1\\times10^{-3})$, C$(1\\times10^5, 3\\times10^{-3})$ (in Pa and m³). Find the net work done by the gas.",
+      "answer": "The cycle forms a right triangle in the $P$-$V$ plane.\n\nNet work = area of triangle:\n\n$W_{\\text{net}} = \\dfrac{1}{2} \\times \\text{base} \\times \\text{height}$\n\nBase (along $V$-axis from A to C at $P = 1\\times10^5$): $\\Delta V = 3\\times10^{-3} - 1\\times10^{-3} = 2\\times10^{-3}\\ \\mathrm{m^3}$\n\nHeight (along $P$-axis from A to B at $V = 1\\times10^{-3}$): $\\Delta P = 3\\times10^5 - 1\\times10^5 = 2\\times10^5\\ \\mathrm{Pa}$\n\n$W_{\\text{net}} = \\dfrac{1}{2} \\times 2\\times10^{-3} \\times 2\\times10^5 = 200\\ \\mathrm{J}$\n\n(Positive if traversed counterclockwise — check the orientation based on the given path.)"
+    },
+    {
+      "id": "t22-p06",
+      "source": "2019-UG adapted",
+      "question": "In a complete thermodynamic cycle, the gas performs net work $W_{\\text{net}} = 500\\ \\mathrm{J}$. The cycle has two steps where heat is absorbed ($Q_1 = 800\\ \\mathrm{J}$, $Q_2 = 400\\ \\mathrm{J}$) and one step where heat is released. Find $Q_3$ (heat released).",
+      "answer": "For a complete cycle: $\\Delta U = 0$, so $Q_{\\text{net}} = W_{\\text{net}}$\n\n$Q_1 + Q_2 + Q_3 = W_{\\text{net}}$\n\n$800 + 400 + Q_3 = 500$\n\n$Q_3 = 500 - 1200 = -700\\ \\mathrm{J}$\n\nThe gas releases $700\\ \\mathrm{J}$ in step 3."
+    },
+    {
+      "id": "t22-p07",
+      "source": "original",
+      "question": "Explain the sign convention for net work done in a cyclic process on a $P$-$V$ diagram: when is the net work positive (clockwise) vs. negative (counterclockwise)?",
+      "answer": "Work done by the gas $= \\int P\\,dV$ = area under the $P$-$V$ curve.\n\n**Clockwise cycle:** The upper path (expansion) has higher pressure than the lower path (compression). So the expansion step does more positive work than the compression step does negative work.\n\n$W_{\\text{net}} = \\oint P\\,dV > 0$ ✓ (engine: gas does net work on surroundings)\n\n**Counterclockwise cycle:** The compression path has higher pressure — more work is done **on** the gas than the gas does on surroundings.\n\n$W_{\\text{net}} = \\oint P\\,dV < 0$ (refrigerator/pump: net work done on gas)\n\n**Magnitude:** In both cases $|W_{\\text{net}}| = $ area enclosed by the cycle."
+    },
+    {
+      "id": "t22-p08",
+      "source": "original",
+      "question": "A heat engine operates on a rectangular cycle (on a $P$-$V$ diagram) with $P_H = 4\\times10^5\\ \\mathrm{Pa}$, $P_L = 1\\times10^5\\ \\mathrm{Pa}$, $V_1 = 2\\ \\mathrm{L}$, $V_2 = 6\\ \\mathrm{L}$. Find: (a) net work per cycle, (b) the efficiency if the heat input is $Q_H = 3000\\ \\mathrm{J}$.",
+      "answer": "**(a)** Net work = area of rectangle:\n\n$W = (P_H - P_L)(V_2 - V_1) = (4-1)\\times10^5 \\times (6-2)\\times10^{-3}$\n\n$= 3\\times10^5 \\times 4\\times10^{-3} = 1200\\ \\mathrm{J}$\n\n**(b)** $\\eta = \\dfrac{W}{Q_H} = \\dfrac{1200}{3000} = 0.4 = 40\\%$"
+    },
+    {
+      "id": "t22-p09",
+      "source": "2015-CoT adapted",
+      "question": "A gas undergoes a cycle: A→B (isobaric at $P = 2\\times10^5\\ \\mathrm{Pa}$ from $V = 1\\ \\mathrm{L}$ to $4\\ \\mathrm{L}$), B→C (isochoric), C→A (isothermal). Find: (a) the pressure at C, (b) the net work (approximate, using only the exact work from A→B and B→C).",
+      "answer": "**(a)** For the isothermal path C→A: $T_C = T_A$.\n\nAt A: $P_A = 2\\times10^5\\ \\mathrm{Pa}$, $V_A = 1\\times10^{-3}\\ \\mathrm{m^3}$\n\nAt C: $V_C = V_B = 4\\times10^{-3}\\ \\mathrm{m^3}$ (from the isochoric B→C)\n\nIsothermal C→A: $P_C V_C = P_A V_A \\Rightarrow P_C = \\dfrac{P_A V_A}{V_C} = \\dfrac{2\\times10^5 \\times 1}{4} = 0.5\\times10^5\\ \\mathrm{Pa}$\n\n**(b)** $W_{AB} = 2\\times10^5 \\times 3\\times10^{-3} = 600\\ \\mathrm{J}$\n\n$W_{BC} = 0$ (isochoric)\n\n$W_{CA} = nRT\\ln(V_A/V_C) = P_A V_A \\ln(1/4) = 200 \\times (-1.386) \\approx -277\\ \\mathrm{J}$ (compression)\n\n$W_{\\text{net}} \\approx 600 + 0 - 277 = 323\\ \\mathrm{J}$"
+    },
+    {
+      "id": "t22-p10",
+      "source": "original",
+      "question": "On a $P$-$V$ diagram, two different cycles have the same enclosed area but one is clockwise and the other is counterclockwise. Describe what each cycle represents physically and what happens to $Q_{\\text{net}}$ in each case.",
+      "answer": "Both cycles have $|W_{\\text{net}}|$ equal to the same enclosed area.\n\n**Clockwise cycle (heat engine):**\n- $W_{\\text{net}} > 0$: gas does positive net work on surroundings\n- $Q_{\\text{net}} = W_{\\text{net}} > 0$: gas absorbs net heat from reservoirs\n- Converts heat to work (engine)\n\n**Counterclockwise cycle (refrigerator/heat pump):**\n- $W_{\\text{net}} < 0$: net work done **on** the gas\n- $Q_{\\text{net}} = W_{\\text{net}} < 0$: gas rejects net heat to surroundings\n- Uses work to move heat from cold to hot (refrigerator)\n\nIn both cases $\\Delta U_{\\text{cycle}} = 0$ since the state returns to its initial value."
+    }
+  ]
+}
