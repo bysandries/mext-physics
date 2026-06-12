@@ -9,7 +9,7 @@ const { topic } = Astro.props;
 const data = topic.data;
 ---
 
-<a href={`/topic/${data.id}`} class="topic-card">
+<a href={`${import.meta.env.BASE_URL}topic/${data.id}`} class="topic-card">
   <div class="topic-card-header">
     <span class="topic-number">#{data.number}</span>
     {data.theoryOnly && <span class="badge">theory only</span>}
