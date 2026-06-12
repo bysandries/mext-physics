@@ -17,7 +17,11 @@
     },
     {
       "latex": "v = \\dfrac{c}{n}",
-      "description": ", $\\;\\lambda_n = \\dfrac{\\lambda}{n}$"
+      "description": "speed in medium"
+    },
+    {
+      "latex": "\\lambda_n = \\dfrac{\\lambda}{n}",
+      "description": "wavelength in medium (frequency unchanged)"
     }
   ],
   "framework": [

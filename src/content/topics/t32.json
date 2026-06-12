@@ -9,7 +9,11 @@
   "formulas": [
     {
       "latex": "F = \\dfrac{kq_1q_2}{r^2}",
-      "description": ", $\\;U = \\dfrac{kq_1q_2}{r}$, with $k = \\dfrac{1}{4\\pi\\varepsilon_0} \\approx 9.0\\times10^9\\ \\mathrm{N\\,m^2/C^2}$"
+      "description": "Coulomb force"
+    },
+    {
+      "latex": "U = \\dfrac{kq_1q_2}{r}",
+      "description": "electrostatic potential energy; $k = \\dfrac{1}{4\\pi\\varepsilon_0} \\approx 9.0\\times10^9\\ \\mathrm{N\\,m^2/C^2}$"
     }
   ],
   "framework": [

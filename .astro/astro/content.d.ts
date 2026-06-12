@@ -195,6 +195,186 @@ declare module 'astro:content' {
   collection: "practice";
   data: InferEntrySchema<"practice">
 };
+"t11": {
+	id: "t11";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t12": {
+	id: "t12";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t13": {
+	id: "t13";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t14": {
+	id: "t14";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t15": {
+	id: "t15";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t16": {
+	id: "t16";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t17": {
+	id: "t17";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t18": {
+	id: "t18";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t19": {
+	id: "t19";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t20": {
+	id: "t20";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t21": {
+	id: "t21";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t22": {
+	id: "t22";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t23": {
+	id: "t23";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t24": {
+	id: "t24";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t25": {
+	id: "t25";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t26": {
+	id: "t26";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t27": {
+	id: "t27";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t28": {
+	id: "t28";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t29": {
+	id: "t29";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t30": {
+	id: "t30";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t31": {
+	id: "t31";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t32": {
+	id: "t32";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t33": {
+	id: "t33";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t34": {
+	id: "t34";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t35": {
+	id: "t35";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t36": {
+	id: "t36";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t37": {
+	id: "t37";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t38": {
+	id: "t38";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t39": {
+	id: "t39";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t40": {
+	id: "t40";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t41": {
+	id: "t41";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t42": {
+	id: "t42";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t43": {
+	id: "t43";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t44": {
+	id: "t44";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t45": {
+	id: "t45";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
+"t46": {
+	id: "t46";
+  collection: "practice";
+  data: InferEntrySchema<"practice">
+};
 };
 "questions": {
 "t01": {

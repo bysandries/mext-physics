@@ -24,8 +24,8 @@
       "description": "away"
     },
     {
-      "latex": "",
-      "description": "Wall: compose (receive as observer) × (re-emit as source)"
+      "latex": "f' = f \\cdot \\frac{V + v_w}{V} \\cdot \\frac{V}{V - v_w}",
+      "description": "wall moving toward source+observer (receive as observer, re-emit as source)"
     }
   ],
   "framework": [

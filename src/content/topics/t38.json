@@ -21,7 +21,7 @@
     },
     {
       "latex": "\\Phi = Blvt",
-      "description": "Coil entering a field region — ⇒ $\\mathcal{E} = Blv$, constant during entry"
+      "description": "flux swept as coil enters field region at constant speed $v$"
     }
   ],
   "framework": [

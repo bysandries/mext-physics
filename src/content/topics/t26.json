@@ -16,12 +16,12 @@
       "description": ""
     },
     {
-      "latex": "\\Delta P",
-      "description": "Pressure amplitude = peak of the — axis"
+      "latex": "\\Delta P_{\\max}",
+      "description": "pressure amplitude (peak of pressure oscillation)"
     },
     {
-      "latex": "",
-      "description": "peak→adjacent trough = half a period (or half a wavelength)"
+      "latex": "\\tfrac{T}{2} \\text{ or } \\tfrac{\\lambda}{2}",
+      "description": "peak to adjacent trough (half a period or half a wavelength)"
     }
   ],
   "framework": [

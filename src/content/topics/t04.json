@@ -8,16 +8,20 @@
   "theory": "Static friction adjusts itself up to $f_s \\le \\mu_s N$; sliding starts when demand exceeds supply. Kinetic friction is fixed at $f_k = \\mu_k N$ and points opposite the **relative** sliding of the two surfaces — not necessarily opposite the body's motion. On an incline, $N = mg\\cos\\theta$ and the slide condition is $\\tan\\theta > \\mu$. In stacked blocks the friction from below is the **only** horizontal force on the top block, so it *accelerates* it forward; its N3 reaction decelerates the lower block. The pair vanishes the instant the velocities match.",
   "formulas": [
     {
-      "latex": "f_s \\le \\mu_s N",
-      "description": "; $\\;f_k = \\mu_k N$"
+      "latex": "f_s \\le \\mu_s N,\\quad f_k = \\mu_k N",
+      "description": "static (max) and kinetic friction"
     },
     {
-      "latex": "\\Leftrightarrow \\mu < \\tan\\theta",
-      "description": "incline: slide — ; sliding acceleration $a = g(\\sin\\theta - \\mu\\cos\\theta)$"
+      "latex": "\\tan\\theta > \\mu_s",
+      "description": "slide condition on incline"
     },
     {
-      "latex": "=",
-      "description": "Heat generated — friction force × **relative** sliding distance."
+      "latex": "a = g(\\sin\\theta - \\mu_k\\cos\\theta)",
+      "description": "sliding acceleration on incline"
+    },
+    {
+      "latex": "Q = f_k \\cdot \\Delta s_{\\text{rel}}",
+      "description": "heat generated = friction force × relative sliding distance"
     }
   ],
   "framework": [

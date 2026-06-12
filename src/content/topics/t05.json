@@ -16,8 +16,12 @@
       "description": ""
     },
     {
-      "latex": "\\;v = r\\omega",
-      "description": ", $\\;T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi r}{v}$"
+      "latex": "v = r\\omega",
+      "description": "tangential speed"
+    },
+    {
+      "latex": "T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi r}{v}",
+      "description": "period"
     }
   ],
   "framework": [

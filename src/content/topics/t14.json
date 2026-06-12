@@ -12,8 +12,8 @@
       "description": "[$P$: Pa; $V$: m³; $n$: mol; $T$: K]"
     },
     {
-      "latex": "P,V",
-      "description": "Fixed — $\\;mT = \\text{const}$"
+      "latex": "mT = \\text{const}",
+      "description": "fixed $P$ and $V$ (mass $m$ leaving/entering)"
     },
     {
       "latex": "\\rho = \\dfrac{PM_{mol}}{RT}",

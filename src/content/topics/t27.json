@@ -8,12 +8,12 @@
   "theory": "Two identical counter-propagating waves superpose into a standing wave: adjacent **nodes are λ/2 apart**, antinodes midway. In sound tubes, the air **density/pressure oscillates most strongly at displacement nodes** (the closed end / piston face) and not at all at displacement antinodes (the open end). Resonance = the source frequency matches a normal mode of the cavity.",
   "formulas": [
     {
-      "latex": "= \\lambda/2",
-      "description": "Node spacing"
+      "latex": "\\lambda/2",
+      "description": "node spacing (adjacent nodes)"
     },
     {
-      "latex": "",
-      "description": "pressure antinode ↔ displacement node"
+      "latex": "\\text{pressure antinode} \\leftrightarrow \\text{displacement node}",
+      "description": "90° phase shift between pressure and displacement waves"
     }
   ],
   "framework": [],

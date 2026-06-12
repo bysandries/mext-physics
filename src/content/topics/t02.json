@@ -8,12 +8,24 @@
   "theory": "Decompose: horizontal motion is uniform ($a_x=0$), vertical is uniform acceleration $-g$. The **time of flight comes from the vertical motion alone**; feed it into the horizontal. Impact angles come from velocity components, never from position. Three standard launches: angled from level ground, horizontal from a height, and off a cliff.",
   "formulas": [
     {
-      "latex": "v",
-      "description": "Level ground, speed — at angle $\\theta$: flight time $t_f = \\frac{2v\\sin\\theta}{g}$; range $L = \\frac{2v^2\\sin\\theta\\cos\\theta}{g} = \\frac{v^2\\sin 2\\theta}{g}$ (max at 45°); apex $H = \\frac{v^2\\sin^2\\theta}{2g}$."
+      "latex": "t_f = \\frac{2v\\sin\\theta}{g}",
+      "description": "flight time, angled launch from level ground"
     },
     {
-      "latex": "h",
-      "description": "Horizontal launch from height — $t = \\sqrt{2h/g}$; $x = vt$; $v_y = gt = \\sqrt{2gh}$; impact angle $\\tan\\theta = v_y/v_x$."
+      "latex": "L = \\frac{v^2\\sin 2\\theta}{g}",
+      "description": "range (max at 45°)"
+    },
+    {
+      "latex": "H = \\frac{v^2\\sin^2\\theta}{2g}",
+      "description": "apex height"
+    },
+    {
+      "latex": "t = \\sqrt{\\frac{2h}{g}},\\quad x = vt",
+      "description": "horizontal launch from height $h$"
+    },
+    {
+      "latex": "\\tan\\theta = \\frac{v_y}{v_x} = \\frac{\\sqrt{2gh}}{v}",
+      "description": "impact angle, horizontal launch"
     }
   ],
   "framework": [

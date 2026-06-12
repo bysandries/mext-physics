@@ -9,11 +9,19 @@
   "formulas": [
     {
       "latex": "\\Delta U = -W_{by}",
-      "description": "Quasi-static — , $PV^{5/3} = \\text{const}$"
+      "description": "adiabatic ($Q = 0$)"
+    },
+    {
+      "latex": "PV^{5/3} = \\text{const}",
+      "description": "quasi-static adiabatic ($\\gamma = 5/3$ monatomic)"
     },
     {
       "latex": "T_f = T_i",
-      "description": "Free expansion — , $\\;P_f = P_i\\dfrac{V_i}{V_f}$"
+      "description": "free expansion — temperature unchanged (ideal gas)"
+    },
+    {
+      "latex": "P_f = P_i\\dfrac{V_i}{V_f}",
+      "description": "free expansion — pressure after"
     }
   ],
   "framework": [],

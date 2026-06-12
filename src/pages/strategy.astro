@@ -9,9 +9,48 @@ const speedRules = [
   { rule: '**2 sig figs:** carry 3 digits through the arithmetic, round once at the end.' },
   { rule: 'Memorize: √2≈1.41, √3≈1.73, √5≈2.24, √10≈3.16; triangles **3-4-5** (and its 9-12-15 disguise), 5-12-13.' },
   { rule: '**Energy first, forces second.** Conservation laws answer most MEXT mechanics in two lines.' },
-  { rule: 'For any **direction question** (current, charge sign), derive it twice: Lenz’s law AND F = qv×B. They must agree.' },
+  { rule: 'For any **direction question** (current, charge sign), derive it twice: Lenz\'s law AND F = qv×B. They must agree.' },
   { rule: '**Never integrate.** Every MEXT answer is reachable with algebra, conservation laws, and areas of rectangles/triangles.' },
   { rule: '**Skip and return.** A stuck part rarely blocks the next sub-question — they often re-state what you need.' },
+  { rule: '**Q4 is thermodynamics and Q5 is waves/optics — every year.** Prioritize these two domains; they alone account for 40 % of the paper.' },
+];
+
+const yearData = [
+  {
+    year: '2019',
+    q2: { topic: 'EM: LC circuit oscillation', tags: ['circuits', 'capacitor', 'inductor'] },
+    q3: { topic: 'Mechanics: Projectile landing on inclined slope', tags: ['projectile', 'energy'] },
+    q4: { topic: 'Thermo: Cylinder piston + adiabatic removal', tags: ['ideal gas', 'piston'] },
+    q5: { topic: 'Optics: Thin-film interference', tags: ['optics', 'interference'] },
+  },
+  {
+    year: '2018',
+    q2: { topic: 'EM: Square coil entering uniform B field', tags: ['induction', 'Faraday'] },
+    q3: { topic: 'Gravity: Earth mass, escape speed, geostationary orbit', tags: ['gravitation', 'orbits'] },
+    q4: { topic: 'Thermo: Rectangular P-V cycle (monatomic)', tags: ['cycle', 'efficiency'] },
+    q5: { topic: 'Waves: Sound pressure wave analysis', tags: ['waves', 'sound'] },
+  },
+  {
+    year: '2016',
+    q2: { topic: 'EM: Charged particle semicircle in B field', tags: ['Lorentz', 'circular motion'] },
+    q3: { topic: 'Mechanics: Two-block kinetic friction', tags: ['friction', 'momentum'] },
+    q4: { topic: 'Thermo: Mixing two gas containers (adiabatic)', tags: ['ideal gas', 'mixing'] },
+    q5: { topic: 'Optics: Total internal reflection / optical fibre', tags: ['optics', 'refraction'] },
+  },
+  {
+    year: '2015',
+    q2: { topic: 'EM: Conducting bar sliding on inclined rails', tags: ['induction', 'terminal velocity'] },
+    q3: { topic: 'Mechanics: Collision + SHM (spring-mass)', tags: ['collision', 'SHM'] },
+    q4: { topic: 'Thermo: Heated piston — isobaric process', tags: ['isobaric', 'piston'] },
+    q5: { topic: 'Waves: Standing waves in open-closed pipe', tags: ['resonance', 'standing waves'] },
+  },
+  {
+    year: '2014',
+    q2: { topic: 'EM: Hall effect — current strip in B field', tags: ['Hall effect', 'B field'] },
+    q3: { topic: 'Mechanics: Pendulum + nail (string wraps)', tags: ['pendulum', 'energy'] },
+    q4: { topic: 'Thermo: Rectangular P-V cycle (monatomic)', tags: ['cycle', 'efficiency'] },
+    q5: { topic: 'Waves: Doppler + wall reflection (moving speaker)', tags: ['Doppler', 'beats'] },
+  },
 ];
 
 function md(s: string) {
@@ -30,18 +69,138 @@ function md(s: string) {
     </header>
 
     <section class="topic-section">
-      <h2>How the exam works (test-day facts)</h2>
+      <h2>Two exam tracks — know yours</h2>
+      <div class="track-grid">
+        <div class="track-card track-ug">
+          <div class="track-badge">学部留学生</div>
+          <h3>Undergraduate</h3>
+          <ul>
+            <li><strong>5 questions</strong> · ~22–25 answers total</li>
+            <li>Q1 = 5 independent short problems (one per domain)</li>
+            <li>Q2–Q5 = single-scenario multi-part problems</li>
+            <li><strong>Multiple choice only</strong> — letters (a)–(o)</li>
+            <li>No partial credit · No calculator</li>
+            <li>Mostly <strong>symbolic</strong> answers</li>
+          </ul>
+        </div>
+        <div class="track-card track-cot">
+          <div class="track-badge">高等専門学校留学生</div>
+          <h3>College of Technology</h3>
+          <ul>
+            <li><strong>6–7 questions</strong> · more answers total</li>
+            <li>Mix of write-in <strong>numerical</strong> answers and letter-choice</li>
+            <li>Problems are shorter and more independent</li>
+            <li><strong>Round to 2 sig figs</strong> — every numerical answer</li>
+            <li>No connected 5-part chains; fewer cascading errors</li>
+            <li>Uses physical constants explicitly (ke, g, etc.)</li>
+          </ul>
+        </div>
+      </div>
+      <p class="section-note" style="margin-top:0.75rem">
+        The topic coverage and physics are identical for both tracks. The difference is purely in
+        answer format and question depth. The speed rules, constants, and topic blueprint below
+        apply to both; the Q2–Q5 structure section targets the Undergraduate paper specifically.
+      </p>
+    </section>
+
+    <section class="topic-section">
+      <h2>How the undergraduate exam works</h2>
       <ul class="fact-list">
-        <li><strong>60 minutes</strong>, 5 numbered questions. Question 1 is five independent short problems spanning the whole syllabus; Questions 2–5 are single-scenario multi-part problems (mechanics, thermodynamics, waves, E&amp;M in some order).</li>
-        <li>Roughly <strong>22–25 answers total → budget ≈ 2.5 min per answer</strong>.</li>
+        <li><strong>60 minutes</strong>, 5 numbered questions. Q1 is five independent short problems spanning the whole syllabus; Q2–Q5 follow a <strong>fixed topic order</strong> (see blueprint below).</li>
+        <li>Roughly <strong>22–25 answers total → budget ≈ 2.5 min per answer</strong>. Q1 is worth about 5 × 2.5 min; Q2–Q5 each about 4–5 × 2.5 min.</li>
         <li>Answers are <strong>letters (a)–(o)</strong> on a separate answer sheet. <strong>No partial credit. No calculator.</strong></li>
-        <li>Most answers are <strong>symbolic</strong>; numeric answers use <strong>2 significant figures</strong> and <strong>g = 9.8 m/s²</strong>.</li>
+        <li>Most answers are <strong>symbolic formulas</strong>; numeric answers use <strong>2 significant figures</strong> and <strong>g = 9.8 m/s²</strong>.</li>
         <li>Japanese conventions: 物理 = Physics; print your full name and <strong>underline the family name</strong>; first law is <strong>Q = ΔU + W (work done BY the gas)</strong>; capacitor plate area is <strong>S</strong>; sound speed is <strong>V</strong> (lowercase v is reserved for object speeds).</li>
       </ul>
     </section>
 
     <section class="topic-section">
-      <h2>The ten speed rules</h2>
+      <h2>The Q2–Q5 blueprint (Undergraduate)</h2>
+      <p class="section-note">
+        Five years of past papers reveal a near-fixed topic slot for each question. Use this to
+        allocate study time and to orient yourself instantly on test day.
+      </p>
+
+      <div class="blueprint-grid">
+        <div class="blueprint-slot slot-q2">
+          <div class="slot-label">Q2</div>
+          <div class="slot-topic">Electromagnetism</div>
+          <div class="slot-note">Always EM — induction (Faraday/Lenz), charged particle in B field, LC or RC circuit, Hall effect. Expect 4–5 parts.</div>
+        </div>
+        <div class="blueprint-slot slot-q3">
+          <div class="slot-label">Q3</div>
+          <div class="slot-topic">Mechanics or Gravity</div>
+          <div class="slot-note">Usually a constrained mechanics problem (collision + SHM, projectile, pendulum, friction). Occasionally replaced by a celestial mechanics block (escape speed, orbit radius).</div>
+        </div>
+        <div class="blueprint-slot slot-q4">
+          <div class="slot-label">Q4</div>
+          <div class="slot-topic">Thermodynamics</div>
+          <div class="slot-note"><strong>Always thermodynamics — no exceptions across all available years.</strong> Cyclic processes, piston/cylinder, or mixing two gas containers. Know the monatomic ratios cold.</div>
+        </div>
+        <div class="blueprint-slot slot-q5">
+          <div class="slot-label">Q5</div>
+          <div class="slot-topic">Waves &amp; Optics</div>
+          <div class="slot-note"><strong>Always waves or optics — no exceptions.</strong> Alternates between: Doppler + reflection, standing waves / resonance, thin-film interference, total internal reflection.</div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Q1 — the five-domain sweep</h3>
+      <p class="section-note" style="margin-bottom:0.6rem">
+        Q1 always contains exactly one problem from each of the four main domains, plus a fifth
+        drawn from any domain. The split across 5 years:
+      </p>
+      <div class="domain-chips">
+        <span class="chip chip-mech">Mechanics / Kinematics</span>
+        <span class="chip chip-em">Electromagnetism</span>
+        <span class="chip chip-thermo">Thermodynamics / Gases</span>
+        <span class="chip chip-waves">Waves / Optics</span>
+        <span class="chip chip-gravity">Gravity / Orbits (occasional)</span>
+      </div>
+      <p class="section-note" style="margin-top:0.5rem">
+        Because Q1 problems are independent (no chain dependency), a wrong answer costs only that
+        sub-question. Spend ≤ 2 min each; flag and return if stuck.
+      </p>
+
+      <h3 class="subsection-title">Year-by-year breakdown (Undergraduate)</h3>
+      <div class="year-table-wrapper">
+        <table class="year-table">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Q2 — Electromagnetism</th>
+              <th>Q3 — Mechanics/Gravity</th>
+              <th>Q4 — Thermodynamics</th>
+              <th>Q5 — Waves/Optics</th>
+            </tr>
+          </thead>
+          <tbody>
+            {yearData.map(row => (
+              <tr>
+                <td class="year-cell">{row.year}</td>
+                <td>{row.q2.topic}</td>
+                <td>{row.q3.topic}</td>
+                <td>{row.q4.topic}</td>
+                <td>{row.q5.topic}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="topic-section">
+      <h2>College of Technology — format differences</h2>
+      <ul class="fact-list">
+        <li><strong>6–7 standalone questions</strong>, each covering a self-contained scenario. Questions do not chain into each other the way Q2–Q5 do in the undergraduate paper.</li>
+        <li><strong>Numerical fill-in answers</strong> are common alongside multiple-choice. Write the number (rounded to 2 sig figs) directly in the box — there is no letter to circle.</li>
+        <li>Topics covered (2014–2019 sample): Newton's laws, kinematics, energy/work, SHM/pendulum, sound resonance, ideal gas processes, Coulomb's law + electric field, capacitor networks, basic circuits with resistance.</li>
+        <li><strong>No symbolic algebra chains.</strong> Each sub-part gives or re-states the numbers you need. Dimensional analysis is less useful; numerical accuracy matters more.</li>
+        <li>The square-root benchmarks and 2-sig-fig discipline from the undergraduate toolkit apply equally here.</li>
+      </ul>
+    </section>
+
+    <section class="topic-section">
+      <h2>The eleven speed rules</h2>
       <p class="section-note">Read twice, then live by them.</p>
       <ol class="rules-list">
         {speedRules.map((r, i) => (
@@ -127,28 +286,90 @@ function md(s: string) {
     <section class="topic-section">
       <h2>How to drill with this site</h2>
       <ol class="pass-list">
-        <li><strong>Pass 1 — Map.</strong> Read each topic's theory + framework. Don't grind: if a topic is already solid, mark it and move on (the topic grid tracks this).</li>
+        <li><strong>Pass 1 — Map.</strong> Read each topic's theory + framework. Don't grind: if a topic is already solid, mark it and move on (the topic grid tracks this). Given the blueprint above, front-load thermodynamics and waves/optics — they appear in the two heaviest question slots every year.</li>
         <li><strong>Pass 2 — Re-derive.</strong> Cover the solutions and re-derive every worked example against the clock (2.5 min each) using the step-by-step reveal in Practice mode.</li>
-        <li><strong>Pass 3 — Simulate.</strong> Take a full paper in 60 minutes, grading only at the end. Speed comes from the fast checks above becoming reflexes.</li>
+        <li><strong>Pass 3 — Simulate.</strong> Take a full past paper in 60 minutes, grading only at the end. Work Q4 and Q5 before Q3 if you have a weakness — they are the highest-certainty topic bets.</li>
       </ol>
     </section>
   </article>
 </BaseLayout>
 
 <style>
-  .strategy-page { max-width: 800px; }
+  .strategy-page { max-width: 860px; }
   .topic-header { margin-bottom: 2rem; }
   .topic-title { font-size: 1.75rem; font-weight: 800; line-height: 1.3; }
   .subtitle { margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; }
   .topic-section { margin-bottom: 2.5rem; }
   .topic-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+  .subsection-title { font-size: 1rem; font-weight: 700; margin: 1.25rem 0 0.5rem; color: var(--text-primary); }
   .section-note { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+
+  /* Track cards */
+  .track-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 0.75rem; }
+  .track-card {
+    padding: 1.1rem; border-radius: var(--radius);
+    border: 1px solid var(--border); background: var(--bg-secondary);
+  }
+  .track-card h3 { font-size: 1rem; font-weight: 700; margin: 0.4rem 0 0.6rem; }
+  .track-card ul { padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.3rem; }
+  .track-card li { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5; }
+  .track-badge {
+    display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.02em;
+    padding: 0.15rem 0.55rem; border-radius: 999px; margin-bottom: 0.1rem;
+  }
+  .track-ug { border-color: var(--accent); }
+  .track-ug .track-badge { background: var(--accent); color: white; }
+  .track-cot { border-color: var(--border); }
+  .track-cot .track-badge { background: var(--bg-tertiary, #e5e7eb); color: var(--text-secondary); }
+
+  /* Blueprint slots */
+  .blueprint-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0.75rem; margin-bottom: 1.25rem; }
+  .blueprint-slot {
+    padding: 1rem; border-radius: var(--radius); border-width: 2px; border-style: solid;
+  }
+  .slot-label { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.25rem; }
+  .slot-topic { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; }
+  .slot-note { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; }
+  .slot-q2 { border-color: #6366f1; background: #6366f10d; }
+  .slot-q2 .slot-label { color: #6366f1; }
+  .slot-q3 { border-color: #f59e0b; background: #f59e0b0d; }
+  .slot-q3 .slot-label { color: #d97706; }
+  .slot-q4 { border-color: #ef4444; background: #ef44440d; }
+  .slot-q4 .slot-label { color: #dc2626; }
+  .slot-q5 { border-color: #10b981; background: #10b9810d; }
+  .slot-q5 .slot-label { color: #059669; }
+
+  /* Domain chips */
+  .domain-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.25rem; }
+  .chip { font-size: 0.8rem; font-weight: 600; padding: 0.2rem 0.65rem; border-radius: 999px; }
+  .chip-mech { background: #f59e0b22; color: #d97706; }
+  .chip-em { background: #6366f122; color: #6366f1; }
+  .chip-thermo { background: #ef444422; color: #dc2626; }
+  .chip-waves { background: #10b98122; color: #059669; }
+  .chip-gravity { background: var(--bg-tertiary, #e5e7eb); color: var(--text-secondary); }
+
+  /* Year table */
+  .year-table-wrapper { overflow-x: auto; margin-top: 0.75rem; }
+  .year-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .year-table th {
+    text-align: left; padding: 0.5rem 0.75rem; font-size: 0.75rem; font-weight: 700;
+    background: var(--bg-secondary); border-bottom: 2px solid var(--border);
+    white-space: nowrap;
+  }
+  .year-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); vertical-align: top; color: var(--text-secondary); line-height: 1.5; }
+  .year-table tr:last-child td { border-bottom: none; }
+  .year-table tr:hover td { background: var(--bg-secondary); }
+  .year-cell { font-weight: 700; color: var(--text-primary); white-space: nowrap; }
+
+  /* Fact list */
   .fact-list { display: flex; flex-direction: column; gap: 0.6rem; }
   .fact-list li {
     padding: 0.6rem 0.9rem; font-size: 0.9rem; line-height: 1.6;
     background: var(--bg-secondary); border: 1px solid var(--border);
     border-radius: var(--radius); color: var(--text-secondary); list-style: none;
   }
+
+  /* Rules list */
   .rules-list { display: flex; flex-direction: column; gap: 0.75rem; }
   .rules-list li { display: flex; gap: 0.75rem; align-items: flex-start; font-size: 0.95rem; line-height: 1.5; list-style: none; }
   .rule-num {
@@ -158,6 +379,8 @@ function md(s: string) {
     flex-shrink: 0; margin-top: 0.2rem;
   }
   .rule-text { flex: 1; color: var(--text-secondary); }
+
+  /* Card grid */
   .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.75rem; }
   .info-card {
     padding: 1rem; border-radius: var(--radius);
@@ -166,6 +389,8 @@ function md(s: string) {
   .info-card h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem; }
   .info-card p, .info-card li { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
   .info-card ul { padding-left: 1rem; }
+
+  /* Pass list */
   .pass-list { display: flex; flex-direction: column; gap: 0.75rem; padding-left: 1.25rem; }
   .pass-list li { font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); }
 </style>
